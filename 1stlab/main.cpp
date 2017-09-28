@@ -1,9 +1,10 @@
 #include <iostream>
 #include "matrix.h"
 
-const double DELTAX = 0.8; /* 8 / 10 */
-const double DELTAT = 1;
-const double TSIZE = 20 / DELTAT + 1;
+const double XSIZE = 100;
+const double DELTAX = 80 / XSIZE;
+const double DELTAT = 0.1;
+const double TSIZE = 20 / DELTAT;
 const double A = 1;
 
 double sign(double value) {
@@ -16,61 +17,85 @@ double sign(double value) {
 	}
 }
 
-void explicit_solution(Matrix & f) {
-	for (int n = 0; n < TSIZE - 1; n++) {
-		for (int i = 1; i <= 99; i++) {
-			f[n + 1][i] = f[n][i] - A * (f[n][i] - f[n][i - 1]) / DELTAX;
+void upwind_scheme(Matrix & f) {
+	for (int n = 1; n < TSIZE; n++) {
+		for (int i = 1; i < XSIZE; i++) {
+			f[n][i] = f[n - 1][i] - A * DELTAT * (f[n - 1][i] - f[n - 1][i - 1]) / DELTAX;
 		}
 	}
 }
 
-void analitical_solution(Matrix & f, Vector & x) {
-	for (int n = 0; n < TSIZE; n++) {
-		for (int i = 0; i <= 100; i++) {
-			f[n][i] = 0.5 * (sign(x[i] - n) + 1);
+void central_difference_scheme(Matrix & f) {
+	for (int n = 1; n < TSIZE; n++) {
+		for (int i = 1; i < XSIZE; i++) {
+			f[n][i] = (f[n][i + 1] - f[n][i - 1]) / (2 * DELTAX);
 		}
 	}
 }
+
+void analitical_solution(Matrix & f, Vector & x, Vector & t) {
+	for (int n = 0; n <= TSIZE; n++) {
+		for (int i = 0; i <= XSIZE; i++) {
+			f[n][i] = 0.5 * (sign(x[i] - t[n]) + 1);
+		}
+	}
+}
+
 void compute_errors(Matrix & a, Matrix & b, Matrix & e) {
-	for (int n = 0; n < TSIZE; n++) {
-		for (int i = 0; i <= 100; i++) {
+	for (int n = 0; n <= TSIZE; n++) {
+		for (int i = 0; i <= XSIZE; i++) {
 			e[n][i] = a[n][i] - b[n][i];
 		}
 	}
 }
 
-int main() {
-	Matrix explicitf(TSIZE, 101);
-	Matrix analiticalf(TSIZE, 101);
-	Matrix error_matrix(TSIZE, 101);
+void print_csv(const char* name, Matrix matrix) {
+	std::ofstream out;
+	out.open(name);
+	for (unsigned int i = 0; i < matrix.getNrows(); i++) {
+	  for (unsigned int j = 0; j < matrix.getNcols(); j++)
+	    out << matrix[i][j] << ',';
+	  out << '\n';
+	}
+	out.close();
+}
 
-	Vector xvalues(101);
+int main() {
+	Matrix explicitf(TSIZE + 1, XSIZE + 1);
+	Matrix analiticalf(TSIZE + 1, XSIZE + 1);
+	Matrix error_matrix(TSIZE + 1, XSIZE + 1);
+
+	Vector xvalues(XSIZE + 1);
+	Vector tvalues(TSIZE + 1);
 	
-	for (double i = 0; i <= 100; i++) {
+	for (double i = 0; i <= XSIZE; i++) {
 		xvalues[i] = -40 + (i * DELTAX);
 		explicitf[0][i] = 0.5 * (sign(xvalues[i]) + 1);
 	}
-	for (double t = 0; t < TSIZE; t++) {
+	for (double t = 0; t <= TSIZE; t++) {
 		explicitf[t][0] = 0;
-		explicitf[t][100] = 1;
+		explicitf[t][XSIZE] = 1;
+		tvalues[t] = DELTAT * t;
 	}
 
-	explicit_solution(explicitf);
-	analitical_solution(analiticalf, xvalues);
+	//upwind_scheme(explicitf);
+	central_difference_scheme(explicitf);
+	analitical_solution(analiticalf, xvalues, tvalues);
 	compute_errors(explicitf, analiticalf, error_matrix);
-
-	for (double t = 1; t < TSIZE; t++) {
-		if (t * DELTAT == 5 || t * DELTAT == 10 || t * DELTAT == 15 || t * DELTAT == 20) {
+	
+	std::cout << std::endl << "DELTAX = " << DELTAX << std::endl;
+	std::cout << "DELTAT = " << DELTAT << std::endl << std::endl;
+	for (double t = 1; t <= TSIZE; t++) {
+		if (tvalues[t] == 5 || tvalues[t] == 10 || tvalues[t] == 20) {
 			Vector vector(error_matrix[t]);
-			std::cout << "1st norm at " << t * DELTAT << ": " << vector.one_norm() << std::endl;
-			std::cout << "2nd norm at  " << t * DELTAT << ": " << vector.two_norm() << std::endl;
-			std::cout << "uniform norm at " << t * DELTAT << ": " << vector.uniform_norm() << std::endl << std::endl;
+			std::cout << "1st norm at " << tvalues[t] << ": " << vector.one_norm() << std::endl;
+			std::cout << "2nd norm at  " << tvalues[t] << ": " << vector.two_norm() << std::endl;
+			std::cout << "uniform norm at " << tvalues[t] << ": " << vector.uniform_norm() << std::endl << std::endl;
 		}
 	}
-	/*
-	std::cout << "1st norm: " << error_matrix.one_norm() << std::endl;
-	std::cout << "2nd norm: " << error_matrix.two_norm() << std::endl;
-	std::cout << "uniform norm: " << error_matrix.uniform_norm() << std::endl;
+	/*print_csv("./matrices/explicit.csv", explicitf);
+	print_csv("./matrices/analitical.csv", analiticalf);
+	print_csv("./matrices/error.csv", error_matrix);
 	*/
 	return 0;
 }

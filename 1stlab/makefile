@@ -1,2 +1,2 @@
 waveequation: *.cpp
-	g++ -O2 *.cpp -o waveequation
+	g++ -std=c++11 *.cpp -o waveequation
