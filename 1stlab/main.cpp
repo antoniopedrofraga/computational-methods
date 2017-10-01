@@ -33,6 +33,22 @@ void central_difference_scheme(Matrix & f) {
 	}
 }
 
+void lax_scheme(Matrix & f) {
+	for (int n = 1; n < TSIZE; n++) {
+		for (int i = 1; i < XSIZE; i++) {
+			f[n][i] = 0.5 * (f[n][i + 1] + f[n][i - 1]) - A * DELTAT / (2 * DELTAX) * (f[n][i + 1] - f[n][i - 1]);
+		}
+	}
+}
+
+void leapfrog_scheme(Matrix & f) {
+	for (int n = 1; n < TSIZE; n++) {
+		for (int i = 1; i < XSIZE; i++) {
+			f[n][i] = (f[n][i + 1] - f[n][i - 1]) / DELTAT;
+		}
+	}
+}
+
 void analitical_solution(Matrix & f, Vector & x, Vector & t) {
 	for (int n = 0; n <= TSIZE; n++) {
 		for (int i = 0; i <= XSIZE; i++) {
@@ -60,39 +76,57 @@ void print_csv(const char* name, Matrix matrix) {
 	out.close();
 }
 
-int main() {
-	Matrix explicitf(TSIZE + 1, XSIZE + 1);
-	Matrix analiticalf(TSIZE + 1, XSIZE + 1);
+void print_norms(std::string scheme_name, Matrix analitical_matrix, Matrix matrix, Vector tvalues) {
 	Matrix error_matrix(TSIZE + 1, XSIZE + 1);
+	compute_errors(matrix, analitical_matrix, error_matrix);
+
+	std::cout << scheme_name << std::endl;
+	for (double t = 1; t <= TSIZE; t++) {
+		if (tvalues[t] == 5 || tvalues[t] == 10 || tvalues[t] == 20) {
+			Vector vector(error_matrix[t]);
+			std::cout << "1st norm at " << tvalues[t] << ": " << vector.one_norm() / XSIZE << std::endl;
+			std::cout << "2nd norm at  " << tvalues[t] << ": " << vector.two_norm() / XSIZE << std::endl;
+			std::cout << "uniform norm at " << tvalues[t] << ": " << vector.uniform_norm() / XSIZE << std::endl << std::endl;
+		}
+	}
+}
+
+int main() {
+	Matrix matrix(TSIZE + 1, XSIZE + 1);
+	Matrix analitical_matrix(TSIZE + 1, XSIZE + 1);
 
 	Vector xvalues(XSIZE + 1);
 	Vector tvalues(TSIZE + 1);
 	
 	for (double i = 0; i <= XSIZE; i++) {
 		xvalues[i] = -40 + (i * DELTAX);
-		explicitf[0][i] = 0.5 * (sign(xvalues[i]) + 1);
+		matrix[0][i] = 0.5 * (sign(xvalues[i]) + 1);
 	}
 	for (double t = 0; t <= TSIZE; t++) {
-		explicitf[t][0] = 0;
-		explicitf[t][XSIZE] = 1;
+		matrix[t][0] = 0;
+		matrix[t][XSIZE] = 1;
 		tvalues[t] = DELTAT * t;
 	}
 
-	//upwind_scheme(explicitf);
-	central_difference_scheme(explicitf);
-	analitical_solution(analiticalf, xvalues, tvalues);
-	compute_errors(explicitf, analiticalf, error_matrix);
+	Matrix upwind_matrix = matrix, 
+	central_difference_matrix = matrix, 
+	lax_matrix = matrix,
+	leapfrog_matrix = matrix;
+
+	upwind_scheme(upwind_matrix);
+	central_difference_scheme(central_difference_matrix);
+	lax_scheme(lax_matrix);
+	leapfrog_scheme(leapfrog_matrix);
+	analitical_solution(analitical_matrix, xvalues, tvalues);
 	
 	std::cout << std::endl << "DELTAX = " << DELTAX << std::endl;
 	std::cout << "DELTAT = " << DELTAT << std::endl << std::endl;
-	for (double t = 1; t <= TSIZE; t++) {
-		if (tvalues[t] == 5 || tvalues[t] == 10 || tvalues[t] == 20) {
-			Vector vector(error_matrix[t]);
-			std::cout << "1st norm at " << tvalues[t] << ": " << vector.one_norm() << std::endl;
-			std::cout << "2nd norm at  " << tvalues[t] << ": " << vector.two_norm() << std::endl;
-			std::cout << "uniform norm at " << tvalues[t] << ": " << vector.uniform_norm() << std::endl << std::endl;
-		}
-	}
+	
+	print_norms("Upwind scheme", analitical_matrix, upwind_matrix, tvalues);
+	print_norms("Central Difference scheme", analitical_matrix, central_difference_matrix, tvalues);
+	print_norms("Lax scheme", analitical_matrix, lax_matrix, tvalues);
+	print_norms("Leapfrog scheme", analitical_matrix, leapfrog_matrix, tvalues);
+
 	/*print_csv("./matrices/explicit.csv", explicitf);
 	print_csv("./matrices/analitical.csv", analiticalf);
 	print_csv("./matrices/error.csv", error_matrix);
