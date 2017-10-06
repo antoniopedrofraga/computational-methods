@@ -13,7 +13,7 @@ plot:
 		fi; \
 	done; \
 
-	for scheme in "simpleexplicit" "thomas"; do \
+	for scheme in "simpleexplicit" "thomas" "lupartialpivoting"; do \
 		for time in 1.20 5.20 10.00; do \
 			for r in 0.40 0.51 0.60; do \
 				./heattransfer $$scheme 30 $$time $$r 0.02; \
@@ -22,7 +22,7 @@ plot:
 	done; \
 
 	for root in "matrices" "plots"; do \
-		for scheme in "simpleexplicit" "thomas"; do \
+		for scheme in "simpleexplicit" "thomas" "lupartialpivoting"; do \
 			for time in 1.20 5.20 10.00; do \
 				for r in 0.40 0.51 0.60; do \
 					make scheme=$$scheme time=$$time r=$$r saveplot; \
@@ -30,9 +30,9 @@ plot:
 			done; \
 		done; \
 	done;
-testthomas:
+testlu:
 	make
-	./heattransfer thomas 30 10.00 0.40 0.02;
+	./heattransfer lupartialpivoting 30 10.00 0.40 0.02;
 clean:
 	\rm  -r ./matrices 
 	\rm  -r ./plots

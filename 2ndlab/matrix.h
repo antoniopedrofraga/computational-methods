@@ -70,6 +70,7 @@ public:
 	*/
 	int getNcols() const; // get the number of cols
 
+	void set_row_from_lu_b(int xsize, int index, Vector v);
 	// OVERLOADED OPERATOR
 
 	/**

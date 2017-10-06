@@ -25,6 +25,8 @@ Matrix::Matrix(int Nrows, int Ncols) : std::vector<std::vector<double> >()
 		for (int j = 0; j < Ncols; j++) (*this)[i][j] = 0;
 }
 
+
+
 /*
  * Copy constructor
  */
@@ -59,6 +61,13 @@ int Matrix::getNcols() const
 	return (*this)[0].size();
 }
 
+void Matrix::set_row_from_lu_b(int vector_size, int index, Vector v) 
+{
+	for (int i = 1; i < vector_size + 1; i++) {
+		//std::cout << "X size = " << xsize << ", index: " << index << ", v length = " << v.getSize() << ", i = " << i << std::endl;
+		(*this)[index][i] = v[i - 1];
+	}
+}
 
 // NORMS
 /*
