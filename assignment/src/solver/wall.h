@@ -1,10 +1,10 @@
-#ifndef SOLVER_H  
-#define SOLVER_H
+#ifndef WALL_H  
+#define WALL_H
 
 #include "../variants/utils.h"
 #include "../grid/matrix.h"
 
-class Solver {
+class Wall {
 	double delta_x;
 	double delta_t;
 
@@ -14,17 +14,17 @@ class Solver {
 	Vector x_values;
 	Vector t_values;
 
-	Matrix matrix;
+	Matrix grid;
 
+	void set_x_values();
+	void set_t_values();
+	void set_initial_conditions();
 	public:
-
 	static const double THICKNESS;
 	static const double TIMELIMIT;
 
-	Solver(double dt);
-	void setXValues();
-	void setTValues();
-	void setInitialConditions();
+	Wall();
+	Wall(double dt);
 };
 
 #endif

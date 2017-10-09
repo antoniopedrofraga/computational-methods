@@ -1,11 +1,12 @@
-#ifndef ANALYTICALSOLVER_H  
-#define ANALYTICALSOLVER_H
+#ifndef ANALYTICAL_H  
+#define ANALYTICAL_H
 
-#include "../solver.h"
+#include "method.h"
 
-class AnalyticalSolver:Solver {
+class Analytical: public Method {
 public:
-	void computeSolution(Matrix &matrix);
+	Analytical(Wall wall);
+	void compute_solution();
 };
 
 #endif

@@ -2,7 +2,11 @@
 #include "solver/methods/analytical.h"
 
 int main() {
-	std::cout << "Hello world!" << std::endl;
-	std::cout << "Wall difusivity is " << DIFUSIVITY << std::endl;
+	
+	Wall wall(0.01);
+
+	Analytical analytical(wall);
+	analytical.compute_solution();
+
 	return 0;
 }

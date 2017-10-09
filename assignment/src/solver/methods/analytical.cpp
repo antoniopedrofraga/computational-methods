@@ -1,5 +1,9 @@
 #include "analytical.h"
 
-void AnalyticalSolver::computeSolution(Matrix &matrix) {
+Analytical::Analytical(Wall wall)
+: Method(wall) {}
+
+void Analytical::compute_solution() {
 	
 }
+
