@@ -1,5 +1,5 @@
 all: *.cpp
-	g++ -std=c++11 *.cpp -o heattransfer
+	g++ -std=c++11 -Lmydirlib -lliblapacke -lliblapack -lllibblas -lgfortran *.cpp -o heattransfer
 run:
 	make
 	./heattransfer

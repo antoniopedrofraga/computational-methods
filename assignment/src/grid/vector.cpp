@@ -111,6 +111,11 @@ double Vector::uniform_norm() const
 	return result;
 }
 
+std::vector<double> * Vector::begin() {
+	 return this->begin();
+}
+
+
 // INPUT AND OUTPUT
 /*
 * keyboard input , user friendly

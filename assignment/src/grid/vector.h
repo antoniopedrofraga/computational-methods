@@ -87,6 +87,7 @@ public:
 	int getSize() const;  
 
 
+	std::vector<double> *  begin();
 	// THREE NORMS
 	/**
 	* Normal public method that returns a double.

@@ -135,8 +135,6 @@ Matrix& Matrix::operator=(const Matrix& m)
 	return *this;
 }
 
-
-
 /*
 * Operator* multiplication of a matrix by a matrix
 */

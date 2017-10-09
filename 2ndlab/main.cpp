@@ -1,7 +1,7 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
-#include "lapacke.h"
+#include <lapacke.h>
 #include "lu.h"
 
 double DELTAX = 0.02;
@@ -117,12 +117,12 @@ void lu_lapack(Matrix & f) {
 		}
 	}
 
-	lapack_int one = 1;
+	lapack_int pivd[size];
 	for (int n = 0; n < TSIZE; n++) {
-		double *b = malloc(size);
+		double *b = (double*) malloc(size * sizeof(double));
 		lapack_int info;
 		lu_b_vector_lapack(f[n], &b);
-		info = LAPACKE_dgesv (LAPACK_ROW_MAJOR , size, 1 , &a , 1, &one , b , 1);
+		info = LAPACKE_dgesv(LAPACK_ROW_MAJOR , size, 1 , *a , 1, pivd , b , 1);
 		if (info == 0) {
 			std::cout << "lapack factorization went well!" << std::endl;
 		} else if(info < 0) {
