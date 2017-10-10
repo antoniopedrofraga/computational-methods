@@ -1,6 +1,7 @@
 #include <iostream>
 #include "methods/analytical.h"
 #include "methods/dufort_frankel.h"
+#include "methods/richardson.h"
 
 int main() {
 
@@ -12,6 +13,9 @@ int main() {
 
 	DufortFrankel dufort_frankel(wall);
 	dufort_frankel.compute_solution();
+
+	Richardson richardson(wall);
+	richardson.compute_solution();
 
 	return 0;
 }
