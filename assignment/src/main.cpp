@@ -5,6 +5,7 @@
 int main() {
 
 	Wall wall(0.01);
+	wall.set_initial_conditions();
 
 	Analytical analytical(wall);
 	analytical.compute_solution();

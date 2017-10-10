@@ -18,16 +18,18 @@ class Wall {
 
 	void set_x_values();
 	void set_t_values();
-	void set_initial_conditions();
 	
 	public:
 	Wall();
 	Wall(double dt);
 	unsigned int get_xsize();
 	unsigned int get_tsize();
+	double get_deltax();
+	double get_deltat();
 	Vector get_xvalues();
 	Vector get_tvalues();
 	Matrix * get_grid();
+	void set_initial_conditions();
 };
 
 #endif

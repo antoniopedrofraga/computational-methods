@@ -61,11 +61,11 @@ int Matrix::getNcols() const
 	return (*this)[0].size();
 }
 
-void Matrix::set_row_from_lu_b(int vector_size, int index, Vector v) 
-{
-	for (int i = 1; i < vector_size + 1; i++) {
-		//std::cout << "X size = " << xsize << ", index: " << index << ", v length = " << v.getSize() << ", i = " << i << std::endl;
-		(*this)[index][i] = v[i - 1];
+void Matrix::set_row(int index, Vector v) 
+{	
+	unsigned int vector_size = v.getSize();
+	for (unsigned int i = 1; i < vector_size; i++) {
+		(*this)[index][i] = v[i];
 	}
 }
 
@@ -123,15 +123,16 @@ double Matrix::uniform_norm() const
 * Operator= - assignment
 */
 Matrix& Matrix::operator=(const Matrix& m)
-{
-	(*this).resize(m.size());
-	std::size_t i;
-	std::size_t j;
-	for (i = 0; i < m.size(); i++) (*this)[i].resize(m[0].size());
+{	if (this != &m) {
+		(*this).resize(m.size());
+		std::size_t i;
+		std::size_t j;
+		for (i = 0; i < m.size(); i++) (*this)[i].resize(m[0].size());
 
-	for (i = 0; i<m.size(); i++)
-		for (j = 0; j<m[0].size(); j++)
-			(*this)[i][j] = m[i][j];
+		for (i = 0; i<m.size(); i++)
+			for (j = 0; j<m[0].size(); j++)
+				(*this)[i][j] = m[i][j];
+	}
 	return *this;
 }
 

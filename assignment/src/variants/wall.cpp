@@ -21,8 +21,8 @@ void Wall::set_x_values() {
 
 void Wall::set_t_values() {
 	this->t_values = Vector(NUMBER_TIME_STEPS);
-	for (unsigned int time; time < NUMBER_TIME_STEPS; time++) {
-		this->t_values[time] = time * 0.1;
+	for (unsigned int time = 0; time < NUMBER_TIME_STEPS; time++) {
+		this->t_values[time] = double(time) / 10.0;
 	}
 }
 
@@ -41,6 +41,14 @@ unsigned int Wall::get_xsize() {
 
 unsigned int Wall::get_tsize() {
 	return this->t_size;
+}
+
+double Wall::get_deltax() {
+	return this->delta_x;
+}
+
+double Wall::get_deltat() {
+	return this->delta_t;
 }
 
 Vector Wall::get_xvalues() {

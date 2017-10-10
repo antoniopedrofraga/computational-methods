@@ -52,9 +52,11 @@ int Vector::getSize() const
 */
 Vector& Vector::operator=(const Vector& copy)
 {
-	(*this).resize(copy.size());
-	std::size_t i;
-    for (i=0; i<copy.size(); i++) (*this)[i] = copy[i]; 
+	if (this != &copy) {
+        (*this).resize(copy.size());
+		std::size_t i;
+    	for (i=0; i<copy.size(); i++) (*this)[i] = copy[i]; 
+    }
     return *this;
 }
 
