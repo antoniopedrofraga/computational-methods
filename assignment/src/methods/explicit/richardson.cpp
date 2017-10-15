@@ -1,7 +1,7 @@
 #include "richardson.h"
 
 Richardson::Richardson(Wall wall)
-: Method(wall) {}
+: Explicit(wall) {}
 
 void Richardson::compute_solution() {
 	Matrix * grid = wall.get_grid();
@@ -16,25 +16,23 @@ void Richardson::compute_solution() {
 	double c = (2 * delta_t * DIFUSIVITY) / pow(delta_x, 2);
 	unsigned int tvalues_size = t_values.getSize();
 
-	Vector current_iteration(x_size + 1), temp_a(x_size + 1), temp_b(x_size + 1);
-
-	temp_a = (*grid)[0];
-	current_iteration[0] = current_iteration[x_size] = temp_b[0] = temp_b[x_size] = SURFACE_TEMPERATURE;
+	this->temp_a = (*grid)[0];
+	this->current_iteration[0] = this->current_iteration[x_size] = this->temp_b[0] = this->temp_b[x_size] = SURFACE_TEMPERATURE;
 
 	for (unsigned int index = 1; index < x_size; index++) {
-		current_iteration[index] = temp_a[index] - DIFUSIVITY * delta_t * (temp_a[index] - temp_a[index - 1]) / delta_x;
+		this->current_iteration[index] = this->temp_a[index] - DIFUSIVITY * delta_t * (this->temp_a[index] - this->temp_a[index - 1]) / delta_x;
 	}
 	for (unsigned int time = 2; time < t_size + 1; time++) {
 		for (unsigned int index = 1; index < x_size; index++) {
-			temp_b[index] = temp_a[index] + c * (current_iteration[index + 1] - 2 * current_iteration[index] + current_iteration[index - 1]);
+			this->temp_b[index] = this->temp_a[index] + c * (this->current_iteration[index + 1] - 2 * this->current_iteration[index] + this->current_iteration[index - 1]);
 		}
-		temp_a = current_iteration;
-		current_iteration = temp_b;
+		this->temp_a = this->current_iteration;
+		this->current_iteration = this->temp_b;
 
 		for (unsigned int t = 1; t < tvalues_size; t++) {
 			double time_value = double(time) * delta_t;
 			if(t_values[t] == time_value) {
-				grid->set_row(t, current_iteration);
+				grid->set_row(t, this->current_iteration);
 			}
 		}
 	}

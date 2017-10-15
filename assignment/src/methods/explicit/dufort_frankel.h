@@ -1,9 +1,9 @@
 #ifndef DUFORT_FRANKEL_H  
 #define DUFORT_FRANKEL_H
 
-#include "method.h"
+#include "explicit.h"
 
-class DufortFrankel: public Method {
+class DufortFrankel: public Explicit {
 public:
 	DufortFrankel(Wall wall);
 	void compute_solution();

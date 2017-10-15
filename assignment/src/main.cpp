@@ -1,7 +1,9 @@
 #include <iostream>
 #include "methods/analytical.h"
-#include "methods/dufort_frankel.h"
-#include "methods/richardson.h"
+#include "methods/explicit/dufort_frankel.h"
+#include "methods/explicit/richardson.h"
+#include "methods/implicit/laasonen.h"
+#include "methods/implicit/crank_nicolson.h"
 
 int main() {
 
@@ -17,5 +19,11 @@ int main() {
 	Richardson richardson(wall);
 	richardson.compute_solution();
 
+	Laasonen laasonen(wall);
+	laasonen.compute_solution();
+
+	CrankNicolson crank_nicolson(wall);
+	crank_nicolson.compute_solution();
+	
 	return 0;
 }

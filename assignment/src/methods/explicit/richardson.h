@@ -1,9 +1,9 @@
 #ifndef RICHARDSON_H  
 #define RICHARDSON_H
 
-#include "method.h"
+#include "explicit.h"
 
-class Richardson: public Method {
+class Richardson: public Explicit {
 public:
 	Richardson(Wall wall);
 	void compute_solution();

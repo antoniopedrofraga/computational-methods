@@ -8,7 +8,9 @@ protected:
 	Wall wall;
 public:
 	Method();
+	~Method();
 	Method(Wall wall);
+	virtual void compute_solution() = 0;
 };
 
 #endif
