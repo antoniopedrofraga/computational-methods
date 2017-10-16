@@ -61,10 +61,9 @@ int Matrix::getNcols() const
 	return (*this)[0].size();
 }
 
-void Matrix::set_row(int index, Vector v) 
-{	
+void Matrix::set_row(int index, Vector v) {	
 	unsigned int vector_size = v.getSize();
-	for (unsigned int i = 1; i < vector_size; i++) {
+	for (unsigned int i = 0; i < vector_size; i++) {
 		(*this)[index][i] = v[i];
 	}
 }

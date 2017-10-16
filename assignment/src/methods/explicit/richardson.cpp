@@ -22,7 +22,7 @@ void Richardson::compute_solution() {
 	this->current_iteration[0] = this->current_iteration[x_size] = this->temp_b[0] = this->temp_b[x_size] = SURFACE_TEMPERATURE;
 
 	for (unsigned int index = 1; index < x_size; index++) {
-		this->current_iteration[index] = this->temp_a[index] - DIFUSIVITY * delta_t * (this->temp_a[index] - this->temp_a[index - 1]) / delta_x;
+		this->current_iteration[index] = this->temp_a[index] + c / 2.0 * (this->temp_a[index + 1] - 2.0 * this->temp_a[index] + this->temp_a[index - 1]);
 	}
 	for (unsigned int time = 2; time < t_size + 1; time++) {
 		for (unsigned int index = 1; index < x_size; index++) {

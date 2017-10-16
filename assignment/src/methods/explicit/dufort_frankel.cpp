@@ -22,11 +22,11 @@ void DufortFrankel::compute_solution() {
 	this->current_iteration[0] = this->current_iteration[x_size] = this->temp_b[0] = this->temp_b[x_size] = SURFACE_TEMPERATURE;
 
 	for (unsigned int index = 1; index < x_size; index++) {
-		this->current_iteration[index] = this->temp_a[index] - DIFUSIVITY * delta_t * (this->temp_a[index] - this->temp_a[index - 1]) / delta_x;
+		this->current_iteration[index] = this->temp_a[index] + c / 2.0 * (this->temp_a[index + 1] - 2.0 * this->temp_a[index] + this->temp_a[index - 1]);
 	}
 	for (unsigned int time = 2; time < t_size + 1; time++) {
 		for (unsigned int index = 1; index < x_size; index++) {
-			this->temp_b[index] = (this->temp_a[index] + c * (this->current_iteration[index + 1] - this->temp_a[index] + this->current_iteration[index - 1])) / (1 + c);
+			this->temp_b[index] = ((1.0 - c) * this->temp_a[index] + c * (this->current_iteration[index + 1] + this->current_iteration[index - 1])) / (1.0 + c);
 		}
 		this->temp_a = this->current_iteration;
 		this->current_iteration = this->temp_b;

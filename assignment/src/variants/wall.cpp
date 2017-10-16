@@ -10,6 +10,7 @@ Wall::Wall(double delta_t) {
 	this->grid = Matrix(NUMBER_TIME_STEPS, this->x_size + 1);
 	set_x_values();
 	set_t_values();
+	set_initial_conditions();
 }
 
 void Wall::set_x_values() {
