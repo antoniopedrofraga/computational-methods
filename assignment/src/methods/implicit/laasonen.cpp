@@ -13,25 +13,26 @@ void Laasonen::compute_solution() {
 
 	double delta_t = wall.get_deltat();
 
-	Vector t_values = wall.get_tvalues();
+	Vector p(x_size - 1), y(x_size - 2), t_values = wall.get_tvalues();
 	Matrix * grid = wall.get_grid();
 
-	for (int n = 1; n <= t_size; n++) {
-		Vector p(x_size), y(x_size - 1);
+	for (int n = 0; n < t_size; n++) {
 		for (int i = 1; i < x_size; i++) {
+			int j = i - 1;
 			if (i == 1) {
-				y[i] = -c / (1.0 + 2.0 * c);
-				p[i] = (matrix[n][i + 1] + c * matrix[n][i]) / (1.0 + 2.0 * c);
+				y[j] = -c / (1 + 2 * c);
+				p[j] = (matrix[n][i] + c * matrix[n][i - 1]) / (1 + 2 * c);
 			} else if (i == x_size - 1) {
-				p[i] = (matrix[n][i + 1] + c * matrix[n][i] - (-c) * p[i - 1]) / ((1.0 + 2.0 * c) - (-c) * y[i - 1]);
+				p[j] = (matrix[n][i + 1] + c * matrix[n][i] + c * p[j - 1]) / ((1 + 2 * c) + c * y[j - 1]);
 			} else {
-				y[i] = -c / ((1.0 + 2.0 * c) - (-c) * y[i - 1]);
-				p[i] = (matrix[n][i] - (-c) * p[i - 1]) / ((1.0 + 2.0 * c) - (-c) * y[i - 1]);
+				y[j] = -c / ((1 + 2 * c) + c * y[j - 1]);
+				p[j] = (matrix[n][i] + c * p[j - 1]) / ((1 + 2 * c) + c * y[j - 1]);
 			}
 		}
-		matrix[n + 1][x_size - 1] = p[x_size - 1];
+		matrix[n + 1][x_size - 1] = p[x_size - 2];
 		for (int i = x_size - 2; i > 0; i--) {
-			matrix[n + 1][i] = p[i] - y[i] * matrix[n + 1][i + 1];
+			int j = i - 1;
+			matrix[n + 1][i] = p[j] - y[j] * matrix[n + 1][i + 1];
 		}
 	}
 

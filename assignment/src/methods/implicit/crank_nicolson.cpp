@@ -13,24 +13,26 @@ void CrankNicolson::compute_solution() {
 
 	double delta_t = wall.get_deltat();
 
-	Vector p(x_size), y(x_size - 1), t_values = wall.get_tvalues();
+	Vector p(x_size - 1), y(x_size - 2), t_values = wall.get_tvalues();
 	Matrix * grid = wall.get_grid();
 
 	for (int n = 0; n < t_size; n++) {
-		for (int i = 0; i < x_size; i++) {
-			if (i == 0) {
-				y[i] = c / (1 + 2 * c);
-				p[i] = c * (matrix[n + 1][i - 1] + matrix[n][i + 1] - ( -1 / c + 2) * matrix[n][i] + matrix[n][i - 1]) / (1 + 2 * c);
+		for (int i = 1; i < x_size; i++) {
+			int j = i - 1;
+			if (i == 1) {
+				y[j] = c / (1 + 2 * c);
+				p[j] = c * (matrix[n + 1][i - 1] + matrix[n][i + 1] - ( -1 / c + 2) * matrix[n][i] + matrix[n][i - 1]) / (1 + 2 * c);
 			} else if (i == x_size - 1) {
-				p[i] = (c * (matrix[n + 1][i + 1] + matrix[n][i + 1] - ( -1 / c + 2) * matrix[n][i] + matrix[n][i - 1]) + c * p[i - 1]) / ((1 + 2 * c) + c * y[i - 1]);
+				p[j] = (c * (matrix[n + 1][i + 1] + matrix[n][i + 1] - ( -1 / c + 2) * matrix[n][i] + matrix[n][i - 1]) + c * p[j - 1]) / ((1 + 2 * c) + c * y[j - 1]);
 			} else {
-				y[i] = -c / ((1 + 2 * c) + c * y[i - 1]);
-				p[i] = (c * (matrix[n][i + 1] - ( -1 / c + 2) * matrix[n][i] + matrix[n][i - 1]) + c * p[i - 1]) / ((1 + 2 * c) + c * y[i - 1]);
+				y[j] = -c / ((1 + 2 * c) + c * y[j - 1]);
+				p[j] = (c * (matrix[n][i + 1] - ( -1 / c + 2) * matrix[n][i] + matrix[n][i - 1]) + c * p[j - 1]) / ((1 + 2 * c) + c * y[j - 1]);
 			}
 		}
-		matrix[n + 1][x_size - 1] = p[x_size - 1];
-		for (int i = x_size - 1; i > 0; i--) {
-			matrix[n + 1][i] = p[i] - y[i] * matrix[n + 1][i + 1];
+		matrix[n + 1][x_size - 1] = p[x_size - 2];
+		for (int i = x_size - 2; i > 0; i--) {
+			int j = i - 1;
+			matrix[n + 1][i] = p[j] - y[j] * matrix[n + 1][i + 1];
 		}
 	}
 	
