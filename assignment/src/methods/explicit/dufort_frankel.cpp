@@ -1,7 +1,9 @@
 #include "dufort_frankel.h"
 
 DufortFrankel::DufortFrankel(Wall wall)
-: Explicit(wall) {}
+: Explicit(wall) {
+	name = "DuFort-Frankel";
+}
 
 void DufortFrankel::compute_solution() {
 	Matrix * grid = wall.get_grid();
@@ -36,5 +38,4 @@ void DufortFrankel::compute_solution() {
 			}
 		}
 	}
-	std::cout << (*grid);
 }

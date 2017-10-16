@@ -21,6 +21,5 @@ void Analytical::compute_solution() {
 			(*grid)[t][x] = SURFACE_TEMPERATURE + 2.0 * (INITIAL_TEMPERATURE - SURFACE_TEMPERATURE) * sum;
 		}
 	}
-	std::cout << (*grid);
 }
 

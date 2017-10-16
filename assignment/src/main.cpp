@@ -4,26 +4,26 @@
 #include "methods/explicit/richardson.h"
 #include "methods/implicit/laasonen.h"
 #include "methods/implicit/crank_nicolson.h"
+#include "io/iomanager.h"
 
 int main() {
 
+	IOManager io_manager;
 	Wall wall(0.01);
-	wall.set_initial_conditions();
-
 	Analytical analytical(wall);
-	analytical.compute_solution();
-
 	DufortFrankel dufort_frankel(wall);
-	dufort_frankel.compute_solution();
-
 	Richardson richardson(wall);
-	richardson.compute_solution();
-
 	Laasonen laasonen(wall);
-	laasonen.compute_solution();
-
 	CrankNicolson crank_nicolson(wall);
-	crank_nicolson.compute_solution();
-	
+	std::vector<Method*> solutions = {&analytical, &dufort_frankel, &richardson, &laasonen, &crank_nicolson};
+
+	wall.set_initial_conditions();
+	for (int index = 0; index < solutions.size(); index++) {
+		solutions[index]->compute_solution();
+	}
+
+	std::vector<Method*> methods(solutions.begin() + 1, solutions.end());
+	io_manager.export_plots(solutions[0], methods);
+
 	return 0;
 }

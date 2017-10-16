@@ -1,7 +1,9 @@
 #include "richardson.h"
 
 Richardson::Richardson(Wall wall)
-: Explicit(wall) {}
+: Explicit(wall) {
+	name = "Richardson";
+}
 
 void Richardson::compute_solution() {
 	Matrix * grid = wall.get_grid();
@@ -36,5 +38,4 @@ void Richardson::compute_solution() {
 			}
 		}
 	}
-	std::cout << (*grid);
 }

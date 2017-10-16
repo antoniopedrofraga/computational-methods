@@ -1,6 +1,7 @@
 #include "crank_nicolson.h"
 
 CrankNicolson::CrankNicolson(Wall wall) : Implicit(wall) {
+	name = "Crank-Nicholson";
 	double delta_x = wall.get_deltax();
 	double delta_t = wall.get_deltat();
 	this->c = 0.5 * delta_t * DIFUSIVITY / pow(delta_x, 2);
@@ -37,5 +38,4 @@ void CrankNicolson::compute_solution() {
 		int time = t_values[i] / delta_t;
 		(*grid)[i] = matrix[time];
 	}
-	std::cout << (*grid);
 }

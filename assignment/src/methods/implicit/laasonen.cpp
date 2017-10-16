@@ -1,6 +1,7 @@
 #include "laasonen.h"
 
 Laasonen::Laasonen(Wall wall) : Implicit(wall) {
+	name = "Laasonen";
 	double delta_x = wall.get_deltax();
 	double delta_t = wall.get_deltat();
 	this->c = delta_t * DIFUSIVITY / pow(delta_x, 2);
@@ -37,5 +38,4 @@ void Laasonen::compute_solution() {
 		int time = t_values[i] / delta_t;
 		(*grid)[i] = matrix[time];
 	}
-	std::cout << (*grid);
 }
