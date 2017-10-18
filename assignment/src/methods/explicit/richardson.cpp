@@ -5,37 +5,12 @@ Richardson::Richardson(Wall wall)
 	name = "Richardson";
 }
 
-void Richardson::compute_solution() {
-	Matrix * grid = wall.get_grid();
-	Vector t_values = wall.get_tvalues();
-
-	unsigned int x_size = wall.get_xsize();
-	unsigned int t_size = wall.get_tsize();
-
-	double delta_t = wall.get_deltat();
-	double delta_x = wall.get_deltax();
-
-	double c = (2 * delta_t * DIFUSIVITY) / pow(delta_x, 2);
-	unsigned int tvalues_size = t_values.getSize();
-
-	this->temp_a = (*grid)[0];
-	this->current_iteration[0] = this->current_iteration[x_size] = this->temp_b[0] = this->temp_b[x_size] = SURFACE_TEMPERATURE;
-
-	for (unsigned int index = 1; index < x_size; index++) {
-		this->current_iteration[index] = this->temp_a[index] + c / 2.0 * (this->temp_a[index + 1] - 2.0 * this->temp_a[index] + this->temp_a[index - 1]);
+Vector Richardson::build_iteration(Vector current_step, Vector previous_step) {
+	unsigned int size = previous_step.getSize();
+	Vector result(size);
+	result[0] = result[size - 1] = SURFACE_TEMPERATURE;
+	for (unsigned int i = 1; i < size - 1; i++) {
+			result[i] = previous_step[i] + q * (current_step[i + 1] - 2.0 * current_step[i] + current_step[i - 1]);
 	}
-	for (unsigned int time = 2; time < t_size + 1; time++) {
-		for (unsigned int index = 1; index < x_size; index++) {
-			this->temp_b[index] = this->temp_a[index] + c * (this->current_iteration[index + 1] - 2 * this->current_iteration[index] + this->current_iteration[index - 1]);
-		}
-		this->temp_a = this->current_iteration;
-		this->current_iteration = this->temp_b;
-
-		for (unsigned int t = 1; t < tvalues_size; t++) {
-			double time_value = double(time) * delta_t;
-			if(t_values[t] == time_value) {
-				grid->set_row(t, this->current_iteration);
-			}
-		}
-	}
+	return result;
 }

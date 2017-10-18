@@ -1,4 +1,5 @@
 #include "vector.h"
+#include <algorithm>
 
 // CONSTRUCTORS
 /*=
@@ -35,7 +36,7 @@ Vector::Vector(std::vector<double> vec) : std::vector<double>() {
 	(*this).resize(vec.size());
     // copy the data members (if vector is empty then num==0)
 	std::size_t i;
-    for (i=0; i<vec.size(); i++) (*this)[i]=vec[i]; 
+    for (i=0; i<vec.size(); i++) (*this)[i]=vec[i];
 }
 
 /*
@@ -44,6 +45,20 @@ Vector::Vector(std::vector<double> vec) : std::vector<double>() {
 int Vector::getSize() const
 {
 	return size();
+}
+
+void Vector::push_front_back(double value) {
+	this->insert(this->begin(), value);
+	this->push_back(value);
+}
+
+int Vector::find(double value) {
+	std::vector<double>::iterator it = std::find((*this).begin(), (*this).end(), value);
+	if (it != (*this).end()) {
+		return std::distance((*this).begin(), it);
+	} else {
+		return -1;
+	}
 }
 
 // OVERLOADED OPERATORS

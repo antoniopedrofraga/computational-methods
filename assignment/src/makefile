@@ -3,6 +3,9 @@ all: *.cpp
 install:
 	sudo apt-get install libboost-iostreams-dev libboost-system-dev libboost-filesystem-dev
 run:
+	make all
+	./assignment
+export:
 	if [ -d ../plots/ ]; then \
 	  	make clean; \
 	fi; \

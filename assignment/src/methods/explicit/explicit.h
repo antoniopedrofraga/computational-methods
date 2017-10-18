@@ -4,11 +4,14 @@
 #include "../method.h"
 
 class Explicit: public Method {
+private:
+	Vector first_iteration(Vector v);
 protected:
-	Vector current_iteration, temp_a, temp_b;
+	double q;
+	virtual Vector build_iteration(Vector current_step, Vector previous_step) = 0;
 public:
 	Explicit(Wall wall);
-	virtual void compute_solution() = 0;
+	void compute_solution();
 };
 
 #endif

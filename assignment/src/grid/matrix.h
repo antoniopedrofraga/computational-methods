@@ -42,7 +42,9 @@ public:
 	* @see Matrix(const Matrix& m)
 	* @exception invalid_argument ("matrix size negative or zero")
 	*/
-    Matrix(int Nrows /**< int. number of rows in matrix */, int Ncols /**< int. number of columns in matrix  */); 
+    Matrix(int Nrows /**< int. number of rows in matrix */, int Ncols /**< int. number of columns in matrix  */);
+
+    Matrix(int size, double a, double b, double c);
 
 	/**
 	* Copy constructor.

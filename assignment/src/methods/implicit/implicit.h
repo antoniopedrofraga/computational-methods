@@ -5,13 +5,13 @@
 
 class Implicit: public Method {
 private:
-	void set_initial_conditions(unsigned int x_size, unsigned int t_size);
+	Vector thomas_algorithm(Vector r, double a, double b, double c);
 protected:
-	Matrix matrix;
-	double c;
+	double q;
+	virtual Vector build_r(Vector previous_step) = 0;
 public:
 	Implicit(Wall wall);
-	virtual void compute_solution() = 0;
+	void compute_solution();
 };
 
 #endif

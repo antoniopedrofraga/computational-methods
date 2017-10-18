@@ -4,9 +4,10 @@
 #include "implicit.h"
 
 class Laasonen: public Implicit {
+protected:
+	Vector build_r(Vector previous_step);
 public:
 	Laasonen(Wall wall);
-	void compute_solution();
 };
 
 #endif

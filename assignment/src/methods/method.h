@@ -9,7 +9,6 @@ protected:
 	std::string name;
 public:
 	Method();
-	~Method();
 	Method(Wall wall);
 	std::string get_name();
 	Matrix get_grid();

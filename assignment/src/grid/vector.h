@@ -84,7 +84,11 @@ public:
 	/** Normal get method that returns integer, the size of the vector
 	* @return int. the size of the vector
 	*/
-	int getSize() const;  
+	int getSize() const;
+
+	void push_front_back(double value);
+
+	int find(double value);
 
 	// THREE NORMS
 	/**

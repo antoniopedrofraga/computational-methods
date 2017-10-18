@@ -28,7 +28,9 @@ class Wall {
 	double get_deltat();
 	Vector get_xvalues();
 	Vector get_tvalues();
-	Matrix * get_grid();
+	Vector get_first_row();
+	Matrix *get_grid();
+	void set_time_step(Vector step, double time);
 	void set_initial_conditions();
 };
 

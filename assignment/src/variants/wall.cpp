@@ -2,64 +2,75 @@
 
 Wall::Wall() {}
 
-Wall::Wall(double delta_t) {
-	this->delta_x = 0.05;
-	this->delta_t = delta_t;
-	this->x_size = (int)(THICKNESS / this->delta_x);
-	this->t_size = (int)(TIMELIMIT / this->delta_t);
-	this->grid = Matrix(NUMBER_TIME_STEPS, this->x_size + 1);
+Wall::Wall(double dt) {
+	delta_x = 0.05;
+	delta_t = dt;
+	x_size = (int)(THICKNESS / delta_x);
+	t_size = (int)(TIMELIMIT / delta_t);
+	grid = Matrix(NUMBER_TIME_STEPS, x_size + 1);
 	set_x_values();
 	set_t_values();
 	set_initial_conditions();
 }
 
 void Wall::set_x_values() {
-	this->x_values = Vector(this->x_size + 1);
-	for (unsigned int index = 0; index <= this->x_size; index++) {
-		this->x_values[index] = this->delta_x * index;
+	x_values = Vector(x_size + 1);
+	for (unsigned int index = 0; index <= x_size; index++) {
+		x_values[index] = delta_x * index;
 	}
 }
 
 void Wall::set_t_values() {
-	this->t_values = Vector(NUMBER_TIME_STEPS);
+	t_values = Vector(NUMBER_TIME_STEPS);
 	for (unsigned int time = 0; time < NUMBER_TIME_STEPS; time++) {
-		this->t_values[time] = double(time) / 10.0;
+		t_values[time] = double(time) / 10.0;
 	}
 }
 
 void Wall::set_initial_conditions() {
-	for (unsigned int index = 1; index < this->x_size; index++) {
-		this->grid[0][index] = INITIAL_TEMPERATURE;
+	for (unsigned int index = 1; index < x_size; index++) {
+		grid[0][index] = INITIAL_TEMPERATURE;
 	}
 	for (unsigned int time = 0; time < NUMBER_TIME_STEPS; time++) {
-		this->grid[time][0] = this->grid[time][x_size] = SURFACE_TEMPERATURE;
+		grid[time][0] = grid[time][x_size] = SURFACE_TEMPERATURE;
 	}
+}
+
+void Wall::set_time_step(Vector step, double time) {
+	int position = t_values.find(time);
+	if (position != -1) {
+		grid.set_row(position, step);
+	}
+}
+
+Vector Wall::get_first_row() {
+	return grid[0];
 }
 
 unsigned int Wall::get_xsize() {
-	return this->x_size;
+	return x_size;
 }
 
 unsigned int Wall::get_tsize() {
-	return this->t_size;
+	return t_size;
 }
 
 double Wall::get_deltax() {
-	return this->delta_x;
+	return delta_x;
 }
 
 double Wall::get_deltat() {
-	return this->delta_t;
+	return delta_t;
 }
 
 Vector Wall::get_xvalues() {
-	return this->x_values;
+	return x_values;
 }
 
 Vector Wall::get_tvalues() {
-	return this->t_values;
+	return t_values;
 }
 
-Matrix * Wall::get_grid() {
-	return &this->grid;
+Matrix *Wall::get_grid() {
+	return &grid;
 }

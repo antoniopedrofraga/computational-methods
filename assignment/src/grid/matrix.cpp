@@ -25,6 +25,15 @@ Matrix::Matrix(int Nrows, int Ncols) : std::vector<std::vector<double> >()
 		for (int j = 0; j < Ncols; j++) (*this)[i][j] = 0;
 }
 
+Matrix::Matrix(int size, double a, double b, double c) : std::vector<std::vector<double> >() {
+    (*this) = Matrix(size, size);
+    (*this)[0][0] = b; (*this)[0][1] = c;
+    for (unsigned int i = 1; i < size - 1; i++) {
+    	(*this)[i][i - 1] = a; (*this)[i][i] = b; (*this)[i][i + 1] = c;
+    }
+    (*this)[size - 1][size - 1] = b; (*this)[size - 1][size - 2] = a;
+}
+
 
 
 /*

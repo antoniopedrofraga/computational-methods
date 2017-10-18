@@ -4,9 +4,10 @@
 #include "implicit.h"
 
 class CrankNicolson: public Implicit {
+protected:
+	Vector build_r(Vector previous_step);
 public:
 	CrankNicolson(Wall wall);
-	void compute_solution();
 };
 
 #endif
