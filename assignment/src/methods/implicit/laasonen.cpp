@@ -9,13 +9,7 @@ Vector Laasonen::build_r(Vector previous_step) {
 	Vector r(size);
 	for (unsigned int i = 0; i < size; i++) {
 		j = i + 1;
-		if (i == 0) {
-			r[i] = q * previous_step[j - 1] + previous_step[j];
-		} else if (i == size - 1) {
-			r[i] = q * previous_step[j + 1] + previous_step[j];
-		} else {
-			r[i] = previous_step[j];
-		}
+		r[i] = (i == 0 || i == size - 1) ? q * SURFACE_TEMPERATURE + previous_step[j] : previous_step[j];
 	}
 	return r;
 }

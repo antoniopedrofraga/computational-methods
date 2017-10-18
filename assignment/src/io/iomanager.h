@@ -6,6 +6,8 @@
 
 class IOManager {
 private:
+	const std::string pathname = "../plots";
+
 	bool create_plots_dir();
 	void plot(Method * analytical, Method * method);
 	std::string double_to_string(double value);

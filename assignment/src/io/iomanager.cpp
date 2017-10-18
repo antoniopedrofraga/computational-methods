@@ -3,12 +3,11 @@
 IOManager::IOManager() {}
 
 bool IOManager::create_plots_dir() {
-	std::string pathname = "../plots";
 	char answer = '.';
 
 	if(boost::filesystem::exists(pathname)) {
 		while (answer != 'y' && answer != 'Y' && answer != 'n' && answer != 'N') {
-			std::cout << "Plots folder already exists, overwrite files? [Y:N] - ";
+			std::cout << "Plots folder already exists, this program might overwrite some files, procceed? [Y:N] - ";
 			answer = std::getchar();
 			std::cout << std::endl;
 		}
@@ -26,6 +25,7 @@ bool IOManager::create_plots_dir() {
 
 void IOManager::export_plots(Method * analytical, std::vector<Method*> methods) {
 	if (!create_plots_dir()) return;
+	std::cout << "Exporting plots to " << boost::filesystem::canonical(pathname, ".") << std::endl;
 	for (unsigned int index = 0; index < methods.size(); index++) {
 		std::cout << "Exporting " << (*methods[index]).get_name() << " method plots... ";
 		plot(analytical, methods[index]);
