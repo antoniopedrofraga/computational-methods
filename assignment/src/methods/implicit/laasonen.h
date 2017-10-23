@@ -7,7 +7,7 @@ class Laasonen: public Implicit {
 protected:
 	Vector build_r(Vector previous_step);
 public:
-	Laasonen(Wall wall);
+	Laasonen(Problem problem);
 };
 
 #endif

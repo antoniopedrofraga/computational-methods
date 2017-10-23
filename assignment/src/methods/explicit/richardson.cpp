@@ -1,7 +1,7 @@
 #include "richardson.h"
 
-Richardson::Richardson(Wall wall)
-: Explicit(wall) {
+Richardson::Richardson(Problem problem)
+: Explicit(problem) {
 	name = "Richardson";
 }
 

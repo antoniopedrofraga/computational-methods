@@ -7,7 +7,7 @@ class CrankNicolson: public Implicit {
 protected:
 	Vector build_r(Vector previous_step);
 public:
-	CrankNicolson(Wall wall);
+	CrankNicolson(Problem problem);
 };
 
 #endif

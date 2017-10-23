@@ -9,8 +9,8 @@ Method::Method() {}
 /*
  * Alternate constructor - creates a method with a given problem
  */
-Method::Method(Wall wall) {
-	this->wall = wall;
+Method::Method(Problem problem) {
+	this->problem = problem;
 }
 
 // PUBLIC ACCESSOR METHODS
@@ -26,5 +26,5 @@ std::string Method::get_name() {
  * public accessor method - get the solution grid
  */
 Matrix Method::get_grid() {
-	return (*wall.get_grid());
+	return (*problem.get_grid());
 }

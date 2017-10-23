@@ -5,7 +5,7 @@
 
 class FTCS: public Explicit {
 public:
-	FTCS(Wall wall);
+	FTCS(Problem problem);
 	Vector build_iteration(Vector current_step, Vector previous_step);
 };
 

@@ -1,23 +1,23 @@
 #include "implicit.h"
 
-Implicit::Implicit(Wall wall) : Method(wall) {
-	double delta_t = wall.get_deltat(), delta_x = wall.get_deltax();
+Implicit::Implicit(Problem problem) : Method(problem) {
+	double delta_t = problem.get_deltat(), delta_x = problem.get_deltax();
 	q = delta_t * DIFUSIVITY / pow(delta_x, 2);
 }
 
 void Implicit::compute_solution() {
-	Vector previous_step, current_step, r, t_values = wall.get_tvalues();
-	unsigned int t_size = wall.get_tsize();
-	double delta_t = wall.get_deltat(), time;
+	Vector previous_step, current_step, r, t_values = problem.get_tvalues();
+	unsigned int t_size = problem.get_tsize();
+	double delta_t = problem.get_deltat(), time;
 
 	for (unsigned int i = 1; i <= t_size; i++) {
-		if (i == 1) { previous_step = wall.get_first_row(); }
+		if (i == 1) { previous_step = problem.get_first_row(); }
 		r = build_r(previous_step);
 		current_step = thomas_algorithm(r, -q, (1.0 + 2.0 * q), -q);
 		current_step.push_front_back(SURFACE_TEMPERATURE);
 		previous_step = current_step;
 		time = delta_t * (double)i;
-		wall.set_time_step(current_step, time);
+		problem.set_time_step(current_step, time);
 	}
 }
 

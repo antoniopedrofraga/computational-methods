@@ -1,7 +1,7 @@
 #ifndef METHOD_H  // include guard
 #define METHOD_H
 
-#include "../variants/wall.h" // declare the wall structure
+#include "../variants/problem.h" // declare the problem structure
 
 
 /**
@@ -10,18 +10,18 @@
 * The Method class provides:
 * \n-basic constructors for creating a Method object.
 * \n-acessor methods to retrieve valuable information
-* \n-mutator methods to change the wall grid system
+* \n-mutator methods to change the problem grid system
 */
 class Method {
 protected:
-	Wall wall; /**< Private Wall wall. Space step of the solution. */
+	Problem problem; /**< Private Problem problem. Space step of the solution. */
 	std::string name; /**< Private string name. Name of the method. */
 public:
 	// CONSTRUCTORS
 
 	/**
 	* Default constructor.  Intialize a Method object
-	* @see Method(Wall wall)
+	* @see Method(Problem problem)
 	*/
 	Method();
 
@@ -29,7 +29,7 @@ public:
 	* Alternate constructor. Initializes a Method with a given parabolic problem.
 	* @see Method()
 	*/
-	Method(Wall wall);
+	Method(Problem problem);
 
 	// PUBLIC ACCESSOR METHODS
 

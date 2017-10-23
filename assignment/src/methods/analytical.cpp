@@ -1,15 +1,15 @@
 #include "analytical.h"
 
-Analytical::Analytical(Wall wall)
-: Method(wall) {
+Analytical::Analytical(Problem problem)
+: Method(problem) {
 	this->nr_of_expansions = NUMBER_OF_EXPANSIONS;
 }
 
 void Analytical::compute_solution() {
-	Matrix * grid = wall.get_grid();
-	Vector t_values = wall.get_tvalues();
-	Vector x_values = wall.get_xvalues();
-	unsigned int x_size = wall.get_xsize();
+	Matrix * grid = problem.get_grid();
+	Vector t_values = problem.get_tvalues();
+	Vector x_values = problem.get_xvalues();
+	unsigned int x_size = problem.get_xsize();
 
 	for (unsigned int t = 0; t < NUMBER_TIME_STEPS; t++) {
 		for (unsigned int x = 0; x <= x_size; x++) {

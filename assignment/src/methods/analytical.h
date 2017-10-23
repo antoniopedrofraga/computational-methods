@@ -6,7 +6,7 @@
 class Analytical: public Method {
 	unsigned int nr_of_expansions;
 public:
-	Analytical(Wall wall);
+	Analytical(Problem problem);
 	void compute_solution();
 };
 

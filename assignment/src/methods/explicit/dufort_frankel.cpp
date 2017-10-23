@@ -1,7 +1,7 @@
 #include "dufort_frankel.h"
 
-DufortFrankel::DufortFrankel(Wall wall)
-: Explicit(wall) {
+DufortFrankel::DufortFrankel(Problem problem)
+: Explicit(problem) {
 	name = "DuFort-Frankel";
 }
 

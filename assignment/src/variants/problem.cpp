@@ -1,17 +1,17 @@
-#include "wall.h"
+#include "problem.h"
 
 // CONSTRUCTORS
 /*=
  *Default constructor
  */
-Wall::Wall() {}
+Problem::Problem() {}
 
 
 /*
- * Alternate constructor - creates a wall with a specific time and space step
+ * Alternate constructor - creates a problem with a specific time and space step
  */
 
-Wall::Wall(double dt, double dx) {
+Problem::Problem(double dt, double dx) {
 	//check the input
 	if (dx <= 0) throw std::out_of_range("space step can't be negative or zero");
 	if (dt <= 0) throw std::out_of_range("time step can't be negative or zero");
@@ -38,7 +38,7 @@ Wall::Wall(double dt, double dx) {
 /*
 * private mutator method - set space value in each column
 */
-void Wall::set_x_values() {
+void Problem::set_x_values() {
 	x_values = Vector(x_size + 1);
 	for (unsigned int index = 0; index <= x_size; index++) {
 		x_values[index] = delta_x * index;
@@ -48,7 +48,7 @@ void Wall::set_x_values() {
 /*
 * private mutator method - set time value in each column
 */
-void Wall::set_t_values() {
+void Problem::set_t_values() {
 	t_values = Vector(NUMBER_TIME_STEPS);
 	for (unsigned int time = 0; time < NUMBER_TIME_STEPS; time++) {
 		t_values[time] = double(time) / 10.0;
@@ -60,7 +60,7 @@ void Wall::set_t_values() {
 /*
 * public mutator method - set initial boundaries
 */
-void Wall::set_initial_conditions() {
+void Problem::set_initial_conditions() {
 	for (unsigned int index = 1; index < x_size; index++) {
 		grid[0][index] = INITIAL_TEMPERATURE;
 	}
@@ -72,7 +72,7 @@ void Wall::set_initial_conditions() {
 /*
 * public mutator method - set solution row
 */
-void Wall::set_time_step(Vector step, double time) {
+void Problem::set_time_step(Vector step, double time) {
 
 	//checks if value is in vector
 	int position = t_values.find(time);
@@ -86,55 +86,55 @@ void Wall::set_time_step(Vector step, double time) {
 /*
 * public accessor method - get first row of the solution
 */
-Vector Wall::get_first_row() {
+Vector Problem::get_first_row() {
 	return grid[0];
 }
 
 /*
 * public accessor method - get number of columns of the solution
 */
-unsigned int Wall::get_xsize() {
+unsigned int Problem::get_xsize() {
 	return x_size;
 }
 
 /*
 * public accessor method - get number of rows of the solution
 */
-unsigned int Wall::get_tsize() {
+unsigned int Problem::get_tsize() {
 	return t_size;
 }
 
 /*
 * public accessor method - get space step
 */
-double Wall::get_deltax() {
+double Problem::get_deltax() {
 	return delta_x;
 }
 
 /*
 * public accessor method - get time step
 */
-double Wall::get_deltat() {
+double Problem::get_deltat() {
 	return delta_t;
 }
 
 /*
 * public accessor method - get Vector of corresponding space values for each column index
 */
-Vector Wall::get_xvalues() {
+Vector Problem::get_xvalues() {
 	return x_values;
 }
 
 /*
 * public accessor method - get Vector of corresponding time values for each row index
 */
-Vector Wall::get_tvalues() {
+Vector Problem::get_tvalues() {
 	return t_values;
 }
 
 /*
 * public accessor method - get grid solution
 */
-Matrix *Wall::get_grid() {
+Matrix *Problem::get_grid() {
 	return &grid;
 }

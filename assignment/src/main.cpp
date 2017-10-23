@@ -8,12 +8,12 @@
 
 int main() {
 	IOManager io_manager;
-	Wall wall(DELTA_T, DELTA_X);
-	Analytical analytical(wall);
-	DufortFrankel dufort_frankel(wall);
-	Richardson richardson(wall);
-	Laasonen laasonen(wall);
-	CrankNicolson crank_nicolson(wall);
+	Problem problem(DELTA_T, DELTA_X);
+	Analytical analytical(problem);
+	DufortFrankel dufort_frankel(problem);
+	Richardson richardson(problem);
+	Laasonen laasonen(problem);
+	CrankNicolson crank_nicolson(problem);
 	std::vector<Method*> solutions = {&analytical, &dufort_frankel, &richardson, &laasonen, &crank_nicolson};
 
 	for (int index = 0; index < solutions.size(); index++) {

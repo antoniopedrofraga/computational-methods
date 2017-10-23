@@ -7,7 +7,7 @@ class DufortFrankel: public Explicit {
 protected:
 	Vector build_iteration(Vector current_step, Vector previous_step);
 public:
-	DufortFrankel(Wall wall);
+	DufortFrankel(Problem problem);
 };
 
 #endif

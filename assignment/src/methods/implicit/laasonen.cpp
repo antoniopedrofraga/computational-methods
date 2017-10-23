@@ -1,6 +1,6 @@
 #include "laasonen.h"
 
-Laasonen::Laasonen(Wall wall) : Implicit(wall) {
+Laasonen::Laasonen(Problem problem) : Implicit(problem) {
 	name = "Laasonen";
 }
 

@@ -10,7 +10,7 @@ protected:
 	double q;
 	virtual Vector build_r(Vector previous_step) = 0;
 public:
-	Implicit(Wall wall);
+	Implicit(Problem problem);
 	void compute_solution();
 };
 

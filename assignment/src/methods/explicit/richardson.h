@@ -7,7 +7,7 @@ class Richardson: public Explicit {
 protected:
 	Vector build_iteration(Vector current_step, Vector previous_step);
 public:
-	Richardson(Wall wall);
+	Richardson(Problem problem);
 };
 
 #endif

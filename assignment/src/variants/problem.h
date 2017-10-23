@@ -1,18 +1,18 @@
-#ifndef WALL_H  //include guard
-#define WALL_H
+#ifndef PROBLEM_H  //include guard
+#define PROBLEM_H
 
 #include "../variants/utils.h" //relevant utils
 #include "../grid/matrix.h" // declare the structure of the matrix object
 
 /**
-*  A Wall class to structure relevant information related with the problem
+*  A Problem class to structure relevant information related with the problem
 *
-* The Wall class provides:
-* \n-basic constructors for creating a Wall object.
+* The Problem class provides:
+* \n-basic constructors for creating a Problem object.
 * \n-acessor methods to retrieve valuable information
 * \n-mutator methods to change the grid system
 */
-class Wall {
+class Problem {
 private:
 	double delta_x; /**< Private double delta_x. Space step of the solution. */
 	double delta_t; /**< Private double delta_t. Time step of the solution. */
@@ -44,20 +44,20 @@ private:
 public:
 	// CONSTRUCTORS
 	/**
-	* Default constructor.  Intialize an empty Wall object
-	* @see Wall(double dt, double dx)
+	* Default constructor.  Intialize an empty Problem object
+	* @see Problem(double dt, double dx)
 	*/
-	Wall();
+	Problem();
 
 	/**
-	* Intialize Wall object with specific time and space steps
-	* @see Wall()
+	* Intialize Problem object with specific time and space steps
+	* @see Problem()
 	* @param dt Time step to assign
 	* @param dx Space step to assign
 	* @exception out_of_range ("space step can't be negative or zero")
 	* @exception out_of_range ("time step can't be negative or zero")
 	*/
-	Wall(double dt, double dx);
+	Problem(double dt, double dx);
 
 	// PUBLIC ACCESSOR METHODS
 	/** Normal public get method that returns an unsigned int, the number of columns of the solution 

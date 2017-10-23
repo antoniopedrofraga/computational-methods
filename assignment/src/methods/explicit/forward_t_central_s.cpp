@@ -1,7 +1,7 @@
 #include "forward_t_central_s.h"
 
-FTCS::FTCS(Wall wall)
-: Explicit(wall) {
+FTCS::FTCS(Problem problem)
+: Explicit(problem) {
 	name = "Forward time Central space";
 }
 

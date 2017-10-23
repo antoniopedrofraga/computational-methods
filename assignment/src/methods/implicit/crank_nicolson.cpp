@@ -1,6 +1,6 @@
 #include "crank_nicolson.h"
 
-CrankNicolson::CrankNicolson(Wall wall) : Implicit(wall) {
+CrankNicolson::CrankNicolson(Problem problem) : Implicit(problem) {
 	name = "Crank-Nicholson";
 	q *= 0.5;
 }
