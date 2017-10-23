@@ -5,8 +5,9 @@
 #include <fstream>  //File IO operations
 #include <stdexcept> //provides exceptions
 #include <vector>  // std vector upon which our Vector is based
-#include <cmath>
-#include <float.h>
+#include <cmath>  // use of existing mathematical methods
+#include <float.h> // provides double maximum value
+#include <algorithm> // to use a method which finds a given value in a vector
 
 
 /**
@@ -54,7 +55,15 @@ public:
 	*/
     Vector(const Vector& v);
 
+    /**
+	* Copy constructor takes an vector<double> object reference.
+	* Intialize Vector object with an vector<double> object
+	* @see Vector()
+	* @see Vector(int Num)
+	* @see Vector(const Vector& v)
+	*/
     Vector(std::vector<double> vec);
+
     Vector mult(const Vector& v) const;
 
 
@@ -86,9 +95,21 @@ public:
 	*/
 	int getSize() const;
 
+	//AUX METHODS
+	/**
+	* Method to find the value index in a vector
+	* @param value Value to find
+	* @return int. -1 if value was not found or the value index otherwise
+	*/
+	int find(double value);
+
+
+	/**
+	* Method to push a value to the first and last position of a Vector
+	* @param value Value to insert
+	*/
 	void push_front_back(double value);
 
-	int find(double value);
 
 	// THREE NORMS
 	/**

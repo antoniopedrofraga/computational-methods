@@ -21,7 +21,7 @@ class Wall {
 	
 	public:
 	Wall();
-	Wall(double dt);
+	Wall(double dt, double dx);
 	unsigned int get_xsize();
 	unsigned int get_tsize();
 	double get_deltax();

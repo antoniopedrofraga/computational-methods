@@ -25,16 +25,6 @@ Matrix::Matrix(int Nrows, int Ncols) : std::vector<std::vector<double> >()
 		for (int j = 0; j < Ncols; j++) (*this)[i][j] = 0;
 }
 
-Matrix::Matrix(int size, double a, double b, double c) : std::vector<std::vector<double> >() {
-    (*this) = Matrix(size, size);
-    (*this)[0][0] = b; (*this)[0][1] = c;
-    for (unsigned int i = 1; i < size - 1; i++) {
-    	(*this)[i][i - 1] = a; (*this)[i][i] = b; (*this)[i][i + 1] = c;
-    }
-    (*this)[size - 1][size - 1] = b; (*this)[size - 1][size - 2] = a;
-}
-
-
 
 /*
  * Copy constructor
@@ -70,8 +60,17 @@ int Matrix::getNcols() const
 	return (*this)[0].size();
 }
 
-void Matrix::set_row(int index, Vector v) {	
-	unsigned int vector_size = v.getSize();
+// MUTATORS METHODS
+
+/*
+* mutator method - set new values to a row
+*/
+
+void Matrix::set_row(int index, Vector v) {
+	int vector_size = v.getSize();
+	if (index < 0 || index >= vector_size) throw std::out_of_range("index out of range.");
+	if (vector_size != (*this).getNcols()) throw std::out_of_range("vector size is different from matrix columns number.");
+
 	for (unsigned int i = 0; i < vector_size; i++) {
 		(*this)[index][i] = v[i];
 	}
@@ -88,7 +87,7 @@ double Matrix::one_norm() const
 	Matrix transpose = this->transpose();
 	Vector * sizes = new Vector(nrows);
 	for (unsigned int index = 0; index < nrows; index++) {
-		Vector * vector = new Vector(transpose[index]);
+		Vector * vector = (Vector*)&transpose[index];
 		(*sizes)[index] = vector->one_norm();
 	}
 	return sizes->uniform_norm();
@@ -120,7 +119,7 @@ double Matrix::uniform_norm() const
 	int ncols = getNcols();
 	Vector * sizes = new Vector(nrows);
 	for (unsigned int index = 0; index < nrows; index++) {
-		Vector * vector = new Vector((*this)[index]);
+		Vector * vector = (Vector*)&((*this)[index]);
 		(*sizes)[index] = vector->one_norm();
 	}
 	return sizes->uniform_norm();

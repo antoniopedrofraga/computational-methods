@@ -4,6 +4,9 @@
 #include <cmath>
 #include <iostream>
 
+const double DELTA_T = 0.01;
+const double DELTA_X = 0.05;
+
 const double DIFUSIVITY = 0.1; /* ft²/hr */
 const double THICKNESS = 1.0;
 const double TIMELIMIT = 0.5;

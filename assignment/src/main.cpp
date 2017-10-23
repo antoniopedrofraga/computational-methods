@@ -7,9 +7,8 @@
 #include "io/iomanager.h"
 
 int main() {
-
 	IOManager io_manager;
-	Wall wall(0.01);
+	Wall wall(DELTA_T, DELTA_X);
 	Analytical analytical(wall);
 	DufortFrankel dufort_frankel(wall);
 	Richardson richardson(wall);
@@ -17,7 +16,6 @@ int main() {
 	CrankNicolson crank_nicolson(wall);
 	std::vector<Method*> solutions = {&analytical, &dufort_frankel, &richardson, &laasonen, &crank_nicolson};
 
-	wall.set_initial_conditions();
 	for (int index = 0; index < solutions.size(); index++) {
 		solutions[index]->compute_solution();
 	}

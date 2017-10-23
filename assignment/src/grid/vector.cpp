@@ -1,5 +1,4 @@
 #include "vector.h"
-#include <algorithm>
 
 // CONSTRUCTORS
 /*=
@@ -32,6 +31,9 @@ Vector::Vector(const Vector& copy) : std::vector<double>()
     for (i=0; i<copy.size(); i++) (*this)[i]=copy[i]; 
 }
 
+/*
+* Copy constructor from different type
+*/
 Vector::Vector(std::vector<double> vec) : std::vector<double>() {
 	(*this).resize(vec.size());
     // copy the data members (if vector is empty then num==0)
@@ -47,11 +49,17 @@ int Vector::getSize() const
 	return size();
 }
 
+/*
+* aux method - pushes a value to the begining and ending of a vector
+*/
 void Vector::push_front_back(double value) {
 	this->insert(this->begin(), value);
 	this->push_back(value);
 }
 
+/*
+* aux method - finds a given value
+*/
 int Vector::find(double value) {
 	std::vector<double>::iterator it = std::find((*this).begin(), (*this).end(), value);
 	if (it != (*this).end()) {

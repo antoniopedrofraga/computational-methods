@@ -2,9 +2,13 @@
 
 Wall::Wall() {}
 
-Wall::Wall(double dt) {
-	delta_x = 0.05;
+Wall::Wall(double dt, double dx) {
+	if (dx <= 0) throw std::out_of_range("space step can't be negative.");
+	if (dt <= 0) throw std::out_of_range("time step can't be negative.");
+
+	delta_x = dx;
 	delta_t = dt;
+
 	x_size = (int)(THICKNESS / delta_x);
 	t_size = (int)(TIMELIMIT / delta_t);
 	grid = Matrix(NUMBER_TIME_STEPS, x_size + 1);

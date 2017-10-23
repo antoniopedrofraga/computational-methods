@@ -44,8 +44,6 @@ public:
 	*/
     Matrix(int Nrows /**< int. number of rows in matrix */, int Ncols /**< int. number of columns in matrix  */);
 
-    Matrix(int size, double a, double b, double c);
-
 	/**
 	* Copy constructor.
 	* build a matrix from another matrix
@@ -72,7 +70,18 @@ public:
 	*/
 	int getNcols() const; // get the number of cols
 
+	// MUTATOR METHODS
+
+	/**
+	* Normal public set method.
+	* replace a row with a given vector
+	* @param index Index of row to mutate
+	* @param v New vector
+	* @exception out_of_range ("index out of range.\n")
+	* @exception out_of_range ("vector size is different from matrix columns number.\n")
+	*/
 	void set_row(int index, Vector v);
+
 	// OVERLOADED OPERATOR
 
 	/**

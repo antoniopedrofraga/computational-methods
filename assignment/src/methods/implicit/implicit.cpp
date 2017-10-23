@@ -1,17 +1,16 @@
 #include "implicit.h"
 
 Implicit::Implicit(Wall wall) : Method(wall) {
-	double delta_x = wall.get_deltax();
-	double delta_t = wall.get_deltat();
-	this->q = delta_t * DIFUSIVITY / pow(delta_x, 2);
+	double delta_t = wall.get_deltat(), delta_x = wall.get_deltax();
+	q = delta_t * DIFUSIVITY / pow(delta_x, 2);
 }
 
 void Implicit::compute_solution() {
 	Vector previous_step, current_step, r, t_values = wall.get_tvalues();
-	unsigned int size = wall.get_tsize();
+	unsigned int t_size = wall.get_tsize();
 	double delta_t = wall.get_deltat(), time;
 
-	for (unsigned int i = 1; i <= size; i++) {
+	for (unsigned int i = 1; i <= t_size; i++) {
 		if (i == 1) { previous_step = wall.get_first_row(); }
 		r = build_r(previous_step);
 		current_step = thomas_algorithm(r, -q, (1.0 + 2.0 * q), -q);
