@@ -14,7 +14,7 @@ class IOManager {
 private:
 	std::string plots_path;  /**< Private string plots_path. Contains the plots directory path name. */
 
-	// PLOT METHODS
+	// PRIVATE PLOT METHODS
 
 	/**
 	* Method to create plots folder if the folder does not exist
@@ -45,7 +45,7 @@ public:
 	*/
 	IOManager();
 
-	// PLOT METHODS
+	// PUBLIC PLOT METHODS
 
 	/**
 	* Exports one plot for each computed solution, comparing them to the analytical solution

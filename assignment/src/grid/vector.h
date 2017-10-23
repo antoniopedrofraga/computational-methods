@@ -64,9 +64,6 @@ public:
 	*/
     Vector(std::vector<double> vec);
 
-    Vector mult(const Vector& v) const;
-
-
 	// OVERLOADED OPERATORS
 	/**
 	* Overloaded assignment operator

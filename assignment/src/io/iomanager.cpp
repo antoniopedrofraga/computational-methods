@@ -12,7 +12,7 @@ IOManager::IOManager() {
 // PLOT METHODS
 
 /*
-* plot method - creates plots folder 
+* private plot method - creates plots folder 
 */
 
 bool IOManager::create_plots_dir() {
@@ -38,7 +38,7 @@ bool IOManager::create_plots_dir() {
 }
 
 /*
-* plot method - iterates through all the solutions in order to export them
+* public plot method - iterates through all the solutions in order to export them
 */
 
 void IOManager::export_plots(Method * analytical, std::vector<Method*> methods) {
@@ -52,7 +52,7 @@ void IOManager::export_plots(Method * analytical, std::vector<Method*> methods) 
 }
 
 /*
-* plot method - Exports a plot chart which compares the analytical solution with a given solution
+* private plot method - Exports a plot chart which compares the analytical solution with a given solution
 */
 
 void IOManager::plot(Method * analytical, Method * method) {
