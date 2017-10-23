@@ -24,7 +24,7 @@ Wall::Wall(double dt, double dx) {
 	x_size = (int)(THICKNESS / delta_x);
 	t_size = (int)(TIMELIMIT / delta_t);
 
-	// initialises the solution grid and set space value in each column and time value in each row
+	// initializes the solution grid and set space value in each column and time value in each row
 	grid = Matrix(NUMBER_TIME_STEPS, x_size + 1);
 	set_x_values();
 	set_t_values();
