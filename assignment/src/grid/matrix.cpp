@@ -68,6 +68,8 @@ int Matrix::getNcols() const
 
 void Matrix::set_row(int index, Vector v) {
 	int vector_size = v.getSize();
+
+	//catches invalid arguments 
 	if (index < 0 || index >= vector_size) throw std::out_of_range("index out of range.");
 	if (vector_size != (*this).getNcols()) throw std::out_of_range("vector size is different from matrix columns number.");
 

@@ -13,3 +13,10 @@ export:
 	./assignment
 clean:
 	\rm  -r ../plots
+generate-doxygen-config:
+	if [ ! -d ../doxygen/ ]; then \
+		sudo mkdir -p ../doxygen/; \
+	fi; \
+	sudo doxygen -g ../doxygen/doxygen.config
+generate-doxygen:
+	doxygen ../doxygen/doxygen.config

@@ -5,6 +5,7 @@
 #include "../grid/matrix.h"
 
 class Wall {
+private:
 	double delta_x;
 	double delta_t;
 
@@ -19,7 +20,7 @@ class Wall {
 	void set_x_values();
 	void set_t_values();
 	
-	public:
+public:
 	Wall();
 	Wall(double dt, double dx);
 	unsigned int get_xsize();

@@ -19,4 +19,6 @@ const unsigned int NUMBER_OF_EXPANSIONS = 20;
 
 const double PI = std::atan(1) * 4;
 
+const std::string PLOTS_PATH = "../plots";
+
 #endif
