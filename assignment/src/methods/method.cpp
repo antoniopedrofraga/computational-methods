@@ -25,6 +25,6 @@ std::string Method::get_name() {
 /*
  * public accessor method - get the solution grid
  */
-Matrix Method::get_grid() {
-	return (*problem.get_grid());
+Matrix Method::get_solution() {
+	return (*problem.get_solution());
 }

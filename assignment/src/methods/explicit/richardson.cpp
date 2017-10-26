@@ -1,10 +1,17 @@
 #include "richardson.h"
 
+// CONSTRUCTORS
+/*=
+ *Default constructor, method to compute an explicit solution.
+ */
 Richardson::Richardson(Problem problem)
 : Explicit(problem) {
 	name = "Richardson";
 }
 
+/*
+* Normal public method - compute a solution for the current time step using the Richardson method.
+*/
 Vector Richardson::build_iteration(Vector current_step, Vector previous_step) {
 	unsigned int size = previous_step.getSize();
 	Vector result(size);

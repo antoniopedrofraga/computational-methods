@@ -1,10 +1,17 @@
 #include "dufort_frankel.h"
 
+// CONSTRUCTORS
+/*=
+ *Default constructor, method to compute an explicit solution.
+ */
 DufortFrankel::DufortFrankel(Problem problem)
 : Explicit(problem) {
 	name = "DuFort-Frankel";
 }
 
+/*
+* Normal public method - compute a solution for the current time step using the Dufort-Frankel method.
+*/
 Vector DufortFrankel::build_iteration(Vector current_step, Vector previous_step) {
 	unsigned int size = previous_step.getSize();
 	Vector result(size);

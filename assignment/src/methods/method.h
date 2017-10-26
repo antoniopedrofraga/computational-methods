@@ -45,7 +45,7 @@ public:
 	* get the solution grid
 	* @return Matrix. Computed solution grid.
 	*/
-	Matrix get_grid();
+	Matrix get_solution();
 
 	// PUBLIC MUTATOR METHODS
 

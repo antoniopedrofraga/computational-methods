@@ -24,12 +24,12 @@ Problem::Problem(double dt, double dx) {
 	x_size = (int)(THICKNESS / delta_x);
 	t_size = (int)(TIMELIMIT / delta_t);
 
-	// initializes the solution grid and set space value in each column and time value in each row
-	grid = Matrix(NUMBER_TIME_STEPS, x_size + 1);
+	// initializes the solution and set space value in each column and time value in each row
+	solution = Matrix(NUMBER_TIME_STEPS, x_size + 1);
 	set_x_values();
 	set_t_values();
 
-	// set the initial boundaries in the given grid
+	// set the initial boundaries
 	set_initial_conditions();
 }
 
@@ -62,10 +62,10 @@ void Problem::set_t_values() {
 */
 void Problem::set_initial_conditions() {
 	for (unsigned int index = 1; index < x_size; index++) {
-		grid[0][index] = INITIAL_TEMPERATURE;
+		solution[0][index] = INITIAL_TEMPERATURE;
 	}
 	for (unsigned int time = 0; time < NUMBER_TIME_STEPS; time++) {
-		grid[time][0] = grid[time][x_size] = SURFACE_TEMPERATURE;
+		solution[time][0] = solution[time][x_size] = SURFACE_TEMPERATURE;
 	}
 }
 
@@ -77,7 +77,7 @@ void Problem::set_time_step(Vector step, double time) {
 	//checks if value is in vector
 	int position = t_values.find(time);
 	if (position != -1) {
-		grid.set_row(position, step);
+		solution.set_row(position, step);
 	}
 }
 
@@ -87,7 +87,7 @@ void Problem::set_time_step(Vector step, double time) {
 * public accessor method - get first row of the solution
 */
 Vector Problem::get_first_row() {
-	return grid[0];
+	return solution[0];
 }
 
 /*
@@ -133,8 +133,8 @@ Vector Problem::get_tvalues() {
 }
 
 /*
-* public accessor method - get grid solution
+* public accessor method - get solution solution
 */
-Matrix *Problem::get_grid() {
-	return &grid;
+Matrix *Problem::get_solution() {
+	return &solution;
 }

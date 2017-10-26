@@ -10,7 +10,7 @@
 * The Problem class provides:
 * \n-basic constructors for creating a Problem object.
 * \n-acessor methods to retrieve valuable information
-* \n-mutator methods to change the grid system
+* \n-mutator methods to change the solution system
 */
 class Problem {
 private:
@@ -23,7 +23,7 @@ private:
 	Vector x_values; /**< Private Vector x_values. Space correspondent value for each column index. */
 	Vector t_values; /**< Private Vector t_values. Time correspondent value for each row index. */
 
-	Matrix grid; /**< Private Matrix grid. Matrix containing the computed solution. */
+	Matrix solution; /**< Private Matrix solution. Matrix containing the computed solution. */
 
 	// PRIVATE MUTATOR METHODS
 
@@ -95,10 +95,10 @@ public:
 	*/
 	Vector get_first_row();
 
-	/** Normal public get method that returns a Matrix, containing the solution grid. 
-	* @return Matrix*. The solution grid.
+	/** Normal public get method that returns a Matrix, containing the solution solution. 
+	* @return Matrix*. The solution solution.
 	*/
-	Matrix *get_grid();
+	Matrix *get_solution();
 
 	// PUBLIC MUTATOR METHODS
 

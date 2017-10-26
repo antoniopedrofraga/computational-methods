@@ -60,7 +60,7 @@ void IOManager::plot(Method * analytical, Method * method) {
 	Gnuplot gp;
 
 	// methods solutions
-	Matrix analytical_matrix = analytical->get_grid(), method_matrix = method->get_grid();
+	Matrix analytical_matrix = analytical->get_solution(), method_matrix = method->get_solution();
 	unsigned int rows = method_matrix.getNrows();
 	unsigned int cols = method_matrix.getNcols();
 

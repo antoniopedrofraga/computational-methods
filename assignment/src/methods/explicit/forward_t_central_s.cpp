@@ -1,10 +1,17 @@
 #include "forward_t_central_s.h"
 
+// CONSTRUCTORS
+/*=
+ *Default constructor, method to solve a the first iteration of explicit methods.
+ */
 FTCS::FTCS(Problem problem)
 : Explicit(problem) {
 	name = "Forward time Central space";
 }
 
+/*
+* Normal public method - compute the first iteration of explicit methods
+*/
 Vector FTCS::build_iteration(Vector current_step, Vector previous_step) {
 	unsigned int size = previous_step.getSize();
 	Vector result(size);
