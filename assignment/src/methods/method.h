@@ -16,6 +16,7 @@ class Method {
 protected:
 	Problem problem; /**< Private Problem problem. Space step of the solution. */
 	std::string name; /**< Private string name. Name of the method. */
+	double q; /**< Protected double q. A coeficient which value depends of way the equation is written, it may vary from method to method. */
 public:
 	// CONSTRUCTORS
 

@@ -13,7 +13,6 @@
 */
 class Explicit: public Method {
 protected:
-	double q; /**< Protected double q. A coeficient which value depends of way the equation is written, it may vary from method to method. */
 	// PROTECTED METHODS
 
 	/**
