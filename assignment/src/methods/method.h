@@ -13,9 +13,11 @@
 * \n-mutator methods to change the problem grid system
 */
 class Method {
+private:
+	double time; /**< Private double time. Elapsed time throughout the solution computation. */
 protected:
-	Problem problem; /**< Private Problem problem. Space step of the solution. */
-	std::string name; /**< Private string name. Name of the method. */
+	Problem problem; /**< Protected Problem problem. Space step of the solution. */
+	std::string name; /**< Protected string name. Name of the method. */
 	double q; /**< Protected double q. A coeficient which value depends of way the equation is written, it may vary from method to method. */
 public:
 	// CONSTRUCTORS
@@ -48,6 +50,27 @@ public:
 	*/
 	Matrix get_solution();
 
+	/**
+	* Normal public get method.
+	* get the time step of the solution
+	* @return double. Solution time step.
+	*/
+	double get_deltat();
+
+	/**
+	* Normal public get method.
+	* get x values vector
+	* @return Vector. x values Vector.
+	*/
+	
+	Vector get_xvalues();
+
+	/**
+	* Normal public method.
+	* Keeps track of the time to compute a solution
+	*/
+	void compute();
+
 	// PUBLIC MUTATOR METHODS
 
 	/**
@@ -55,6 +78,7 @@ public:
 	* compute the solution following the rules of a given method.
 	*/
 	virtual void compute_solution() = 0;
+
 };
 
 #endif

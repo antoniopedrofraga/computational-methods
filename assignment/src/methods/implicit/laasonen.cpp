@@ -5,7 +5,7 @@
  *Default constructor, with a given problem.
  */
 Laasonen::Laasonen(Problem problem) : Implicit(problem) {
-	name = "Laasonen";
+	name = LAASONEN;
 }
 
 // PROTECTED METHODS

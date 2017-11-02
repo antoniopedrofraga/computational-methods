@@ -5,7 +5,7 @@
  *Default constructor, with a given problem.
  */
 CrankNicolson::CrankNicolson(Problem problem) : Implicit(problem) {
-	name = "Crank-Nicolson";
+	name = CRANK_NICHOLSON;
 	// q = delta_t * DIFUSIVITY / (pow(delta_x, 2) * 2) so we multiply it by 0.5
 	q *= 0.5;
 }

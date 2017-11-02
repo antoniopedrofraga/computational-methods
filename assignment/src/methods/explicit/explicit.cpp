@@ -22,7 +22,7 @@ void Explicit::compute_solution() {
 	double delta_t = problem.get_deltat(), time;
 	current_step = next_step = Vector(x_size + 1);
 	// iterate through the several time steps
-	for (unsigned int i = 1; i <= t_size; i++) {
+	for (int i = 1; i <= t_size; i++) {
 		// if is the first iteration then the previous step is known (initial conditions)
 		// and the current-step may be obtained with the forward in time and central in space method, which only requires the previous step to calculate the current time step solution
 		if (i == 1) {

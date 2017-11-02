@@ -6,13 +6,13 @@ run:
 	make all
 	./assignment
 export:
-	if [ -d ../plots/ ]; then \
+	if [ -d ../outputs ]; then \
 	  	make clean; \
 	fi; \
 	make all
 	./assignment
 clean:
-	\rm  -r ../plots
+	\rm  -r ../outputs
 generate-doxygen-config:
 	if [ ! -d ../doxygen/ ]; then \
 		sudo mkdir -p ../doxygen/; \

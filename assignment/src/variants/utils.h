@@ -3,9 +3,12 @@
 
 #include <cmath> // PI calculation
 #include <string> // string usage
+#include <vector>
 
 const double DELTA_T = 0.01; /**< Macro double. The default time step. */
 const double DELTA_X = 0.05; /**< Macro double. The default space step. */
+
+const std::vector<double> DELTA_T_LASSONEN = {0.01, 0.025, 0.05, 0.1}; /**< Macro double. Time steps to study in Laasonen Implicit Scheme. */
 
 const double DIFUSIVITY = 0.1; /**< Macro double. The default value of difusivity. */
 const double THICKNESS = 1.0; /**< Macro double. The default value of thickness. */
@@ -19,6 +22,12 @@ const unsigned int NUMBER_OF_EXPANSIONS = 20; /**< Macro unsigned int. Number of
 
 const double PI = std::atan(1) * 4; /**< Macro double. Approximated value of PI. */
 
-const std::string PLOTS_PATH = "../plots"; /**< Macro string. Default plot exporting path. */
+const std::string OUTPUT_PATH = "../outputs"; /**< Macro string. Default outputs path. */
+
+const std::string FORWARD_TIME_CENTRAL_SPACE = "Forward Time Central Space"; /**< Macro string. Forward in Time and Central in Space method name. */
+const std::string RICHARDSON = "Richardson"; /**< Macro string. Richardson method name. */
+const std::string DUFORT_FRANKEL = "DuFort-Frankel"; /**< Macro string. DuFort-Frankel method name. */
+const std::string LAASONEN = "Laasonen"; /**< Macro string. Laasonen method name. */
+const std::string CRANK_NICHOLSON = "Crank-Nicholson"; /**< Macro string. Crank-Nicholson method name. */
 
 #endif

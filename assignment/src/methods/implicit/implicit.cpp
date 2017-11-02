@@ -20,7 +20,7 @@ void Implicit::compute_solution() {
 	double delta_t = problem.get_deltat(), time;
 
 	// iterate through the several time steps
-	for (unsigned int i = 1; i <= t_size; i++) {
+	for (int i = 1; i <= t_size; i++) {
 		// if is the first iteration then the previous step is known (initial conditions)
 		if (i == 1) { previous_step = problem.get_first_row(); }
 		// build r vector

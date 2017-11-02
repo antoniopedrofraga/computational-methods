@@ -6,7 +6,7 @@
  */
 Richardson::Richardson(Problem problem)
 : Explicit(problem) {
-	name = "Richardson";
+	name = RICHARDSON;
 }
 
 /*

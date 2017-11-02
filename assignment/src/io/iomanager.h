@@ -12,22 +12,31 @@
 */
 class IOManager {
 private:
-	std::string plots_path;  /**< Private string plots_path. Contains the plots directory path name. */
+	std::string output_path;  /**< Private string output_path. Contains the ouput directory path name. */
 
 	// PRIVATE PLOT METHODS
 
 	/**
-	* Method to create plots folder if the folder does not exist
+	* Method to create ouput folder if the folder does not exist
 	* @return bool. true if successfull, false if not
 	*/
-	bool create_plots_dir();
+	bool create_output_dir();
 
 	/**
-	* Exports a plot that compares the analytical solution to any other solution wsing gnuplot
+	* Exports a plot that compares the analytical solution to any other solution using gnuplot
+	* @param string output_name File name to be exported
 	* @param Method* analytical The analytical solution
 	* @param Method* method Any method solution
 	*/
-	void plot(Method * analytical, Method * method);
+	void plot(std::string output_name, Method * analytical, Method * method);
+
+	/**
+	* Exports an error table to a .lsx file that compares the analytical solution to any other solution
+	* @param string output_name File name to be exported
+	* @param Method* analytical The analytical solution
+	* @param Method* method Any method solution
+	*/
+	void error_table(std::string output_name, Method * analytical, Method * method);
 
 	// AUX METHODS
 
@@ -36,7 +45,7 @@ private:
 	* @param double value Number to be converted
 	* @return string. String containing the converted number
 	*/
-	std::string double_to_string(double value);
+	std::string double_to_string(int precision, double value);
 public:
 	// CONSTRUCTORS
 
@@ -45,14 +54,14 @@ public:
 	*/
 	IOManager();
 
-	// PUBLIC PLOT METHODS
+	// PUBLIC OUTPUTS METHODS
 
 	/**
-	* Exports one plot for each computed solution, comparing them to the analytical solution
+	* Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution
 	* @param Method* analytical The analytical solution
-	* @param vector<Method*> methods Vector containing the solutions to be plotted
+	* @param vector<Method*> methods Vector containing the solutions 
 	*/
-	void export_plots(Method * analytical, std::vector<Method*> methods);
+	void export_outputs(Method * analytical, std::vector<Method*> methods);
 };
 
 #endif

@@ -6,7 +6,7 @@
  */
 FTCS::FTCS(Problem problem)
 : Explicit(problem) {
-	name = "Forward time Central space";
+	name = FORWARD_TIME_CENTRAL_SPACE;
 }
 
 /*

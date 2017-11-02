@@ -8,20 +8,27 @@
 
 int main() {
 	IOManager io_manager;
-	Problem problem(DELTA_T, DELTA_X);
-	Analytical analytical(problem);
-	DufortFrankel dufort_frankel(problem);
-	Richardson richardson(problem);
-	Laasonen laasonen(problem);
-	CrankNicolson crank_nicolson(problem);
-	std::vector<Method*> solutions = {&analytical, &dufort_frankel, &richardson, &laasonen, &crank_nicolson};
+	Problem default_problem(DELTA_T, DELTA_X);
+	Analytical analytical(default_problem);
+	DufortFrankel dufort_frankel(default_problem);
+	Richardson richardson(default_problem);
+	CrankNicolson crank_nicolson(default_problem);
+
+	std::vector<Method*> solutions = {&analytical, &dufort_frankel, &richardson, &crank_nicolson};
+
+	for (int index = 0; index < DELTA_T_LASSONEN.size(); index++) {
+		double delta_t = DELTA_T_LASSONEN[index];
+		Problem laasonen_problem = Problem(delta_t, DELTA_X);
+		Laasonen * laasonen = new Laasonen(laasonen_problem);
+		solutions.push_back(laasonen);
+	}
 
 	for (int index = 0; index < solutions.size(); index++) {
-		solutions[index]->compute_solution();
+		solutions[index]->compute();
 	}
 
 	std::vector<Method*> methods(solutions.begin() + 1, solutions.end());
-	io_manager.export_plots(solutions[0], methods);
+	io_manager.export_outputs(solutions[0], methods);
 
 	return 0;
 }

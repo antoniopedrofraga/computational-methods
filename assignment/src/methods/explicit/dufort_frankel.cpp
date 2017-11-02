@@ -6,7 +6,7 @@
  */
 DufortFrankel::DufortFrankel(Problem problem)
 : Explicit(problem) {
-	name = "DuFort-Frankel";
+	name = DUFORT_FRANKEL;
 }
 
 /*
