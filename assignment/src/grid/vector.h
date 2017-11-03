@@ -107,6 +107,11 @@ public:
 	*/
 	void push_front_back(double value);
 
+	/**
+	* Method to push a value to the last position of a Vector
+	* @param value Value to be pushed
+	*/
+	void push(double value);
 
 	// THREE NORMS
 	/**

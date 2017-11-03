@@ -13,6 +13,8 @@
 class IOManager {
 private:
 	std::string output_path;  /**< Private string output_path. Contains the ouput directory path name. */
+	std::vector<double> laasonen_times; 	/**< Private Vector laasonen_times. Contains the computation time of each laasonen solution, with a different time step. */
+	Vector default_deltat_times;	/**< Private Vector default_deltat_times. Contains the computation time of each method solution, with a time step of 0.01. */
 
 	// PRIVATE PLOT METHODS
 
@@ -23,12 +25,17 @@ private:
 	bool create_output_dir();
 
 	/**
-	* Exports a plot that compares the analytical solution to any other solution using gnuplot
+	* Exports a plot chart that compares the analytical solution to any other solution using gnuplot
 	* @param string output_name File name to be exported
 	* @param Method* analytical The analytical solution
 	* @param Method* method Any method solution
 	*/
-	void plot(std::string output_name, Method * analytical, Method * method);
+	void plot_solutions(std::string output_name, Method * analytical, Method * method);
+
+	/**
+	* Exports a plot with Laasonen times computational times
+	*/
+	void plot_laasonen_times();
 
 	/**
 	* Exports an error table to a .lsx file that compares the analytical solution to any other solution

@@ -12,6 +12,15 @@ Method::Method() {}
 Method::Method(Problem problem) {
 	this->problem = problem;
 }
+/*
+ * public method - compute a solution keeping track of time
+ */
+void Method::compute() {
+	clock_t begin = clock();
+	compute_solution();
+	clock_t end = clock();
+	computational_time = double(end - begin) * 1000 / CLOCKS_PER_SEC;
+}
 
 // PUBLIC ACCESSOR METHODS
 
@@ -43,10 +52,11 @@ Vector Method::get_xvalues() {
 	return problem.get_xvalues();
 }
 
-void Method::compute() {
-	clock_t begin = clock();
-	compute_solution();
-	clock_t end = clock();
-	time = double(end - begin) * 1000 / CLOCKS_PER_SEC;
+/*
+ * public accessor method - get computational time
+ */
+double Method::get_computational_time() {
+	return computational_time;
 }
+
 

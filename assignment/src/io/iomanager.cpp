@@ -38,7 +38,7 @@ bool IOManager::create_output_dir() {
 }
 
 /*
-* public output method - iterates through all the solutions in order to export them
+* public output method - iterates through all the solutions in order to export them in varied formats
 */
 
 void IOManager::export_outputs(Method * analytical, std::vector<Method*> methods) {
@@ -51,19 +51,21 @@ void IOManager::export_outputs(Method * analytical, std::vector<Method*> methods
 		output_name = output_path + '/' + name;
 		if (name == LAASONEN) {
 			output_name += "dt=" + deltat_string;
+			laasonen_times.push_back(methods[index]->get_computational_time());
 		}
 		std::cout << "Exporting " << name << " method outputs... ";
-		plot(output_name, analytical, methods[index]);
+		plot_solutions(output_name, analytical, methods[index]);
 		error_table(output_name, analytical, methods[index]);
 		std::cout << "Finished!" << std::endl;
 	}
+	plot_laasonen_times();
 }
 
 /*
 * private plot method - Exports a plot chart which compares the analytical solution with a given solution
 */
 
-void IOManager::plot(std::string output_name, Method * analytical, Method * method) {
+void IOManager::plot_solutions(std::string output_name, Method * analytical, Method * method) {
 	// Object to export plots
 	Gnuplot gp;
 
@@ -85,6 +87,19 @@ void IOManager::plot(std::string output_name, Method * analytical, Method * meth
 		gp << "plot" << gp.file1d(analytical_matrix[index]) << "with lines title \"Analytical\" lw 2 lt rgb \"red\","
 			<< gp.file1d(method_matrix[index]) << "with points title \"" << name << "\" pt 17 ps 1 lw 1" << std::endl;
 	}
+}
+
+/*
+* private plot method - Exports a plot chart with laasonen solutions computational times
+*/
+
+void IOManager::plot_laasonen_times() {
+	// Object to export plots
+	Gnuplot gp;
+
+	gp << "set tics scale 0; set border 3; set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5; set clip two; set ylabel \"Computational Time [ms]\";set xlabel \"Δ t [h]\"; set term png; set xtics (\"0.01\" 0, \"0.025\" 1, \"0.05\" 2, \"0.1\" 3)\n";
+	gp << "set output \"" << output_path << "/laasonen_times.png\";\n";
+	gp << "plot" << gp.file1d(laasonen_times) << " notitle with linespoint ls 1" << std::endl;
 }
 
 /*

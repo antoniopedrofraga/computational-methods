@@ -58,6 +58,13 @@ void Vector::push_front_back(double value) {
 }
 
 /*
+* aux method - pushes a value to the vector
+*/
+void Vector::push(double value) {
+	this->push_back(value);
+}
+
+/*
 * aux method - finds a given value
 */
 int Vector::find(double value) {

@@ -14,7 +14,7 @@
 */
 class Method {
 private:
-	double time; /**< Private double time. Elapsed time throughout the solution computation. */
+	double computational_time; /**< Private double computational_time. Elapsed time throughout the solution computation. */
 protected:
 	Problem problem; /**< Protected Problem problem. Space step of the solution. */
 	std::string name; /**< Protected string name. Name of the method. */
@@ -62,8 +62,14 @@ public:
 	* get x values vector
 	* @return Vector. x values Vector.
 	*/
-	
 	Vector get_xvalues();
+
+	/**
+	* Normal public get method.
+	* get the elapsed time value to compute a solution
+	* @return double. Elapsed time throughout the computation.
+	*/
+	double get_computational_time();
 
 	/**
 	* Normal public method.
