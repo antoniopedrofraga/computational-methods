@@ -15,23 +15,54 @@
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
 \usepackage[myheadings]{fullpage}
+\usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
 \usepackage[T1]{fontenc}
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage{fourier}
+\usepackage{amsmath}
 \usepackage[protrusion=true, expansion=true]{microtype}
 \usepackage[english]{babel}
 \usepackage{sectsty}
 \usepackage{url, lipsum}
+\usepackage{titlesec}
+\usepackage{diagbox}
 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=C++,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breakatwhitespace=true,
+  tabsize=3
+}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
 \setcounter{tocdepth}{5}
 \setcounter{secnumdepth}{5}
 \inputencoding{utf8}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
 %-------------------------------------------------------------------------------
 % HEADER & FOOTER
@@ -48,55 +79,490 @@
 
 \begin{document}
 
-\title{ \normalsize \textsc{Computational Methods}
+\title{ \fontsize{40}{90} \textsc{Computational Methods}
 		\\ [2.0cm]
 		\HRule{0.5pt} \\
-		\LARGE \textbf{Lab 1 - Wave equation}
+		\LARGE \textbf{Heat Conduction Equation}
 		\HRule{2pt} \\ [0.5cm]
 		\normalsize \today \vspace*{5\baselineskip}}
 
 \date{}
 
 \author{
-		António Pedro Araújo Fraga \\
-		Student ID: 279654 \\ 
-		Cranfield University \\
-		Software Engineering for Technical Computing MSc }
+		\textbf{António Pedro Araújo Fraga} \\
+		\textbf{Student ID: 279654} \\ 
+		\textbf{Cranfield University} \\
+		\textbf{M.Sc. in Software Engineering for Technical Computing}}
 
 \maketitle
 \tableofcontents
+\thispagestyle{empty}
 \newpage
 
 %-------------------------------------------------------------------------------
 % Section title formatting
 \sectionfont{\scshape}
+\titleformat{\section}
+{\normalfont\huge\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titlespacing*{\section}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
 %-------------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------------
 % BODY
 %-------------------------------------------------------------------------------
 \begin{abstract}
-Numerical schemes were applied to a linear advection equation. We've
+Four numerical schemes were applied to compute a solution for a parabolic partial differential equation, the heat conduction equation. Two different types of schemes were used, explicit and implicit, and their solutions were evaluated. This evaluation could be done with a qualitative analysis, in which is evaluated how good the computed solution approximates the analytical solution, and a quantitative analysis, a more mathematical approach were the norms of both solutions were calculated.
+
 \end{abstract}
+
+%-------------------------------------------------------------------------------
+% Nomenclature
+%-------------------------------------------------------------------------------
+\begin{table}[tb]
+\caption{Nomenclature}
+\label{tab:notation}
+\centering
+\def\arraystretch{1.5}
+\begin{tabular}{ll}
+Diffusivity & $D$\\
+First derivative in time & $\frac{\partial f}{\partial t}$\\
+First derivative in space & $\frac{\partial f}{\partial x}$\\
+Time grid position & $n$\\
+Space grid position & $i$\\
+Function at time and space grid position & $f_i^n$\\
+Time step & $\Delta t$\\
+Space step & $\Delta x$\\
+Time value & $t$\\
+Space value & $x$\\
+Function value at specific space and time values& $f(x, t)$\\
+Initial Temperature& $T_{in}$\\
+Surface Temperature& $T_{sur}$\\
+\end{tabular}
+\end{table}
+
+%-------------------------------------------------------------------------------
+% Introduction
+%-------------------------------------------------------------------------------
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-\lipsum
+Numerical methods are used to obtain an approximated solution to problems with no given analytical solution. These methods can be used in order to save computational time, therefore they can obtain results which are similar to the real solution more efficiently. Four different schemes were applied to compute an approximated solution to a \textbf{Parabolic Partial Differential Equation}, in this case the heat conduction equation. 
+\begin{center}
+\Large
+$
+\frac{\partial f}{\partial t} = D\frac{\partial ^2 f}{\partial x^2} 
+$
+\end{center}
+\par 
+This condition had to be satisfied on a grid in space and time, which means the problem has a structured mesh type, and therefore can be represented as a grid of two dimensions. The previous equation could be written in its discretized form for each method.
 
+\subsection*{Problem definition}
+\addcontentsline{toc}{subsection}{Problem definition}
+A few initial or boundary conditions were set, including the heat conduction equation. An existing wall with \textbf{1 \textit{ft}} thick had an initial temperature of \textbf{100ºF} and the surface temperatures at both sides were suddenly increased and maintained to \textbf{300ºF}. It is also known that the wall is composed of nickel steel (40\% Ni) with a Diffusivity of \textbf{0.01 $ft ^2/h$}.
+\par
+Since the wall has a 1 \textit{ft} thickness, the problem space domain could be restricted between \textbf{0} and \textbf{1}, and the diffusivity value, which is considered constant, could be set to \textbf{0.01}. The time domain was restricted between \textbf{0} to \textbf{0.5}:
+\begin{center}
+\normalsize
+$
+x \in [0, 1], t \in [0, 0.5]
+$
+\end{center}
+\begin{center}
+\normalsize
+$
+T_{in} = 100, T_{sur} = 300
+$
+\end{center}
+\begin{center}
+\normalsize
+$
+D = 0.01
+$
+\end{center}
+\par 
+The initial boundaries can be formalized in mathematical expressions:
+\begin{center}
+\normalsize
+$
+f(x,0) = T_{in}
+$
+\end{center}
+\begin{center}
+\normalsize
+$
+f(0,t) = T_{sur}
+$
+\end{center}
+\begin{center}
+\normalsize
+$
+f(1,t) = T_{sur}
+$
+\end{center}
+\par
+The analytical solution of this problem was given by the following expression:
+\begin{center}
+\normalsize
+$$
+f(x,t) = T_{sur} + 2(T_{in} - T_{sur}) \sum_{m=1}^{m=\infty} 
+e ^{-D t (m \pi / L) ^2}  \frac{1 - (-1)^m}{m \pi} sin \left(\frac{m \pi x}{L}\right)$$  
+
+\end{center}
+
+\subsection*{Numerical analysis}
+\addcontentsline{toc}{subsection}{Numerical analysis}
+\par Numerical analysis is the study of the obtained solution. Criticism is very important on this phase, since the solutions are evaluated. Digitals computers have problems with round-off errors, and since values were truncated, problems with discretization errors may appear. There are some definitions related with this study: stability, convergence and approximation.
+
+\par A method is declared stable if an error doesn't grow as time advances. Theoretically, conditions that make a scheme becomes stable or unstable can be known, by making use of Fourier series.
+\par Approximation can be verified by comparing the computed solution with the analytical solution, and check if there is an approximation at all.
+\par Convergence is defined by how well the computed solution approximates to the analytical solution. This can vary with a change in the number of \textbf{time steps} or \textbf{space steps}. A big number of steps can lead to a bigger number of round-off errors or a considerably more time expensive solution. This definition is related with the \textbf{numerical viscosity} concept which must have a positive value in order to our scheme to be stable. It was possible to calculate on which conditions there is a stable solution by considering the Navier-Stokes equation for this problem:
+\begin{center}
+\large
+$
+\frac{\partial f}{\partial t} = v\frac{\partial ^2f}{\partial x ^2}
+$
+\end{center}
+\par By developing the unknown terms with Taylor expansion series and replacing their equivalences in the previous equation, it could be concluded which methods are conditionally stable, unconditionally unstable and unconditionally stable.
+\par A stencil could also be developed for each method, which relates the several grid points, revealing the dependencies for a calculation in a more graphical way. 
 \section*{Procedures}
 \addcontentsline{toc}{section}{Procedures}
-\lipsum
+Four different schemes/methods were used to compute a solution for the given problem, two of them are explicit schemes, \textbf{Richardson}, \textbf{DuFort-Frankel}, and two of them are implicit schemes, \textbf{Laasonen Simple Implicit} and \textbf{Crank-Nicholson}. The space step was maintained at \textbf{0.05} \textit{ft}, and the time step took the value of \textbf{0.1} \textit{h}, studying every solutions from \textbf{0.0} to \textbf{0.5} hours. The \textbf{Laasonen Simple Implicit} solution was also studied with different time steps, always maintaining the same space step,  \textbf{$\Delta x = 0.05$}:
+\begin{itemize}[noitemsep] 
+\item $ \Delta t = 0.01 $
+\item $ \Delta t = 0.025 $
+\item $ \Delta t = 0.05 $
+\item $ \Delta t = 0.1 $
+\end{itemize}
+As referred, considering the initial equation, these methods can be written in its discretized form.
 
-\section*{Results}
-\addcontentsline{toc}{section}{Results}
-\lipsum
+\subsection*{Explicit Schemes}
+\addcontentsline{toc}{subsection}{Explicit Schemes}
 
-\section*{Discussion}
-\addcontentsline{toc}{section}{Discussion}
-\lipsum
+\par This type of schemes rely only on the previous time steps to calculate the current time step solution. In the case of both used methods, they were relying in known values of the \textbf{n - 1} and \textbf{n} time steps to calculate a value for the \textbf{n + 1} time step. Thereby, the second time step can not be calculated by these methods, because there's no possible value for a negative time step. A different method, for the same equation, with two levels of time steps was used in order to overcome this situation, the \textbf{Forward in Time and Central in Space} scheme. It's known that this method is \textbf{conditionally stable}, and its stability condition is given by,
 
-\section*{Future work}
-\addcontentsline{toc}{section}{Future work}
+\begin{center}
+\Large
+$
+\frac{D \Delta t}{(\Delta x)^2} \leq 0.5
+$
+\end{center}
+
+Therefore, considering $\Delta t = 0.1$, $\Delta x = 0.05$, and $D = 0.1$, this method is declared unstable. Nevertheless, is known that in unstable methods the error grows as the time advance. Therefore it can be admitted that the error present in the first iteration is not large enough to considerably affect the final output values computed by the other two methods. The first iteration can be calculated with,
+
+\begin{center}
+\Large
+$
+f_{i}^{n + 1} = f_{i}^{n} + \frac{D \Delta t}{(\Delta x)^2}(f_{i + 1}^{n} - 2f_{i}^{n} + f_{i - 1}^{n})
+$
+\end{center}
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{richardson.png}
+  \captionof{figure}{DuFort-Frankel's method stencil.}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{dufort-frankel.png}
+  \captionof{figure}{Richardson's method stencil.}
+\end{minipage}
+\end{figure}
+
+\subsubsection*{Richardson}
+\addcontentsline{toc}{subsubsection}{Richardson}
+The Richardson method can be applied by having a central in time and central in space scheme. Regarding to stability issues, this method is unconditionally unstable. Following the heat conduction equation, the expression can be written as following:
+\begin{center}
+\Large
+$
+\frac{f_i^{n + 1} - f_i^{n - 1}}{2 \Delta t} = D \frac{f_{i + 1}^{n} - 2f_{i}^{n} + f_{i - 1}^{n}}{(\Delta x)^2}
+$
+\end{center}
+\par Which corresponds to,
+\begin{center}
+\Large
+$
+f_{i}^{n + 1} = f_{i}^{n - 1} - \frac{2\Delta t D}{(\Delta x)^2} (f_{i + 1}^{n} - 2 f_{i}^{n} + f_{i - 1}^{n})
+$
+\end{center}
+
+\subsubsection*{DuFort-Frankel}
+\addcontentsline{toc}{subsubsection}{DuFort-Frankel}
+\par The DuFort-Frankel scheme can be applied by having central differences in both derivatives, but to prevent stability issues, the space derivative term $f_i^n$ can be written as the average value of $f_{i}^{n + 1}$ and $f_{i}^{n - 1}$. This scheme is declared as unconditionally stable and it may be formulated as follows:
+\begin{center}
+\Large
+$
+\frac{f_i^{n + 1} - f_i^{n - 1}}{2 \Delta t} = D \frac{f_{i + 1}^{n} - f_{i}^{n + 1} - f_{i}^{n - 1} + f_{i - 1}^{n}}{(\Delta x)^2}
+$
+\end{center}
+\par Which is equivalent to,
+\begin{center}
+\Large
+$
+f_{i}^{n + 1} = f_{i}^{n - 1} - \frac{2\Delta t D}{(\Delta x)^2} (f_{i + 1}^{n} - f_{i}^{n + 1} - f_{i}^{n - 1} + f_{i - 1}^{n})
+$
+\end{center}
+
+\subsection*{Implicit Schemes}
+\addcontentsline{toc}{subsection}{Implicit Schemes}
+
+\par In other hand, implicit schemes rely not only on lower time steps to calculate a solution, but also on current time step known values. Each time step solution can often be solved by applying the Thomas Algorithm, which is an algorithm that can solve tridiagonal matrix systems, $Ax = r$. This algorithm is a special case of the LU decomposition, with a better performance. The matrix $A$ can be decomposed in a lower triangular matrix $L$ and an upper triangular matrix $U$, therefore $A = LU$. This algorithm consists of two steps, the downwards phase where the equation $Lp = r$ is solved and the upwards phase, solving $Ux = p$, obtaining a solution for $x$. 
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{laasonen.png}
+  \captionof{figure}{Laasonen's method stencil.}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{crank-nicholson.png}
+  \captionof{figure}{Crank-Nicholson's method stencil.}
+\end{minipage}
+\end{figure}
+
+\subsubsection*{Laasonen Simple Implicit}
+\addcontentsline{toc}{subsubsection}{Laasonen Simple Implicit}
+\par The time derivative is considered forward in time. Central difference is used in space derivative, and the scheme is unconditionally stable. Concluding, the below equation could be established:
+
+\begin{center}
+\Large
+$
+\frac{f_i^{n + 1} - f_i^{n}}{\Delta t} = D \frac{f_{i + 1}^{n + 1} - 2f_{i}^{n + 1} + f_{i - 1}^{n + 1}}{(\Delta x)^2} 
+$
+\end{center}
+
+\par Assuming that $c = \frac{\Delta t D}{(\Delta x)^2}$, the equation could be represented as:
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} = f_i^n + c \left[f_{i + 1}^{n + 1} + f_{i - 1}^{n + 1}\right]
+$
+\end{center}
+
+\par The values of the first and last space position of each time step are known, they are represent by the $T_{sur}$ value. Therefore, in every second and penultimate space step, two terms of the previous equation could be successfully inquired. For the second space step, the equation could be divided by having the unknown terms in the left side and the known terms in the right side:
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} - c f_{i + 1}^{n + 1} = f_i^n + c f_{i - 1}^{n + 1}
+$
+\end{center}
+
+\par And the same could be done for the penultimate space step:
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} - c f_{i - 1}^{n + 1} = f_i^n + c f_{i + 1}^{n + 1}
+$
+\end{center}
+
+\par For every other space steps with unknown values, the expression could be generalized as:
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} - c \left[f_{i + 1}^{n + 1} + f_{i - 1}^{n + 1}\right] = f_i^n 
+$
+\end{center}
+
+\par Considering that the maximum number of space steps is \textbf{m}, the previous expressions could form a system of linear equations, $A.x = r$:
+\begin{center}
+$
+\begin{bmatrix}
+    (1 - 2c) & -c & 0 & 0 & \dots & 0 & 0 \\
+    -c & (1 - 2c) & -c & 0 & \dots & 0 & 0 \\
+    0 & -c & (1 - 2c) & -c & \dots & 0 & 0 \\
+    \hdotsfor{7} \\
+    0 & 0 & 0 & 0 & \dots & -c & (1 - 2c) \\
+\end{bmatrix}
+\begin{bmatrix}
+    f_1^{n + 1} \\
+    f_2^{n + 1} \\
+    f_3^{n + 1} \\
+    \dots \\
+    f_{\textbf{m} - 1}^{n + 1} \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    f_1^{n} + c f_0^{n + 1} \\
+    f_2^{n} \\
+    f_3^{n} \\
+    \dots \\
+    f_{\textbf{m} - 1}^{n} + c f_{\textbf{m}}^{n + 1} \\
+\end{bmatrix}
+$
+\end{center}
+
+
+\subsubsection*{Crank-Nicholson}
+\addcontentsline{toc}{subsubsection}{Crank-Nicholson}
+\par The time derivative is considered forward in time, and the space derivative can be replaced by the average of central differences in time steps \textbf{n} and \textbf{n + 1}, the method is declared as unconditionally stable. Thus:
+
+\begin{center}
+\Large
+$
+\frac{f_i^{n + 1} - f_i^{n}}{\Delta t} = \frac{1}{2} D {\left[\frac{f_{i + 1}^{n + 1} - 2f_{i}^{n + 1} + f_{i - 1}^{n + 1}}{(\Delta x)^2} + \frac{f_{i + 1}^{n} - 2f_{i}^{n} + f_{i - 1}^{n}}{(\Delta x)^2}\right]}
+$
+\end{center}
+
+\par In this method, the coefficient had a new value, $c = \frac{1}{2}\frac{\Delta t D}{(\Delta x)^2}$, and assuming that $p = f_{i + 1}^{n} + f_{i - 1}^{n}$, the equation could be written as follows,
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} = (1 - 2c)f_i^n + c \left[f_{i + 1}^{n + 1} + f_{i - 1}^{n + 1} + p\right]
+$
+\end{center}
+
+\par Following the same logical principles of the previous scheme, 
+some expressions could be generalized for the second,
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} - c f_{i + 1}^{n + 1} = (1 - 2c)f_i^n + c \left[f_{i - 1}^{n + 1} + p\right]
+$
+\end{center}
+, penultimate, 
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} - c f_{i + 1}^{n + 1} = (1 - 2c)f_i^n + c \left[f_{i + 1}^{n + 1} + p\right]
+$
+\end{center}
+, and every other space steps with unknown values.
+
+\begin{center}
+\Large
+$
+(1 - 2c)f_i^{n + 1} - c \left[f_{i + 1}^{n + 1} + f_{i - 1}^{n + 1}\right] = (1 - 2c)f_i^n + cp
+$
+\end{center}
+
+\par Thus, a tridiagonal matrix system is obtained,
+
+\begin{center}
+\small
+$
+\begin{bmatrix}
+    (1 - 2c) & -c & 0 & 0 & \dots & 0 & 0 \\
+    -c & (1 - 2c) & -c & 0 & \dots & 0 & 0 \\
+    0 & -c & (1 - 2c) & -c & \dots & 0 & 0 \\
+    \hdotsfor{7} \\
+    0 & 0 & 0 & 0 & \dots & -c & (1 - 2c) \\
+\end{bmatrix}
+\begin{bmatrix}
+    f_1^{n + 1} \\
+    f_2^{n + 1} \\
+    f_3^{n + 1} \\
+    \dots \\
+    f_{\textbf{m} - 1}^{n + 1} \\
+\end{bmatrix}
+=
+\begin{bmatrix}
+    (1 - 2c)f_1^{n} + c \left[f_0^{n + 1} + p\right] \\
+    (1 - 2c)f_2^{n} + cp \\
+    (1 - 2c)f_3^{n} + cp\\
+    \dots \\
+    (1 - 2c)f_{\textbf{m} - 1}^{n} + c \left[f_{\textbf{m}}^{n + 1} + p\right] \\
+\end{bmatrix}
+$
+\end{center}
+
+
+\section*{Results \& Discussion}
+\addcontentsline{toc}{section}{Results \& Discussion}
+\par The results of the four methods, \textbf{Richardson}, \textbf{DuFort-Frankel}, \textbf{Laasonen Simple Implicit} and \textbf{Crank-Nicholson} can be seen in the following figures/tables. These results were used to analyze each solution quantitatively and qualitatively. In most of the plot charts, the obtained solution was compared to the analytical solution so that it would be possible to realize whether the solution was a good approximation or not. Notice that the next results are regarding to the "default" values of time and space steps, $\Delta t = 0.01$ and $\Delta x = 0.05$. 
+
+\begin{table}[!htb]
+\centering
+\caption{Richardson method error table.}
+\label{table:1}
+\fontsize{6}{10}\selectfont
+\begin{tabular}{|| c || c | c | c | c | c | c | c | c | c | c | c ||} 
+ \hline
+ \diagbox[width=5em]{t}{x} & 0.10 & 0.20 & 0.30 & 0.40 & 0.50 & 0.60 & 0.70 & 0.80 & 0.90 \\ [0.5ex] 
+ \hline\hline
+ 0.1 & 1.05136e+06 & 631856 & 123707 & 8417.73 & 300.81 & 8417.73 & 123707 & 631856 & 1.05136e+06 \\ 
+ 0.2 & 1.33245e+11 & 1.39e+11 & 7.02854e+10 & 2.06123e+10 & 6.93136e+09 & 2.06123e+10 & 7.02854e+10 & 1.39e+11 & 1.33245e+11 \\
+ 0.3 & 2.14659e+16 & 2.74969e+16 & 1.97012e+16 & 9.88337e+15 & 5.98161e+15 & 9.88337e+15 & 1.97012e+16 & 2.74969e+16 & 2.14659e+16  \\
+ 0.4 & 3.91917e+21 & 5.60267e+21 & 4.87086e+21 & 3.31281e+21 & 2.58429e+21 & 3.31281e+21 & 4.87086e+21 & 5.60267e+21 & 3.91917e+21 \\ 
+ 0.5 & 7.74272e+26 & 1.19047e+27 & 1.18021e+27 & 9.72231e+26 & 8.60626e+26 & 9.72231e+26 & 1.18021e+27 & 1.19047e+27 & 7.74272e+26  \\[1ex] 
+ \hline
+\end{tabular}
+\end{table}
+
+\par By examining \textbf{Table 2}, it could be concluded that the solution given by the Richardson method  was considerably different from the analytical solution. This was due to the fact that this method is declared as \textbf{unconditionally unstable}.  As referred before, when a method is declared unstable, the error grows as the time advances. The error growth was responsible for obtaining a different solution, or a solution to a different problem. The mathematical calculations regarding the stability and accuracy properties of this method can be found under the appendix section. 
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=.5\linewidth]{DuFort-Frankelt_0_5.png}
+  \captionof{figure}{DuFort-Frankel's solution at $t= 0.5$.}
+\end{figure}
+
+\par When looking at \textbf{Figure 5}, it can be observed that the DuFort-Frankel solution is quite approximated to the real solution. This scheme is more efficient comparing to other unconditionally stable methods, the only disadvantage is the fact that it requires a different method for the first iteration.
+
+\par Similarly of what could be concluded on DuFort-Frankel results, by observing \textbf{Figure 6} and \textbf{Figure 7}, it can also be deducted that these are good solutions. These schemes, Crank-Nicholson and Laasonen, are unconditionally stable as well. Therefore good results were expected.
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{Laasonent_0_4dt_0_010.png}
+  \captionof{figure}{Laasonen's solution at $t= 0.4$.}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{Crank-Nicholsont_0_4.png}
+  \captionof{figure}{Crank-Nicholson's solution at $t= 0.4$.}
+\end{minipage}
+\end{figure}
+
+\subsection*{Laasonen Implicit Scheme: study of time step variation}
+\addcontentsline{toc}{subsection}{Laasonen Implicit Scheme: study of time step variation}
+
+\par Laasonen Implicit Scheme is an unconditionally stable scheme to solve Parabolic Partial Differential Equations. Therefore, with the right time and space step, there's almost no error related to the development of its results throughout the time advancement. 
+\par A reduction on these steps led to a higher computational time, since there's more calculations to be made. Whereas steps with higher values led to more inaccurate results. This phenomenon could be explained with a concept that was introduced earlier, the \textbf{truncation error}. This error can only be avoided with exact calculations, but can be reduced by applying a larger number of smaller intervals or steps. As referred before, different results of this method were studied by changing the time step size. The space step was maintained, $\Delta x = 0.05$.
+
+\begin{table}[!htb]
+\centering
+\caption{Laasonen method error table for the several $\Delta t$ at $t = 0.5$}
+\label{table:1}
+\fontsize{8}{18}\selectfont
+\begin{tabular}{|| c || c | c | c | c | c | c | c | c | c | c | c ||} 
+ \hline
+ \diagbox[width=5em]{$\Delta t$}{x} & 0.10 & 0.20 & 0.30 & 0.40 & 0.50 & 0.60 & 0.70 & 0.80 & 0.90 \\ [0.5ex] 
+ \hline\hline
+ 0.01 & 0.288694 & 0.385764 & 0.255427 & 0.0405061 & -0.0611721 & 0.0405061 & 0.255427 & 0.385764 & 0.288694 \\ 
+ 0.025 & 0.738044 & 1.0344 & 0.805442 & 0.368491 & 0.157551 & 0.368491 & 0.805442 & 1.0344 & 0.738044 \\
+ 0.05 & 1.53627 & 2.15669 & 1.71375 & 0.864487 & 0.457364 & 0.864487 & 1.71375 & 2.15669 & 1.53627  \\
+ 0.1 & 3.29955 & 4.49523 & 3.46045 & 1.7082 & 0.898726 & 1.7082 & 3.46045 & 4.49523 & 3.29955 \\ [1ex] 
+ \hline
+\end{tabular}
+\end{table}
+
+\par \textbf{Table 3} and \textbf{figure 8} could support the previous affirmations.  While observing \textbf{table 3}, it can be seen that the error is larger for bigger time steps, as it was expected. Whereas when observing \textbf{figure 8}, it can be identified a reduction in computational time as the \textbf{time step} becomes larger. 
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=.6\linewidth]{laasonen_times.png}
+  \captionof{figure}{Laasonen method computational times for the several $\Delta t$.}
+\end{figure}
+
+\pagebreak
+
+\section*{Conclusions}
+\addcontentsline{toc}{section}{Conclusions}
 \lipsum
 
 \section*{Acknowledgements}
@@ -110,117 +576,25 @@ Numerical schemes were applied to a linear advection equation. We've
 \section*{References}
 \addcontentsline{toc}{section}{References}
 
-Anand, U., 2010. The Elusive Free Radicals, \textit{The Clinical Chemist,} [e-journal] Available at:<\url{http://www.clinchem.org/content/56/10/1649.full.pdf}> [Accessed 2 November 2013]
+Gilberto E. Urroz, July 2004, \textit{Convergence, Stability, and Consistency of Finite
+Difference Schemes in the Solution of Partial Differential
+Equations,} Available at: <\url{http://ocw.usu.edu/Civil_and_Environmental_Engineering/Numerical_Methods_in_Civil_Engineering/StabilityNumericalSchemes.pdf}> [Accessed 2 October 2017]
 \newline
 \newline
-
-Biology Forums, 2012. \textit{Normal glomerulus. Acute glomerulonephritis.} [online] Available at: <\url{http://biology-forums.com/index.php?action=gallery;sa=view;id=9284}> [Accessed 23 October 2013].
+S. Scott Collis, April 26, 2005, \textit{An Introduction to Numerical Analysis
+for Computational Fluid Mechanics,} Available at: <\url{https://bb.cranfield.ac.uk/bbcswebdav/pid-604246-dt-content-rid-919106_2/courses/N-CST-CM-17-A17/CompMethods_Assignment_2017.pdf}> (a private book provided by the course supervisor on Black Board)[Accessed 2 October 2017]
 \newline
 \newline
-
-Budisavljevic, M., Hodge, L., Barber, K., Fulmer, J., Durazo-Arvizu, R., Self, S., Kuhlmann, M., Raymond, J. and Greene, E., 2003. Oxidative stress in the pathogenesis of experimental mesangial proliferative glomerulonephritis, \textit{American Journal of Physiology - Renal Physiology,} 285(6), pp. 1138-1148.
+Klaus A. Hoffman, Steve T. Chiang, August 2000, \textit{Computational Fluid Dynamics, Volume 1} [Accessed 27 October 2017]
 \newline
 \newline
-
-Chien, C., Lee, P., Chen, C., Ma, M., Lai, M. and Hsu, S., 2001. De Novo Demonstration and Co-localization of Free-Radical Production and Apoptosis Formation in Rat Kidney Subjected to Ischemia/Reperfusion, \textit{Journal of the American Society of Nephrology,} 12(5), pp. 973-982.
+Richard H. Pletcher, Jhon C. Tannehill, Dale A. Anderson, 2013, \textit{Computational Fluid Mechanics and Heat Transfer, Third Edition}, Available at: <\url{https://books.google.pt/books?id=-GTOBQAAQBAJ&pg=PA130&lpg=PA130&dq=laasonen+simple+implicit&source=bl&ots=qSP2J5eUhD&sig=8AXEV0b_9Wu7owNAgC67F0TiTcY&hl=pt-PT&sa=X&ved=0ahUKEwjakvufg5HXAhVMD8AKHdbRA5YQ6AEILDAA#v=onepage&q=laasonen\%20simple\%20implicit&f=false}> [Accessed 27 October 2017]
 \newline
 \newline
-
-Couser, W., 1993. Pathogenesis of glomerulonephritis, \textit{Kidney International Supplements,} 42, pp. 19-26.
+W. T. Lee, \textit{Tridiagonal Matrices: Thomas Algorithm}, Available at: <\url{https://www3.ul.ie/wlee/ms6021_thomas.pdf}> [Accessed 28 October 2017]
 \newline
 \newline
-
-De Gasparo, M., 2002. Angiotensin II and nitric oxide interaction, \textit{Heart Failure Reviews,} [e-journal] Available at:<\url{http://www.ncbi.nlm.nih.gov/pubmed/12379820}> [Accessed 26 October 2013]
-\newline
-\newline
-
-Edinburgh Renal Education Pages, 2012. \textit{Glomerulonephritis} [online] Available at: <\url{http://www.edrep.org/pages/textbook/glomerulonephritis.php}> [Accessed 25 October 2013].
-\newline
-\newline
-
-Forbes, J., Coughlan, M. and Cooper, M., 2008. Oxidative Stress as a Major Culprit in Kidney Disease in Diabetes, \textit{Diabetes,} 57(6), pp. 1446-1454.
-\newline
-\newline
-
-Geeky Medics, 2010. \textit{Glomerulonephritis} [online] Available at: <\url{http://geekymedics.com/2010/10/27/glomerulonephritis/}> [Accessed 25 October 2013].
-\newline
-\newline
-
-Gryglewski, R., Palmer, R., Moncada, S., 1986. Superoxide anion is involved in the break­down of endothelium derived relaxing factor, \textit{Nature,} 320, pp. 454-456.
-\newline
-\newline
-
-Halliwell, B., 2001. Free Radicals and other reactive species in Disease, \textit{Encyclopedia of Life Sciences,} [e-journal] Available at:<\url{http://web.sls.hw.ac.uk/teaching/level4/bcm1_2/reading/oxidative_stress/files/Oxidative_stress.pdf}> [Accessed 19 October 2013]
-\newline
-\newline
-
-Huang, H., Patel, P. and Salahudeen, A., 2001. Lazaroid compounds prevent early but not late stages of oxidant-induced cell injury: potential explanation for the lack of efficacy of lazaroids in clinical trials, \textit{Pharmacological Research,} 41(1), pp. 55-61.
-\newline
-\newline
-
-Klinger, J., Abman, S. and Gladwin, M., 2013. Nitric Oxide Deficiency and Endothelial Dysfunction in Pulmonary Arterial Hypertension, \textit{American Journal of Respiratory and Critical Care Medicine,} 188(6), pp. 639-646.
-\newline
-\newline
-
-Lindemann, I., Boettcher, J., Oertel, K., Pasternack, R., Heine, A. and Klebe, G. 2012. Inhibitors of Transglutaminase 2: A therapeutic option in celiac disease, \textit{To be Published,} [e-journal + PDB structure] Available at:<\url{http://www.ebi.ac.uk/pdbe-srv/view/entry/3s3s/summary}> [Accessed 24 October 2013]
-\newline
-\newline
-
-Mayo Clinic, 2011. \textit{Glomerulonephritis} [online] Available at: <\url{http://www.mayoclinic.com/health/glomerulonephritis/DS00503/}> [Accessed 20 October 2013].
-\newline
-\newline
-
-McCord, J., Roy, R. and Schaffer, S., 1985. Free radicals and myocardial ischemia. The role of xanthine oxidase, \textit{Advances in myocardiology,} [e-journal] Available at:<\url{http://www.ncbi.nlm.nih.gov/pubmed/2982206}> [Accessed 24 October 2013]
-\newline
-\newline
-
-National Health Service, 2012. \textit{Causes of glomerulonephritis} [online] Available at: <\url{http://www.nhs.uk/Conditions/Glomerulonephritis/Pages/Causes.aspx}> [Accessed 20 October 2013].
-\newline
-\newline
-
-Niaudet, P., 2013. \textit{Overview of the pathogenesis and causes of glomerulonephritis in children.} [online] Available at: <\url{http://www.uptodate.com/contents/overview-of- \ the-pathogenesis-and-causes-of-glomerulonephritis-in-children}> [Accessed 21 October 2013].
-\newline
-\newline
-
-Ronco, P., 2013. \textit{Mechanisms of glomerular crescent formation.} [online] Available at: <\url{http://www.uptodate.com/contents/mechanisms-of-glomerular-crescent-formation}> [Accessed 21 October 2013].
-\newline
-\newline
-
-Rutchik, J., 2013. \textit{Toxic Neuropathy Clinical Presentation.} [online] Available at: <\url{http://emedicine.medscape.com/article/1175276-clinical#a0216}> [Accessed 26 October 2013].
-\newline
-\newline
-
-R\&D Systems, 2013. \textit{Technical Information. Ischemia/Reperfusion Injury.} [online] Available at: <\url{http://www.rndsystems.com/cb_detail_objectname_SP96_Ischemia.aspx}> [Accessed 28 October 2013].
-\newline
-\newline
-
-Salahudeen, A., 1999. Free Radicals in Kidney Disease and Transplantation, \textit{Saudi Journal of Kidney Diseases and Transplantation,} 10(2), pp. 137-143.
-\newline
-\newline
-
-Sarma, A., Mallick, A. and Ghosh, A., 2010. Free Radicals and Their Role in Different Clinical Conditions: An Overview, \textit{International Journal of Pharma Sciences and Research,} 1(3), pp. 182-192.
-\newline
-\newline
-
-Shah, S., Baliga, R., Rajapurkar, M. and Fonseca, V., 2007. Oxidants in Chronic Kidney Disease, \textit{Journal of the American Society of Nephrology,} 18(1), pp. 16-28.
-\newline
-\newline
-
-The University of Utah, Unknown. \textit{Glomerulonephritis} [online] Available at: <\url{http://library.med.utah.edu/WebPath/RENAHTML/RENALIDX.html#8}> [Accessed 25 October 2013].
-\newline
-\newline
-
-Wang, C. and Salahudeen, A., 1994. Cyclosporine nephrotoxicity: attenuation by an antioxidant -inhibitor of lipid peroxidation in-vitro and in-vivo, \textit{Transplantation,} 58, pp. 940-946.
-\newline
-\newline
-
-Wang, C. and Salahudeen, A., 1995. Lipid peroxidation accompanies cyclosporine nephrotoxicity: effects of vitamin E, \textit{Kidney International,} 47, pp. 927-934.
-\newline
-\newline
-
-Weiss, S., 1989. Tissue Destruction by Neutrophils, \textit{New England Journal of Medicine,} 320, pp. 365-376.
-\newline
-\newline
+\textit{ Error in Euler’s Method}, Available at: <\url{http://www.math.unl.edu/~gledder1/Math447/EulerError}> [Accessed 2 November 2017]
 
 
 \end{document}
