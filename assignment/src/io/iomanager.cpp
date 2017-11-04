@@ -77,7 +77,7 @@ void IOManager::plot_solutions(std::string output_name, Method * analytical, Met
 	std::string time_str, name = method->get_name();
 
 	// defining gnuplot configuration with the correct syntax
-	gp << "set tics scale 0; set border 3; set ylabel \"Temperature [ºF]\";set xlabel \"x [ft]\"; set yrange [90:310]; set term png; set xtics (\"0\" 0, \"0.5\"" << cols / 2 << ", \"1\"" << cols - 1 << ")\n";
+	gp << "set key on box; set tics scale 0; set border 3; set ylabel \"Temperature [ºF]\";set xlabel \"x [ft]\"; set yrange [90:310]; set term png; set xtics (\"0\" 0, \"0.5\"" << cols / 2 << ", \"1\"" << cols - 1 << ")\n";
 	for (unsigned int index = 1; index < rows; index++) {
 		time = (double)index / 10.0;
 		time_str = double_to_string(1, time);
@@ -117,14 +117,17 @@ void IOManager::error_table(std::string output_name, Method * analytical, Method
 	out.open(name);
 	out << " & ";
 	for (int i = 0; i < x_values.getSize(); i++) {
-		x_str = double_to_string(2, x_values[i]);
-		out << "x=" << x_str << " & ";
+		if (i % 2 == 0) {
+			x_str = double_to_string(2, x_values[i]);
+			out << "x=" << x_str << " & ";
+		}
 	}
 	out << '\n';
 	for (unsigned int i = 1; i < rows; i++) {
 		time = double_to_string(2, (double)i / 10.0);
 		out << "t=" << time << " & ";
 		for (unsigned int j = 0; j < cols; j++) {
+			if (j % 2 == 0)
 			out << analytical_matrix[i][j] - method_matrix[i][j] << " & ";
 		}
 		out << '\n';

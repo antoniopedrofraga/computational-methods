@@ -12,5 +12,4 @@
 \contentsline {section}{Results \& Discussion}{8}
 \contentsline {subsection}{Laasonen Implicit Scheme: study of time step variation}{9}
 \contentsline {section}{Conclusions}{11}
-\contentsline {section}{Acknowledgements}{12}
-\contentsline {section}{References}{15}
+\contentsline {section}{References}{12}
