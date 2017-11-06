@@ -50,6 +50,7 @@ private:
 	/**
 	* Converts a double to a string with a precison of 2 decimal places
 	* @param double value Number to be converted
+	* @param int precision Precision to have
 	* @return string. String containing the converted number
 	*/
 	std::string double_to_string(int precision, double value);
