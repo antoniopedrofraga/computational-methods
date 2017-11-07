@@ -1,0 +1,319 @@
+.TH "Problem" 3 "Mon Nov 6 2017" "Heat conduction equation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Problem \- A \fBProblem\fP class to structure relevant information related with the problem\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <problem\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBProblem\fP ()"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "\fBProblem\fP (double dt, double dx)"
+.br
+.RI "\fIIntialize \fBProblem\fP object with specific time and space steps\&. \fP"
+.ti -1c
+.RI "unsigned int \fBget_xsize\fP ()"
+.br
+.RI "\fINormal public get method that returns an unsigned int, the number of columns of the solution\&. \fP"
+.ti -1c
+.RI "unsigned int \fBget_tsize\fP ()"
+.br
+.RI "\fINormal public get method that returns an unsigned int, the number of rows of the solution\&. \fP"
+.ti -1c
+.RI "double \fBget_deltax\fP ()"
+.br
+.RI "\fINormal public get method that returns a double, the space step value of the solution\&. \fP"
+.ti -1c
+.RI "double \fBget_deltat\fP ()"
+.br
+.RI "\fINormal public get method that returns a double, the time step value of the solution\&. \fP"
+.ti -1c
+.RI "\fBVector\fP \fBget_xvalues\fP ()"
+.br
+.RI "\fINormal public get method that returns a \fBVector\fP, containing the space values in each column\&. \fP"
+.ti -1c
+.RI "\fBVector\fP \fBget_tvalues\fP ()"
+.br
+.RI "\fINormal public get method that returns a \fBVector\fP, containing the time values in each row\&. \fP"
+.ti -1c
+.RI "\fBVector\fP \fBget_first_row\fP ()"
+.br
+.RI "\fINormal public get method that returns a \fBVector\fP, containing the initial boundaries in the first row of the solution\&. \fP"
+.ti -1c
+.RI "\fBMatrix\fP * \fBget_solution\fP ()"
+.br
+.RI "\fINormal public get method that returns a \fBMatrix\fP, containing the solution solution\&. \fP"
+.ti -1c
+.RI "void \fBset_time_step\fP (\fBVector\fP step, double time)"
+.br
+.RI "\fINormal public set method\&. \fP"
+.ti -1c
+.RI "void \fBset_initial_conditions\fP ()"
+.br
+.RI "\fINormal public set method\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBset_x_values\fP ()"
+.br
+.RI "\fINormal private set method\&. \fP"
+.ti -1c
+.RI "void \fBset_t_values\fP ()"
+.br
+.RI "\fINormal private set method\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBdelta_x\fP"
+.br
+.RI "\fIPrivate double delta_x\&. \fP"
+.ti -1c
+.RI "double \fBdelta_t\fP"
+.br
+.RI "\fIPrivate double delta_t\&. \fP"
+.ti -1c
+.RI "unsigned int \fBx_size\fP"
+.br
+.RI "\fIPrivate unsigned int x_size\&. \fP"
+.ti -1c
+.RI "unsigned int \fBt_size\fP"
+.br
+.RI "\fIPrivate unsigned int t_size\&. \fP"
+.ti -1c
+.RI "\fBVector\fP \fBx_values\fP"
+.br
+.RI "\fIPrivate \fBVector\fP x_values\&. \fP"
+.ti -1c
+.RI "\fBVector\fP \fBt_values\fP"
+.br
+.RI "\fIPrivate \fBVector\fP t_values\&. \fP"
+.ti -1c
+.RI "\fBMatrix\fP \fBsolution\fP"
+.br
+.RI "\fIPrivate \fBMatrix\fP solution\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+A \fBProblem\fP class to structure relevant information related with the problem\&. 
+
+The \fBProblem\fP class provides: 
+.br
+-basic constructors for creating a \fBProblem\fP object\&. 
+.br
+-acessor methods to retrieve valuable information 
+.br
+-mutator methods to change the solution system 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Problem::Problem ()"
+
+.PP
+Default constructor\&. Intialize an empty \fBProblem\fP object 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBProblem(double dt, double dx)\fP 
+.RE
+.PP
+
+.SS "Problem::Problem (double dt, double dx)"
+
+.PP
+Intialize \fBProblem\fP object with specific time and space steps\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBProblem()\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdt\fP Time step to assign 
+.br
+\fIdx\fP Space step to assign 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIout_of_range\fP ('space step can't be negative or zero') 
+.br
+\fIout_of_range\fP ('time step can't be negative or zero') 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "double Problem::get_deltat ()"
+
+.PP
+Normal public get method that returns a double, the time step value of the solution\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+double\&. The time step value of the solution\&. 
+.RE
+.PP
+
+.SS "double Problem::get_deltax ()"
+
+.PP
+Normal public get method that returns a double, the space step value of the solution\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+double\&. The space step value of the solution\&. 
+.RE
+.PP
+
+.SS "\fBVector\fP Problem::get_first_row ()"
+
+.PP
+Normal public get method that returns a \fBVector\fP, containing the initial boundaries in the first row of the solution\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBVector\fP\&. The initial boundaries in the first row of the solution\&. 
+.RE
+.PP
+
+.SS "\fBMatrix\fP * Problem::get_solution ()"
+
+.PP
+Normal public get method that returns a \fBMatrix\fP, containing the solution solution\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Matrix*\&. The solution solution\&. 
+.RE
+.PP
+
+.SS "unsigned int Problem::get_tsize ()"
+
+.PP
+Normal public get method that returns an unsigned int, the number of rows of the solution\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+unsigned int\&. The number of rows of the solution\&. 
+.RE
+.PP
+
+.SS "\fBVector\fP Problem::get_tvalues ()"
+
+.PP
+Normal public get method that returns a \fBVector\fP, containing the time values in each row\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBVector\fP\&. The time values in each row\&. 
+.RE
+.PP
+
+.SS "unsigned int Problem::get_xsize ()"
+
+.PP
+Normal public get method that returns an unsigned int, the number of columns of the solution\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+unsigned int\&. The number of columns of the solution\&. 
+.RE
+.PP
+
+.SS "\fBVector\fP Problem::get_xvalues ()"
+
+.PP
+Normal public get method that returns a \fBVector\fP, containing the space values in each column\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+\fBVector\fP\&. The space values in each column\&. 
+.RE
+.PP
+
+.SS "void Problem::set_initial_conditions ()"
+
+.PP
+Normal public set method\&. set the problem initial boundaries\&. 
+.SS "void Problem::set_t_values ()\fC [private]\fP"
+
+.PP
+Normal private set method\&. Intialize \fBVector\fP t_values with the correct values\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBt_values\fP 
+.RE
+.PP
+
+.SS "void Problem::set_time_step (\fBVector\fP step, double time)"
+
+.PP
+Normal public set method\&. replace a row of the solution for a given \fBVector\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstep\fP \fBVector\fP conatining the new values\&. 
+.br
+\fItime\fP Corresponding row to be replaced 
+.RE
+.PP
+
+.SS "void Problem::set_x_values ()\fC [private]\fP"
+
+.PP
+Normal private set method\&. Intialize \fBVector\fP x_values with the correct values\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBx_values\fP 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "double Problem::delta_t\fC [private]\fP"
+
+.PP
+Private double delta_t\&. Time step of the solution\&. 
+.SS "double Problem::delta_x\fC [private]\fP"
+
+.PP
+Private double delta_x\&. Space step of the solution\&. 
+.SS "\fBMatrix\fP Problem::solution\fC [private]\fP"
+
+.PP
+Private \fBMatrix\fP solution\&. \fBMatrix\fP containing the computed solution\&. 
+.SS "unsigned int Problem::t_size\fC [private]\fP"
+
+.PP
+Private unsigned int t_size\&. Time size of the solution\&. 
+.SS "\fBVector\fP Problem::t_values\fC [private]\fP"
+
+.PP
+Private \fBVector\fP t_values\&. Time correspondent value for each row index\&. 
+.SS "unsigned int Problem::x_size\fC [private]\fP"
+
+.PP
+Private unsigned int x_size\&. Space size of the solution\&. 
+.SS "\fBVector\fP Problem::x_values\fC [private]\fP"
+
+.PP
+Private \fBVector\fP x_values\&. Space correspondent value for each column index\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Heat conduction equation from the source code\&.

@@ -1,0 +1,73 @@
+.TH "CrankNicolson" 3 "Mon Nov 6 2017" "Heat conduction equation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CrankNicolson \- A \fBCrankNicolson\fP method class that contains a r vector builder\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <crank_nicolson\&.h>\fP
+.PP
+Inherits \fBImplicit\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCrankNicolson\fP (\fBProblem\fP \fBproblem\fP)"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector\fP \fBbuild_r\fP (\fBVector\fP previous_step)"
+.br
+.RI "\fINormal protected method\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+A \fBCrankNicolson\fP method class that contains a r vector builder\&. 
+
+
+.br
+ This builder is used to calculate the r vector in A\&.x = r linear equation system\&.
+.PP
+The \fBCrankNicolson\fP class provides: 
+.br
+-a basic constructor for creating a \fBCrankNicolson\fP method object\&. 
+.br
+-a method to compute the r vector\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CrankNicolson::CrankNicolson (\fBProblem\fP problem)"
+
+.PP
+Default constructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBVector\fP CrankNicolson::build_r (\fBVector\fP previous_step)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+Normal protected method\&. get the number of rows 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIprevious_step\fP \fBVector\fP representing the solution of the previous time step\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBVector\fP\&. r vector to be used in A\&.x = r 
+.RE
+.PP
+
+.PP
+Implements \fBImplicit\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Heat conduction equation from the source code\&.

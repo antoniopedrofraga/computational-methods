@@ -1,0 +1,26 @@
+<map id="grid/matrix.h" name="grid/matrix.h">
+<area shape="rect" id="node2" href="$problem_8h.html" title="variants/problem.h" alt="" coords="1132,80,1261,107"/>
+<area shape="rect" id="node25" href="$matrix_8cpp.html" title="grid/matrix.cpp" alt="" coords="1285,80,1393,107"/>
+<area shape="rect" id="node3" href="$method_8h.html" title="methods/method.h" alt="" coords="1051,155,1182,181"/>
+<area shape="rect" id="node24" href="$problem_8cpp.html" title="variants/problem.cpp" alt="" coords="1205,155,1348,181"/>
+<area shape="rect" id="node4" href="$analytical_8h.html" title="methods/analytical.h" alt="" coords="1045,229,1188,256"/>
+<area shape="rect" id="node7" href="$explicit_8h.html" title="methods/explicit/explicit.h" alt="" coords="395,229,569,256"/>
+<area shape="rect" id="node15" href="$implicit_8h.html" title="methods/implicit/implicit.h" alt="" coords="1234,229,1407,256"/>
+<area shape="rect" id="node21" href="$iomanager_8h.html" title="io/iomanager.h" alt="" coords="906,229,1013,256"/>
+<area shape="rect" id="node23" href="$method_8cpp.html" title="methods/method.cpp" alt="" coords="1431,229,1575,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="main.cpp" alt="" coords="947,401,1022,427"/>
+<area shape="rect" id="node6" href="$analytical_8cpp.html" title="methods/analytical.cpp" alt="" coords="1048,311,1204,338"/>
+<area shape="rect" id="node8" href="$dufort__frankel_8h.html" title="methods/explicit/dufort\l_frankel.h" alt="" coords="405,304,559,345"/>
+<area shape="rect" id="node10" href="$richardson_8h.html" title="methods/explicit/richardson.h" alt="" coords="583,311,775,338"/>
+<area shape="rect" id="node12" href="$explicit_8cpp.html" title="methods/explicit/explicit.cpp" alt="" coords="194,401,381,427"/>
+<area shape="rect" id="node13" href="$forward__t__central__s_8h.html" title="methods/explicit/forward\l_t_central_s.h" alt="" coords="165,304,329,345"/>
+<area shape="rect" id="node9" href="$dufort__frankel_8cpp.html" title="methods/explicit/dufort\l_frankel.cpp" alt="" coords="405,393,559,435"/>
+<area shape="rect" id="node11" href="$richardson_8cpp.html" title="methods/explicit/richardson.cpp" alt="" coords="584,401,791,427"/>
+<area shape="rect" id="node14" href="$forward__t__central__s_8cpp.html" title="methods/explicit/forward\l_t_central_s.cpp" alt="" coords="5,393,169,435"/>
+<area shape="rect" id="node16" href="$laasonen_8h.html" title="methods/implicit/laasonen.h" alt="" coords="1229,311,1413,338"/>
+<area shape="rect" id="node18" href="$crank__nicolson_8h.html" title="methods/implicit/crank\l_nicolson.h" alt="" coords="1437,304,1591,345"/>
+<area shape="rect" id="node20" href="$implicit_8cpp.html" title="methods/implicit/implicit.cpp" alt="" coords="1615,311,1802,338"/>
+<area shape="rect" id="node17" href="$laasonen_8cpp.html" title="methods/implicit/laasonen.cpp" alt="" coords="1217,401,1416,427"/>
+<area shape="rect" id="node19" href="$crank__nicolson_8cpp.html" title="methods/implicit/crank\l_nicolson.cpp" alt="" coords="1440,393,1593,435"/>
+<area shape="rect" id="node22" href="$iomanager_8cpp.html" title="io/iomanager.cpp" alt="" coords="800,311,921,338"/>
+</map>

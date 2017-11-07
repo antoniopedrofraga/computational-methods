@@ -1,0 +1,525 @@
+\hypertarget{classProblem}{}\section{Problem Class Reference}
+\label{classProblem}\index{Problem@{Problem}}
+
+
+A \hyperlink{classProblem}{Problem} class to structure relevant information related with the problem.  
+
+
+
+
+{\ttfamily \#include $<$problem.\+h$>$}
+
+
+
+Collaboration diagram for Problem\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classProblem__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProblem_ad9d44f0ef936fb62f0ce41dd200494ac}{Problem} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classProblem_a2bd30352a90746e7b2c8233c59536259}{Problem} (double dt, double dx)
+\begin{DoxyCompactList}\small\item\em Intialize \hyperlink{classProblem}{Problem} object with specific time and space steps. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classProblem_af09d12c75d48d233c0e6b34266440a96}{get\+\_\+xsize} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns an unsigned int, the number of columns of the solution. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classProblem_a2f4ee1a3e797fe66181d7f62a3191366}{get\+\_\+tsize} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns an unsigned int, the number of rows of the solution. \end{DoxyCompactList}\item 
+double \hyperlink{classProblem_ae4d3597c10075ce871795528a34f1b0a}{get\+\_\+deltax} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns a double, the space step value of the solution. \end{DoxyCompactList}\item 
+double \hyperlink{classProblem_a5237b5ed257f9fae244573b64bea0c95}{get\+\_\+deltat} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns a double, the time step value of the solution. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classProblem_a24f804792a0f5e30816a79cbbdb4c561}{get\+\_\+xvalues} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns a \hyperlink{classVector}{Vector}, containing the space values in each column. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classProblem_ad9471629841ec6bd734d398ed9bfa624}{get\+\_\+tvalues} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns a \hyperlink{classVector}{Vector}, containing the time values in each row. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classProblem_af17e4443d0bf9b347f5d2765eb235412}{get\+\_\+first\+\_\+row} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns a \hyperlink{classVector}{Vector}, containing the initial boundaries in the first row of the solution. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix} $\ast$ \hyperlink{classProblem_ac4e50f2308eef0abbe17446a9763b5be}{get\+\_\+solution} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method that returns a \hyperlink{classMatrix}{Matrix}, containing the solution solution. \end{DoxyCompactList}\item 
+void \hyperlink{classProblem_ac383070ca94c0da306bbcfbde061183a}{set\+\_\+time\+\_\+step} (\hyperlink{classVector}{Vector} step, double time)
+\begin{DoxyCompactList}\small\item\em Normal public set method. \end{DoxyCompactList}\item 
+void \hyperlink{classProblem_a3bc203645a0d259f21586b55d239ee88}{set\+\_\+initial\+\_\+conditions} ()
+\begin{DoxyCompactList}\small\item\em Normal public set method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classProblem_a05100ba1606694f73080238a5d7ed9a5}{set\+\_\+x\+\_\+values} ()
+\begin{DoxyCompactList}\small\item\em Normal private set method. \end{DoxyCompactList}\item 
+void \hyperlink{classProblem_af5f96a84c005e788f84e902071b24b34}{set\+\_\+t\+\_\+values} ()
+\begin{DoxyCompactList}\small\item\em Normal private set method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classProblem_a6d6d5f0aeca78dc62a84f74ab3d609d9}{delta\+\_\+x}
+\begin{DoxyCompactList}\small\item\em Private double delta\+\_\+x. \end{DoxyCompactList}\item 
+double \hyperlink{classProblem_adb04657b8f456da09cefbcd6328403fe}{delta\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Private double delta\+\_\+t. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classProblem_afa87f6f37b1b167eb93b9a7655bcd0cc}{x\+\_\+size}
+\begin{DoxyCompactList}\small\item\em Private unsigned int x\+\_\+size. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classProblem_a66936266b7164a2a2f1af01bc9baccb9}{t\+\_\+size}
+\begin{DoxyCompactList}\small\item\em Private unsigned int t\+\_\+size. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classProblem_a2b451feb5a8d7f3e870e2b5e607f0b7c}{x\+\_\+values}
+\begin{DoxyCompactList}\small\item\em Private \hyperlink{classVector}{Vector} x\+\_\+values. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classProblem_a8255789b9dc8cabdd933ddbcf4bd49aa}{t\+\_\+values}
+\begin{DoxyCompactList}\small\item\em Private \hyperlink{classVector}{Vector} t\+\_\+values. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classProblem_a2051ea400371fc901151bd5d2826189c}{solution}
+\begin{DoxyCompactList}\small\item\em Private \hyperlink{classMatrix}{Matrix} solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classProblem}{Problem} class to structure relevant information related with the problem. 
+
+The \hyperlink{classProblem}{Problem} class provides\+: ~\newline
+-\/basic constructors for creating a \hyperlink{classProblem}{Problem} object. ~\newline
+-\/acessor methods to retrieve valuable information ~\newline
+-\/mutator methods to change the solution system 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Problem@{Problem}!Problem@{Problem}}
+\index{Problem@{Problem}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{Problem()}{Problem()}}]{\setlength{\rightskip}{0pt plus 5cm}Problem\+::\+Problem (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_ad9d44f0ef936fb62f0ce41dd200494ac}{}\label{classProblem_ad9d44f0ef936fb62f0ce41dd200494ac}
+
+
+Default constructor. 
+
+Intialize an empty \hyperlink{classProblem}{Problem} object \begin{DoxySeeAlso}{See also}
+\hyperlink{classProblem_a2bd30352a90746e7b2c8233c59536259}{Problem(double dt, double dx)} 
+\end{DoxySeeAlso}
+\index{Problem@{Problem}!Problem@{Problem}}
+\index{Problem@{Problem}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{Problem(double dt, double dx)}{Problem(double dt, double dx)}}]{\setlength{\rightskip}{0pt plus 5cm}Problem\+::\+Problem (
+\begin{DoxyParamCaption}
+\item[{double}]{dt, }
+\item[{double}]{dx}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_a2bd30352a90746e7b2c8233c59536259}{}\label{classProblem_a2bd30352a90746e7b2c8233c59536259}
+
+
+Intialize \hyperlink{classProblem}{Problem} object with specific time and space steps. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classProblem_ad9d44f0ef936fb62f0ce41dd200494ac}{Problem()} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Time step to assign \\
+\hline
+{\em dx} & Space step to assign \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & (\char`\"{}space step can\textquotesingle{}t be negative or zero\char`\"{}) \\
+\hline
+{\em out\+\_\+of\+\_\+range} & (\char`\"{}time step can\textquotesingle{}t be negative or zero\char`\"{}) \\
+\hline
+\end{DoxyExceptions}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Problem@{Problem}!get\+\_\+deltat@{get\+\_\+deltat}}
+\index{get\+\_\+deltat@{get\+\_\+deltat}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+deltat()}{get_deltat()}}]{\setlength{\rightskip}{0pt plus 5cm}double Problem\+::get\+\_\+deltat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_a5237b5ed257f9fae244573b64bea0c95}{}\label{classProblem_a5237b5ed257f9fae244573b64bea0c95}
+
+
+Normal public get method that returns a double, the time step value of the solution. 
+
+\begin{DoxyReturn}{Returns}
+double. The time step value of the solution. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+deltax@{get\+\_\+deltax}}
+\index{get\+\_\+deltax@{get\+\_\+deltax}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+deltax()}{get_deltax()}}]{\setlength{\rightskip}{0pt plus 5cm}double Problem\+::get\+\_\+deltax (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_ae4d3597c10075ce871795528a34f1b0a}{}\label{classProblem_ae4d3597c10075ce871795528a34f1b0a}
+
+
+Normal public get method that returns a double, the space step value of the solution. 
+
+\begin{DoxyReturn}{Returns}
+double. The space step value of the solution. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+first\+\_\+row@{get\+\_\+first\+\_\+row}}
+\index{get\+\_\+first\+\_\+row@{get\+\_\+first\+\_\+row}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+first\+\_\+row()}{get_first_row()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Problem\+::get\+\_\+first\+\_\+row (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_af17e4443d0bf9b347f5d2765eb235412}{}\label{classProblem_af17e4443d0bf9b347f5d2765eb235412}
+
+
+Normal public get method that returns a \hyperlink{classVector}{Vector}, containing the initial boundaries in the first row of the solution. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. The initial boundaries in the first row of the solution. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+solution@{get\+\_\+solution}}
+\index{get\+\_\+solution@{get\+\_\+solution}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+solution()}{get_solution()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} $\ast$ Problem\+::get\+\_\+solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_ac4e50f2308eef0abbe17446a9763b5be}{}\label{classProblem_ac4e50f2308eef0abbe17446a9763b5be}
+
+
+Normal public get method that returns a \hyperlink{classMatrix}{Matrix}, containing the solution solution. 
+
+\begin{DoxyReturn}{Returns}
+Matrix$\ast$. The solution solution. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+tsize@{get\+\_\+tsize}}
+\index{get\+\_\+tsize@{get\+\_\+tsize}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+tsize()}{get_tsize()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Problem\+::get\+\_\+tsize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_a2f4ee1a3e797fe66181d7f62a3191366}{}\label{classProblem_a2f4ee1a3e797fe66181d7f62a3191366}
+
+
+Normal public get method that returns an unsigned int, the number of rows of the solution. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int. The number of rows of the solution. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+tvalues@{get\+\_\+tvalues}}
+\index{get\+\_\+tvalues@{get\+\_\+tvalues}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+tvalues()}{get_tvalues()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Problem\+::get\+\_\+tvalues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_ad9471629841ec6bd734d398ed9bfa624}{}\label{classProblem_ad9471629841ec6bd734d398ed9bfa624}
+
+
+Normal public get method that returns a \hyperlink{classVector}{Vector}, containing the time values in each row. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. The time values in each row. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+xsize@{get\+\_\+xsize}}
+\index{get\+\_\+xsize@{get\+\_\+xsize}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+xsize()}{get_xsize()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Problem\+::get\+\_\+xsize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_af09d12c75d48d233c0e6b34266440a96}{}\label{classProblem_af09d12c75d48d233c0e6b34266440a96}
+
+
+Normal public get method that returns an unsigned int, the number of columns of the solution. 
+
+\begin{DoxyReturn}{Returns}
+unsigned int. The number of columns of the solution. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!get\+\_\+xvalues@{get\+\_\+xvalues}}
+\index{get\+\_\+xvalues@{get\+\_\+xvalues}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{get\+\_\+xvalues()}{get_xvalues()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Problem\+::get\+\_\+xvalues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_a24f804792a0f5e30816a79cbbdb4c561}{}\label{classProblem_a24f804792a0f5e30816a79cbbdb4c561}
+
+
+Normal public get method that returns a \hyperlink{classVector}{Vector}, containing the space values in each column. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. The space values in each column. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!set\+\_\+initial\+\_\+conditions@{set\+\_\+initial\+\_\+conditions}}
+\index{set\+\_\+initial\+\_\+conditions@{set\+\_\+initial\+\_\+conditions}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{set\+\_\+initial\+\_\+conditions()}{set_initial_conditions()}}]{\setlength{\rightskip}{0pt plus 5cm}void Problem\+::set\+\_\+initial\+\_\+conditions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_a3bc203645a0d259f21586b55d239ee88}{}\label{classProblem_a3bc203645a0d259f21586b55d239ee88}
+
+
+Normal public set method. 
+
+set the problem initial boundaries. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!set\+\_\+t\+\_\+values@{set\+\_\+t\+\_\+values}}
+\index{set\+\_\+t\+\_\+values@{set\+\_\+t\+\_\+values}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{set\+\_\+t\+\_\+values()}{set_t_values()}}]{\setlength{\rightskip}{0pt plus 5cm}void Problem\+::set\+\_\+t\+\_\+values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_af5f96a84c005e788f84e902071b24b34}{}\label{classProblem_af5f96a84c005e788f84e902071b24b34}
+
+
+Normal private set method. 
+
+Intialize \hyperlink{classVector}{Vector} t\+\_\+values with the correct values. \begin{DoxySeeAlso}{See also}
+\hyperlink{classProblem_a8255789b9dc8cabdd933ddbcf4bd49aa}{t\+\_\+values} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classProblem_af5f96a84c005e788f84e902071b24b34_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!set\+\_\+time\+\_\+step@{set\+\_\+time\+\_\+step}}
+\index{set\+\_\+time\+\_\+step@{set\+\_\+time\+\_\+step}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{set\+\_\+time\+\_\+step(\+Vector step, double time)}{set_time_step(Vector step, double time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Problem\+::set\+\_\+time\+\_\+step (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}}]{step, }
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{classProblem_ac383070ca94c0da306bbcfbde061183a}{}\label{classProblem_ac383070ca94c0da306bbcfbde061183a}
+
+
+Normal public set method. 
+
+replace a row of the solution for a given \hyperlink{classVector}{Vector}. 
+\begin{DoxyParams}{Parameters}
+{\em step} & \hyperlink{classVector}{Vector} conatining the new values. \\
+\hline
+{\em time} & Corresponding row to be replaced \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Problem@{Problem}!set\+\_\+x\+\_\+values@{set\+\_\+x\+\_\+values}}
+\index{set\+\_\+x\+\_\+values@{set\+\_\+x\+\_\+values}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{set\+\_\+x\+\_\+values()}{set_x_values()}}]{\setlength{\rightskip}{0pt plus 5cm}void Problem\+::set\+\_\+x\+\_\+values (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_a05100ba1606694f73080238a5d7ed9a5}{}\label{classProblem_a05100ba1606694f73080238a5d7ed9a5}
+
+
+Normal private set method. 
+
+Intialize \hyperlink{classVector}{Vector} x\+\_\+values with the correct values. \begin{DoxySeeAlso}{See also}
+\hyperlink{classProblem_a2b451feb5a8d7f3e870e2b5e607f0b7c}{x\+\_\+values} 
+\end{DoxySeeAlso}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Problem@{Problem}!delta\+\_\+t@{delta\+\_\+t}}
+\index{delta\+\_\+t@{delta\+\_\+t}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{delta\+\_\+t}{delta_t}}]{\setlength{\rightskip}{0pt plus 5cm}double Problem\+::delta\+\_\+t\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_adb04657b8f456da09cefbcd6328403fe}{}\label{classProblem_adb04657b8f456da09cefbcd6328403fe}
+
+
+Private double delta\+\_\+t. 
+
+Time step of the solution. \index{Problem@{Problem}!delta\+\_\+x@{delta\+\_\+x}}
+\index{delta\+\_\+x@{delta\+\_\+x}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{delta\+\_\+x}{delta_x}}]{\setlength{\rightskip}{0pt plus 5cm}double Problem\+::delta\+\_\+x\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_a6d6d5f0aeca78dc62a84f74ab3d609d9}{}\label{classProblem_a6d6d5f0aeca78dc62a84f74ab3d609d9}
+
+
+Private double delta\+\_\+x. 
+
+Space step of the solution. \index{Problem@{Problem}!solution@{solution}}
+\index{solution@{solution}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{solution}{solution}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Problem\+::solution\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_a2051ea400371fc901151bd5d2826189c}{}\label{classProblem_a2051ea400371fc901151bd5d2826189c}
+
+
+Private \hyperlink{classMatrix}{Matrix} solution. 
+
+\hyperlink{classMatrix}{Matrix} containing the computed solution. \index{Problem@{Problem}!t\+\_\+size@{t\+\_\+size}}
+\index{t\+\_\+size@{t\+\_\+size}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{t\+\_\+size}{t_size}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Problem\+::t\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_a66936266b7164a2a2f1af01bc9baccb9}{}\label{classProblem_a66936266b7164a2a2f1af01bc9baccb9}
+
+
+Private unsigned int t\+\_\+size. 
+
+Time size of the solution. \index{Problem@{Problem}!t\+\_\+values@{t\+\_\+values}}
+\index{t\+\_\+values@{t\+\_\+values}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{t\+\_\+values}{t_values}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Problem\+::t\+\_\+values\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_a8255789b9dc8cabdd933ddbcf4bd49aa}{}\label{classProblem_a8255789b9dc8cabdd933ddbcf4bd49aa}
+
+
+Private \hyperlink{classVector}{Vector} t\+\_\+values. 
+
+Time correspondent value for each row index. \index{Problem@{Problem}!x\+\_\+size@{x\+\_\+size}}
+\index{x\+\_\+size@{x\+\_\+size}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{x\+\_\+size}{x_size}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Problem\+::x\+\_\+size\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_afa87f6f37b1b167eb93b9a7655bcd0cc}{}\label{classProblem_afa87f6f37b1b167eb93b9a7655bcd0cc}
+
+
+Private unsigned int x\+\_\+size. 
+
+Space size of the solution. \index{Problem@{Problem}!x\+\_\+values@{x\+\_\+values}}
+\index{x\+\_\+values@{x\+\_\+values}!Problem@{Problem}}
+\subsubsection[{\texorpdfstring{x\+\_\+values}{x_values}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Problem\+::x\+\_\+values\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classProblem_a2b451feb5a8d7f3e870e2b5e607f0b7c}{}\label{classProblem_a2b451feb5a8d7f3e870e2b5e607f0b7c}
+
+
+Private \hyperlink{classVector}{Vector} x\+\_\+values. 
+
+Space correspondent value for each column index. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+variants/\hyperlink{problem_8h}{problem.\+h}\item 
+variants/\hyperlink{problem_8cpp}{problem.\+cpp}\end{DoxyCompactItemize}

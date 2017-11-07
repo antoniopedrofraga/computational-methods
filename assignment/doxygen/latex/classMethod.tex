@@ -1,0 +1,337 @@
+\hypertarget{classMethod}{}\section{Method Class Reference}
+\label{classMethod}\index{Method@{Method}}
+
+
+A \hyperlink{classMethod}{Method} class to structure information used to solve the problem.  
+
+
+
+
+{\ttfamily \#include $<$method.\+h$>$}
+
+
+
+Inheritance diagram for Method\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMethod__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Method\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMethod__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMethod_ab48717dc68d3c057b65574a539a480f7}{Method} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classMethod_ad27fe6ae65cd4571d52cba8562b16222}{Method} (\hyperlink{classProblem}{Problem} \hyperlink{classMethod_a29a08a679b5d30a8c813766308205041}{problem})
+\begin{DoxyCompactList}\small\item\em Alternate constructor. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3}{get\+\_\+name} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMethod_a2a10100e81e4aca97f7ef485ed11fbe6}{get\+\_\+solution} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
+double \hyperlink{classMethod_a45b9b0d41d353381a6725323e5be6281}{get\+\_\+deltat} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classMethod_aeda95af3c0440df84c0571614f6fd122}{get\+\_\+xvalues} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
+double \hyperlink{classMethod_a0ad41fa7e54a46dc97b73187a8dcba4d}{get\+\_\+computational\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
+void \hyperlink{classMethod_a50aea9f4e6101bf7c37f145177b72693}{compute} ()
+\begin{DoxyCompactList}\small\item\em Normal public method. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classMethod_af3dcec8e066214e82d8b4578a4a55076}{compute\+\_\+solution} ()=0
+\begin{DoxyCompactList}\small\item\em A pure virtual member. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classProblem}{Problem} \hyperlink{classMethod_a29a08a679b5d30a8c813766308205041}{problem}
+\begin{DoxyCompactList}\small\item\em Protected \hyperlink{classProblem}{Problem} problem. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classMethod_a8648aeee4e6ebb1adc52522ac26ac523}{name}
+\begin{DoxyCompactList}\small\item\em Protected string name. \end{DoxyCompactList}\item 
+double \hyperlink{classMethod_a794257d62bedf3691c3c0a2b921b8886}{q}
+\begin{DoxyCompactList}\small\item\em Protected double q. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classMethod_a4504c8cdb13651c87485d76d6e20d7ef}{computational\+\_\+time}
+\begin{DoxyCompactList}\small\item\em Private double computational\+\_\+time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classMethod}{Method} class to structure information used to solve the problem. 
+
+The \hyperlink{classMethod}{Method} class provides\+: ~\newline
+-\/basic constructors for creating a \hyperlink{classMethod}{Method} object. ~\newline
+-\/acessor methods to retrieve valuable information ~\newline
+-\/mutator methods to change the problem grid system 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Method@{Method}!Method@{Method}}
+\index{Method@{Method}!Method@{Method}}
+\subsubsection[{\texorpdfstring{Method()}{Method()}}]{\setlength{\rightskip}{0pt plus 5cm}Method\+::\+Method (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_ab48717dc68d3c057b65574a539a480f7}{}\label{classMethod_ab48717dc68d3c057b65574a539a480f7}
+
+
+Default constructor. 
+
+Intialize a \hyperlink{classMethod}{Method} object \begin{DoxySeeAlso}{See also}
+\hyperlink{classMethod_ad27fe6ae65cd4571d52cba8562b16222}{Method(\+Problem problem)} 
+\end{DoxySeeAlso}
+\index{Method@{Method}!Method@{Method}}
+\index{Method@{Method}!Method@{Method}}
+\subsubsection[{\texorpdfstring{Method(\+Problem problem)}{Method(Problem problem)}}]{\setlength{\rightskip}{0pt plus 5cm}Method\+::\+Method (
+\begin{DoxyParamCaption}
+\item[{{\bf Problem}}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_ad27fe6ae65cd4571d52cba8562b16222}{}\label{classMethod_ad27fe6ae65cd4571d52cba8562b16222}
+
+
+Alternate constructor. 
+
+Initializes a \hyperlink{classMethod}{Method} with a given parabolic problem. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMethod_ab48717dc68d3c057b65574a539a480f7}{Method()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{Method@{Method}!compute@{compute}}
+\index{compute@{compute}!Method@{Method}}
+\subsubsection[{\texorpdfstring{compute()}{compute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Method\+::compute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_a50aea9f4e6101bf7c37f145177b72693}{}\label{classMethod_a50aea9f4e6101bf7c37f145177b72693}
+
+
+Normal public method. 
+
+Keeps track of the time to compute a solution 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Method@{Method}!compute\+\_\+solution@{compute\+\_\+solution}}
+\index{compute\+\_\+solution@{compute\+\_\+solution}!Method@{Method}}
+\subsubsection[{\texorpdfstring{compute\+\_\+solution()=0}{compute_solution()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Method\+::compute\+\_\+solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classMethod_af3dcec8e066214e82d8b4578a4a55076}{}\label{classMethod_af3dcec8e066214e82d8b4578a4a55076}
+
+
+A pure virtual member. 
+
+compute the solution following the rules of a given method. 
+
+Implemented in \hyperlink{classImplicit_a1d6b7250da6d3a417baefe7328635d45}{Implicit}, \hyperlink{classExplicit_a09fa3df66e16200fefaabc908e6efafd}{Explicit}, and \hyperlink{classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6}{Analytical}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Method@{Method}!get\+\_\+computational\+\_\+time@{get\+\_\+computational\+\_\+time}}
+\index{get\+\_\+computational\+\_\+time@{get\+\_\+computational\+\_\+time}!Method@{Method}}
+\subsubsection[{\texorpdfstring{get\+\_\+computational\+\_\+time()}{get_computational_time()}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::get\+\_\+computational\+\_\+time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_a0ad41fa7e54a46dc97b73187a8dcba4d}{}\label{classMethod_a0ad41fa7e54a46dc97b73187a8dcba4d}
+
+
+Normal public get method. 
+
+get the elapsed time value to compute a solution \begin{DoxyReturn}{Returns}
+double. Elapsed time throughout the computation. 
+\end{DoxyReturn}
+\index{Method@{Method}!get\+\_\+deltat@{get\+\_\+deltat}}
+\index{get\+\_\+deltat@{get\+\_\+deltat}!Method@{Method}}
+\subsubsection[{\texorpdfstring{get\+\_\+deltat()}{get_deltat()}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::get\+\_\+deltat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_a45b9b0d41d353381a6725323e5be6281}{}\label{classMethod_a45b9b0d41d353381a6725323e5be6281}
+
+
+Normal public get method. 
+
+get the time step of the solution \begin{DoxyReturn}{Returns}
+double. Solution time step. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Method@{Method}!get\+\_\+name@{get\+\_\+name}}
+\index{get\+\_\+name@{get\+\_\+name}!Method@{Method}}
+\subsubsection[{\texorpdfstring{get\+\_\+name()}{get_name()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Method\+::get\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3}{}\label{classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3}
+
+
+Normal public get method. 
+
+get the method name \begin{DoxyReturn}{Returns}
+string. \hyperlink{classMethod}{Method} name. 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Method@{Method}!get\+\_\+solution@{get\+\_\+solution}}
+\index{get\+\_\+solution@{get\+\_\+solution}!Method@{Method}}
+\subsubsection[{\texorpdfstring{get\+\_\+solution()}{get_solution()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Method\+::get\+\_\+solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_a2a10100e81e4aca97f7ef485ed11fbe6}{}\label{classMethod_a2a10100e81e4aca97f7ef485ed11fbe6}
+
+
+Normal public get method. 
+
+get the solution grid \begin{DoxyReturn}{Returns}
+\hyperlink{classMatrix}{Matrix}. Computed solution grid. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Method@{Method}!get\+\_\+xvalues@{get\+\_\+xvalues}}
+\index{get\+\_\+xvalues@{get\+\_\+xvalues}!Method@{Method}}
+\subsubsection[{\texorpdfstring{get\+\_\+xvalues()}{get_xvalues()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Method\+::get\+\_\+xvalues (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_aeda95af3c0440df84c0571614f6fd122}{}\label{classMethod_aeda95af3c0440df84c0571614f6fd122}
+
+
+Normal public get method. 
+
+get x values vector \begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. x values \hyperlink{classVector}{Vector}. 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Method@{Method}!computational\+\_\+time@{computational\+\_\+time}}
+\index{computational\+\_\+time@{computational\+\_\+time}!Method@{Method}}
+\subsubsection[{\texorpdfstring{computational\+\_\+time}{computational_time}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::computational\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMethod_a4504c8cdb13651c87485d76d6e20d7ef}{}\label{classMethod_a4504c8cdb13651c87485d76d6e20d7ef}
+
+
+Private double computational\+\_\+time. 
+
+Elapsed time throughout the solution computation. \index{Method@{Method}!name@{name}}
+\index{name@{name}!Method@{Method}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Method\+::name\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMethod_a8648aeee4e6ebb1adc52522ac26ac523}{}\label{classMethod_a8648aeee4e6ebb1adc52522ac26ac523}
+
+
+Protected string name. 
+
+Name of the method. \index{Method@{Method}!problem@{problem}}
+\index{problem@{problem}!Method@{Method}}
+\subsubsection[{\texorpdfstring{problem}{problem}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Problem} Method\+::problem\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMethod_a29a08a679b5d30a8c813766308205041}{}\label{classMethod_a29a08a679b5d30a8c813766308205041}
+
+
+Protected \hyperlink{classProblem}{Problem} problem. 
+
+Space step of the solution. \index{Method@{Method}!q@{q}}
+\index{q@{q}!Method@{Method}}
+\subsubsection[{\texorpdfstring{q}{q}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::q\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMethod_a794257d62bedf3691c3c0a2b921b8886}{}\label{classMethod_a794257d62bedf3691c3c0a2b921b8886}
+
+
+Protected double q. 
+
+A coeficient which value depends of way the equation is written, it may vary from method to method. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+methods/\hyperlink{method_8h}{method.\+h}\item 
+methods/\hyperlink{method_8cpp}{method.\+cpp}\end{DoxyCompactItemize}

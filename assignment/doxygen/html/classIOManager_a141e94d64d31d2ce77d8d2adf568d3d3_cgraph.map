@@ -1,0 +1,8 @@
+<map id="IOManager::error_table" name="IOManager::error_table">
+<area shape="rect" id="node2" href="$classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="212,5,355,32"/>
+<area shape="rect" id="node4" href="$classMethod.html#aeda95af3c0440df84c0571614f6fd122" title="Normal public get method. " alt="" coords="212,56,355,83"/>
+<area shape="rect" id="node6" href="$classVector.html#ad7a31bddb977b9fee5fd6226d77ca119" title="Normal get method that returns integer, the size of the vector. " alt="" coords="227,107,339,133"/>
+<area shape="rect" id="node7" href="$classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="208,158,359,199"/>
+<area shape="rect" id="node3" href="$classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="407,5,555,32"/>
+<area shape="rect" id="node5" href="$classProblem.html#a24f804792a0f5e30816a79cbbdb4c561" title="Normal public get method that returns a Vector, containing the space values in each column..." alt="" coords="407,56,555,83"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="IOManager::double_to_string" name="IOManager::double_to_string">
+<area shape="rect" id="node2" href="$classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="427,23,607,50"/>
+<area shape="rect" id="node4" href="$classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="204,23,379,50"/>
+<area shape="rect" id="node5" href="$classIOManager.html#a141e94d64d31d2ce77d8d2adf568d3d3" title="Exports an error table to a .lsx file that compares the analytical solution to any other solution..." alt="" coords="214,74,369,100"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="655,23,705,50"/>
+</map>

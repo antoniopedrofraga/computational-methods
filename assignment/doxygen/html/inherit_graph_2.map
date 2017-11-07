@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMethod.html" title="A Method class to structure information used to solve the problem. " alt="" coords="5,81,71,108"/>
+<area shape="rect" id="node2" href="$classAnalytical.html" title="An Analytical class to compute the solution with standard procedures &#160;&#160;The implementation is derived ..." alt="" coords="119,31,197,57"/>
+<area shape="rect" id="node3" href="$classExplicit.html" title="An explicit method class that contains default methods that only explicit methods use &#160;&#160;The implement..." alt="" coords="125,81,191,108"/>
+<area shape="rect" id="node7" href="$classImplicit.html" title="An implicit method class that contains default methods that only implicit methods use &#160;&#160;The implement..." alt="" coords="126,157,190,184"/>
+<area shape="rect" id="node4" href="$classDufortFrankel.html" title="A DufortFrankel method class that contains an iteration builder. " alt="" coords="249,5,350,32"/>
+<area shape="rect" id="node5" href="$classFTCS.html" title="A FTCS method class that contains an iteration builder. " alt="" coords="271,56,328,83"/>
+<area shape="rect" id="node6" href="$classRichardson.html" title="A Richardson method class that contains an iteration builder. " alt="" coords="255,107,343,133"/>
+<area shape="rect" id="node8" href="$classCrankNicolson.html" title="A CrankNicolson method class that contains a r vector builder. " alt="" coords="245,157,353,184"/>
+<area shape="rect" id="node9" href="$classLaasonen.html" title="A Laasonen method class that contains a r vector builder. " alt="" coords="260,208,339,235"/>
+</map>

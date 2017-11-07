@@ -1,0 +1,122 @@
+.TH "Implicit" 3 "Mon Nov 6 2017" "Heat conduction equation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Implicit \- An implicit method class that contains default methods that only implicit methods use 
+.br
+ The implementation is derived from the \fBMethod\fP class\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <implicit\&.h>\fP
+.PP
+Inherits \fBMethod\fP\&.
+.PP
+Inherited by \fBCrankNicolson\fP, and \fBLaasonen\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBImplicit\fP (\fBProblem\fP \fBproblem\fP)"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "void \fBcompute_solution\fP ()"
+.br
+.RI "\fINormal public method\&. \fP"
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual \fBVector\fP \fBbuild_r\fP (\fBVector\fP previous_step)=0"
+.br
+.RI "\fIA pure virtual member\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBVector\fP \fBthomas_algorithm\fP (\fBVector\fP r, double a, double b, double c)"
+.br
+.RI "\fINormal private method\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+An implicit method class that contains default methods that only implicit methods use 
+.br
+ The implementation is derived from the \fBMethod\fP class\&. 
+
+The \fBImplicit\fP class provides: 
+.br
+-a basic constructor for creating an implicit method object\&. 
+.br
+-a method to compute a solution following implicit methods rules 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Implicit::Implicit (\fBProblem\fP problem)"
+
+.PP
+Default constructor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual \fBVector\fP Implicit::build_r (\fBVector\fP previous_step)\fC [protected]\fP, \fC [pure virtual]\fP"
+
+.PP
+A pure virtual member\&. Build the r vector in a linear system of A\&.x = r in which A is a matrix, whereas b and r are vectors\&. 
+.br
+ This method is used to compute a solution using the thomas algorithm, which can be used in a triadiogonal matrix\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIprevious_step\fP A vector containing the previous time step solution\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBVector\fP\&. The r vector, which can be used in to calculate the current time step solution with Tomas Algorithm\&. 
+.RE
+.PP
+
+.PP
+Implemented in \fBCrankNicolson\fP, and \fBLaasonen\fP\&.
+.SS "void Implicit::compute_solution ()\fC [virtual]\fP"
+
+.PP
+Normal public method\&. Calculates a solution for the given problem by populating the solution grid with the correct values\&. 
+.PP
+Implements \fBMethod\fP\&.
+.SS "\fBVector\fP Implicit::thomas_algorithm (\fBVector\fP r, double a, double b, double c)\fC [private]\fP"
+
+.PP
+Normal private method\&. Calculates the current time step with Tomas Algorithm\&. Giving the A\&.x = r, in which A is a matrix, whereas b and r are vectors, it calculates the b vector, since A and b are known variables\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBbuild_r(Vector previous_step)\fP 
+.RE
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP \fBVector\fP calculated by the build_r method\&. 
+.br
+\fIa\fP Lower diagonal value of the tridiagonal matrix 
+.br
+\fIb\fP Center diagonal value of the tridiagonal matrix 
+.br
+\fIc\fP Upper diagonal value of the tridiagonal matrix 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+\fBVector\fP\&. \fBVector\fP that represents the current time step solution\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Heat conduction equation from the source code\&.

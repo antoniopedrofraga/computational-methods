@@ -1,0 +1,122 @@
+\hypertarget{classFTCS}{}\section{F\+T\+CS Class Reference}
+\label{classFTCS}\index{F\+T\+CS@{F\+T\+CS}}
+
+
+A \hyperlink{classFTCS}{F\+T\+CS} method class that contains an iteration builder.  
+
+
+
+
+{\ttfamily \#include $<$forward\+\_\+t\+\_\+central\+\_\+s.\+h$>$}
+
+
+
+Inheritance diagram for F\+T\+CS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classFTCS__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for F\+T\+CS\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classFTCS__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFTCS_a7a41ea5217c29d68cebf1a5e20effa8b}{F\+T\+CS} (\hyperlink{classProblem}{Problem} \hyperlink{classMethod_a29a08a679b5d30a8c813766308205041}{problem})
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classVector}{Vector} \hyperlink{classFTCS_abc8074dbb5a5facaf0380aa867998556}{build\+\_\+iteration} (\hyperlink{classVector}{Vector} current\+\_\+step, \hyperlink{classVector}{Vector} previous\+\_\+step)
+\begin{DoxyCompactList}\small\item\em Normal public method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classFTCS}{F\+T\+CS} method class that contains an iteration builder. 
+
+~\newline
+ This builder is used to calculate the first iteration of explicit methods, since it only requires the previous step solution to do it.
+
+The \hyperlink{classFTCS}{F\+T\+CS} class provides\+: ~\newline
+-\/a basic constructor for creating a \hyperlink{classFTCS}{F\+T\+CS} method object. ~\newline
+-\/a method to compute the current iteration 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{F\+T\+CS@{F\+T\+CS}!F\+T\+CS@{F\+T\+CS}}
+\index{F\+T\+CS@{F\+T\+CS}!F\+T\+CS@{F\+T\+CS}}
+\subsubsection[{\texorpdfstring{F\+T\+C\+S(\+Problem problem)}{FTCS(Problem problem)}}]{\setlength{\rightskip}{0pt plus 5cm}F\+T\+C\+S\+::\+F\+T\+CS (
+\begin{DoxyParamCaption}
+\item[{{\bf Problem}}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{classFTCS_a7a41ea5217c29d68cebf1a5e20effa8b}{}\label{classFTCS_a7a41ea5217c29d68cebf1a5e20effa8b}
+
+
+Default constructor. 
+
+
+
+\subsection{Member Function Documentation}
+\index{F\+T\+CS@{F\+T\+CS}!build\+\_\+iteration@{build\+\_\+iteration}}
+\index{build\+\_\+iteration@{build\+\_\+iteration}!F\+T\+CS@{F\+T\+CS}}
+\subsubsection[{\texorpdfstring{build\+\_\+iteration(\+Vector current\+\_\+step, Vector previous\+\_\+step)}{build_iteration(Vector current_step, Vector previous_step)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} F\+T\+C\+S\+::build\+\_\+iteration (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}}]{current\+\_\+step, }
+\item[{{\bf Vector}}]{previous\+\_\+step}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classFTCS_abc8074dbb5a5facaf0380aa867998556}{}\label{classFTCS_abc8074dbb5a5facaf0380aa867998556}
+
+
+Normal public method. 
+
+Calculate a solution requiring only the previous time step solution. 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+step} & A vector with size 0, it\textquotesingle{}s not required in this method. \\
+\hline
+{\em previous\+\_\+step} & A vector representing the previous time step solution \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. The computed solution. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classExplicit_a2b9b097253488f4ce07a8ef0580a5d22}{Explicit}.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+methods/explicit/\hyperlink{forward__t__central__s_8h}{forward\+\_\+t\+\_\+central\+\_\+s.\+h}\item 
+methods/explicit/\hyperlink{forward__t__central__s_8cpp}{forward\+\_\+t\+\_\+central\+\_\+s.\+cpp}\end{DoxyCompactItemize}

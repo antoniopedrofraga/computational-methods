@@ -1,0 +1,71 @@
+.TH "Analytical" 3 "Mon Nov 6 2017" "Heat conduction equation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Analytical \- An \fBAnalytical\fP class to compute the solution with standard procedures 
+.br
+ The implementation is derived from the \fBMethod\fP Object\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <analytical\&.h>\fP
+.PP
+Inherits \fBMethod\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAnalytical\fP (\fBProblem\fP \fBproblem\fP)"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "void \fBcompute_solution\fP ()"
+.br
+.RI "\fINormal public method\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "unsigned int \fBnr_of_expansions\fP"
+.br
+.RI "\fIPrivate unsigned int nr_of_expansions\&. \fP"
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+An \fBAnalytical\fP class to compute the solution with standard procedures 
+.br
+ The implementation is derived from the \fBMethod\fP Object\&. 
+
+The \fBAnalytical\fP class provides: 
+.br
+-a basic constructor for an object, 
+.br
+-a method to compute a solution with the correct procedures 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Analytical::Analytical (\fBProblem\fP problem)"
+
+.PP
+Default constructor\&. Intialize a \fBAnalytical\fP object 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Analytical::compute_solution ()\fC [virtual]\fP"
+
+.PP
+Normal public method\&. compute the solution with specific given rules 
+.PP
+Implements \fBMethod\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "unsigned int Analytical::nr_of_expansions\fC [private]\fP"
+
+.PP
+Private unsigned int nr_of_expansions\&. Limit of expansions to do in the sum used to compute the solution\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Heat conduction equation from the source code\&.

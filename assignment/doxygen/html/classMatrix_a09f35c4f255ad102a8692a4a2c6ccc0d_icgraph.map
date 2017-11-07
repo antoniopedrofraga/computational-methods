@@ -1,0 +1,11 @@
+<map id="Matrix::getNcols" name="Matrix::getNcols">
+<area shape="rect" id="node2" href="$classMatrix.html#a765f4dcb51b6829311cc3e7576388423" title="Copy constructor. " alt="" coords="193,5,296,32"/>
+<area shape="rect" id="node3" href="$classMatrix.html#a4f7ede695709b614f2e1f6423a024201" title="Normal public method that returns a double. " alt="" coords="365,183,488,209"/>
+<area shape="rect" id="node4" href="$classMatrix.html#a0b738b2c1d87ec28b23c7e479d014f2a" title="Normal public method that returns a double. " alt="" coords="183,107,306,133"/>
+<area shape="rect" id="node5" href="$classMatrix.html#a05777a670e901010b96e9d667a4bdd3b" title="Normal public method that returns a double. " alt="" coords="172,157,317,184"/>
+<area shape="rect" id="node6" href="$classMatrix.html#a1fbef471bec2714e891c082a345d2274" title="Overloaded *operator that returns a Matrix. " alt="" coords="185,208,304,235"/>
+<area shape="rect" id="node7" href="$classMatrix.html#a5bc97450e589f9ae3a43814808645f3f" title="Overloaded comparison operator returns true or false depending on whether the matrices are the same o..." alt="" coords="180,259,309,285"/>
+<area shape="rect" id="node8" href="$classMatrix.html#a9da9f5ee8215491cc54ecc59ddeb3f73" title="public method that returns the transpose of the matrix. " alt="" coords="183,309,306,336"/>
+<area shape="rect" id="node9" href="$matrix_8cpp.html#a3d6c1dcfc038804f4c08687f4f37f48b" title="operator\&gt;\&gt;" alt="" coords="202,360,287,387"/>
+<area shape="rect" id="node10" href="$matrix_8cpp.html#a060711074cb5bcaf4e75498bc040c4b7" title="operator\&lt;\&lt;" alt="" coords="202,411,287,437"/>
+</map>

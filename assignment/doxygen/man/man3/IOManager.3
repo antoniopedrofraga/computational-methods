@@ -1,0 +1,172 @@
+.TH "IOManager" 3 "Mon Nov 6 2017" "Heat conduction equation" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+IOManager \- An input/output manager class to handle plot exportations and future implementations of input handling\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <iomanager\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBIOManager\fP ()"
+.br
+.RI "\fIDefault constructor\&. \fP"
+.ti -1c
+.RI "void \fBexport_outputs\fP (\fBMethod\fP *analytical, std::vector< \fBMethod\fP * > methods)"
+.br
+.RI "\fIExports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcreate_output_dir\fP ()"
+.br
+.RI "\fI\fBMethod\fP to create ouput folder if the folder does not exist\&. \fP"
+.ti -1c
+.RI "void \fBplot_solutions\fP (std::string output_name, \fBMethod\fP *analytical, \fBMethod\fP *method)"
+.br
+.RI "\fIExports a plot chart that compares the analytical solution to any other solution using gnuplot\&. \fP"
+.ti -1c
+.RI "void \fBplot_laasonen_times\fP ()"
+.br
+.RI "\fIExports a plot with \fBLaasonen\fP times computational times\&. \fP"
+.ti -1c
+.RI "void \fBerror_table\fP (std::string output_name, \fBMethod\fP *analytical, \fBMethod\fP *method)"
+.br
+.RI "\fIExports an error table to a \&.lsx file that compares the analytical solution to any other solution\&. \fP"
+.ti -1c
+.RI "std::string \fBdouble_to_string\fP (int precision, double value)"
+.br
+.RI "\fIConverts a double to a string with a precison of 2 decimal places\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBoutput_path\fP"
+.br
+.RI "\fIPrivate string output_path\&. \fP"
+.ti -1c
+.RI "std::vector< double > \fBlaasonen_times\fP"
+.br
+.RI "\fIPrivate \fBVector\fP laasonen_times\&. \fP"
+.ti -1c
+.RI "\fBVector\fP \fBdefault_deltat_times\fP"
+.br
+.RI "\fIPrivate \fBVector\fP default_deltat_times\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+An input/output manager class to handle plot exportations and future implementations of input handling\&. 
+
+The \fBIOManager\fP class provides: 
+.br
+-plot method which compares the analytical solution with a set of given methods, ploting them with a custom configuration using gnuplot 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "IOManager::IOManager ()"
+
+.PP
+Default constructor\&. Initialize an \fBIOManager\fP object\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "bool IOManager::create_output_dir ()\fC [private]\fP"
+
+.PP
+\fBMethod\fP to create ouput folder if the folder does not exist\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+bool\&. true if successfull, false if not 
+.RE
+.PP
+
+.SS "std::string IOManager::double_to_string (int precision, double value)\fC [private]\fP"
+
+.PP
+Converts a double to a string with a precison of 2 decimal places\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdouble\fP value Number to be converted 
+.br
+\fIint\fP precision Precision to have 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+string\&. String containing the converted number 
+.RE
+.PP
+
+.SS "void IOManager::error_table (std::string output_name, \fBMethod\fP * analytical, \fBMethod\fP * method)\fC [private]\fP"
+
+.PP
+Exports an error table to a \&.lsx file that compares the analytical solution to any other solution\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstring\fP output_name File name to be exported 
+.br
+\fIMethod*\fP analytical The analytical solution 
+.br
+\fIMethod*\fP method Any method solution 
+.RE
+.PP
+
+.SS "void IOManager::export_outputs (\fBMethod\fP * analytical, std::vector< \fBMethod\fP * > methods)"
+
+.PP
+Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIMethod*\fP analytical The analytical solution 
+.br
+\fIvector<Method*>\fP methods \fBVector\fP containing the solutions 
+.RE
+.PP
+
+.SS "void IOManager::plot_laasonen_times ()\fC [private]\fP"
+
+.PP
+Exports a plot with \fBLaasonen\fP times computational times\&. 
+.SS "void IOManager::plot_solutions (std::string output_name, \fBMethod\fP * analytical, \fBMethod\fP * method)\fC [private]\fP"
+
+.PP
+Exports a plot chart that compares the analytical solution to any other solution using gnuplot\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstring\fP output_name File name to be exported 
+.br
+\fIMethod*\fP analytical The analytical solution 
+.br
+\fIMethod*\fP method Any method solution 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBVector\fP IOManager::default_deltat_times\fC [private]\fP"
+
+.PP
+Private \fBVector\fP default_deltat_times\&. Contains the computation time of each method solution, with a time step of 0\&.01\&. 
+.SS "std::vector<double> IOManager::laasonen_times\fC [private]\fP"
+
+.PP
+Private \fBVector\fP laasonen_times\&. Contains the computation time of each laasonen solution, with a different time step\&. 
+.SS "std::string IOManager::output_path\fC [private]\fP"
+
+.PP
+Private string output_path\&. Contains the ouput directory path name\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Heat conduction equation from the source code\&.

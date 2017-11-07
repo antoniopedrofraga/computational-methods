@@ -1,0 +1,7 @@
+<map id="IOManager::plot_solutions" name="IOManager::plot_solutions">
+<area shape="rect" id="node2" href="$classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="232,5,375,32"/>
+<area shape="rect" id="node4" href="$classMatrix.html#ab0ed1933348c0511d74f825b73778aaa" title="Normal public get method. " alt="" coords="242,56,365,83"/>
+<area shape="rect" id="node5" href="$classMethod.html#a103a9b2dcf6ef35857e279ba1e5ef9c3" title="Normal public get method. " alt="" coords="238,107,369,133"/>
+<area shape="rect" id="node6" href="$classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="228,158,379,199"/>
+<area shape="rect" id="node3" href="$classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="427,5,575,32"/>
+</map>
