@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  6 NOV 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  28 NOV 2017 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,8 +1024,7 @@ Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
-))
-No file refman.aux.
+)) (./refman.aux)
 \openout1 = `refman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -1135,6 +1134,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 117.
 LaTeX Info: Redefining \pageref on input line 117.
 LaTeX Info: Redefining \nameref on input line 117.
+
+(./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
@@ -1148,8 +1149,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 128.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 130.
-
-[1
+ [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
@@ -1163,14 +1163,41 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 134.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 134.
+ (./refman.toc
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 11.
+ [3
+
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 67.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 67.
+ [4] [5] [6]
+[7] [8] [9])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [3
-
-] [4
-
-]
+ [10]
 Package hyperref Info: Option `pageanchor' set `true' on input line 137.
 
 Chapter 1.
@@ -1189,224 +1216,18 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 2.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 2.
- (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 3.
-
-
-LaTeX Warning: Reference `classIOManager' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `classMethod' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Reference `classAnalytical' on page 1 undefined on input line 6.
-
-
-
-LaTeX Warning: Reference `classExplicit' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Reference `classDufortFrankel' on page 1 undefined on input line
- 9.
-
-
-LaTeX Warning: Reference `classFTCS' on page 1 undefined on input line 10.
-
-
-LaTeX Warning: Reference `classRichardson' on page 1 undefined on input line 11
-.
-
-
-LaTeX Warning: Reference `classImplicit' on page 1 undefined on input line 13.
-
-
-LaTeX Warning: Reference `classCrankNicolson' on page 1 undefined on input line
- 15.
-
-
-LaTeX Warning: Reference `classLaasonen' on page 1 undefined on input line 16.
-
-
-LaTeX Warning: Reference `classProblem' on page 1 undefined on input line 19.
-
-
-LaTeX Warning: Reference `classMatrix' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Reference `classVector' on page 1 undefined on input line 22.
-
 ) [1
 
-]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 142.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 142.
- [2
+
+] [2
 
 ]
 Chapter 2.
-(./annotated.tex
-
-LaTeX Warning: Reference `classAnalytical' on page 3 undefined on input line 4.
-
-
-
-LaTeX Warning: Reference `classCrankNicolson' on page 3 undefined on input line
- 5.
-
-
-LaTeX Warning: Reference `classDufortFrankel' on page 3 undefined on input line
- 6.
-
-
-LaTeX Warning: Reference `classExplicit' on page 3 undefined on input line 8.
-
-
-LaTeX Warning: Reference `classFTCS' on page 3 undefined on input line 9.
-
-
-LaTeX Warning: Reference `classImplicit' on page 3 undefined on input line 11.
-
-
-LaTeX Warning: Reference `classIOManager' on page 3 undefined on input line 12.
-
-
-
-LaTeX Warning: Reference `classLaasonen' on page 3 undefined on input line 13.
-
-
-LaTeX Warning: Reference `classMatrix' on page 3 undefined on input line 16.
-
-
-LaTeX Warning: Reference `classMethod' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Reference `classProblem' on page 3 undefined on input line 18.
-
-
-LaTeX Warning: Reference `classRichardson' on page 3 undefined on input line 19
-.
-
-
-LaTeX Warning: Reference `classVector' on page 3 undefined on input line 22.
-
-) [3] [4
+(./annotated.tex) [3] [4
 
 ]
 Chapter 3.
-(./files.tex
-
-LaTeX Warning: Reference `main_8cpp' on page 5 undefined on input line 3.
-
-
-LaTeX Warning: Reference `matrix_8cpp' on page 5 undefined on input line 4.
-
-
-LaTeX Warning: Reference `matrix_8h' on page 5 undefined on input line 5.
-
-
-LaTeX Warning: Reference `vector_8cpp' on page 5 undefined on input line 6.
-
-
-LaTeX Warning: Reference `vector_8h' on page 5 undefined on input line 7.
-
-
-LaTeX Warning: Reference `iomanager_8cpp' on page 5 undefined on input line 8.
-
-
-LaTeX Warning: Reference `iomanager_8h' on page 5 undefined on input line 9.
-
-
-LaTeX Warning: Reference `analytical_8cpp' on page 5 undefined on input line 10
-.
-
-
-LaTeX Warning: Reference `analytical_8h' on page 5 undefined on input line 11.
-
-
-LaTeX Warning: Reference `method_8cpp' on page 5 undefined on input line 12.
-
-
-LaTeX Warning: Reference `method_8h' on page 5 undefined on input line 13.
-
-
-LaTeX Warning: Reference `dufort__frankel_8cpp' on page 5 undefined on input li
-ne 14.
-
-
-LaTeX Warning: Reference `dufort__frankel_8h' on page 5 undefined on input line
- 15.
-
-
-LaTeX Warning: Reference `explicit_8cpp' on page 5 undefined on input line 16.
-
-
-LaTeX Warning: Reference `explicit_8h' on page 5 undefined on input line 17.
-
-
-LaTeX Warning: Reference `forward__t__central__s_8cpp' on page 5 undefined on i
-nput line 18.
-
-
-LaTeX Warning: Reference `forward__t__central__s_8h' on page 5 undefined on inp
-ut line 19.
-
-
-LaTeX Warning: Reference `richardson_8cpp' on page 5 undefined on input line 20
-.
-
-
-LaTeX Warning: Reference `richardson_8h' on page 5 undefined on input line 21.
-
-
-LaTeX Warning: Reference `crank__nicolson_8cpp' on page 5 undefined on input li
-ne 22.
-
-
-LaTeX Warning: Reference `crank__nicolson_8h' on page 5 undefined on input line
- 23.
-
-
-LaTeX Warning: Reference `implicit_8cpp' on page 5 undefined on input line 24.
-
-
-LaTeX Warning: Reference `implicit_8h' on page 5 undefined on input line 25.
-
-
-LaTeX Warning: Reference `laasonen_8cpp' on page 5 undefined on input line 26.
-
-
-LaTeX Warning: Reference `laasonen_8h' on page 5 undefined on input line 27.
-
-
-LaTeX Warning: Reference `problem_8cpp' on page 5 undefined on input line 28.
-
-
-LaTeX Warning: Reference `problem_8h' on page 5 undefined on input line 29.
-
-
-LaTeX Warning: Reference `utils_8h' on page 5 undefined on input line 30.
-
-) [5] [6
+(./files.tex) [5] [6
 
 ]
 Chapter 4.
@@ -1414,7 +1235,7 @@ Chapter 4.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) <classAnalytical__inherit__graph.pdf, id=147, 215.80624pt x 365.365pt>
+) <classAnalytical__inherit__graph.pdf, id=1369, 215.80624pt x 365.365pt>
 File: classAnalytical__inherit__graph.pdf Graphic file (type pdf)
 
 <use classAnalytical__inherit__graph.pdf>
@@ -1422,7 +1243,7 @@ Package pdftex.def Info: classAnalytical__inherit__graph.pdf used on input line
  20.
 (pdftex.def)             Requested size: 215.0pt x 364.00937pt.
 
-<classAnalytical__coll__graph.pdf, id=148, 329.23pt x 1014.79124pt>
+<classAnalytical__coll__graph.pdf, id=1370, 329.23pt x 1014.79124pt>
 File: classAnalytical__coll__graph.pdf Graphic file (type pdf)
 
 <use classAnalytical__coll__graph.pdf>
@@ -1471,8 +1292,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 77.
 
 
-<classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf, id=193, 331.2375
-pt x 214.8025pt>
+<classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf, id=1411, 331.237
+5pt x 214.8025pt>
 File: classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf Graphic file
  (type pdf)
 
@@ -1491,7 +1312,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [9 <./classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf>])
 (./classCrankNicolson.tex
-<classCrankNicolson__inherit__graph.pdf, id=219, 215.80624pt x 492.84125pt>
+<classCrankNicolson__inherit__graph.pdf, id=1432, 215.80624pt x 492.84125pt>
 File: classCrankNicolson__inherit__graph.pdf Graphic file (type pdf)
 
 <use classCrankNicolson__inherit__graph.pdf>
@@ -1502,7 +1323,7 @@ ine 19.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-<classCrankNicolson__coll__graph.pdf, id=227, 329.23pt x 1143.27126pt>
+<classCrankNicolson__coll__graph.pdf, id=1438, 329.23pt x 1143.27126pt>
 File: classCrankNicolson__coll__graph.pdf Graphic file (type pdf)
 
 <use classCrankNicolson__coll__graph.pdf>
@@ -1528,17 +1349,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 76.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 85.
-
-
 Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
 
-<classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf, id=266, 317.1
-85pt x 100.375pt>
+<classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf, id=1477, 317.
+185pt x 100.375pt>
 File: classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf Graphic f
 ile (type pdf)
 
@@ -1551,7 +1368,7 @@ Underfull \vbox (badness 1983) has occurred while \output is active []
 
  [13])
 (./classDufortFrankel.tex
-<classDufortFrankel__inherit__graph.pdf, id=284, 215.80624pt x 481.8pt>
+<classDufortFrankel__inherit__graph.pdf, id=1490, 215.80624pt x 481.8pt>
 File: classDufortFrankel__inherit__graph.pdf Graphic file (type pdf)
 
 <use classDufortFrankel__inherit__graph.pdf>
@@ -1562,7 +1379,7 @@ ine 19.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <./classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf>]
-<classDufortFrankel__coll__graph.pdf, id=298, 329.23pt x 1132.23pt>
+<classDufortFrankel__coll__graph.pdf, id=1502, 329.23pt x 1132.23pt>
 File: classDufortFrankel__coll__graph.pdf Graphic file (type pdf)
 
 <use classDufortFrankel__coll__graph.pdf>
@@ -1587,17 +1404,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 77.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.2 on input line 88.
-
-
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
 
 
-<classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf, id=336, 303.1
-325pt x 111.41624pt>
+<classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf, id=1540, 303.
+1325pt x 111.41624pt>
 File: classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf Graphic f
 ile (type pdf)
 
@@ -1607,7 +1420,7 @@ graph.pdf used on input line 103.
 (pdftex.def)             Requested size: 302.0pt x 111.00114pt.
  [17])
 (./classExplicit.tex
-<classExplicit__inherit__graph.pdf, id=354, 392.46625pt x 481.8pt>
+<classExplicit__inherit__graph.pdf, id=1554, 392.46625pt x 481.8pt>
 File: classExplicit__inherit__graph.pdf Graphic file (type pdf)
 
 <use classExplicit__inherit__graph.pdf>
@@ -1618,7 +1431,7 @@ Package pdftex.def Info: classExplicit__inherit__graph.pdf used on input line 2
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [18 <./classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf>]
-<classExplicit__coll__graph.pdf, id=367, 329.23pt x 1025.8325pt>
+<classExplicit__coll__graph.pdf, id=1566, 329.23pt x 1025.8325pt>
 File: classExplicit__coll__graph.pdf Graphic file (type pdf)
 
 <use classExplicit__coll__graph.pdf>
@@ -1629,8 +1442,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19 <./classExplicit__inherit__graph.pdf>] [20 <./classExplicit__coll__graph.p
 df>]
-<classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf, id=403, 308.15125p
-t x 138.5175pt>
+<classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf, id=1602, 308.15125
+pt x 138.5175pt>
 File: classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf Graphic file (
 type pdf)
 
@@ -1652,10 +1465,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 90.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.3 on input line 101.
-
-
 Overfull \vbox (14.29735pt too high) has occurred while \output is active []
 
 
@@ -1665,8 +1474,8 @@ Underfull \hbox (badness 10000) detected at line 102
  []
 
 
-<classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf, id=429, 363.3575p
-t x 100.375pt>
+<classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf, id=1622, 363.3575
+pt x 100.375pt>
 File: classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf Graphic file 
 (type pdf)
 
@@ -1680,8 +1489,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 127.
 
 
-<classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf, id=431, 634.37pt x
- 329.23pt>
+<classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf, id=1624, 634.37pt 
+x 329.23pt>
 File: classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf Graphic file (
 type pdf)
  <use classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf>
@@ -1690,7 +1499,7 @@ Package pdftex.def Info: classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph
 (pdftex.def)             Requested size: 350.0pt x 181.64975pt.
 )
 (./classFTCS.tex
-<classFTCS__inherit__graph.pdf, id=435, 215.80624pt x 481.8pt>
+<classFTCS__inherit__graph.pdf, id=1628, 215.80624pt x 481.8pt>
 File: classFTCS__inherit__graph.pdf Graphic file (type pdf)
 
 <use classFTCS__inherit__graph.pdf>
@@ -1702,7 +1511,7 @@ plicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf
 pdfTeX warning: pdflatex (file ./classExplicit_a09fa3df66e16200fefaabc908e6efaf
 d_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
->] <classFTCS__coll__graph.pdf, id=456, 329.23pt x 1132.23pt>
+>] <classFTCS__coll__graph.pdf, id=1648, 329.23pt x 1132.23pt>
 File: classFTCS__coll__graph.pdf Graphic file (type pdf)
 
 <use classFTCS__coll__graph.pdf>
@@ -1725,17 +1534,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 74.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.4 on input line 85.
-
-
 Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
 
-<classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf, id=494, 310.15875pt x 
-100.375pt>
+<classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf, id=1686, 310.15875pt x
+ 100.375pt>
 File: classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf Graphic file (type
  pdf)
  <use classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf>
@@ -1743,8 +1548,8 @@ Package pdftex.def Info: classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf
  used on input line 100.
 (pdftex.def)             Requested size: 309.0pt x 99.9995pt.
 
-<classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf, id=495, 357.335pt x 1
-00.375pt>
+<classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf, id=1687, 357.335pt x 
+100.375pt>
 File: classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf Graphic file (typ
 e pdf)
  <use classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf>
@@ -1754,7 +1559,7 @@ f used on input line 112.
 
 [25 <./classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf>])
 (./classImplicit.tex
-<classImplicit__inherit__graph.pdf, id=517, 269.005pt x 492.84125pt>
+<classImplicit__inherit__graph.pdf, id=1704, 269.005pt x 492.84125pt>
 File: classImplicit__inherit__graph.pdf Graphic file (type pdf)
 
 <use classImplicit__inherit__graph.pdf>
@@ -1765,7 +1570,7 @@ Package pdftex.def Info: classImplicit__inherit__graph.pdf used on input line 2
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26 <./classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf>]
-<classImplicit__coll__graph.pdf, id=531, 329.23pt x 1036.87375pt>
+<classImplicit__coll__graph.pdf, id=1716, 329.23pt x 1036.87375pt>
 File: classImplicit__coll__graph.pdf Graphic file (type pdf)
 
 <use classImplicit__coll__graph.pdf>
@@ -1776,8 +1581,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27 <./classImplicit__inherit__graph.pdf>] [28 <./classImplicit__coll__graph.p
 df>]
-<classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf, id=570, 307.1475pt
- x 138.5175pt>
+<classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf, id=1755, 307.1475p
+t x 138.5175pt>
 File: classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf Graphic file (
 type pdf)
 
@@ -1795,18 +1600,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 94.
 
 [29 <./classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.5 on input line 104.
-
-
 Underfull \hbox (badness 10000) detected at line 105
 [][][]
  []
 
 
-<classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf, id=594, 331.2375p
-t x 100.375pt>
+<classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf, id=1775, 331.2375
+pt x 100.375pt>
 File: classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf Graphic file 
 (type pdf)
 
@@ -1820,8 +1620,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 130.
 
 
-<classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf, id=596, 659.46375p
-t x 367.3725pt>
+<classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf, id=1777, 659.46375
+pt x 367.3725pt>
 File: classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf Graphic file (
 type pdf)
 
@@ -1846,17 +1646,13 @@ Underfull \hbox (badness 10000) detected at line 165
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.6 on input line 178.
-
-
 Underfull \hbox (badness 10000) detected at line 179
 [][][]
  []
 
 
-<classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph.pdf, id=623, 332.24126p
-t x 100.375pt>
+<classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph.pdf, id=1803, 332.24126
+pt x 100.375pt>
 File: classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph.pdf Graphic file (
 type pdf)
 
@@ -1865,8 +1661,8 @@ Package pdftex.def Info: classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph
 .pdf used on input line 189.
 (pdftex.def)             Requested size: 331.0pt x 100.00562pt.
 
-<classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf, id=624, 379.4175p
-t x 100.375pt>
+<classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf, id=1804, 379.4175
+pt x 100.375pt>
 File: classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf Graphic file 
 (type pdf)
 
@@ -1881,7 +1677,7 @@ raph.pdf> <./classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf
 pdfTeX warning: pdflatex (file ./classImplicit_a095e8555a718b53ff94770a0a220dfb
 a_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
->] <classIOManager__coll__graph.pdf, id=646, 233.87375pt x 549.05125pt>
+>] <classIOManager__coll__graph.pdf, id=1825, 233.87375pt x 549.05125pt>
 File: classIOManager__coll__graph.pdf Graphic file (type pdf)
 
 <use classIOManager__coll__graph.pdf>
@@ -1903,8 +1699,8 @@ Underfull \hbox (badness 10000) detected at line 85
  []
 
 
-<classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf, id=684, 472.7662
-5pt x 100.375pt>
+<classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf, id=1861, 472.766
+25pt x 100.375pt>
 File: classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf Graphic file
  (type pdf)
 
@@ -1922,17 +1718,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 107.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.7 on input line 118.
-
-
 Underfull \hbox (badness 10000) detected at line 119
 [][][]
  []
 
 
-<classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf, id=707, 607.2687
-5pt x 151.56625pt>
+<classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf, id=1880, 607.268
+75pt x 151.56625pt>
 File: classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf Graphic file
  (type pdf)
 
@@ -1956,13 +1748,8 @@ pdfTeX warning: pdflatex (file ./classIOManager_ac0848cdaa155421cd6904650823bdc
 9e_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.8 on input line 155.
-
-
-<classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf, id=730, 493.845pt
- x 226.8475pt>
+<classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf, id=1900, 493.845p
+t x 226.8475pt>
 File: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf Graphic file 
 (type pdf)
 
@@ -1971,8 +1758,8 @@ Package pdftex.def Info: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgrap
 h.pdf used on input line 163.
 (pdftex.def)             Requested size: 350.0pt x 160.77208pt.
 
-<classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf, id=731, 442.6537
-5pt x 100.375pt>
+<classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf, id=1901, 442.653
+75pt x 100.375pt>
 File: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf Graphic file
  (type pdf)
 
@@ -1986,12 +1773,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 187.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.9 on input line 198.
-
-
-<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf, id=735, 695.59875
-pt x 303.1325pt>
+<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf, id=1905, 695.5987
+5pt x 303.1325pt>
 File: classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf Graphic file 
 (type pdf)
 
@@ -2009,8 +1792,8 @@ pdfTeX warning: pdflatex (file ./classIOManager_a141e94d64d31d2ce77d8d2adf568d3
 d3_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf, id=756, 290.0837
-6pt x 100.375pt>
+<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf, id=1925, 290.083
+76pt x 100.375pt>
 File: classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf Graphic file
  (type pdf)
 
@@ -2028,8 +1811,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 229.
 
 
-<classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf, id=758, 457.71pt
- x 111.41624pt>
+<classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf, id=1927, 457.71p
+t x 111.41624pt>
 File: classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf Graphic file
  (type pdf)
 
@@ -2047,10 +1830,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 254.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.10 on input line 267.
-
-
 Overfull \vbox (37.37767pt too high) has occurred while \output is active []
 
 
@@ -2066,8 +1845,8 @@ pdfTeX warning: pdflatex (file ./classIOManager_addf56e894f0331609d821bd515887f
 84_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-<classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf, id=786, 508.90125
-pt x 226.8475pt>
+<classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf, id=1952, 508.9012
+5pt x 226.8475pt>
 File: classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf Graphic file 
 (type pdf)
 
@@ -2076,8 +1855,8 @@ Package pdftex.def Info: classIOManager_a149183e073e33890810fe6801bc4861f_cgrap
 h.pdf used on input line 275.
 (pdftex.def)             Requested size: 350.0pt x 156.02303pt.
 
-<classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf, id=787, 457.71pt
- x 100.375pt>
+<classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf, id=1953, 457.71p
+t x 100.375pt>
 File: classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf Graphic file
  (type pdf)
 
@@ -2103,7 +1882,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 311.
 
 ) (./classLaasonen.tex
-<classLaasonen__inherit__graph.pdf, id=793, 215.80624pt x 492.84125pt>
+<classLaasonen__inherit__graph.pdf, id=1959, 215.80624pt x 492.84125pt>
 File: classLaasonen__inherit__graph.pdf Graphic file (type pdf)
 
 <use classLaasonen__inherit__graph.pdf>
@@ -2116,7 +1895,7 @@ Manager_a149183e073e33890810fe6801bc4861f_icgraph.pdf
 pdfTeX warning: pdflatex (file ./classIOManager_a149183e073e33890810fe6801bc486
 1f_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
->] <classLaasonen__coll__graph.pdf, id=815, 329.23pt x 1143.27126pt>
+>] <classLaasonen__coll__graph.pdf, id=1977, 329.23pt x 1143.27126pt>
 File: classLaasonen__coll__graph.pdf Graphic file (type pdf)
 
 <use classLaasonen__coll__graph.pdf>
@@ -2136,17 +1915,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 76.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.11 on input line 85.
-
-
 Underfull \hbox (badness 10000) detected at line 86
 [][][]
  []
 
 
-<classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf, id=856, 294.09875p
-t x 100.375pt>
+<classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf, id=2018, 294.09875
+pt x 100.375pt>
 File: classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf Graphic file (
 type pdf)
 
@@ -2159,7 +1934,7 @@ Underfull \vbox (badness 1983) has occurred while \output is active []
 
  [40])
 (./classMatrix.tex
-<classMatrix__inherit__graph.pdf, id=871, 199.74625pt x 398.48875pt>
+<classMatrix__inherit__graph.pdf, id=2028, 199.74625pt x 398.48875pt>
 File: classMatrix__inherit__graph.pdf Graphic file (type pdf)
 
 <use classMatrix__inherit__graph.pdf>
@@ -2170,7 +1945,7 @@ Package pdftex.def Info: classMatrix__inherit__graph.pdf used on input line 21.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41 <./classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf>]
-<classMatrix__coll__graph.pdf, id=884, 199.74625pt x 398.48875pt>
+<classMatrix__coll__graph.pdf, id=2040, 199.74625pt x 398.48875pt>
 File: classMatrix__coll__graph.pdf Graphic file (type pdf)
 
 <use classMatrix__coll__graph.pdf>
@@ -2186,8 +1961,8 @@ Underfull \hbox (badness 10000) detected at line 113
  []
 
 
-<classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf, id=980, 283.0575pt 
-x 138.5175pt>
+<classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf, id=2135, 283.0575pt
+ x 138.5175pt>
 File: classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf Graphic file (t
 ype pdf)
  <use classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf>
@@ -2199,15 +1974,7 @@ Underfull \hbox (badness 10000) detected at line 142
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.12 on input line 151.
-
 [45 <./classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.13 on input line 158.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 165.
@@ -2218,11 +1985,7 @@ Underfull \hbox (badness 10000) detected at line 170
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.14 on input line 179.
-
-
-<classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf, id=1006, 286.06876pt
+<classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf, id=2156, 286.06876pt
  x 138.5175pt>
 File: classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2241,7 +2004,7 @@ Underfull \hbox (badness 10000) detected at line 209
  []
 
 
-<classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf, id=1008, 443.6575pt
+<classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf, id=2158, 443.6575pt
  x 405.515pt>
 File: classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2261,7 +2024,7 @@ Underfull \hbox (badness 10000) detected at line 238
  []
 
 
-<classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf, id=1026, 586.19pt x
+<classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf, id=2173, 586.19pt x
  443.6575pt>
 File: classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2290,7 +2053,7 @@ Underfull \hbox (badness 10000) detected at line 276
  []
 
 
-<classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf, id=1042, 447.6725pt 
+<classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf, id=2187, 447.6725pt 
 x 235.88126pt>
 File: classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2310,20 +2073,12 @@ Underfull \hbox (badness 10000) detected at line 302
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.15 on input line 311.
-
-
 Underfull \hbox (badness 10000) detected at line 312
 [][][]
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.16 on input line 319.
-
-
-<classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf, id=1062, 298.11375pt
+<classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf, id=2205, 298.11375pt
  x 176.66pt>
 File: classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2345,20 +2100,12 @@ Underfull \hbox (badness 10000) detected at line 343
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.17 on input line 354.
-
-
 Underfull \hbox (badness 10000) detected at line 355
 [][][]
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.18 on input line 362.
-
-
-<classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf, id=1086, 298.11375pt
+<classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf, id=2228, 298.11375pt
  x 176.66pt>
 File: classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2385,10 +2132,6 @@ Underfull \hbox (badness 10000) detected at line 389
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.19 on input line 396.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 403.
 
@@ -2403,12 +2146,7 @@ Underfull \hbox (badness 10000) detected at line 411
  []
 
 [51 <./classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.20 on input line 418.
-
-
-<classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf, id=1131, 306.14375pt
+<classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf, id=2271, 306.14375pt
  x 138.5175pt>
 File: classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2422,15 +2160,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 438.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.21 on input line 449.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.22 on input line 456.
-
-
-<classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf, id=1132, 285.065pt x
+<classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf, id=2272, 285.065pt x
  100.375pt>
 File: classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2439,7 +2169,7 @@ Package pdftex.def Info: classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.p
 df used on input line 464.
 (pdftex.def)             Requested size: 284.0pt x 99.9995pt.
 
-<classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf, id=1133, 488.82625p
+<classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf, id=2273, 488.82625p
 t x 138.5175pt>
 File: classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2463,7 +2193,7 @@ Underfull \hbox (badness 10000) detected at line 492
  []
 
 
-<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf, id=1157, 301.125pt x
+<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf, id=2295, 301.125pt x
  138.5175pt>
 File: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2472,7 +2202,7 @@ Package pdftex.def Info: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.p
 df used on input line 502.
 (pdftex.def)             Requested size: 300.0pt x 138.012pt.
 
-<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf, id=1158, 301.125pt 
+<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf, id=2296, 301.125pt 
 x 100.375pt>
 File: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2507,7 +2237,7 @@ Underfull \hbox (badness 10000) detected at line 535
  []
 
 
-<classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf, id=1185, 301.125pt x
+<classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf, id=2322, 301.125pt x
  138.5175pt>
 File: classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2531,7 +2261,7 @@ Underfull \hbox (badness 10000) detected at line 566
  []
 
 
-<classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf, id=1188, 336.25626pt
+<classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf, id=2325, 336.25626pt
  x 214.8025pt>
 File: classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2551,10 +2281,6 @@ Underfull \hbox (badness 10000) detected at line 603
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.23 on input line 612.
-
-
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
  [55 <./classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf>]
@@ -2563,17 +2289,9 @@ Underfull \hbox (badness 10000) detected at line 625
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.24 on input line 636.
-
-
 Underfull \hbox (badness 10000) detected at line 637
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.25 on input line 644.
 
 
 Underfull \hbox (badness 10000) detected at line 657
@@ -2581,17 +2299,9 @@ Underfull \hbox (badness 10000) detected at line 657
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.26 on input line 668.
-
-
 Underfull \hbox (badness 10000) detected at line 669
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.27 on input line 678.
 
 
 Overfull \vbox (13.50034pt too high) has occurred while \output is active []
@@ -2607,12 +2317,8 @@ Underfull \hbox (badness 10000) detected at line 698
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.28 on input line 707.
-
 ) (./classMethod.tex
-<classMethod__inherit__graph.pdf, id=1253, 600.2425pt x 492.84125pt>
+<classMethod__inherit__graph.pdf, id=2385, 600.2425pt x 492.84125pt>
 File: classMethod__inherit__graph.pdf Graphic file (type pdf)
 
 <use classMethod__inherit__graph.pdf>
@@ -2623,7 +2329,7 @@ Package pdftex.def Info: classMethod__inherit__graph.pdf used on input line 19.
 Underfull \vbox (badness 7064) has occurred while \output is active []
 
  [57]
-<classMethod__coll__graph.pdf, id=1262, 329.23pt x 908.39375pt>
+<classMethod__coll__graph.pdf, id=2392, 329.23pt x 908.39375pt>
 File: classMethod__coll__graph.pdf Graphic file (type pdf)
 
 <use classMethod__coll__graph.pdf>
@@ -2644,7 +2350,7 @@ Underfull \hbox (badness 10000) detected at line 103
  []
 
 
-<classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf, id=1333, 340.27126pt
+<classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf, id=2459, 340.27126pt
  x 100.375pt>
 File: classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2658,7 +2364,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 138.
 
 
-<classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf, id=1337, 340.27126p
+<classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf, id=2463, 340.27126p
 t x 100.375pt>
 File: classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2696,7 +2402,7 @@ Underfull \hbox (badness 10000) detected at line 184
  []
 
 
-<classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf, id=1359, 316.18124pt
+<classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf, id=2482, 316.18124pt
  x 100.375pt>
 File: classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2715,7 +2421,7 @@ Underfull \hbox (badness 10000) detected at line 210
  []
 
 
-<classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf, id=1361, 592.2125pt
+<classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf, id=2484, 592.2125pt
  x 100.375pt>
 File: classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2734,7 +2440,7 @@ Underfull \hbox (badness 10000) detected at line 236
  []
 
 
-<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf, id=1363, 335.2525pt 
+<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf, id=2486, 335.2525pt 
 x 100.375pt>
 File: classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2750,7 +2456,7 @@ pdfTeX warning: pdflatex (file ./classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf, id=1384, 601.24625p
+<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf, id=2504, 601.24625p
 t x 138.5175pt>
 File: classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2770,7 +2476,7 @@ Underfull \hbox (badness 10000) detected at line 274
  []
 
 
-<classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf, id=1387, 335.2525pt 
+<classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf, id=2507, 335.2525pt 
 x 100.375pt>
 File: classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2779,7 +2485,7 @@ Package pdftex.def Info: classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.p
 df used on input line 284.
 (pdftex.def)             Requested size: 334.0pt x 99.9995pt.
 
-<classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf, id=1388, 586.19pt x
+<classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf, id=2508, 586.19pt x
  100.375pt>
 File: classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2805,7 +2511,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 306.
 
 ) (./classProblem.tex
-<classProblem__coll__graph.pdf, id=1420, 329.23pt x 692.5875pt>
+<classProblem__coll__graph.pdf, id=2537, 329.23pt x 692.5875pt>
 File: classProblem__coll__graph.pdf Graphic file (type pdf)
 
 <use classProblem__coll__graph.pdf>
@@ -2823,15 +2529,7 @@ Underfull \hbox (badness 10000) detected at line 110
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.29 on input line 119.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.30 on input line 126.
-
-
-<classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf, id=1521, 328.22626p
+<classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf, id=2633, 328.22626p
 t x 188.705pt>
 File: classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf Graphic file (t
 ype pdf)
@@ -2853,7 +2551,7 @@ Underfull \hbox (badness 10000) detected at line 153
  []
 
 
-<classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf, id=1533, 349.305pt
+<classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf, id=2640, 349.305pt
  x 252.945pt>
 File: classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf Graphic file (
 type pdf)
@@ -2878,7 +2576,7 @@ Underfull \hbox (badness 10000) detected at line 179
  []
 
 
-<classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf, id=1553, 308.15125
+<classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf, id=2658, 308.15125
 pt x 138.5175pt>
 File: classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf Graphic file (
 type pdf)
@@ -2902,7 +2600,7 @@ Underfull \hbox (badness 10000) detected at line 205
  []
 
 
-<classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf, id=1556, 363.3575p
+<classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf, id=2661, 363.3575p
 t x 138.5175pt>
 File: classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf Graphic file (
 type pdf)
@@ -2922,7 +2620,7 @@ Underfull \hbox (badness 10000) detected at line 231
  []
 
 
-<classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf, id=1558, 748.7975p
+<classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf, id=2663, 748.7975p
 t x 169.63374pt>
 File: classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf Graphic file (
 type pdf)
@@ -2948,7 +2646,7 @@ Underfull \hbox (badness 10000) detected at line 257
  []
 
 
-<classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf, id=1579, 346.29375
+<classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf, id=2683, 346.29375
 pt x 138.5175pt>
 File: classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf Graphic file (
 type pdf)
@@ -2968,7 +2666,7 @@ Underfull \hbox (badness 10000) detected at line 283
  []
 
 
-<classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf, id=1582, 357.335pt
+<classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf, id=2686, 357.335pt
  x 150.5625pt>
 File: classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf Graphic file (
 type pdf)
@@ -2994,7 +2692,7 @@ Underfull \hbox (badness 10000) detected at line 309
  []
 
 
-<classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf, id=1603, 349.305pt
+<classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf, id=2704, 349.305pt
  x 150.5625pt>
 File: classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf Graphic file (
 type pdf)
@@ -3014,7 +2712,7 @@ Underfull \hbox (badness 10000) detected at line 335
  []
 
 
-<classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf, id=1606, 733.74126
+<classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf, id=2707, 733.74126
 pt x 150.5625pt>
 File: classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf Graphic file (
 type pdf)
@@ -3039,7 +2737,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 356.
 
 
-<classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf, id=1626, 312.16624
+<classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf, id=2725, 312.16624
 pt x 111.41624pt>
 File: classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf Graphic file (
 type pdf)
@@ -3063,7 +2761,7 @@ Underfull \hbox (badness 10000) detected at line 384
  []
 
 
-<classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf, id=1629, 326.21875
+<classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf, id=2728, 326.21875
 pt x 100.375pt>
 File: classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf Graphic file (
 type pdf)
@@ -3093,12 +2791,7 @@ pdfTeX warning: pdflatex (file ./classProblem_af5f96a84c005e788f84e902071b24b34
 _icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.31 on input line 417.
-
-
-<classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf, id=1660, 441.65pt x
+<classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf, id=2756, 441.65pt x
  138.5175pt>
 File: classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf Graphic file (t
 ype pdf)
@@ -3107,7 +2800,7 @@ Package pdftex.def Info: classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.
 pdf used on input line 425.
 (pdftex.def)             Requested size: 350.0pt x 109.77847pt.
 
-<classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf, id=1661, 368.37625
+<classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf, id=2757, 368.37625
 pt x 138.5175pt>
 File: classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf Graphic file (
 type pdf)
@@ -3131,7 +2824,7 @@ Underfull \hbox (badness 10000) detected at line 453
  []
 
 
-<classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf, id=1664, 328.22626
+<classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf, id=2760, 328.22626
 pt x 100.375pt>
 File: classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf Graphic file (
 type pdf)
@@ -3173,7 +2866,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [74 <./classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf>])
 (./classRichardson.tex
-<classRichardson__inherit__graph.pdf, id=1709, 215.80624pt x 481.8pt>
+<classRichardson__inherit__graph.pdf, id=2798, 215.80624pt x 481.8pt>
 File: classRichardson__inherit__graph.pdf Graphic file (type pdf)
 
 <use classRichardson__inherit__graph.pdf>
@@ -3184,7 +2877,7 @@ Package pdftex.def Info: classRichardson__inherit__graph.pdf used on input line
 Underfull \vbox (badness 4341) has occurred while \output is active []
 
  [75]
-<classRichardson__coll__graph.pdf, id=1718, 329.23pt x 1132.23pt>
+<classRichardson__coll__graph.pdf, id=2804, 329.23pt x 1132.23pt>
 File: classRichardson__coll__graph.pdf Graphic file (type pdf)
 
 <use classRichardson__coll__graph.pdf>
@@ -3209,16 +2902,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 77.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.32 on input line 88.
-
-
 Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
 
 
-<classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf, id=1756, 333.245
+<classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf, id=2842, 333.245
 pt x 100.375pt>
 File: classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf Graphic file
  (type pdf)
@@ -3229,7 +2918,7 @@ ph.pdf used on input line 103.
 (pdftex.def)             Requested size: 332.0pt x 100.00716pt.
  [78])
 (./classVector.tex
-<classVector__inherit__graph.pdf, id=1772, 190.7125pt x 365.365pt>
+<classVector__inherit__graph.pdf, id=2852, 190.7125pt x 365.365pt>
 File: classVector__inherit__graph.pdf Graphic file (type pdf)
 
 <use classVector__inherit__graph.pdf>
@@ -3240,7 +2929,7 @@ Package pdftex.def Info: classVector__inherit__graph.pdf used on input line 21.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79 <./classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf>]
-<classVector__coll__graph.pdf, id=1785, 190.7125pt x 365.365pt>
+<classVector__coll__graph.pdf, id=2864, 190.7125pt x 365.365pt>
 File: classVector__coll__graph.pdf Graphic file (type pdf)
 
 <use classVector__coll__graph.pdf>
@@ -3256,7 +2945,7 @@ Underfull \hbox (badness 10000) detected at line 109
  []
 
 
-<classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf, id=1858, 260.975pt 
+<classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf, id=2938, 260.975pt 
 x 100.375pt>
 File: classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3269,14 +2958,6 @@ pdf used on input line 121.
 Underfull \hbox (badness 10000) detected at line 137
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.33 on input line 146.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.34 on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -3293,16 +2974,12 @@ Underfull \hbox (badness 10000) detected at line 179
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.35 on input line 204.
-
-
 Underfull \hbox (badness 10000) detected at line 205
 [][][]
  []
 
 
-<classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf, id=1908, 471.7625pt
+<classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf, id=2980, 471.7625pt
  x 138.5175pt>
 File: classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3316,7 +2993,7 @@ Underfull \hbox (badness 10000) detected at line 231
  []
 
 
-<classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf, id=1909, 672.5125pt
+<classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf, id=2981, 672.5125pt
  x 417.56pt>
 File: classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3341,7 +3018,7 @@ Underfull \hbox (badness 10000) detected at line 262
  []
 
 
-<classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf, id=1928, 320.19624p
+<classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf, id=2997, 320.19624p
 t x 138.5175pt>
 File: classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3367,17 +3044,9 @@ Underfull \hbox (badness 10000) detected at line 288
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.36 on input line 295.
-
-
 Underfull \hbox (badness 10000) detected at line 296
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.37 on input line 303.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -3393,20 +3062,8 @@ Underfull \hbox (badness 10000) detected at line 322
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.38 on input line 329.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.39 on input line 334.
-
 [86]
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.40 on input line 350.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 357.
 
@@ -3415,11 +3072,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 357.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.41 on input line 366.
-
-
-<classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf, id=1973, 371.3875pt
+<classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf, id=3038, 371.3875pt
  x 100.375pt>
 File: classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3452,17 +3105,12 @@ Underfull \hbox (badness 10000) detected at line 409
  []
 
 [87 <./classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.42 on input line 418.
-
-
 Underfull \hbox (badness 10000) detected at line 419
 [][][]
  []
 
 
-<classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf, id=1996, 336.25626p
+<classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf, id=3057, 336.25626p
 t x 138.5175pt>
 File: classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3481,10 +3129,6 @@ Underfull \hbox (badness 10000) detected at line 456
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.43 on input line 465.
-
 [88 <./classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 478
 [][][]
@@ -3496,10 +3140,6 @@ Underfull \hbox (badness 10000) detected at line 485
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.44 on input line 494.
-
-
 Underfull \hbox (badness 10000) detected at line 507
 [][][]
  []
@@ -3508,14 +3148,6 @@ Underfull \hbox (badness 10000) detected at line 507
 Underfull \hbox (badness 10000) detected at line 514
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.45 on input line 521.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.46 on input line 528.
 
 [89]
 Underfull \hbox (badness 10000) detected at line 541
@@ -3527,17 +3159,9 @@ Underfull \hbox (badness 10000) detected at line 548
 [][][]
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.47 on input line 555.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.48 on input line 562.
-
 ) [90]
 Chapter 5.
-(./matrix_8cpp.tex <matrix_8cpp__incl.pdf, id=2051, 542.025pt x 269.005pt>
+(./matrix_8cpp.tex <matrix_8cpp__incl.pdf, id=3108, 542.025pt x 269.005pt>
 File: matrix_8cpp__incl.pdf Graphic file (type pdf)
 
 <use matrix_8cpp__incl.pdf>
@@ -3565,11 +3189,7 @@ Underfull \hbox (badness 10000) detected at line 41
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.1 on input line 50.
-
-
-<matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf, id=2086, 273.02pt x 
+<matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf, id=3139, 273.02pt x 
 138.5175pt>
 File: matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3592,21 +3212,12 @@ Underfull \hbox (badness 10000) detected at line 71
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 82.
-
-
 Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
 
 [92 <./matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.3 on input line 90.
-
-
-<matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf, id=2108, 273.02pt x 
+<matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf, id=3159, 273.02pt x 
 138.5175pt>
 File: matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3629,20 +3240,12 @@ Underfull \hbox (badness 10000) detected at line 111
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.4 on input line 122.
-
-
 Underfull \hbox (badness 10000) detected at line 123
 [][][]
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.5 on input line 132.
-
-
-<matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf, id=2115, 273.02pt x 
+<matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf, id=3166, 273.02pt x 
 176.66pt>
 File: matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3673,11 +3276,7 @@ Underfull \hbox (badness 10000) detected at line 160
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.6 on input line 169.
-
-
-<matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf, id=2138, 257.96375pt
+<matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf, id=3188, 257.96375pt
  x 100.375pt>
 File: matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3686,7 +3285,7 @@ Package pdftex.def Info: matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.p
 df used on input line 177.
 (pdftex.def)             Requested size: 257.0pt x 100.00868pt.
 )
-(./matrix_8h.tex <matrix_8h__incl.pdf, id=2139, 542.025pt x 212.795pt>
+(./matrix_8h.tex <matrix_8h__incl.pdf, id=3189, 542.025pt x 212.795pt>
 File: matrix_8h__incl.pdf Graphic file (type pdf)
 
 <use matrix_8h__incl.pdf>
@@ -3698,14 +3297,14 @@ p_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf
 pdfTeX warning: pdflatex (file ./matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_
 cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->] <matrix_8h__dep__incl.pdf, id=2160, 1433.355pt x 403.5075pt>
+>] <matrix_8h__dep__incl.pdf, id=3208, 1433.355pt x 403.5075pt>
 File: matrix_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use matrix_8h__dep__incl.pdf>
 Package pdftex.def Info: matrix_8h__dep__incl.pdf used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 98.52464pt.
 ) (./vector_8cpp.tex
-<vector_8cpp__incl.pdf, id=2162, 542.025pt x 212.795pt>
+<vector_8cpp__incl.pdf, id=3210, 542.025pt x 212.795pt>
 File: vector_8cpp__incl.pdf Graphic file (type pdf)
 
 <use vector_8cpp__incl.pdf>
@@ -3735,10 +3334,6 @@ Underfull \hbox (badness 10000) detected at line 41
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.7 on input line 50.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 58.
 
@@ -3755,10 +3350,6 @@ Underfull \hbox (badness 10000) detected at line 59
 Underfull \hbox (badness 10000) detected at line 66
 [][][]
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.8 on input line 75.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -3779,15 +3370,7 @@ Underfull \hbox (badness 10000) detected at line 91
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.9 on input line 98.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.10 on input line 105.
-
-
-<vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf, id=2225, 260.975pt x
+<vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf, id=3270, 260.975pt x
  100.375pt>
 File: vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3816,15 +3399,7 @@ Underfull \hbox (badness 10000) detected at line 133
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.11 on input line 140.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5.12 on input line 147.
-
-
-<vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf, id=2248, 260.975pt x
+<vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf, id=3291, 260.975pt x
  100.375pt>
 File: vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3833,21 +3408,21 @@ Package pdftex.def Info: vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.p
 df used on input line 155.
 (pdftex.def)             Requested size: 260.0pt x 100.00102pt.
 )
-(./vector_8h.tex <vector_8h__incl.pdf, id=2249, 542.025pt x 156.585pt>
+(./vector_8h.tex <vector_8h__incl.pdf, id=3292, 542.025pt x 156.585pt>
 File: vector_8h__incl.pdf Graphic file (type pdf)
 
 <use vector_8h__incl.pdf>
 Package pdftex.def Info: vector_8h__incl.pdf used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 101.1148pt.
  [98 <./vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf>] <vector_8h__
-dep__incl.pdf, id=2265, 1433.355pt x 459.7175pt>
+dep__incl.pdf, id=3306, 1433.355pt x 459.7175pt>
 File: vector_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use vector_8h__dep__incl.pdf>
 Package pdftex.def Info: vector_8h__dep__incl.pdf used on input line 23.
 (pdftex.def)             Requested size: 350.0pt x 112.24947pt.
 ) (./iomanager_8cpp.tex
-<iomanager_8cpp__incl.pdf, id=2267, 602.25pt x 437.635pt>
+<iomanager_8cpp__incl.pdf, id=3308, 602.25pt x 437.635pt>
 File: iomanager_8cpp__incl.pdf Graphic file (type pdf)
 
 <use iomanager_8cpp__incl.pdf>
@@ -3860,14 +3435,14 @@ Underfull \vbox (badness 3158) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./vector_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] <iomanager_8h__incl.pdf, id=2288, 602.25pt x 381.425pt>
+>] <iomanager_8h__incl.pdf, id=3328, 602.25pt x 381.425pt>
 File: iomanager_8h__incl.pdf Graphic file (type pdf)
 
 <use iomanager_8h__incl.pdf>
 Package pdftex.def Info: iomanager_8h__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
 
-<iomanager_8h__dep__incl.pdf, id=2289, 246.9225pt x 156.585pt>
+<iomanager_8h__dep__incl.pdf, id=3329, 246.9225pt x 156.585pt>
 File: iomanager_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use iomanager_8h__dep__incl.pdf>
@@ -3881,14 +3456,14 @@ Underfull \vbox (badness 1092) has occurred while \output is active []
 pdfTeX warning: pdflatex (file ./iomanager_8h__incl.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]) (./main_8cpp.tex
-<main_8cpp__incl.pdf, id=2309, 2291.56125pt x 504.88625pt>
+<main_8cpp__incl.pdf, id=3349, 2291.56125pt x 504.88625pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 
 <use main_8cpp__incl.pdf>
 Package pdftex.def Info: main_8cpp__incl.pdf used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 77.10866pt.
 
-<main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=2311, 769.87625pt x
+<main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=3351, 769.87625pt x
  303.1325pt>
 File: main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file (type
  pdf)
@@ -3902,14 +3477,14 @@ Package pdftex.def Info: main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
 pdfTeX warning: pdflatex (file ./main_8cpp__incl.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]) (./analytical_8cpp.tex
-<analytical_8cpp__incl.pdf, id=2333, 602.25pt x 437.635pt>
+<analytical_8cpp__incl.pdf, id=3372, 602.25pt x 437.635pt>
 File: analytical_8cpp__incl.pdf Graphic file (type pdf)
 
 <use analytical_8cpp__incl.pdf>
 Package pdftex.def Info: analytical_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 254.34265pt.
 ) (./analytical_8h.tex
-<analytical_8h__incl.pdf, id=2334, 602.25pt x 381.425pt>
+<analytical_8h__incl.pdf, id=3373, 602.25pt x 381.425pt>
 File: analytical_8h__incl.pdf Graphic file (type pdf)
 
 <use analytical_8h__incl.pdf>
@@ -3920,14 +3495,14 @@ Package pdftex.def Info: analytical_8h__incl.pdf used on input line 9.
 
 pdfTeX warning: pdflatex (file ./analytical_8cpp__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <analytical_8h__dep__incl.pdf, id=2357, 273.02pt x 156.585pt>
+>] <analytical_8h__dep__incl.pdf, id=3391, 273.02pt x 156.585pt>
 File: analytical_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use analytical_8h__dep__incl.pdf>
 Package pdftex.def Info: analytical_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 272.0pt x 156.00879pt.
 ) (./dufort__frankel_8cpp.tex
-<dufort__frankel_8cpp__incl.pdf, id=2361, 602.25pt x 504.88625pt>
+<dufort__frankel_8cpp__incl.pdf, id=3395, 602.25pt x 504.88625pt>
 File: dufort__frankel_8cpp__incl.pdf Graphic file (type pdf)
 
 <use dufort__frankel_8cpp__incl.pdf>
@@ -3938,7 +3513,7 @@ dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./analytical_8h__dep__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <dufort__frankel_8h__incl.pdf, id=2381, 602.25pt x 448.67625pt>
+>] <dufort__frankel_8h__incl.pdf, id=3414, 602.25pt x 448.67625pt>
 File: dufort__frankel_8h__incl.pdf Graphic file (type pdf)
 
 <use dufort__frankel_8h__incl.pdf>
@@ -3948,7 +3523,7 @@ Package pdftex.def Info: dufort__frankel_8h__incl.pdf used on input line 9.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [104 <./dufort__frankel_8cpp__incl.pdf>]
-<dufort__frankel_8h__dep__incl.pdf, id=2394, 271.0125pt x 178.6675pt>
+<dufort__frankel_8h__dep__incl.pdf, id=3426, 271.0125pt x 178.6675pt>
 File: dufort__frankel_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use dufort__frankel_8h__dep__incl.pdf>
@@ -3956,7 +3531,7 @@ Package pdftex.def Info: dufort__frankel_8h__dep__incl.pdf used on input line 1
 7.
 (pdftex.def)             Requested size: 270.0pt x 178.0073pt.
 ) (./explicit_8cpp.tex
-<explicit_8cpp__incl.pdf, id=2397, 602.25pt x 493.845pt>
+<explicit_8cpp__incl.pdf, id=3429, 602.25pt x 493.845pt>
 File: explicit_8cpp__incl.pdf Graphic file (type pdf)
 
 <use explicit_8cpp__incl.pdf>
@@ -3967,14 +3542,14 @@ h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./dufort__frankel_8h__dep__incl.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] <explicit_8h__incl.pdf, id=2418, 602.25pt x 381.425pt>
+>] <explicit_8h__incl.pdf, id=3450, 602.25pt x 381.425pt>
 File: explicit_8h__incl.pdf Graphic file (type pdf)
 
 <use explicit_8h__incl.pdf>
 Package pdftex.def Info: explicit_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
 
-<explicit_8h__dep__incl.pdf, id=2419, 746.79pt x 234.8775pt>
+<explicit_8h__dep__incl.pdf, id=3451, 746.79pt x 234.8775pt>
 File: explicit_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use explicit_8h__dep__incl.pdf>
@@ -3985,7 +3560,7 @@ Package pdftex.def Info: explicit_8h__dep__incl.pdf used on input line 17.
 pdfTeX warning: pdflatex (file ./explicit_8h__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]) (./forward__t__central__s_8cpp.tex
-<forward__t__central__s_8cpp__incl.pdf, id=2440, 602.25pt x 504.88625pt>
+<forward__t__central__s_8cpp__incl.pdf, id=3471, 602.25pt x 504.88625pt>
 File: forward__t__central__s_8cpp__incl.pdf Graphic file (type pdf)
 
 <use forward__t__central__s_8cpp__incl.pdf>
@@ -3993,7 +3568,7 @@ Package pdftex.def Info: forward__t__central__s_8cpp__incl.pdf used on input li
 ne 9.
 (pdftex.def)             Requested size: 350.0pt x 293.42741pt.
 ) (./forward__t__central__s_8h.tex
-<forward__t__central__s_8h__incl.pdf, id=2441, 602.25pt x 448.67625pt>
+<forward__t__central__s_8h__incl.pdf, id=3472, 602.25pt x 448.67625pt>
 File: forward__t__central__s_8h__incl.pdf Graphic file (type pdf)
 
 <use forward__t__central__s_8h__incl.pdf>
@@ -4005,7 +3580,7 @@ Package pdftex.def Info: forward__t__central__s_8h__incl.pdf used on input line
 pdfTeX warning: pdflatex (file ./forward__t__central__s_8cpp__incl.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-<forward__t__central__s_8h__dep__incl.pdf, id=2461, 363.3575pt x 178.6675pt>
+<forward__t__central__s_8h__dep__incl.pdf, id=3491, 363.3575pt x 178.6675pt>
 File: forward__t__central__s_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use forward__t__central__s_8h__dep__incl.pdf>
@@ -4013,7 +3588,7 @@ Package pdftex.def Info: forward__t__central__s_8h__dep__incl.pdf used on input
  line 17.
 (pdftex.def)             Requested size: 350.0pt x 172.10498pt.
 ) (./richardson_8cpp.tex
-<richardson_8cpp__incl.pdf, id=2464, 602.25pt x 493.845pt>
+<richardson_8cpp__incl.pdf, id=3494, 602.25pt x 493.845pt>
 File: richardson_8cpp__incl.pdf Graphic file (type pdf)
 
 <use richardson_8cpp__incl.pdf>
@@ -4024,7 +3599,7 @@ _t__central__s_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./forward__t__central__s_8h__dep__incl.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] <richardson_8h__incl.pdf, id=2485, 602.25pt x 437.635pt>
+>] <richardson_8h__incl.pdf, id=3513, 602.25pt x 437.635pt>
 File: richardson_8h__incl.pdf Graphic file (type pdf)
 
 <use richardson_8h__incl.pdf>
@@ -4034,14 +3609,14 @@ Package pdftex.def Info: richardson_8h__incl.pdf used on input line 9.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [109 <./richardson_8cpp__incl.pdf>]
-<richardson_8h__dep__incl.pdf, id=2499, 311.1625pt x 156.585pt>
+<richardson_8h__dep__incl.pdf, id=3525, 311.1625pt x 156.585pt>
 File: richardson_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use richardson_8h__dep__incl.pdf>
 Package pdftex.def Info: richardson_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 310.0pt x 156.00162pt.
 ) (./crank__nicolson_8cpp.tex
-<crank__nicolson_8cpp__incl.pdf, id=2502, 602.25pt x 504.88625pt>
+<crank__nicolson_8cpp__incl.pdf, id=3528, 602.25pt x 504.88625pt>
 File: crank__nicolson_8cpp__incl.pdf Graphic file (type pdf)
 
 <use crank__nicolson_8cpp__incl.pdf>
@@ -4052,14 +3627,14 @@ dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./richardson_8h__dep__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <crank__nicolson_8h__incl.pdf, id=2522, 602.25pt x 448.67625pt>
+>] <crank__nicolson_8h__incl.pdf, id=3547, 602.25pt x 448.67625pt>
 File: crank__nicolson_8h__incl.pdf Graphic file (type pdf)
 
 <use crank__nicolson_8h__incl.pdf>
 Package pdftex.def Info: crank__nicolson_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 260.75957pt.
 
-<crank__nicolson_8h__dep__incl.pdf, id=2523, 270.00874pt x 178.6675pt>
+<crank__nicolson_8h__dep__incl.pdf, id=3548, 270.00874pt x 178.6675pt>
 File: crank__nicolson_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use crank__nicolson_8h__dep__incl.pdf>
@@ -4071,14 +3646,14 @@ Package pdftex.def Info: crank__nicolson_8h__dep__incl.pdf used on input line 1
 pdfTeX warning: pdflatex (file ./crank__nicolson_8h__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]) (./implicit_8cpp.tex
-<implicit_8cpp__incl.pdf, id=2545, 602.25pt x 437.635pt>
+<implicit_8cpp__incl.pdf, id=3570, 602.25pt x 437.635pt>
 File: implicit_8cpp__incl.pdf Graphic file (type pdf)
 
 <use implicit_8cpp__incl.pdf>
 Package pdftex.def Info: implicit_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 254.34265pt.
 ) (./implicit_8h.tex
-<implicit_8h__incl.pdf, id=2546, 602.25pt x 381.425pt>
+<implicit_8h__incl.pdf, id=3571, 602.25pt x 381.425pt>
 File: implicit_8h__incl.pdf Graphic file (type pdf)
 
 <use implicit_8h__incl.pdf>
@@ -4088,14 +3663,14 @@ Package pdftex.def Info: implicit_8h__incl.pdf used on input line 9.
 
 pdfTeX warning: pdflatex (file ./implicit_8cpp__incl.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] <implicit_8h__dep__incl.pdf, id=2566, 557.08125pt x 234.8775pt>
+>] <implicit_8h__dep__incl.pdf, id=3590, 557.08125pt x 234.8775pt>
 File: implicit_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use implicit_8h__dep__incl.pdf>
 Package pdftex.def Info: implicit_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 147.56862pt.
 ) (./laasonen_8cpp.tex
-<laasonen_8cpp__incl.pdf, id=2569, 602.25pt x 493.845pt>
+<laasonen_8cpp__incl.pdf, id=3593, 602.25pt x 493.845pt>
 File: laasonen_8cpp__incl.pdf Graphic file (type pdf)
 
 <use laasonen_8cpp__incl.pdf>
@@ -4106,14 +3681,14 @@ df
 
 pdfTeX warning: pdflatex (file ./implicit_8h__dep__incl.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] <laasonen_8h__incl.pdf, id=2590, 602.25pt x 437.635pt>
+>] <laasonen_8h__incl.pdf, id=3612, 602.25pt x 437.635pt>
 File: laasonen_8h__incl.pdf Graphic file (type pdf)
 
 <use laasonen_8h__incl.pdf>
 Package pdftex.def Info: laasonen_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 254.34265pt.
 
-<laasonen_8h__dep__incl.pdf, id=2591, 304.13625pt x 156.585pt>
+<laasonen_8h__dep__incl.pdf, id=3613, 304.13625pt x 156.585pt>
 File: laasonen_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use laasonen_8h__dep__incl.pdf>
@@ -4123,14 +3698,14 @@ Package pdftex.def Info: laasonen_8h__dep__incl.pdf used on input line 17.
 
 pdfTeX warning: pdflatex (file ./laasonen_8h__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->]) (./method_8cpp.tex <method_8cpp__incl.pdf, id=2613, 602.25pt x 381.425pt>
+>]) (./method_8cpp.tex <method_8cpp__incl.pdf, id=3633, 602.25pt x 381.425pt>
 File: method_8cpp__incl.pdf Graphic file (type pdf)
 
 <use method_8cpp__incl.pdf>
 Package pdftex.def Info: method_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
 ) (./method_8h.tex
-<method_8h__incl.pdf, id=2614, 602.25pt x 325.215pt>
+<method_8h__incl.pdf, id=3634, 602.25pt x 325.215pt>
 File: method_8h__incl.pdf Graphic file (type pdf)
  <use method_8h__incl.pdf>
 Package pdftex.def Info: method_8h__incl.pdf used on input line 9.
@@ -4140,14 +3715,14 @@ Package pdftex.def Info: method_8h__incl.pdf used on input line 9.
 
 pdfTeX warning: pdflatex (file ./method_8cpp__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->] <method_8h__dep__incl.pdf, id=2635, 1433.355pt x 291.0875pt>
+>] <method_8h__dep__incl.pdf, id=3653, 1433.355pt x 291.0875pt>
 File: method_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use method_8h__dep__incl.pdf>
 Package pdftex.def Info: method_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 71.07498pt.
 ) (./problem_8cpp.tex
-<problem_8cpp__incl.pdf, id=2638, 602.25pt x 325.215pt>
+<problem_8cpp__incl.pdf, id=3656, 602.25pt x 325.215pt>
 File: problem_8cpp__incl.pdf Graphic file (type pdf)
 
 <use problem_8cpp__incl.pdf>
@@ -4157,14 +3732,14 @@ Package pdftex.def Info: problem_8cpp__incl.pdf used on input line 9.
 
 pdfTeX warning: pdflatex (file ./method_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] <problem_8h__incl.pdf, id=2658, 602.25pt x 269.005pt>
+>] <problem_8h__incl.pdf, id=3676, 602.25pt x 269.005pt>
 File: problem_8h__incl.pdf Graphic file (type pdf)
 
 <use problem_8h__incl.pdf>
 Package pdftex.def Info: problem_8h__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 156.33907pt.
 
-<problem_8h__dep__incl.pdf, id=2659, 1433.355pt x 347.2975pt>
+<problem_8h__dep__incl.pdf, id=3677, 1433.355pt x 347.2975pt>
 File: problem_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use problem_8h__dep__incl.pdf>
@@ -4178,14 +3753,14 @@ pdfTeX warning: pdflatex (file ./problem_8h__incl.pdf): PDF inclusion: multiple
 
 pdfTeX warning: pdflatex (file ./problem_8h__dep__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <utils_8h__incl.pdf, id=2688, 246.9225pt x 156.585pt>
+>] <utils_8h__incl.pdf, id=3705, 246.9225pt x 156.585pt>
 File: utils_8h__incl.pdf Graphic file (type pdf)
 
 <use utils_8h__incl.pdf>
 Package pdftex.def Info: utils_8h__incl.pdf used on input line 11.
 (pdftex.def)             Requested size: 246.0pt x 155.99922pt.
 
-<utils_8h__dep__incl.pdf, id=2689, 1433.355pt x 403.5075pt>
+<utils_8h__dep__incl.pdf, id=3706, 1433.355pt x 403.5075pt>
 File: utils_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use utils_8h__dep__incl.pdf>
@@ -4263,44 +3838,33 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [120]) [121] [122
 
-]
-No file refman.ind.
+] (./refman.ind [123
 
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
 
+] [124] [125] [126
+
+])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
-(./refman.aux)
+ (./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 452ED2336E0BF77EDF234F198D5F2208;53839.
 
-
-Package rerunfilecheck Warning: File `refman.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  EB6E7D0BBBD5FC393D55904860C6DFEC;53766.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 16541 strings out of 494910
- 264788 string characters out of 6179836
- 306653 words of memory out of 5000000
- 18590 multiletter control sequences out of 15000+600000
+ 16786 strings out of 494910
+ 269572 string characters out of 6179836
+ 330629 words of memory out of 5000000
+ 18820 multiletter control sequences out of 15000+600000
  66810 words of font info for 81 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 53i,16n,92p,3215b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,3215b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
@@ -4311,10 +3875,10 @@ hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (126 pages, 570921 bytes).
+Output written on refman.pdf (136 pages, 615915 bytes).
 PDF statistics:
- 2979 PDF objects out of 2984 (max. 8388607)
- 2478 compressed objects within 25 object streams
- 776 named destinations out of 1000 (max. 500000)
- 696 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4265 PDF objects out of 4296 (max. 8388607)
+ 3741 compressed objects within 38 object streams
+ 781 named destinations out of 1000 (max. 500000)
+ 2528 words of extra memory for PDF output out of 10000 (max. 10000000)
 

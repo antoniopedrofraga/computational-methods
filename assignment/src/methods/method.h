@@ -14,6 +14,10 @@
 */
 class Method {
 private:
+	double one_norm;
+	double two_norm;
+	double uniform_norm;
+
 	double computational_time; /**< Private double computational_time. Elapsed time throughout the solution computation. */
 protected:
 	Problem problem; /**< Protected Problem problem. Space step of the solution. */
@@ -72,10 +76,19 @@ public:
 	double get_computational_time();
 
 	/**
+	* Normal public get method.
+	* get the second norm
+	* @return double. Second norm value.
+	*/
+	double get_two_norm();
+
+	/**
 	* Normal public method.
 	* Keeps track of the time to compute a solution
 	*/
 	void compute();
+
+	void compute_norms(Matrix analytical_matrix);
 
 	// PUBLIC MUTATOR METHODS
 
@@ -84,6 +97,7 @@ public:
 	* compute the solution following the rules of a given method.
 	*/
 	virtual void compute_solution() = 0;
+
 
 };
 

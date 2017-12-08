@@ -55,9 +55,10 @@ void IOManager::export_outputs(Method * analytical, std::vector<Method*> methods
 		}
 		std::cout << "Exporting " << name << " method outputs... ";
 		plot_solutions(output_name, analytical, methods[index]);
-		error_table(output_name, analytical, methods[index]);
 		std::cout << "Finished!" << std::endl;
 	}
+	std::vector<Method*> error_vector(methods.begin() + 1, methods.begin() + 4);
+	error_tables(output_name, error_vector);
 	plot_laasonen_times();
 }
 
@@ -105,34 +106,21 @@ void IOManager::plot_laasonen_times() {
 /*
 * private table method - Exports an error table to a .lsx file which compares the analytical solution with a given solution
 */
-void IOManager::error_table(std::string output_name, Method * analytical, Method * method) {
-	std::string name = output_name + ".csv", time, x_str;
-	std::ofstream out;
+void IOManager::error_tables(std::string output_name, std::vector<Method*> methods) {
 
-	Matrix analytical_matrix = analytical->get_solution(), method_matrix = method->get_solution();
-	Vector x_values = method->get_xvalues();
-	unsigned int rows = method_matrix.getNrows();
-	unsigned int cols = method_matrix.getNcols();
+	// Object to export plots
+	Gnuplot gp;
+	std::vector<double> norms;
 
-	out.open(name);
-	out << " & ";
-	for (int i = 0; i < x_values.getSize(); i++) {
-		if (i % 2 == 0) {
-			x_str = double_to_string(2, x_values[i]);
-			out << "x=" << x_str << " & ";
-		}
+	for (int i = 0; i < methods.size(); i++) {
+		norms.push_back(methods[i]->get_two_norm());
 	}
-	out << '\n';
-	for (unsigned int i = 1; i < rows; i++) {
-		time = double_to_string(2, (double)i / 10.0);
-		out << "t=" << time << " & ";
-		for (unsigned int j = 0; j < cols; j++) {
-			if (j % 2 == 0)
-			out << analytical_matrix[i][j] - method_matrix[i][j] << " & ";
-		}
-		out << '\n';
-	}
-	out.close();
+	std::swap(norms[1],norms[2]);
+
+
+	gp << "set tics scale 0; set border 3; set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5; set clip two; set ylabel \"2nd Norm\";set xlabel \"\"; set term png; set xtics (\"Dufort-Frankel\" 0, \"Laasonen\" 1, \"Crank Nicholson\" 2)\n";
+	gp << "set output \"" << output_path << "/norms.png\";\n";
+	gp << "plot" << gp.file1d(norms) << " notitle with linespoint ls 1" << std::endl;
 }
 
 // AUX METHODS
@@ -145,4 +133,4 @@ std::string IOManager::double_to_string(int precision, double value) {
 	std::stringstream stream;
 	stream << std::fixed << std::setprecision(precision) << value;
 	return stream.str();
-} 
+}

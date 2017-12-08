@@ -13,13 +13,32 @@ Method::Method(Problem problem) {
 	this->problem = problem;
 }
 /*
- * public method - compute a solution keeping track of time
+ * public method - compute a solution keeping track of spent time
  */
 void Method::compute() {
 	clock_t begin = clock();
 	compute_solution();
 	clock_t end = clock();
 	computational_time = double(end - begin) * 1000 / CLOCKS_PER_SEC;
+}
+
+/*
+ * public method - compute norms of the error matrix;
+ */
+void Method::compute_norms(Matrix analytical_matrix) {
+	Matrix method_matrix = get_solution();
+	unsigned int rows = method_matrix.getNrows(), cols = method_matrix.getNcols();
+	Matrix error_matrix(rows, cols);
+
+	for (unsigned int i = 0; i < rows; i++) {
+		for (unsigned int j = 0; j < cols; j++) {
+			error_matrix[i][j] = analytical_matrix[i][j] - method_matrix[i][j];
+		}
+	}
+
+	one_norm = error_matrix.one_norm();
+	two_norm = error_matrix.two_norm();
+	uniform_norm = error_matrix.uniform_norm();
 }
 
 // PUBLIC ACCESSOR METHODS
@@ -29,6 +48,13 @@ void Method::compute() {
  */
 std::string Method::get_name() {
 	return name;
+}
+
+/*
+ * public accessor method - get the two norm value
+ */
+double Method::get_two_norm() {
+	return two_norm;
 }
 
 /*

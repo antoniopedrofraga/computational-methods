@@ -24,3 +24,4 @@ Vector CrankNicolson::build_r(Vector previous_step) {
 	}
 	return r;
 }
+

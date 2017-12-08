@@ -4,7 +4,7 @@
 \contentsline {subsection}{Numerical analysis}{2}
 \contentsline {section}{Procedures}{3}
 \contentsline {subsection}{Explicit Schemes}{4}
-\contentsline {subsubsection}{Richardson}{5}
+\contentsline {subsubsection}{Richardson}{4}
 \contentsline {subsubsection}{DuFort-Frankel}{5}
 \contentsline {subsection}{Implicit Schemes}{5}
 \contentsline {subsubsection}{Laasonen Simple Implicit}{6}
@@ -13,4 +13,6 @@
 \contentsline {section}{Results \& Discussion}{9}
 \contentsline {subsection}{Laasonen Implicit Scheme: study of time step variation}{11}
 \contentsline {section}{Conclusions}{12}
-\contentsline {section}{References}{13}
+\contentsline {section}{References}{14}
+\contentsline {subsection}{\numberline {0.0.1}Richardson Method Analysis}{15}
+\contentsline {subsection}{\numberline {0.0.2}Source Code}{15}

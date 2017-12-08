@@ -3,6 +3,7 @@
 
 #include "../libs/gnuplot-iostream.h" // lib to be able to use gnuplot from c++
 #include "../methods/method.h" // provides knowledge about method objects structure
+#include <vector>
 
 /**
 *  An input/output manager class to handle plot exportations and future implementations of input handling
@@ -38,12 +39,11 @@ private:
 	void plot_laasonen_times();
 
 	/**
-	* Exports an error table to a .lsx file that compares the analytical solution to any other solution
+	* Exports a plot that compares the norms of each solution
 	* @param string output_name File name to be exported
-	* @param Method* analytical The analytical solution
-	* @param Method* method Any method solution
+	* @param vector<Method*> vector of methods to plot the second norm
 	*/
-	void error_table(std::string output_name, Method * analytical, Method * method);
+	void error_tables(std::string output_name, std::vector<Method*> method);
 
 	// AUX METHODS
 

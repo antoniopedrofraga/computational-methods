@@ -7,6 +7,7 @@
  */
 Analytical::Analytical(Problem problem)
 : Method(problem) {
+	name = ANALYTICAL;
 	this->nr_of_expansions = NUMBER_OF_EXPANSIONS;
 }
 
