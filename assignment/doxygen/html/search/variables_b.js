@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['t_5fsize',['t_size',['../classProblem.html#a66936266b7164a2a2f1af01bc9baccb9',1,'Problem']]],
-  ['t_5fvalues',['t_values',['../classProblem.html#a8255789b9dc8cabdd933ddbcf4bd49aa',1,'Problem']]],
-  ['thickness',['THICKNESS',['../utils_8h.html#aafead104181a6a96988128aadc2d3cdb',1,'utils.h']]],
-  ['timelimit',['TIMELIMIT',['../utils_8h.html#a309e4f72090b8786963571ae3e184691',1,'utils.h']]]
+  ['solution',['solution',['../classProblem.html#a2051ea400371fc901151bd5d2826189c',1,'Problem']]],
+  ['surface_5ftemperature',['SURFACE_TEMPERATURE',['../utils_8h.html#a088c8a699947fa6aa83f516e3a5e8893',1,'utils.h']]]
 ];

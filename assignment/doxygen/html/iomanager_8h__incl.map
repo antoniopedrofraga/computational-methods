@@ -1,7 +1,7 @@
 <map id="io/iomanager.h" name="io/iomanager.h">
-<area shape="rect" id="node3" href="$method_8h.html" title="../methods/method.h" alt="" coords="308,80,451,107"/>
-<area shape="rect" id="node4" href="$problem_8h.html" title="../variants/problem.h" alt="" coords="309,155,450,181"/>
-<area shape="rect" id="node5" href="$utils_8h.html" title="../variants/utils.h" alt="" coords="96,304,215,331"/>
-<area shape="rect" id="node9" href="$matrix_8h.html" title="../grid/matrix.h" alt="" coords="418,229,525,256"/>
-<area shape="rect" id="node13" href="$vector_8h.html" title="vector.h" alt="" coords="350,304,419,331"/>
+<area shape="rect" id="node3" href="$method_8h.html" title="../methods/method.h" alt="" coords="489,80,631,107"/>
+<area shape="rect" id="node4" href="$problem_8h.html" title="../variants/problem.h" alt="" coords="489,155,631,181"/>
+<area shape="rect" id="node5" href="$utils_8h.html" title="../variants/utils.h" alt="" coords="509,304,627,331"/>
+<area shape="rect" id="node9" href="$matrix_8h.html" title="../grid/matrix.h" alt="" coords="267,229,373,256"/>
+<area shape="rect" id="node13" href="$vector_8h.html" title="vector.h" alt="" coords="285,304,355,331"/>
 </map>

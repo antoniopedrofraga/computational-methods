@@ -8,6 +8,7 @@ var searchData=
   ['get_5fsolution',['get_solution',['../classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6',1,'Method::get_solution()'],['../classProblem.html#ac4e50f2308eef0abbe17446a9763b5be',1,'Problem::get_solution()']]],
   ['get_5ftsize',['get_tsize',['../classProblem.html#a2f4ee1a3e797fe66181d7f62a3191366',1,'Problem']]],
   ['get_5ftvalues',['get_tvalues',['../classProblem.html#ad9471629841ec6bd734d398ed9bfa624',1,'Problem']]],
+  ['get_5ftwo_5fnorm',['get_two_norm',['../classMethod.html#aa44aa54b2296d6bee9f0ed22f73991ba',1,'Method']]],
   ['get_5fxsize',['get_xsize',['../classProblem.html#af09d12c75d48d233c0e6b34266440a96',1,'Problem']]],
   ['get_5fxvalues',['get_xvalues',['../classMethod.html#aeda95af3c0440df84c0571614f6fd122',1,'Method::get_xvalues()'],['../classProblem.html#a24f804792a0f5e30816a79cbbdb4c561',1,'Problem::get_xvalues()']]],
   ['getncols',['getNcols',['../classMatrix.html#a09f35c4f255ad102a8692a4a2c6ccc0d',1,'Matrix']]],

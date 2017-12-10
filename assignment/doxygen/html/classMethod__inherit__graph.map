@@ -1,10 +1,10 @@
 <map id="Method" name="Method">
-<area shape="rect" id="node2" href="$classAnalytical.html" title="An Analytical class to compute the solution with standard procedures &#160;&#160;The implementation is derived ..." alt="" coords="37,307,181,399"/>
-<area shape="rect" id="node3" href="$classExplicit.html" title="An explicit method class that contains default methods that only explicit methods use &#160;&#160;The implement..." alt="" coords="205,299,349,406"/>
-<area shape="rect" id="node7" href="$classImplicit.html" title="An implicit method class that contains default methods that only implicit methods use &#160;&#160;The implement..." alt="" coords="437,292,581,413"/>
-<area shape="rect" id="node4" href="$classDufortFrankel.html" title="A DufortFrankel method class that contains an iteration builder. " alt="" coords="5,461,127,553"/>
-<area shape="rect" id="node5" href="$classFTCS.html" title="A FTCS method class that contains an iteration builder. " alt="" coords="151,461,274,553"/>
-<area shape="rect" id="node6" href="$classRichardson.html" title="A Richardson method class that contains an iteration builder. " alt="" coords="299,461,420,553"/>
-<area shape="rect" id="node8" href="$classCrankNicolson.html" title="A CrankNicolson method class that contains a r vector builder. " alt="" coords="445,461,573,553"/>
-<area shape="rect" id="node9" href="$classLaasonen.html" title="A Laasonen method class that contains a r vector builder. " alt="" coords="597,461,695,553"/>
+<area shape="rect" id="node2" href="$classAnalytical.html" title="An Analytical class to compute the solution with standard procedures &#160;&#160;The implementation is derived ..." alt="" coords="37,380,181,472"/>
+<area shape="rect" id="node3" href="$classExplicit.html" title="An explicit method class that contains default methods that only explicit methods use &#160;&#160;The implement..." alt="" coords="205,373,349,479"/>
+<area shape="rect" id="node7" href="$classImplicit.html" title="An implicit method class that contains default methods that only implicit methods use &#160;&#160;The implement..." alt="" coords="437,365,581,487"/>
+<area shape="rect" id="node4" href="$classDufortFrankel.html" title="A DufortFrankel method class that contains an iteration builder. " alt="" coords="5,535,127,627"/>
+<area shape="rect" id="node5" href="$classFTCS.html" title="A FTCS method class that contains an iteration builder. " alt="" coords="151,535,274,627"/>
+<area shape="rect" id="node6" href="$classRichardson.html" title="A Richardson method class that contains an iteration builder. " alt="" coords="299,535,420,627"/>
+<area shape="rect" id="node8" href="$classCrankNicolson.html" title="A CrankNicolson method class that contains a r vector builder. " alt="" coords="445,535,573,627"/>
+<area shape="rect" id="node9" href="$classLaasonen.html" title="A Laasonen method class that contains a r vector builder. " alt="" coords="597,535,695,627"/>
 </map>

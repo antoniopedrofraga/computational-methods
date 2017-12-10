@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['richardson',['RICHARDSON',['../utils_8h.html#a5f7d233e8e04bd11222d8a998236acc7',1,'utils.h']]]
+  ['q',['q',['../classMethod.html#a794257d62bedf3691c3c0a2b921b8886',1,'Method']]]
 ];

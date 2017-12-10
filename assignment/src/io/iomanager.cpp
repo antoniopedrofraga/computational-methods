@@ -52,6 +52,9 @@ void IOManager::export_outputs(Method * analytical, std::vector<Method*> methods
 		if (name == LAASONEN) {
 			output_name += "dt=" + deltat_string;
 			laasonen_times.push_back(methods[index]->get_computational_time());
+		} 
+		if (! (name == LAASONEN && methods[index]->get_deltat() != 0.01) && name != RICHARDSON) {
+			default_deltat_times.push_back(methods[index]->get_computational_time());
 		}
 		std::cout << "Exporting " << name << " method outputs... ";
 		plot_solutions(output_name, analytical, methods[index]);
@@ -59,6 +62,7 @@ void IOManager::export_outputs(Method * analytical, std::vector<Method*> methods
 	}
 	std::vector<Method*> error_vector(methods.begin() + 1, methods.begin() + 4);
 	error_tables(output_name, error_vector);
+	plot_default_deltat_times();
 	plot_laasonen_times();
 }
 
@@ -104,6 +108,19 @@ void IOManager::plot_laasonen_times() {
 }
 
 /*
+* private plot method - Exports a plot chart with solutions computational times
+*/
+
+void IOManager::plot_default_deltat_times() {
+	// Object to export plots
+	Gnuplot gp;
+
+	gp << "set tics scale 0; set border 3; set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5; set clip two; set ylabel \"Computational Time [ms]\";set xlabel \"Δ t [h]\"; set term png; set xtics (\"Dufort-Frankel\" 0, \"Crank-Nicholson\" 1, \"Laasonen\" 2)\n";
+	gp << "set output \"" << output_path << "/default_deltat_times.png\";\n";
+	gp << "plot" << gp.file1d(default_deltat_times) << " notitle with linespoint ls 1" << std::endl;
+}
+
+/*
 * private table method - Exports an error table to a .lsx file which compares the analytical solution with a given solution
 */
 void IOManager::error_tables(std::string output_name, std::vector<Method*> methods) {
@@ -118,7 +135,7 @@ void IOManager::error_tables(std::string output_name, std::vector<Method*> metho
 	std::swap(norms[1],norms[2]);
 
 
-	gp << "set tics scale 0; set border 3; set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 7 pi -1 ps 1.5; set clip two; set ylabel \"2nd Norm\";set xlabel \"\"; set term png; set xtics (\"Dufort-Frankel\" 0, \"Laasonen\" 1, \"Crank Nicholson\" 2)\n";
+	gp << "set tics scale 0; set border 3; set style line 1 lc rgb '#FFA500' lt 1 lw 2 pt 7 pi -1 ps 1.5; set clip two; set ylabel \"2nd Norm\";set xlabel \"\"; set term png; set xtics (\"Dufort-Frankel\" 0, \"Laasonen\" 1, \"Crank Nicholson\" 2)\n";
 	gp << "set output \"" << output_path << "/norms.png\";\n";
 	gp << "plot" << gp.file1d(norms) << " notitle with linespoint ls 1" << std::endl;
 }

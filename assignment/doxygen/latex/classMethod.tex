@@ -46,8 +46,12 @@ double \hyperlink{classMethod_a45b9b0d41d353381a6725323e5be6281}{get\+\_\+deltat
 \begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
 double \hyperlink{classMethod_a0ad41fa7e54a46dc97b73187a8dcba4d}{get\+\_\+computational\+\_\+time} ()
 \begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
+double \hyperlink{classMethod_aa44aa54b2296d6bee9f0ed22f73991ba}{get\+\_\+two\+\_\+norm} ()
+\begin{DoxyCompactList}\small\item\em Normal public get method. \end{DoxyCompactList}\item 
 void \hyperlink{classMethod_a50aea9f4e6101bf7c37f145177b72693}{compute} ()
 \begin{DoxyCompactList}\small\item\em Normal public method. \end{DoxyCompactList}\item 
+void \hyperlink{classMethod_a4f1d13311599c8ffd73835663beb0e7b}{compute\+\_\+norms} (\hyperlink{classMatrix}{Matrix} analytical\+\_\+matrix)
+\item 
 virtual void \hyperlink{classMethod_af3dcec8e066214e82d8b4578a4a55076}{compute\+\_\+solution} ()=0
 \begin{DoxyCompactList}\small\item\em A pure virtual member. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
@@ -61,6 +65,12 @@ double \hyperlink{classMethod_a794257d62bedf3691c3c0a2b921b8886}{q}
 \begin{DoxyCompactList}\small\item\em Protected double q. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classMethod_a50dd2ba109ea6806d98f8ebe6bbaa743}{one\+\_\+norm}
+\item 
+double \hyperlink{classMethod_ab1409405473f9c18be98f98fef471013}{two\+\_\+norm}
+\item 
+double \hyperlink{classMethod_aa236db6acd86f4f88844892933faae80}{uniform\+\_\+norm}
 \item 
 double \hyperlink{classMethod_a4504c8cdb13651c87485d76d6e20d7ef}{computational\+\_\+time}
 \begin{DoxyCompactList}\small\item\em Private double computational\+\_\+time. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -125,6 +135,25 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=339pt]{classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Method@{Method}!compute\+\_\+norms@{compute\+\_\+norms}}
+\index{compute\+\_\+norms@{compute\+\_\+norms}!Method@{Method}}
+\subsubsection[{\texorpdfstring{compute\+\_\+norms(\+Matrix analytical\+\_\+matrix)}{compute_norms(Matrix analytical_matrix)}}]{\setlength{\rightskip}{0pt plus 5cm}void Method\+::compute\+\_\+norms (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}}]{analytical\+\_\+matrix}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_a4f1d13311599c8ffd73835663beb0e7b}{}\label{classMethod_a4f1d13311599c8ffd73835663beb0e7b}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMethod_a4f1d13311599c8ffd73835663beb0e7b_cgraph}
 \end{center}
 \end{figure}
 
@@ -260,6 +289,20 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
+\index{Method@{Method}!get\+\_\+two\+\_\+norm@{get\+\_\+two\+\_\+norm}}
+\index{get\+\_\+two\+\_\+norm@{get\+\_\+two\+\_\+norm}!Method@{Method}}
+\subsubsection[{\texorpdfstring{get\+\_\+two\+\_\+norm()}{get_two_norm()}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::get\+\_\+two\+\_\+norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMethod_aa44aa54b2296d6bee9f0ed22f73991ba}{}\label{classMethod_aa44aa54b2296d6bee9f0ed22f73991ba}
+
+
+Normal public get method. 
+
+get the second norm \begin{DoxyReturn}{Returns}
+double. Second norm value. 
+\end{DoxyReturn}
 \index{Method@{Method}!get\+\_\+xvalues@{get\+\_\+xvalues}}
 \index{get\+\_\+xvalues@{get\+\_\+xvalues}!Method@{Method}}
 \subsubsection[{\texorpdfstring{get\+\_\+xvalues()}{get_xvalues()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Method\+::get\+\_\+xvalues (
@@ -288,18 +331,6 @@ Here is the call graph for this function\+:
 
 
 
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph}
-\end{center}
-\end{figure}
-
-
-
-
 \subsection{Member Data Documentation}
 \index{Method@{Method}!computational\+\_\+time@{computational\+\_\+time}}
 \index{computational\+\_\+time@{computational\+\_\+time}!Method@{Method}}
@@ -315,7 +346,10 @@ Elapsed time throughout the solution computation. \index{Method@{Method}!name@{n
 
 Protected string name. 
 
-Name of the method. \index{Method@{Method}!problem@{problem}}
+Name of the method. \index{Method@{Method}!one\+\_\+norm@{one\+\_\+norm}}
+\index{one\+\_\+norm@{one\+\_\+norm}!Method@{Method}}
+\subsubsection[{\texorpdfstring{one\+\_\+norm}{one_norm}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::one\+\_\+norm\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMethod_a50dd2ba109ea6806d98f8ebe6bbaa743}{}\label{classMethod_a50dd2ba109ea6806d98f8ebe6bbaa743}
+\index{Method@{Method}!problem@{problem}}
 \index{problem@{problem}!Method@{Method}}
 \subsubsection[{\texorpdfstring{problem}{problem}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Problem} Method\+::problem\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classMethod_a29a08a679b5d30a8c813766308205041}{}\label{classMethod_a29a08a679b5d30a8c813766308205041}
 
@@ -329,7 +363,13 @@ Space step of the solution. \index{Method@{Method}!q@{q}}
 
 Protected double q. 
 
-A coeficient which value depends of way the equation is written, it may vary from method to method. 
+A coeficient which value depends of way the equation is written, it may vary from method to method. \index{Method@{Method}!two\+\_\+norm@{two\+\_\+norm}}
+\index{two\+\_\+norm@{two\+\_\+norm}!Method@{Method}}
+\subsubsection[{\texorpdfstring{two\+\_\+norm}{two_norm}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::two\+\_\+norm\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMethod_ab1409405473f9c18be98f98fef471013}{}\label{classMethod_ab1409405473f9c18be98f98fef471013}
+\index{Method@{Method}!uniform\+\_\+norm@{uniform\+\_\+norm}}
+\index{uniform\+\_\+norm@{uniform\+\_\+norm}!Method@{Method}}
+\subsubsection[{\texorpdfstring{uniform\+\_\+norm}{uniform_norm}}]{\setlength{\rightskip}{0pt plus 5cm}double Method\+::uniform\+\_\+norm\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMethod_aa236db6acd86f4f88844892933faae80}{}\label{classMethod_aa236db6acd86f4f88844892933faae80}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

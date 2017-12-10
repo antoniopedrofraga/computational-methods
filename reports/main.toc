@@ -12,7 +12,10 @@
 \contentsline {section}{Solution Design}{8}
 \contentsline {section}{Results \& Discussion}{9}
 \contentsline {subsection}{Laasonen Implicit Scheme: study of time step variation}{11}
-\contentsline {section}{Conclusions}{12}
+\contentsline {section}{Conclusions}{13}
 \contentsline {section}{References}{14}
-\contentsline {subsection}{\numberline {0.0.1}Richardson Method Analysis}{15}
-\contentsline {subsection}{\numberline {0.0.2}Source Code}{15}
+\contentsline {section}{Appendices}{15}
+\contentsline {subsection}{Richardson Method Analysis}{15}
+\contentsline {subsubsection}{Accuracy}{15}
+\contentsline {subsubsection}{Stability}{16}
+\contentsline {subsection}{Doxygen Documentation}{16}

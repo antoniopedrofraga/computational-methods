@@ -16,7 +16,7 @@ Collaboration diagram for I\+O\+Manager\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=233pt]{classIOManager__coll__graph}
+\includegraphics[width=198pt]{classIOManager__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -34,9 +34,11 @@ bool \hyperlink{classIOManager_a9798220ef88ebb14ffd354a04351862d}{create\+\_\+ou
 void \hyperlink{classIOManager_a149183e073e33890810fe6801bc4861f}{plot\+\_\+solutions} (std\+::string output\+\_\+name, \hyperlink{classMethod}{Method} $\ast$analytical, \hyperlink{classMethod}{Method} $\ast$method)
 \begin{DoxyCompactList}\small\item\em Exports a plot chart that compares the analytical solution to any other solution using gnuplot. \end{DoxyCompactList}\item 
 void \hyperlink{classIOManager_addf56e894f0331609d821bd515887f84}{plot\+\_\+laasonen\+\_\+times} ()
-\begin{DoxyCompactList}\small\item\em Exports a plot with \hyperlink{classLaasonen}{Laasonen} times computational times. \end{DoxyCompactList}\item 
-void \hyperlink{classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3}{error\+\_\+table} (std\+::string output\+\_\+name, \hyperlink{classMethod}{Method} $\ast$analytical, \hyperlink{classMethod}{Method} $\ast$method)
-\begin{DoxyCompactList}\small\item\em Exports an error table to a .lsx file that compares the analytical solution to any other solution. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Exports a plot with \hyperlink{classLaasonen}{Laasonen} delta t variation computational times. \end{DoxyCompactList}\item 
+void \hyperlink{classIOManager_a12b636be3c0bab9b90ed042f450ebe8d}{plot\+\_\+default\+\_\+deltat\+\_\+times} ()
+\begin{DoxyCompactList}\small\item\em Exports a plot with four methods computational times. \end{DoxyCompactList}\item 
+void \hyperlink{classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2}{error\+\_\+tables} (std\+::string output\+\_\+name, std\+::vector$<$ \hyperlink{classMethod}{Method} $\ast$ $>$ method)
+\begin{DoxyCompactList}\small\item\em Exports a plot that compares the norms of each solution. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classIOManager_ac0848cdaa155421cd6904650823bdc9e}{double\+\_\+to\+\_\+string} (int precision, double value)
 \begin{DoxyCompactList}\small\item\em Converts a double to a string with a precison of 2 decimal places. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -46,7 +48,7 @@ std\+::string \hyperlink{classIOManager_a6af8948f7b74b4d6187baca2719cf8dc}{outpu
 \begin{DoxyCompactList}\small\item\em Private string output\+\_\+path. \end{DoxyCompactList}\item 
 std\+::vector$<$ double $>$ \hyperlink{classIOManager_a55739efc2d1c63b7b0c0afe2db6b294b}{laasonen\+\_\+times}
 \begin{DoxyCompactList}\small\item\em Private \hyperlink{classVector}{Vector} laasonen\+\_\+times. \end{DoxyCompactList}\item 
-\hyperlink{classVector}{Vector} \hyperlink{classIOManager_a5551947942fd75911e57b49df6436662}{default\+\_\+deltat\+\_\+times}
+std\+::vector$<$ double $>$ \hyperlink{classIOManager_a30696a7aaed227e80b3bbac567943eb0}{default\+\_\+deltat\+\_\+times}
 \begin{DoxyCompactList}\small\item\em Private \hyperlink{classVector}{Vector} default\+\_\+deltat\+\_\+times. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -131,40 +133,25 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
-\index{I\+O\+Manager@{I\+O\+Manager}!error\+\_\+table@{error\+\_\+table}}
-\index{error\+\_\+table@{error\+\_\+table}!I\+O\+Manager@{I\+O\+Manager}}
-\subsubsection[{\texorpdfstring{error\+\_\+table(std\+::string output\+\_\+name, Method $\ast$analytical, Method $\ast$method)}{error_table(std::string output_name, Method *analytical, Method *method)}}]{\setlength{\rightskip}{0pt plus 5cm}void I\+O\+Manager\+::error\+\_\+table (
+\index{I\+O\+Manager@{I\+O\+Manager}!error\+\_\+tables@{error\+\_\+tables}}
+\index{error\+\_\+tables@{error\+\_\+tables}!I\+O\+Manager@{I\+O\+Manager}}
+\subsubsection[{\texorpdfstring{error\+\_\+tables(std\+::string output\+\_\+name, std\+::vector$<$ Method $\ast$ $>$ method)}{error_tables(std::string output_name, std::vector< Method * > method)}}]{\setlength{\rightskip}{0pt plus 5cm}void I\+O\+Manager\+::error\+\_\+tables (
 \begin{DoxyParamCaption}
 \item[{std\+::string}]{output\+\_\+name, }
-\item[{{\bf Method} $\ast$}]{analytical, }
-\item[{{\bf Method} $\ast$}]{method}
+\item[{std\+::vector$<$ {\bf Method} $\ast$ $>$}]{method}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3}{}\label{classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2}{}\label{classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2}
 
 
-Exports an error table to a .lsx file that compares the analytical solution to any other solution. 
+Exports a plot that compares the norms of each solution. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em string} & output\+\_\+name File name to be exported \\
 \hline
-{\em Method$\ast$} & analytical The analytical solution \\
-\hline
-{\em Method$\ast$} & method Any method solution \\
+{\em vector$<$\+Method$\ast$$>$} & vector of methods to plot the second norm \\
 \hline
 \end{DoxyParams}
-
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph}
-\end{center}
-\end{figure}
-
-
 
 
 Here is the caller graph for this function\+:
@@ -172,7 +159,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph}
+\includegraphics[width=350pt]{classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph}
 \end{center}
 \end{figure}
 
@@ -220,6 +207,29 @@ Here is the caller graph for this function\+:
 \end{figure}
 
 
+\index{I\+O\+Manager@{I\+O\+Manager}!plot\+\_\+default\+\_\+deltat\+\_\+times@{plot\+\_\+default\+\_\+deltat\+\_\+times}}
+\index{plot\+\_\+default\+\_\+deltat\+\_\+times@{plot\+\_\+default\+\_\+deltat\+\_\+times}!I\+O\+Manager@{I\+O\+Manager}}
+\subsubsection[{\texorpdfstring{plot\+\_\+default\+\_\+deltat\+\_\+times()}{plot_default_deltat_times()}}]{\setlength{\rightskip}{0pt plus 5cm}void I\+O\+Manager\+::plot\+\_\+default\+\_\+deltat\+\_\+times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIOManager_a12b636be3c0bab9b90ed042f450ebe8d}{}\label{classIOManager_a12b636be3c0bab9b90ed042f450ebe8d}
+
+
+Exports a plot with four methods computational times. 
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph}
+\end{center}
+\end{figure}
+
+
 \index{I\+O\+Manager@{I\+O\+Manager}!plot\+\_\+laasonen\+\_\+times@{plot\+\_\+laasonen\+\_\+times}}
 \index{plot\+\_\+laasonen\+\_\+times@{plot\+\_\+laasonen\+\_\+times}!I\+O\+Manager@{I\+O\+Manager}}
 \subsubsection[{\texorpdfstring{plot\+\_\+laasonen\+\_\+times()}{plot_laasonen_times()}}]{\setlength{\rightskip}{0pt plus 5cm}void I\+O\+Manager\+::plot\+\_\+laasonen\+\_\+times (
@@ -229,7 +239,7 @@ Here is the caller graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIOManager_addf56e894f0331609d821bd515887f84}{}\label{classIOManager_addf56e894f0331609d821bd515887f84}
 
 
-Exports a plot with \hyperlink{classLaasonen}{Laasonen} times computational times. 
+Exports a plot with \hyperlink{classLaasonen}{Laasonen} delta t variation computational times. 
 
 
 
@@ -294,7 +304,7 @@ Here is the caller graph for this function\+:
 \subsection{Member Data Documentation}
 \index{I\+O\+Manager@{I\+O\+Manager}!default\+\_\+deltat\+\_\+times@{default\+\_\+deltat\+\_\+times}}
 \index{default\+\_\+deltat\+\_\+times@{default\+\_\+deltat\+\_\+times}!I\+O\+Manager@{I\+O\+Manager}}
-\subsubsection[{\texorpdfstring{default\+\_\+deltat\+\_\+times}{default_deltat_times}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} I\+O\+Manager\+::default\+\_\+deltat\+\_\+times\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIOManager_a5551947942fd75911e57b49df6436662}{}\label{classIOManager_a5551947942fd75911e57b49df6436662}
+\subsubsection[{\texorpdfstring{default\+\_\+deltat\+\_\+times}{default_deltat_times}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$double$>$ I\+O\+Manager\+::default\+\_\+deltat\+\_\+times\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classIOManager_a30696a7aaed227e80b3bbac567943eb0}{}\label{classIOManager_a30696a7aaed227e80b3bbac567943eb0}
 
 
 Private \hyperlink{classVector}{Vector} default\+\_\+deltat\+\_\+times. 

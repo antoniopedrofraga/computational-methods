@@ -1,4 +1,4 @@
-.TH "IOManager" 3 "Mon Nov 6 2017" "Heat conduction equation" \" -*- nroff -*-
+.TH "IOManager" 3 "Sun Dec 10 2017" "Heat conduction equation" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -35,11 +35,15 @@ IOManager \- An input/output manager class to handle plot exportations and futur
 .ti -1c
 .RI "void \fBplot_laasonen_times\fP ()"
 .br
-.RI "\fIExports a plot with \fBLaasonen\fP times computational times\&. \fP"
+.RI "\fIExports a plot with \fBLaasonen\fP delta t variation computational times\&. \fP"
 .ti -1c
-.RI "void \fBerror_table\fP (std::string output_name, \fBMethod\fP *analytical, \fBMethod\fP *method)"
+.RI "void \fBplot_default_deltat_times\fP ()"
 .br
-.RI "\fIExports an error table to a \&.lsx file that compares the analytical solution to any other solution\&. \fP"
+.RI "\fIExports a plot with four methods computational times\&. \fP"
+.ti -1c
+.RI "void \fBerror_tables\fP (std::string output_name, std::vector< \fBMethod\fP * > method)"
+.br
+.RI "\fIExports a plot that compares the norms of each solution\&. \fP"
 .ti -1c
 .RI "std::string \fBdouble_to_string\fP (int precision, double value)"
 .br
@@ -57,7 +61,7 @@ IOManager \- An input/output manager class to handle plot exportations and futur
 .br
 .RI "\fIPrivate \fBVector\fP laasonen_times\&. \fP"
 .ti -1c
-.RI "\fBVector\fP \fBdefault_deltat_times\fP"
+.RI "std::vector< double > \fBdefault_deltat_times\fP"
 .br
 .RI "\fIPrivate \fBVector\fP default_deltat_times\&. \fP"
 .in -1c
@@ -105,18 +109,16 @@ string\&. String containing the converted number
 .RE
 .PP
 
-.SS "void IOManager::error_table (std::string output_name, \fBMethod\fP * analytical, \fBMethod\fP * method)\fC [private]\fP"
+.SS "void IOManager::error_tables (std::string output_name, std::vector< \fBMethod\fP * > method)\fC [private]\fP"
 
 .PP
-Exports an error table to a \&.lsx file that compares the analytical solution to any other solution\&. 
+Exports a plot that compares the norms of each solution\&. 
 .PP
 \fBParameters:\fP
 .RS 4
 \fIstring\fP output_name File name to be exported 
 .br
-\fIMethod*\fP analytical The analytical solution 
-.br
-\fIMethod*\fP method Any method solution 
+\fIvector<Method*>\fP vector of methods to plot the second norm 
 .RE
 .PP
 
@@ -133,10 +135,14 @@ Exports outputs regarding plots images and error tables for each computed soluti
 .RE
 .PP
 
+.SS "void IOManager::plot_default_deltat_times ()\fC [private]\fP"
+
+.PP
+Exports a plot with four methods computational times\&. 
 .SS "void IOManager::plot_laasonen_times ()\fC [private]\fP"
 
 .PP
-Exports a plot with \fBLaasonen\fP times computational times\&. 
+Exports a plot with \fBLaasonen\fP delta t variation computational times\&. 
 .SS "void IOManager::plot_solutions (std::string output_name, \fBMethod\fP * analytical, \fBMethod\fP * method)\fC [private]\fP"
 
 .PP
@@ -154,7 +160,7 @@ Exports a plot chart that compares the analytical solution to any other solution
 
 .SH "Member Data Documentation"
 .PP 
-.SS "\fBVector\fP IOManager::default_deltat_times\fC [private]\fP"
+.SS "std::vector<double> IOManager::default_deltat_times\fC [private]\fP"
 
 .PP
 Private \fBVector\fP default_deltat_times\&. Contains the computation time of each method solution, with a time step of 0\&.01\&. 

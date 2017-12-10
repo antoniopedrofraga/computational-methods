@@ -15,7 +15,7 @@ class IOManager {
 private:
 	std::string output_path;  /**< Private string output_path. Contains the ouput directory path name. */
 	std::vector<double> laasonen_times; 	/**< Private Vector laasonen_times. Contains the computation time of each laasonen solution, with a different time step. */
-	Vector default_deltat_times;	/**< Private Vector default_deltat_times. Contains the computation time of each method solution, with a time step of 0.01. */
+	std::vector<double> default_deltat_times;	/**< Private Vector default_deltat_times. Contains the computation time of each method solution, with a time step of 0.01. */
 
 	// PRIVATE PLOT METHODS
 
@@ -34,9 +34,15 @@ private:
 	void plot_solutions(std::string output_name, Method * analytical, Method * method);
 
 	/**
-	* Exports a plot with Laasonen times computational times
+	* Exports a plot with Laasonen delta t variation computational times
 	*/
 	void plot_laasonen_times();
+
+
+	/**
+	* Exports a plot with four methods computational times
+	*/
+	void plot_default_deltat_times();
 
 	/**
 	* Exports a plot that compares the norms of each solution

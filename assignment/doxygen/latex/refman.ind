@@ -1,402 +1,420 @@
 \begin{theindex}
 
+  \item {A\+N\+A\+L\+Y\+T\+I\+C\+AL}
+    \subitem {utils.\+h}, \hyperpage{121}
   \item {Analytical}, \hyperpage{7}
-    \subitem {Analytical}, \hyperpage{9}
-    \subitem {compute\+\_\+solution}, \hyperpage{9}
-    \subitem {nr\+\_\+of\+\_\+expansions}, \hyperpage{10}
+    \subitem {Analytical}, \hyperpage{10}
+    \subitem {compute\+\_\+solution}, \hyperpage{10}
+    \subitem {nr\+\_\+of\+\_\+expansions}, \hyperpage{11}
 
   \indexspace
 
   \item {build\+\_\+iteration}
-    \subitem {Dufort\+Frankel}, \hyperpage{17}
-    \subitem {Explicit}, \hyperpage{21}
-    \subitem {F\+T\+CS}, \hyperpage{25}
-    \subitem {Richardson}, \hyperpage{78}
+    \subitem {Dufort\+Frankel}, \hyperpage{18}
+    \subitem {Explicit}, \hyperpage{22}
+    \subitem {F\+T\+CS}, \hyperpage{26}
+    \subitem {Richardson}, \hyperpage{80}
   \item {build\+\_\+r}
-    \subitem {Crank\+Nicolson}, \hyperpage{13}
-    \subitem {Implicit}, \hyperpage{29}
-    \subitem {Laasonen}, \hyperpage{40}
+    \subitem {Crank\+Nicolson}, \hyperpage{14}
+    \subitem {Implicit}, \hyperpage{30}
+    \subitem {Laasonen}, \hyperpage{41}
 
   \indexspace
 
   \item {C\+R\+A\+N\+K\+\_\+\+N\+I\+C\+H\+O\+L\+S\+ON}
-    \subitem {utils.\+h}, \hyperpage{119}
+    \subitem {utils.\+h}, \hyperpage{121}
   \item {computational\+\_\+time}
-    \subitem {Method}, \hyperpage{64}
+    \subitem {Method}, \hyperpage{66}
   \item {compute}
-    \subitem {Method}, \hyperpage{61}
+    \subitem {Method}, \hyperpage{62}
+  \item {compute\+\_\+norms}
+    \subitem {Method}, \hyperpage{62}
   \item {compute\+\_\+solution}
-    \subitem {Analytical}, \hyperpage{9}
-    \subitem {Explicit}, \hyperpage{22}
-    \subitem {Implicit}, \hyperpage{30}
-    \subitem {Method}, \hyperpage{61}
-  \item {Crank\+Nicolson}, \hyperpage{10}
-    \subitem {build\+\_\+r}, \hyperpage{13}
-    \subitem {Crank\+Nicolson}, \hyperpage{13}
+    \subitem {Analytical}, \hyperpage{10}
+    \subitem {Explicit}, \hyperpage{23}
+    \subitem {Implicit}, \hyperpage{31}
+    \subitem {Method}, \hyperpage{63}
+  \item {Crank\+Nicolson}, \hyperpage{11}
+    \subitem {build\+\_\+r}, \hyperpage{14}
+    \subitem {Crank\+Nicolson}, \hyperpage{14}
   \item {create\+\_\+output\+\_\+dir}
     \subitem {I\+O\+Manager}, \hyperpage{34}
 
   \indexspace
 
   \item {D\+E\+L\+T\+A\+\_\+\+T\+\_\+\+L\+A\+S\+S\+O\+N\+EN}
-    \subitem {utils.\+h}, \hyperpage{119}
+    \subitem {utils.\+h}, \hyperpage{121}
   \item {D\+E\+L\+T\+A\+\_\+T}
-    \subitem {utils.\+h}, \hyperpage{119}
+    \subitem {utils.\+h}, \hyperpage{121}
   \item {D\+E\+L\+T\+A\+\_\+X}
-    \subitem {utils.\+h}, \hyperpage{119}
+    \subitem {utils.\+h}, \hyperpage{121}
   \item {D\+I\+F\+U\+S\+I\+V\+I\+TY}
-    \subitem {utils.\+h}, \hyperpage{119}
+    \subitem {utils.\+h}, \hyperpage{122}
   \item {D\+U\+F\+O\+R\+T\+\_\+\+F\+R\+A\+N\+K\+EL}
-    \subitem {utils.\+h}, \hyperpage{120}
+    \subitem {utils.\+h}, \hyperpage{122}
   \item {default\+\_\+deltat\+\_\+times}
     \subitem {I\+O\+Manager}, \hyperpage{37}
   \item {delta\+\_\+t}
-    \subitem {Problem}, \hyperpage{74}
+    \subitem {Problem}, \hyperpage{76}
   \item {delta\+\_\+x}
-    \subitem {Problem}, \hyperpage{74}
+    \subitem {Problem}, \hyperpage{76}
   \item {double\+\_\+to\+\_\+string}
     \subitem {I\+O\+Manager}, \hyperpage{34}
-  \item {Dufort\+Frankel}, \hyperpage{14}
-    \subitem {build\+\_\+iteration}, \hyperpage{17}
-    \subitem {Dufort\+Frankel}, \hyperpage{17}
+  \item {Dufort\+Frankel}, \hyperpage{15}
+    \subitem {build\+\_\+iteration}, \hyperpage{18}
+    \subitem {Dufort\+Frankel}, \hyperpage{18}
 
   \indexspace
 
-  \item {error\+\_\+table}
-    \subitem {I\+O\+Manager}, \hyperpage{34}
-  \item {Explicit}, \hyperpage{18}
-    \subitem {build\+\_\+iteration}, \hyperpage{21}
-    \subitem {compute\+\_\+solution}, \hyperpage{22}
-    \subitem {Explicit}, \hyperpage{21}
+  \item {error\+\_\+tables}
+    \subitem {I\+O\+Manager}, \hyperpage{35}
+  \item {Explicit}, \hyperpage{19}
+    \subitem {build\+\_\+iteration}, \hyperpage{22}
+    \subitem {compute\+\_\+solution}, \hyperpage{23}
+    \subitem {Explicit}, \hyperpage{22}
   \item {export\+\_\+outputs}
     \subitem {I\+O\+Manager}, \hyperpage{35}
 
   \indexspace
 
   \item {F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+I\+M\+E\+\_\+\+C\+E\+N\+T\+R\+A\+L\+\_\+\+S\+P\+A\+CE}
-    \subitem {utils.\+h}, \hyperpage{120}
-  \item {F\+T\+CS}, \hyperpage{23}
-    \subitem {build\+\_\+iteration}, \hyperpage{25}
-    \subitem {F\+T\+CS}, \hyperpage{25}
+    \subitem {utils.\+h}, \hyperpage{122}
+  \item {F\+T\+CS}, \hyperpage{24}
+    \subitem {build\+\_\+iteration}, \hyperpage{26}
+    \subitem {F\+T\+CS}, \hyperpage{26}
   \item {find}
-    \subitem {Vector}, \hyperpage{84}
+    \subitem {Vector}, \hyperpage{86}
 
   \indexspace
 
   \item {get\+\_\+computational\+\_\+time}
-    \subitem {Method}, \hyperpage{61}
-  \item {get\+\_\+deltat}
-    \subitem {Method}, \hyperpage{62}
-    \subitem {Problem}, \hyperpage{68}
-  \item {get\+\_\+deltax}
-    \subitem {Problem}, \hyperpage{68}
-  \item {get\+\_\+first\+\_\+row}
-    \subitem {Problem}, \hyperpage{69}
-  \item {get\+\_\+name}
-    \subitem {Method}, \hyperpage{62}
-  \item {get\+\_\+solution}
-    \subitem {Method}, \hyperpage{62}
-    \subitem {Problem}, \hyperpage{69}
-  \item {get\+\_\+tsize}
-    \subitem {Problem}, \hyperpage{70}
-  \item {get\+\_\+tvalues}
-    \subitem {Problem}, \hyperpage{70}
-  \item {get\+\_\+xsize}
-    \subitem {Problem}, \hyperpage{71}
-  \item {get\+\_\+xvalues}
     \subitem {Method}, \hyperpage{63}
+  \item {get\+\_\+deltat}
+    \subitem {Method}, \hyperpage{63}
+    \subitem {Problem}, \hyperpage{70}
+  \item {get\+\_\+deltax}
+    \subitem {Problem}, \hyperpage{70}
+  \item {get\+\_\+first\+\_\+row}
     \subitem {Problem}, \hyperpage{71}
+  \item {get\+\_\+name}
+    \subitem {Method}, \hyperpage{64}
+  \item {get\+\_\+solution}
+    \subitem {Method}, \hyperpage{64}
+    \subitem {Problem}, \hyperpage{71}
+  \item {get\+\_\+tsize}
+    \subitem {Problem}, \hyperpage{72}
+  \item {get\+\_\+tvalues}
+    \subitem {Problem}, \hyperpage{72}
+  \item {get\+\_\+two\+\_\+norm}
+    \subitem {Method}, \hyperpage{65}
+  \item {get\+\_\+xsize}
+    \subitem {Problem}, \hyperpage{73}
+  \item {get\+\_\+xvalues}
+    \subitem {Method}, \hyperpage{65}
+    \subitem {Problem}, \hyperpage{73}
   \item {get\+Ncols}
-    \subitem {Matrix}, \hyperpage{46}
-  \item {get\+Nrows}
     \subitem {Matrix}, \hyperpage{47}
+  \item {get\+Nrows}
+    \subitem {Matrix}, \hyperpage{48}
   \item {get\+Size}
-    \subitem {Vector}, \hyperpage{84}
-  \item {grid/matrix.\+cpp}, \hyperpage{91}
-  \item {grid/matrix.\+h}, \hyperpage{95}
-  \item {grid/vector.\+cpp}, \hyperpage{95}
-  \item {grid/vector.\+h}, \hyperpage{98}
+    \subitem {Vector}, \hyperpage{86}
+  \item {grid/matrix.\+cpp}, \hyperpage{93}
+  \item {grid/matrix.\+h}, \hyperpage{97}
+  \item {grid/vector.\+cpp}, \hyperpage{97}
+  \item {grid/vector.\+h}, \hyperpage{100}
 
   \indexspace
 
   \item {I\+N\+I\+T\+I\+A\+L\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}
-    \subitem {utils.\+h}, \hyperpage{120}
-  \item {I\+O\+Manager}, \hyperpage{32}
+    \subitem {utils.\+h}, \hyperpage{122}
+  \item {I\+O\+Manager}, \hyperpage{33}
     \subitem {create\+\_\+output\+\_\+dir}, \hyperpage{34}
     \subitem {default\+\_\+deltat\+\_\+times}, \hyperpage{37}
     \subitem {double\+\_\+to\+\_\+string}, \hyperpage{34}
-    \subitem {error\+\_\+table}, \hyperpage{34}
+    \subitem {error\+\_\+tables}, \hyperpage{35}
     \subitem {export\+\_\+outputs}, \hyperpage{35}
-    \subitem {I\+O\+Manager}, \hyperpage{33}
-    \subitem {laasonen\+\_\+times}, \hyperpage{37}
-    \subitem {output\+\_\+path}, \hyperpage{37}
+    \subitem {I\+O\+Manager}, \hyperpage{34}
+    \subitem {laasonen\+\_\+times}, \hyperpage{38}
+    \subitem {output\+\_\+path}, \hyperpage{38}
+    \subitem {plot\+\_\+default\+\_\+deltat\+\_\+times}, \hyperpage{36}
     \subitem {plot\+\_\+laasonen\+\_\+times}, \hyperpage{36}
-    \subitem {plot\+\_\+solutions}, \hyperpage{36}
-  \item {Implicit}, \hyperpage{26}
-    \subitem {build\+\_\+r}, \hyperpage{29}
-    \subitem {compute\+\_\+solution}, \hyperpage{30}
-    \subitem {Implicit}, \hyperpage{29}
-    \subitem {thomas\+\_\+algorithm}, \hyperpage{30}
-  \item {io/iomanager.\+cpp}, \hyperpage{99}
-  \item {io/iomanager.\+h}, \hyperpage{100}
+    \subitem {plot\+\_\+solutions}, \hyperpage{37}
+  \item {Implicit}, \hyperpage{27}
+    \subitem {build\+\_\+r}, \hyperpage{30}
+    \subitem {compute\+\_\+solution}, \hyperpage{31}
+    \subitem {Implicit}, \hyperpage{30}
+    \subitem {thomas\+\_\+algorithm}, \hyperpage{31}
+  \item {io/iomanager.\+cpp}, \hyperpage{101}
+  \item {io/iomanager.\+h}, \hyperpage{102}
 
   \indexspace
 
   \item {L\+A\+A\+S\+O\+N\+EN}
-    \subitem {utils.\+h}, \hyperpage{120}
+    \subitem {utils.\+h}, \hyperpage{122}
   \item {Laasonen}, \hyperpage{38}
-    \subitem {build\+\_\+r}, \hyperpage{40}
-    \subitem {Laasonen}, \hyperpage{40}
+    \subitem {build\+\_\+r}, \hyperpage{41}
+    \subitem {Laasonen}, \hyperpage{41}
   \item {laasonen\+\_\+times}
-    \subitem {I\+O\+Manager}, \hyperpage{37}
+    \subitem {I\+O\+Manager}, \hyperpage{38}
 
   \indexspace
 
   \item {main}
-    \subitem {main.\+cpp}, \hyperpage{102}
-  \item {main.\+cpp}, \hyperpage{101}
-    \subitem {main}, \hyperpage{102}
-  \item {Matrix}, \hyperpage{41}
-    \subitem {get\+Ncols}, \hyperpage{46}
-    \subitem {get\+Nrows}, \hyperpage{47}
-    \subitem {Matrix}, \hyperpage{45, 46}
-    \subitem {mult}, \hyperpage{48}
-    \subitem {one\+\_\+norm}, \hyperpage{48}
-    \subitem {operator$<$$<$}, \hyperpage{55}
-    \subitem {operator$>$$>$}, \hyperpage{56, 57}
-    \subitem {operator$\ast$}, \hyperpage{49, 50}
-    \subitem {operator=}, \hyperpage{51}
-    \subitem {operator==}, \hyperpage{51}
-    \subitem {set\+\_\+row}, \hyperpage{52}
-    \subitem {transpose}, \hyperpage{53}
-    \subitem {two\+\_\+norm}, \hyperpage{53}
-    \subitem {uniform\+\_\+norm}, \hyperpage{54}
-    \subitem {vec}, \hyperpage{45}
+    \subitem {main.\+cpp}, \hyperpage{104}
+  \item {main.\+cpp}, \hyperpage{103}
+    \subitem {main}, \hyperpage{104}
+  \item {Matrix}, \hyperpage{42}
+    \subitem {get\+Ncols}, \hyperpage{47}
+    \subitem {get\+Nrows}, \hyperpage{48}
+    \subitem {Matrix}, \hyperpage{46, 47}
+    \subitem {mult}, \hyperpage{49}
+    \subitem {one\+\_\+norm}, \hyperpage{49}
+    \subitem {operator$<$$<$}, \hyperpage{56, 57}
+    \subitem {operator$>$$>$}, \hyperpage{57, 58}
+    \subitem {operator$\ast$}, \hyperpage{50, 51}
+    \subitem {operator=}, \hyperpage{52}
+    \subitem {operator==}, \hyperpage{52}
+    \subitem {set\+\_\+row}, \hyperpage{53}
+    \subitem {transpose}, \hyperpage{54}
+    \subitem {two\+\_\+norm}, \hyperpage{54}
+    \subitem {uniform\+\_\+norm}, \hyperpage{55}
+    \subitem {vec}, \hyperpage{46}
   \item {matrix.\+cpp}
-    \subitem {operator$<$$<$}, \hyperpage{91, 92}
-    \subitem {operator$>$$>$}, \hyperpage{93, 94}
-  \item {Method}, \hyperpage{57}
-    \subitem {computational\+\_\+time}, \hyperpage{64}
-    \subitem {compute}, \hyperpage{61}
-    \subitem {compute\+\_\+solution}, \hyperpage{61}
-    \subitem {get\+\_\+computational\+\_\+time}, \hyperpage{61}
-    \subitem {get\+\_\+deltat}, \hyperpage{62}
-    \subitem {get\+\_\+name}, \hyperpage{62}
-    \subitem {get\+\_\+solution}, \hyperpage{62}
-    \subitem {get\+\_\+xvalues}, \hyperpage{63}
-    \subitem {Method}, \hyperpage{60}
-    \subitem {name}, \hyperpage{64}
-    \subitem {problem}, \hyperpage{64}
-    \subitem {q}, \hyperpage{64}
-  \item {methods/analytical.\+cpp}, \hyperpage{102}
-  \item {methods/analytical.\+h}, \hyperpage{103}
-  \item {methods/explicit/dufort\+\_\+frankel.\+cpp}, \hyperpage{104}
-  \item {methods/explicit/dufort\+\_\+frankel.\+h}, \hyperpage{104}
-  \item {methods/explicit/explicit.\+cpp}, \hyperpage{105}
-  \item {methods/explicit/explicit.\+h}, \hyperpage{106}
+    \subitem {operator$<$$<$}, \hyperpage{93, 94}
+    \subitem {operator$>$$>$}, \hyperpage{95, 96}
+  \item {Method}, \hyperpage{58}
+    \subitem {computational\+\_\+time}, \hyperpage{66}
+    \subitem {compute}, \hyperpage{62}
+    \subitem {compute\+\_\+norms}, \hyperpage{62}
+    \subitem {compute\+\_\+solution}, \hyperpage{63}
+    \subitem {get\+\_\+computational\+\_\+time}, \hyperpage{63}
+    \subitem {get\+\_\+deltat}, \hyperpage{63}
+    \subitem {get\+\_\+name}, \hyperpage{64}
+    \subitem {get\+\_\+solution}, \hyperpage{64}
+    \subitem {get\+\_\+two\+\_\+norm}, \hyperpage{65}
+    \subitem {get\+\_\+xvalues}, \hyperpage{65}
+    \subitem {Method}, \hyperpage{62}
+    \subitem {name}, \hyperpage{66}
+    \subitem {one\+\_\+norm}, \hyperpage{66}
+    \subitem {problem}, \hyperpage{66}
+    \subitem {q}, \hyperpage{66}
+    \subitem {two\+\_\+norm}, \hyperpage{66}
+    \subitem {uniform\+\_\+norm}, \hyperpage{66}
+  \item {methods/analytical.\+cpp}, \hyperpage{104}
+  \item {methods/analytical.\+h}, \hyperpage{105}
+  \item {methods/explicit/dufort\+\_\+frankel.\+cpp}, \hyperpage{106}
+  \item {methods/explicit/dufort\+\_\+frankel.\+h}, \hyperpage{106}
+  \item {methods/explicit/explicit.\+cpp}, \hyperpage{107}
+  \item {methods/explicit/explicit.\+h}, \hyperpage{108}
   \item {methods/explicit/forward\+\_\+t\+\_\+central\+\_\+s.\+cpp}, 
-		\hyperpage{107}
+		\hyperpage{109}
   \item {methods/explicit/forward\+\_\+t\+\_\+central\+\_\+s.\+h}, 
-		\hyperpage{108}
-  \item {methods/explicit/richardson.\+cpp}, \hyperpage{109}
-  \item {methods/explicit/richardson.\+h}, \hyperpage{109}
-  \item {methods/implicit/crank\+\_\+nicolson.\+cpp}, \hyperpage{110}
-  \item {methods/implicit/crank\+\_\+nicolson.\+h}, \hyperpage{111}
-  \item {methods/implicit/implicit.\+cpp}, \hyperpage{112}
-  \item {methods/implicit/implicit.\+h}, \hyperpage{113}
-  \item {methods/implicit/laasonen.\+cpp}, \hyperpage{113}
-  \item {methods/implicit/laasonen.\+h}, \hyperpage{114}
-  \item {methods/method.\+cpp}, \hyperpage{115}
-  \item {methods/method.\+h}, \hyperpage{116}
+		\hyperpage{110}
+  \item {methods/explicit/richardson.\+cpp}, \hyperpage{111}
+  \item {methods/explicit/richardson.\+h}, \hyperpage{111}
+  \item {methods/implicit/crank\+\_\+nicolson.\+cpp}, \hyperpage{112}
+  \item {methods/implicit/crank\+\_\+nicolson.\+h}, \hyperpage{113}
+  \item {methods/implicit/implicit.\+cpp}, \hyperpage{114}
+  \item {methods/implicit/implicit.\+h}, \hyperpage{115}
+  \item {methods/implicit/laasonen.\+cpp}, \hyperpage{115}
+  \item {methods/implicit/laasonen.\+h}, \hyperpage{116}
+  \item {methods/method.\+cpp}, \hyperpage{117}
+  \item {methods/method.\+h}, \hyperpage{118}
   \item {mult}
-    \subitem {Matrix}, \hyperpage{48}
+    \subitem {Matrix}, \hyperpage{49}
 
   \indexspace
 
   \item {N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+E\+X\+P\+A\+N\+S\+I\+O\+NS}
-    \subitem {utils.\+h}, \hyperpage{120}
+    \subitem {utils.\+h}, \hyperpage{122}
   \item {N\+U\+M\+B\+E\+R\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+E\+PS}
-    \subitem {utils.\+h}, \hyperpage{120}
+    \subitem {utils.\+h}, \hyperpage{122}
   \item {name}
-    \subitem {Method}, \hyperpage{64}
+    \subitem {Method}, \hyperpage{66}
   \item {nr\+\_\+of\+\_\+expansions}
-    \subitem {Analytical}, \hyperpage{10}
+    \subitem {Analytical}, \hyperpage{11}
 
   \indexspace
 
   \item {O\+U\+T\+P\+U\+T\+\_\+\+P\+A\+TH}
-    \subitem {utils.\+h}, \hyperpage{120}
+    \subitem {utils.\+h}, \hyperpage{122}
   \item {one\+\_\+norm}
-    \subitem {Matrix}, \hyperpage{48}
-    \subitem {Vector}, \hyperpage{85}
+    \subitem {Matrix}, \hyperpage{49}
+    \subitem {Method}, \hyperpage{66}
+    \subitem {Vector}, \hyperpage{87}
   \item {operator$<$$<$}
-    \subitem {Matrix}, \hyperpage{55}
-    \subitem {matrix.\+cpp}, \hyperpage{91, 92}
-    \subitem {Vector}, \hyperpage{88}
-    \subitem {vector.\+cpp}, \hyperpage{96}
-  \item {operator$>$$>$}
     \subitem {Matrix}, \hyperpage{56, 57}
     \subitem {matrix.\+cpp}, \hyperpage{93, 94}
-    \subitem {Vector}, \hyperpage{89}
-    \subitem {vector.\+cpp}, \hyperpage{97, 98}
+    \subitem {Vector}, \hyperpage{90}
+    \subitem {vector.\+cpp}, \hyperpage{98}
+  \item {operator$>$$>$}
+    \subitem {Matrix}, \hyperpage{57, 58}
+    \subitem {matrix.\+cpp}, \hyperpage{95, 96}
+    \subitem {Vector}, \hyperpage{91}
+    \subitem {vector.\+cpp}, \hyperpage{99, 100}
   \item {operator$\ast$}
-    \subitem {Matrix}, \hyperpage{49, 50}
+    \subitem {Matrix}, \hyperpage{50, 51}
   \item {operator=}
-    \subitem {Matrix}, \hyperpage{51}
-    \subitem {Vector}, \hyperpage{85}
+    \subitem {Matrix}, \hyperpage{52}
+    \subitem {Vector}, \hyperpage{87}
   \item {operator==}
-    \subitem {Matrix}, \hyperpage{51}
-    \subitem {Vector}, \hyperpage{86}
+    \subitem {Matrix}, \hyperpage{52}
+    \subitem {Vector}, \hyperpage{88}
   \item {output\+\_\+path}
-    \subitem {I\+O\+Manager}, \hyperpage{37}
+    \subitem {I\+O\+Manager}, \hyperpage{38}
 
   \indexspace
 
   \item {PI}
-    \subitem {utils.\+h}, \hyperpage{120}
+    \subitem {utils.\+h}, \hyperpage{123}
+  \item {plot\+\_\+default\+\_\+deltat\+\_\+times}
+    \subitem {I\+O\+Manager}, \hyperpage{36}
   \item {plot\+\_\+laasonen\+\_\+times}
     \subitem {I\+O\+Manager}, \hyperpage{36}
   \item {plot\+\_\+solutions}
-    \subitem {I\+O\+Manager}, \hyperpage{36}
-  \item {Problem}, \hyperpage{65}
-    \subitem {delta\+\_\+t}, \hyperpage{74}
-    \subitem {delta\+\_\+x}, \hyperpage{74}
-    \subitem {get\+\_\+deltat}, \hyperpage{68}
-    \subitem {get\+\_\+deltax}, \hyperpage{68}
-    \subitem {get\+\_\+first\+\_\+row}, \hyperpage{69}
-    \subitem {get\+\_\+solution}, \hyperpage{69}
-    \subitem {get\+\_\+tsize}, \hyperpage{70}
-    \subitem {get\+\_\+tvalues}, \hyperpage{70}
-    \subitem {get\+\_\+xsize}, \hyperpage{71}
-    \subitem {get\+\_\+xvalues}, \hyperpage{71}
-    \subitem {Problem}, \hyperpage{67}
-    \subitem {set\+\_\+initial\+\_\+conditions}, \hyperpage{72}
-    \subitem {set\+\_\+t\+\_\+values}, \hyperpage{72}
-    \subitem {set\+\_\+time\+\_\+step}, \hyperpage{72}
-    \subitem {set\+\_\+x\+\_\+values}, \hyperpage{73}
-    \subitem {solution}, \hyperpage{74}
-    \subitem {t\+\_\+size}, \hyperpage{74}
-    \subitem {t\+\_\+values}, \hyperpage{74}
-    \subitem {x\+\_\+size}, \hyperpage{74}
-    \subitem {x\+\_\+values}, \hyperpage{75}
+    \subitem {I\+O\+Manager}, \hyperpage{37}
+  \item {Problem}, \hyperpage{67}
+    \subitem {delta\+\_\+t}, \hyperpage{76}
+    \subitem {delta\+\_\+x}, \hyperpage{76}
+    \subitem {get\+\_\+deltat}, \hyperpage{70}
+    \subitem {get\+\_\+deltax}, \hyperpage{70}
+    \subitem {get\+\_\+first\+\_\+row}, \hyperpage{71}
+    \subitem {get\+\_\+solution}, \hyperpage{71}
+    \subitem {get\+\_\+tsize}, \hyperpage{72}
+    \subitem {get\+\_\+tvalues}, \hyperpage{72}
+    \subitem {get\+\_\+xsize}, \hyperpage{73}
+    \subitem {get\+\_\+xvalues}, \hyperpage{73}
+    \subitem {Problem}, \hyperpage{69}
+    \subitem {set\+\_\+initial\+\_\+conditions}, \hyperpage{74}
+    \subitem {set\+\_\+t\+\_\+values}, \hyperpage{74}
+    \subitem {set\+\_\+time\+\_\+step}, \hyperpage{75}
+    \subitem {set\+\_\+x\+\_\+values}, \hyperpage{76}
+    \subitem {solution}, \hyperpage{76}
+    \subitem {t\+\_\+size}, \hyperpage{76}
+    \subitem {t\+\_\+values}, \hyperpage{76}
+    \subitem {x\+\_\+size}, \hyperpage{77}
+    \subitem {x\+\_\+values}, \hyperpage{77}
   \item {problem}
-    \subitem {Method}, \hyperpage{64}
+    \subitem {Method}, \hyperpage{66}
   \item {push}
-    \subitem {Vector}, \hyperpage{86}
+    \subitem {Vector}, \hyperpage{88}
   \item {push\+\_\+front\+\_\+back}
-    \subitem {Vector}, \hyperpage{87}
+    \subitem {Vector}, \hyperpage{88}
 
   \indexspace
 
   \item {q}
-    \subitem {Method}, \hyperpage{64}
+    \subitem {Method}, \hyperpage{66}
 
   \indexspace
 
   \item {R\+I\+C\+H\+A\+R\+D\+S\+ON}
-    \subitem {utils.\+h}, \hyperpage{121}
-  \item {Richardson}, \hyperpage{75}
-    \subitem {build\+\_\+iteration}, \hyperpage{78}
-    \subitem {Richardson}, \hyperpage{78}
+    \subitem {utils.\+h}, \hyperpage{123}
+  \item {Richardson}, \hyperpage{77}
+    \subitem {build\+\_\+iteration}, \hyperpage{80}
+    \subitem {Richardson}, \hyperpage{80}
 
   \indexspace
 
   \item {S\+U\+R\+F\+A\+C\+E\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}
-    \subitem {utils.\+h}, \hyperpage{121}
+    \subitem {utils.\+h}, \hyperpage{123}
   \item {set\+\_\+initial\+\_\+conditions}
-    \subitem {Problem}, \hyperpage{72}
-  \item {set\+\_\+row}
-    \subitem {Matrix}, \hyperpage{52}
-  \item {set\+\_\+t\+\_\+values}
-    \subitem {Problem}, \hyperpage{72}
-  \item {set\+\_\+time\+\_\+step}
-    \subitem {Problem}, \hyperpage{72}
-  \item {set\+\_\+x\+\_\+values}
-    \subitem {Problem}, \hyperpage{73}
-  \item {solution}
     \subitem {Problem}, \hyperpage{74}
+  \item {set\+\_\+row}
+    \subitem {Matrix}, \hyperpage{53}
+  \item {set\+\_\+t\+\_\+values}
+    \subitem {Problem}, \hyperpage{74}
+  \item {set\+\_\+time\+\_\+step}
+    \subitem {Problem}, \hyperpage{75}
+  \item {set\+\_\+x\+\_\+values}
+    \subitem {Problem}, \hyperpage{76}
+  \item {solution}
+    \subitem {Problem}, \hyperpage{76}
 
   \indexspace
 
   \item {t\+\_\+size}
-    \subitem {Problem}, \hyperpage{74}
+    \subitem {Problem}, \hyperpage{76}
   \item {t\+\_\+values}
-    \subitem {Problem}, \hyperpage{74}
+    \subitem {Problem}, \hyperpage{76}
   \item {T\+H\+I\+C\+K\+N\+E\+SS}
-    \subitem {utils.\+h}, \hyperpage{121}
+    \subitem {utils.\+h}, \hyperpage{123}
   \item {T\+I\+M\+E\+L\+I\+M\+IT}
-    \subitem {utils.\+h}, \hyperpage{121}
+    \subitem {utils.\+h}, \hyperpage{123}
   \item {thomas\+\_\+algorithm}
-    \subitem {Implicit}, \hyperpage{30}
+    \subitem {Implicit}, \hyperpage{31}
   \item {transpose}
-    \subitem {Matrix}, \hyperpage{53}
+    \subitem {Matrix}, \hyperpage{54}
   \item {two\+\_\+norm}
-    \subitem {Matrix}, \hyperpage{53}
-    \subitem {Vector}, \hyperpage{87}
+    \subitem {Matrix}, \hyperpage{54}
+    \subitem {Method}, \hyperpage{66}
+    \subitem {Vector}, \hyperpage{89}
 
   \indexspace
 
   \item {uniform\+\_\+norm}
-    \subitem {Matrix}, \hyperpage{54}
-    \subitem {Vector}, \hyperpage{87}
+    \subitem {Matrix}, \hyperpage{55}
+    \subitem {Method}, \hyperpage{66}
+    \subitem {Vector}, \hyperpage{89}
   \item {utils.\+h}
+    \subitem {A\+N\+A\+L\+Y\+T\+I\+C\+AL}, \hyperpage{121}
     \subitem {C\+R\+A\+N\+K\+\_\+\+N\+I\+C\+H\+O\+L\+S\+ON}, 
-		\hyperpage{119}
-    \subitem {D\+E\+L\+T\+A\+\_\+\+T\+\_\+\+L\+A\+S\+S\+O\+N\+EN}, 
-		\hyperpage{119}
-    \subitem {D\+E\+L\+T\+A\+\_\+T}, \hyperpage{119}
-    \subitem {D\+E\+L\+T\+A\+\_\+X}, \hyperpage{119}
-    \subitem {D\+I\+F\+U\+S\+I\+V\+I\+TY}, \hyperpage{119}
-    \subitem {D\+U\+F\+O\+R\+T\+\_\+\+F\+R\+A\+N\+K\+EL}, 
-		\hyperpage{120}
-    \subitem {F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+I\+M\+E\+\_\+\+C\+E\+N\+T\+R\+A\+L\+\_\+\+S\+P\+A\+CE}, 
-		\hyperpage{120}
-    \subitem {I\+N\+I\+T\+I\+A\+L\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}, 
-		\hyperpage{120}
-    \subitem {L\+A\+A\+S\+O\+N\+EN}, \hyperpage{120}
-    \subitem {N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+E\+X\+P\+A\+N\+S\+I\+O\+NS}, 
-		\hyperpage{120}
-    \subitem {N\+U\+M\+B\+E\+R\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+E\+PS}, 
-		\hyperpage{120}
-    \subitem {O\+U\+T\+P\+U\+T\+\_\+\+P\+A\+TH}, \hyperpage{120}
-    \subitem {PI}, \hyperpage{120}
-    \subitem {R\+I\+C\+H\+A\+R\+D\+S\+ON}, \hyperpage{121}
-    \subitem {S\+U\+R\+F\+A\+C\+E\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}, 
 		\hyperpage{121}
-    \subitem {T\+H\+I\+C\+K\+N\+E\+SS}, \hyperpage{121}
-    \subitem {T\+I\+M\+E\+L\+I\+M\+IT}, \hyperpage{121}
+    \subitem {D\+E\+L\+T\+A\+\_\+\+T\+\_\+\+L\+A\+S\+S\+O\+N\+EN}, 
+		\hyperpage{121}
+    \subitem {D\+E\+L\+T\+A\+\_\+T}, \hyperpage{121}
+    \subitem {D\+E\+L\+T\+A\+\_\+X}, \hyperpage{121}
+    \subitem {D\+I\+F\+U\+S\+I\+V\+I\+TY}, \hyperpage{122}
+    \subitem {D\+U\+F\+O\+R\+T\+\_\+\+F\+R\+A\+N\+K\+EL}, 
+		\hyperpage{122}
+    \subitem {F\+O\+R\+W\+A\+R\+D\+\_\+\+T\+I\+M\+E\+\_\+\+C\+E\+N\+T\+R\+A\+L\+\_\+\+S\+P\+A\+CE}, 
+		\hyperpage{122}
+    \subitem {I\+N\+I\+T\+I\+A\+L\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}, 
+		\hyperpage{122}
+    \subitem {L\+A\+A\+S\+O\+N\+EN}, \hyperpage{122}
+    \subitem {N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+E\+X\+P\+A\+N\+S\+I\+O\+NS}, 
+		\hyperpage{122}
+    \subitem {N\+U\+M\+B\+E\+R\+\_\+\+T\+I\+M\+E\+\_\+\+S\+T\+E\+PS}, 
+		\hyperpage{122}
+    \subitem {O\+U\+T\+P\+U\+T\+\_\+\+P\+A\+TH}, \hyperpage{122}
+    \subitem {PI}, \hyperpage{123}
+    \subitem {R\+I\+C\+H\+A\+R\+D\+S\+ON}, \hyperpage{123}
+    \subitem {S\+U\+R\+F\+A\+C\+E\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}, 
+		\hyperpage{123}
+    \subitem {T\+H\+I\+C\+K\+N\+E\+SS}, \hyperpage{123}
+    \subitem {T\+I\+M\+E\+L\+I\+M\+IT}, \hyperpage{123}
 
   \indexspace
 
-  \item {variants/problem.\+cpp}, \hyperpage{116}
-  \item {variants/problem.\+h}, \hyperpage{117}
-  \item {variants/utils.\+h}, \hyperpage{118}
+  \item {variants/problem.\+cpp}, \hyperpage{118}
+  \item {variants/problem.\+h}, \hyperpage{119}
+  \item {variants/utils.\+h}, \hyperpage{120}
   \item {vec}
-    \subitem {Matrix}, \hyperpage{45}
-    \subitem {Vector}, \hyperpage{82}
-  \item {Vector}, \hyperpage{79}
-    \subitem {find}, \hyperpage{84}
-    \subitem {get\+Size}, \hyperpage{84}
-    \subitem {one\+\_\+norm}, \hyperpage{85}
-    \subitem {operator$<$$<$}, \hyperpage{88}
-    \subitem {operator$>$$>$}, \hyperpage{89}
-    \subitem {operator=}, \hyperpage{85}
-    \subitem {operator==}, \hyperpage{86}
-    \subitem {push}, \hyperpage{86}
-    \subitem {push\+\_\+front\+\_\+back}, \hyperpage{87}
-    \subitem {two\+\_\+norm}, \hyperpage{87}
-    \subitem {uniform\+\_\+norm}, \hyperpage{87}
-    \subitem {vec}, \hyperpage{82}
-    \subitem {Vector}, \hyperpage{82, 83}
+    \subitem {Matrix}, \hyperpage{46}
+    \subitem {Vector}, \hyperpage{84}
+  \item {Vector}, \hyperpage{81}
+    \subitem {find}, \hyperpage{86}
+    \subitem {get\+Size}, \hyperpage{86}
+    \subitem {one\+\_\+norm}, \hyperpage{87}
+    \subitem {operator$<$$<$}, \hyperpage{90}
+    \subitem {operator$>$$>$}, \hyperpage{91}
+    \subitem {operator=}, \hyperpage{87}
+    \subitem {operator==}, \hyperpage{88}
+    \subitem {push}, \hyperpage{88}
+    \subitem {push\+\_\+front\+\_\+back}, \hyperpage{88}
+    \subitem {two\+\_\+norm}, \hyperpage{89}
+    \subitem {uniform\+\_\+norm}, \hyperpage{89}
+    \subitem {vec}, \hyperpage{84}
+    \subitem {Vector}, \hyperpage{84, 85}
   \item {vector.\+cpp}
-    \subitem {operator$<$$<$}, \hyperpage{96}
-    \subitem {operator$>$$>$}, \hyperpage{97, 98}
+    \subitem {operator$<$$<$}, \hyperpage{98}
+    \subitem {operator$>$$>$}, \hyperpage{99, 100}
 
   \indexspace
 
   \item {x\+\_\+size}
-    \subitem {Problem}, \hyperpage{74}
+    \subitem {Problem}, \hyperpage{77}
   \item {x\+\_\+values}
-    \subitem {Problem}, \hyperpage{75}
+    \subitem {Problem}, \hyperpage{77}
 
 \end{theindex}

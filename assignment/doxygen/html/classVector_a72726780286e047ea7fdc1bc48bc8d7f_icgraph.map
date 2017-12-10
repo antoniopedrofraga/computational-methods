@@ -1,4 +1,5 @@
 <map id="Vector::uniform_norm" name="Vector::uniform_norm">
 <area shape="rect" id="node2" href="$classMatrix.html#a4f7ede695709b614f2e1f6423a024201" title="Normal public method that returns a double. " alt="" coords="211,5,334,32"/>
-<area shape="rect" id="node3" href="$classMatrix.html#a05777a670e901010b96e9d667a4bdd3b" title="Normal public method that returns a double. " alt="" coords="200,56,345,83"/>
+<area shape="rect" id="node4" href="$classMatrix.html#a05777a670e901010b96e9d667a4bdd3b" title="Normal public method that returns a double. " alt="" coords="200,56,345,83"/>
+<area shape="rect" id="node3" href="$classMethod.html#a4f1d13311599c8ffd73835663beb0e7b" title="Method::compute_norms" alt="" coords="393,31,560,57"/>
 </map>

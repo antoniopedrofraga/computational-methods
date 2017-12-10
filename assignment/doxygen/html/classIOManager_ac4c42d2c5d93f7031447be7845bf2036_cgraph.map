@@ -1,14 +1,12 @@
 <map id="IOManager::export_outputs" name="IOManager::export_outputs">
-<area shape="rect" id="node2" href="$classIOManager.html#a9798220ef88ebb14ffd354a04351862d" title="Method to create ouput folder if the folder does not exist. " alt="" coords="233,21,428,48"/>
-<area shape="rect" id="node3" href="$classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="476,107,627,149"/>
-<area shape="rect" id="node4" href="$classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="243,173,418,200"/>
-<area shape="rect" id="node9" href="$classIOManager.html#a141e94d64d31d2ce77d8d2adf568d3d3" title="Exports an error table to a .lsx file that compares the analytical solution to any other solution..." alt="" coords="253,72,408,99"/>
-<area shape="rect" id="node13" href="$classIOManager.html#addf56e894f0331609d821bd515887f84" title="Exports a plot with Laasonen times computational times. " alt="" coords="243,225,418,266"/>
-<area shape="rect" id="node5" href="$classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="480,173,623,200"/>
-<area shape="rect" id="node7" href="$classMatrix.html#ab0ed1933348c0511d74f825b73778aaa" title="Normal public get method. " alt="" coords="490,224,613,251"/>
-<area shape="rect" id="node8" href="$classMethod.html#a103a9b2dcf6ef35857e279ba1e5ef9c3" title="Normal public get method. " alt="" coords="486,275,617,301"/>
-<area shape="rect" id="node6" href="$classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="675,173,823,200"/>
-<area shape="rect" id="node10" href="$classMethod.html#aeda95af3c0440df84c0571614f6fd122" title="Normal public get method. " alt="" coords="480,5,623,32"/>
-<area shape="rect" id="node12" href="$classVector.html#ad7a31bddb977b9fee5fd6226d77ca119" title="Normal get method that returns integer, the size of the vector. " alt="" coords="495,56,607,83"/>
-<area shape="rect" id="node11" href="$classProblem.html#a24f804792a0f5e30816a79cbbdb4c561" title="Normal public get method that returns a Vector, containing the space values in each column..." alt="" coords="675,5,823,32"/>
+<area shape="rect" id="node2" href="$classIOManager.html#a9798220ef88ebb14ffd354a04351862d" title="Method to create ouput folder if the folder does not exist. " alt="" coords="233,5,428,32"/>
+<area shape="rect" id="node3" href="$classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="476,41,627,82"/>
+<area shape="rect" id="node4" href="$classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="243,107,418,133"/>
+<area shape="rect" id="node9" href="$classIOManager.html#a32ba797e6d5cbd6f0f8d3856b62848a2" title="Exports a plot that compares the norms of each solution. " alt="" coords="249,157,412,184"/>
+<area shape="rect" id="node10" href="$classIOManager.html#a12b636be3c0bab9b90ed042f450ebe8d" title="Exports a plot with four methods computational times. " alt="" coords="250,209,411,250"/>
+<area shape="rect" id="node11" href="$classIOManager.html#addf56e894f0331609d821bd515887f84" title="Exports a plot with Laasonen delta t variation computational times. " alt="" coords="243,274,418,315"/>
+<area shape="rect" id="node5" href="$classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="480,107,623,133"/>
+<area shape="rect" id="node7" href="$classMatrix.html#ab0ed1933348c0511d74f825b73778aaa" title="Normal public get method. " alt="" coords="490,157,613,184"/>
+<area shape="rect" id="node8" href="$classMethod.html#a103a9b2dcf6ef35857e279ba1e5ef9c3" title="Normal public get method. " alt="" coords="486,208,617,235"/>
+<area shape="rect" id="node6" href="$classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="675,107,823,133"/>
 </map>

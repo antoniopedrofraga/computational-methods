@@ -101,7 +101,6 @@ Collaboration diagram for IOManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIOManager__coll__graph.png" border="0" usemap="#IOManager_coll__map" alt="Collaboration graph"/></div>
 <map name="IOManager_coll__map" id="IOManager_coll__map">
-<area shape="rect" id="node2" href="classVector.html" title="A vector class for data storage of a 1D array of doubles &#160;&#160;The implementation is derived from the sta..." alt="" coords="15,132,153,385"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -123,11 +122,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a149183e073e33890810fe6801bc4861f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports a plot chart that compares the analytical solution to any other solution using gnuplot.  <a href="#a149183e073e33890810fe6801bc4861f">More...</a><br /></td></tr>
 <tr class="separator:a149183e073e33890810fe6801bc4861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addf56e894f0331609d821bd515887f84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#addf56e894f0331609d821bd515887f84">plot_laasonen_times</a> ()</td></tr>
-<tr class="memdesc:addf56e894f0331609d821bd515887f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports a plot with <a class="el" href="classLaasonen.html" title="A Laasonen method class that contains a r vector builder. ">Laasonen</a> times computational times.  <a href="#addf56e894f0331609d821bd515887f84">More...</a><br /></td></tr>
+<tr class="memdesc:addf56e894f0331609d821bd515887f84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports a plot with <a class="el" href="classLaasonen.html" title="A Laasonen method class that contains a r vector builder. ">Laasonen</a> delta t variation computational times.  <a href="#addf56e894f0331609d821bd515887f84">More...</a><br /></td></tr>
 <tr class="separator:addf56e894f0331609d821bd515887f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a141e94d64d31d2ce77d8d2adf568d3d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#a141e94d64d31d2ce77d8d2adf568d3d3">error_table</a> (std::string output_name, <a class="el" href="classMethod.html">Method</a> *analytical, <a class="el" href="classMethod.html">Method</a> *method)</td></tr>
-<tr class="memdesc:a141e94d64d31d2ce77d8d2adf568d3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports an error table to a .lsx file that compares the analytical solution to any other solution.  <a href="#a141e94d64d31d2ce77d8d2adf568d3d3">More...</a><br /></td></tr>
-<tr class="separator:a141e94d64d31d2ce77d8d2adf568d3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b636be3c0bab9b90ed042f450ebe8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#a12b636be3c0bab9b90ed042f450ebe8d">plot_default_deltat_times</a> ()</td></tr>
+<tr class="memdesc:a12b636be3c0bab9b90ed042f450ebe8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports a plot with four methods computational times.  <a href="#a12b636be3c0bab9b90ed042f450ebe8d">More...</a><br /></td></tr>
+<tr class="separator:a12b636be3c0bab9b90ed042f450ebe8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32ba797e6d5cbd6f0f8d3856b62848a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#a32ba797e6d5cbd6f0f8d3856b62848a2">error_tables</a> (std::string output_name, std::vector&lt; <a class="el" href="classMethod.html">Method</a> * &gt; method)</td></tr>
+<tr class="memdesc:a32ba797e6d5cbd6f0f8d3856b62848a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports a plot that compares the norms of each solution.  <a href="#a32ba797e6d5cbd6f0f8d3856b62848a2">More...</a><br /></td></tr>
+<tr class="separator:a32ba797e6d5cbd6f0f8d3856b62848a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0848cdaa155421cd6904650823bdc9e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#ac0848cdaa155421cd6904650823bdc9e">double_to_string</a> (int precision, double value)</td></tr>
 <tr class="memdesc:ac0848cdaa155421cd6904650823bdc9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a double to a string with a precison of 2 decimal places.  <a href="#ac0848cdaa155421cd6904650823bdc9e">More...</a><br /></td></tr>
 <tr class="separator:ac0848cdaa155421cd6904650823bdc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +142,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a55739efc2d1c63b7b0c0afe2db6b294b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#a55739efc2d1c63b7b0c0afe2db6b294b">laasonen_times</a></td></tr>
 <tr class="memdesc:a55739efc2d1c63b7b0c0afe2db6b294b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private <a class="el" href="classVector.html" title="A vector class for data storage of a 1D array of doubles   The implementation is derived from the sta...">Vector</a> laasonen_times.  <a href="#a55739efc2d1c63b7b0c0afe2db6b294b">More...</a><br /></td></tr>
 <tr class="separator:a55739efc2d1c63b7b0c0afe2db6b294b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5551947942fd75911e57b49df6436662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#a5551947942fd75911e57b49df6436662">default_deltat_times</a></td></tr>
-<tr class="memdesc:a5551947942fd75911e57b49df6436662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private <a class="el" href="classVector.html" title="A vector class for data storage of a 1D array of doubles   The implementation is derived from the sta...">Vector</a> default_deltat_times.  <a href="#a5551947942fd75911e57b49df6436662">More...</a><br /></td></tr>
-<tr class="separator:a5551947942fd75911e57b49df6436662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30696a7aaed227e80b3bbac567943eb0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIOManager.html#a30696a7aaed227e80b3bbac567943eb0">default_deltat_times</a></td></tr>
+<tr class="memdesc:a30696a7aaed227e80b3bbac567943eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Private <a class="el" href="classVector.html" title="A vector class for data storage of a 1D array of doubles   The implementation is derived from the sta...">Vector</a> default_deltat_times.  <a href="#a30696a7aaed227e80b3bbac567943eb0">More...</a><br /></td></tr>
+<tr class="separator:a30696a7aaed227e80b3bbac567943eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An input/output manager class to handle plot exportations and future implementations of input handling. </p>
@@ -252,17 +254,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.png" border="0" usemap="#classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph" alt=""/></div>
 <map name="classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph" id="classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph">
-<area shape="rect" id="node2" href="classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="427,23,607,50"/>
-<area shape="rect" id="node4" href="classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="204,23,379,50"/>
-<area shape="rect" id="node5" href="classIOManager.html#a141e94d64d31d2ce77d8d2adf568d3d3" title="Exports an error table to a .lsx file that compares the analytical solution to any other solution..." alt="" coords="214,74,369,100"/>
-<area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="655,23,705,50"/>
+<area shape="rect" id="node2" href="classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="427,13,607,39"/>
+<area shape="rect" id="node4" href="classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="204,38,379,65"/>
+<area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="655,13,705,39"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a141e94d64d31d2ce77d8d2adf568d3d3"></a>
+<a class="anchor" id="a32ba797e6d5cbd6f0f8d3856b62848a2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -270,7 +271,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void IOManager::error_table </td>
+          <td class="memname">void IOManager::error_tables </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
           <td class="paramname"><em>output_name</em>, </td>
@@ -278,13 +279,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classMethod.html">Method</a> *&#160;</td>
-          <td class="paramname"><em>analytical</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classMethod.html">Method</a> *&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classMethod.html">Method</a> * &gt;&#160;</td>
           <td class="paramname"><em>method</em>&#160;</td>
         </tr>
         <tr>
@@ -300,38 +295,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Exports an error table to a .lsx file that compares the analytical solution to any other solution. </p>
+<p>Exports a plot that compares the norms of each solution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">string</td><td>output_name File name to be exported </td></tr>
-    <tr><td class="paramname">Method*</td><td>analytical The analytical solution </td></tr>
-    <tr><td class="paramname">Method*</td><td>method Any method solution </td></tr>
+    <tr><td class="paramname">vector&lt;Method*&gt;</td><td>vector of methods to plot the second norm </td></tr>
   </table>
   </dd>
 </dl>
 
 <p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.png" border="0" usemap="#classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph" alt=""/></div>
-<map name="classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph" id="classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph">
-<area shape="rect" id="node2" href="classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="212,5,355,32"/>
-<area shape="rect" id="node4" href="classMethod.html#aeda95af3c0440df84c0571614f6fd122" title="Normal public get method. " alt="" coords="212,56,355,83"/>
-<area shape="rect" id="node6" href="classVector.html#ad7a31bddb977b9fee5fd6226d77ca119" title="Normal get method that returns integer, the size of the vector. " alt="" coords="227,107,339,133"/>
-<area shape="rect" id="node7" href="classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="208,158,359,199"/>
-<area shape="rect" id="node3" href="classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="407,5,555,32"/>
-<area shape="rect" id="node5" href="classProblem.html#a24f804792a0f5e30816a79cbbdb4c561" title="Normal public get method that returns a Vector, containing the space values in each column..." alt="" coords="407,56,555,83"/>
-</map>
-</div>
-</p>
-
-<p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.png" border="0" usemap="#classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph" alt=""/></div>
-<map name="classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph" id="classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph">
-<area shape="rect" id="node2" href="classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="208,5,388,32"/>
-<area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="436,5,487,32"/>
+<div class="center"><img src="classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph.png" border="0" usemap="#classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph" alt=""/></div>
+<map name="classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph" id="classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph">
+<area shape="rect" id="node2" href="classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="216,5,396,32"/>
+<area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="444,5,495,32"/>
 </map>
 </div>
 </p>
@@ -376,18 +355,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.png" border="0" usemap="#classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph" alt=""/></div>
 <map name="classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph" id="classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph">
-<area shape="rect" id="node2" href="classIOManager.html#a9798220ef88ebb14ffd354a04351862d" title="Method to create ouput folder if the folder does not exist. " alt="" coords="233,21,428,48"/>
-<area shape="rect" id="node3" href="classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="476,107,627,149"/>
-<area shape="rect" id="node4" href="classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="243,173,418,200"/>
-<area shape="rect" id="node9" href="classIOManager.html#a141e94d64d31d2ce77d8d2adf568d3d3" title="Exports an error table to a .lsx file that compares the analytical solution to any other solution..." alt="" coords="253,72,408,99"/>
-<area shape="rect" id="node13" href="classIOManager.html#addf56e894f0331609d821bd515887f84" title="Exports a plot with Laasonen times computational times. " alt="" coords="243,225,418,266"/>
-<area shape="rect" id="node5" href="classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="480,173,623,200"/>
-<area shape="rect" id="node7" href="classMatrix.html#ab0ed1933348c0511d74f825b73778aaa" title="Normal public get method. " alt="" coords="490,224,613,251"/>
-<area shape="rect" id="node8" href="classMethod.html#a103a9b2dcf6ef35857e279ba1e5ef9c3" title="Normal public get method. " alt="" coords="486,275,617,301"/>
-<area shape="rect" id="node6" href="classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="675,173,823,200"/>
-<area shape="rect" id="node10" href="classMethod.html#aeda95af3c0440df84c0571614f6fd122" title="Normal public get method. " alt="" coords="480,5,623,32"/>
-<area shape="rect" id="node12" href="classVector.html#ad7a31bddb977b9fee5fd6226d77ca119" title="Normal get method that returns integer, the size of the vector. " alt="" coords="495,56,607,83"/>
-<area shape="rect" id="node11" href="classProblem.html#a24f804792a0f5e30816a79cbbdb4c561" title="Normal public get method that returns a Vector, containing the space values in each column..." alt="" coords="675,5,823,32"/>
+<area shape="rect" id="node2" href="classIOManager.html#a9798220ef88ebb14ffd354a04351862d" title="Method to create ouput folder if the folder does not exist. " alt="" coords="233,5,428,32"/>
+<area shape="rect" id="node3" href="classIOManager.html#ac0848cdaa155421cd6904650823bdc9e" title="Converts a double to a string with a precison of 2 decimal places. " alt="" coords="476,41,627,82"/>
+<area shape="rect" id="node4" href="classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="243,107,418,133"/>
+<area shape="rect" id="node9" href="classIOManager.html#a32ba797e6d5cbd6f0f8d3856b62848a2" title="Exports a plot that compares the norms of each solution. " alt="" coords="249,157,412,184"/>
+<area shape="rect" id="node10" href="classIOManager.html#a12b636be3c0bab9b90ed042f450ebe8d" title="Exports a plot with four methods computational times. " alt="" coords="250,209,411,250"/>
+<area shape="rect" id="node11" href="classIOManager.html#addf56e894f0331609d821bd515887f84" title="Exports a plot with Laasonen delta t variation computational times. " alt="" coords="243,274,418,315"/>
+<area shape="rect" id="node5" href="classMethod.html#a2a10100e81e4aca97f7ef485ed11fbe6" title="Normal public get method. " alt="" coords="480,107,623,133"/>
+<area shape="rect" id="node7" href="classMatrix.html#ab0ed1933348c0511d74f825b73778aaa" title="Normal public get method. " alt="" coords="490,157,613,184"/>
+<area shape="rect" id="node8" href="classMethod.html#a103a9b2dcf6ef35857e279ba1e5ef9c3" title="Normal public get method. " alt="" coords="486,208,617,235"/>
+<area shape="rect" id="node6" href="classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="675,107,823,133"/>
 </map>
 </div>
 </p>
@@ -398,6 +375,42 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.png" border="0" usemap="#classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph" alt=""/></div>
 <map name="classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph" id="classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph">
 <area shape="rect" id="node2" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="233,5,284,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12b636be3c0bab9b90ed042f450ebe8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IOManager::plot_default_deltat_times </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exports a plot with four methods computational times. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph.png" border="0" usemap="#classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph" alt=""/></div>
+<map name="classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph" id="classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph">
+<area shape="rect" id="node2" href="classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="215,13,395,39"/>
+<area shape="rect" id="node3" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="443,13,493,39"/>
 </map>
 </div>
 </p>
@@ -425,7 +438,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Exports a plot with <a class="el" href="classLaasonen.html" title="A Laasonen method class that contains a r vector builder. ">Laasonen</a> times computational times. </p>
+<p>Exports a plot with <a class="el" href="classLaasonen.html" title="A Laasonen method class that contains a r vector builder. ">Laasonen</a> delta t variation computational times. </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -516,7 +529,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5551947942fd75911e57b49df6436662"></a>
+<a class="anchor" id="a30696a7aaed227e80b3bbac567943eb0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -524,7 +537,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classVector.html">Vector</a> IOManager::default_deltat_times</td>
+          <td class="memname">std::vector&lt;double&gt; IOManager::default_deltat_times</td>
         </tr>
       </table>
   </td>

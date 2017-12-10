@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  28 NOV 2017 20:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.3)  10 DEC 2017 02:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**refman.tex
+**refman
 (./refman.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 5 language(s) loaded.
@@ -1235,22 +1235,28 @@ Chapter 4.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) <classAnalytical__inherit__graph.pdf, id=1369, 215.80624pt x 365.365pt>
+) <classAnalytical__inherit__graph.pdf, id=1404, 215.80624pt x 420.57124pt>
 File: classAnalytical__inherit__graph.pdf Graphic file (type pdf)
 
 <use classAnalytical__inherit__graph.pdf>
 Package pdftex.def Info: classAnalytical__inherit__graph.pdf used on input line
  20.
-(pdftex.def)             Requested size: 215.0pt x 364.00937pt.
+(pdftex.def)             Requested size: 215.0pt x 419.01079pt.
 
-<classAnalytical__coll__graph.pdf, id=1370, 329.23pt x 1014.79124pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+<classAnalytical__coll__graph.pdf, id=1410, 329.23pt x 1069.9975pt>
 File: classAnalytical__coll__graph.pdf Graphic file (type pdf)
 
 <use classAnalytical__coll__graph.pdf>
 Package pdftex.def Info: classAnalytical__coll__graph.pdf used on input line 30
 .
-(pdftex.def)             Requested size: 178.43964pt x 550.0pt.
- [7 <./classAnalytical__inherit__graph.pdf>]
+(pdftex.def)             Requested size: 169.23633pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./classAnalytical__inherit__graph.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1258,7 +1264,8 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 33.
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 36.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
@@ -1269,7 +1276,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 37.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 37.
- [8 <./classAnalytical__coll__graph.pdf>]
+ [9 <./classAnalytical__coll__graph.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 44.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -1292,7 +1299,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 77.
 
 
-<classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf, id=1411, 331.237
+<classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf, id=1451, 331.237
 5pt x 214.8025pt>
 File: classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf Graphic file
  (type pdf)
@@ -1310,30 +1317,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 103.
 
-[9 <./classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf>])
+[10 <./classAnalytical_a48b4e86fd33f1dfd9f59b470cc1272a6_cgraph.pdf>])
 (./classCrankNicolson.tex
-<classCrankNicolson__inherit__graph.pdf, id=1432, 215.80624pt x 492.84125pt>
+<classCrankNicolson__inherit__graph.pdf, id=1472, 215.80624pt x 548.0475pt>
 File: classCrankNicolson__inherit__graph.pdf Graphic file (type pdf)
 
 <use classCrankNicolson__inherit__graph.pdf>
 Package pdftex.def Info: classCrankNicolson__inherit__graph.pdf used on input l
 ine 19.
-(pdftex.def)             Requested size: 215.0pt x 491.01262pt.
+(pdftex.def)             Requested size: 215.0pt x 546.01405pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-<classCrankNicolson__coll__graph.pdf, id=1438, 329.23pt x 1143.27126pt>
+ [11]
+<classCrankNicolson__coll__graph.pdf, id=1477, 329.23pt x 1198.4775pt>
 File: classCrankNicolson__coll__graph.pdf Graphic file (type pdf)
 
 <use classCrankNicolson__coll__graph.pdf>
 Package pdftex.def Info: classCrankNicolson__coll__graph.pdf used on input line
  29.
-(pdftex.def)             Requested size: 158.38527pt x 550.0pt.
+(pdftex.def)             Requested size: 151.09096pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11 <./classCrankNicolson__inherit__graph.pdf>] [12 <./classCrankNicolson__col
+ [12 <./classCrankNicolson__inherit__graph.pdf>] [13 <./classCrankNicolson__col
 l__graph.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 76.
@@ -1354,7 +1361,7 @@ Underfull \hbox (badness 10000) detected at line 86
  []
 
 
-<classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf, id=1477, 317.
+<classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf, id=1516, 317.
 185pt x 100.375pt>
 File: classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf Graphic f
 ile (type pdf)
@@ -1366,30 +1373,30 @@ graph.pdf used on input line 100.
 
 Underfull \vbox (badness 1983) has occurred while \output is active []
 
- [13])
+ [14])
 (./classDufortFrankel.tex
-<classDufortFrankel__inherit__graph.pdf, id=1490, 215.80624pt x 481.8pt>
+<classDufortFrankel__inherit__graph.pdf, id=1529, 215.80624pt x 537.00626pt>
 File: classDufortFrankel__inherit__graph.pdf Graphic file (type pdf)
 
 <use classDufortFrankel__inherit__graph.pdf>
 Package pdftex.def Info: classDufortFrankel__inherit__graph.pdf used on input l
 ine 19.
-(pdftex.def)             Requested size: 215.0pt x 480.01234pt.
+(pdftex.def)             Requested size: 215.0pt x 535.01378pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14 <./classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf>]
-<classDufortFrankel__coll__graph.pdf, id=1502, 329.23pt x 1132.23pt>
+ [15 <./classCrankNicolson_a9b67095f05b0ee96701d6cd38099f6c4_cgraph.pdf>]
+<classDufortFrankel__coll__graph.pdf, id=1542, 329.23pt x 1187.43625pt>
 File: classDufortFrankel__coll__graph.pdf Graphic file (type pdf)
 
 <use classDufortFrankel__coll__graph.pdf>
 Package pdftex.def Info: classDufortFrankel__coll__graph.pdf used on input line
  29.
-(pdftex.def)             Requested size: 159.93256pt x 550.0pt.
+(pdftex.def)             Requested size: 152.49757pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./classDufortFrankel__inherit__graph.pdf>] [16 <./classDufortFrankel__col
+ [16 <./classDufortFrankel__inherit__graph.pdf>] [17 <./classDufortFrankel__col
 l__graph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1409,7 +1416,7 @@ Underfull \hbox (badness 10000) detected at line 89
  []
 
 
-<classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf, id=1540, 303.
+<classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf, id=1580, 303.
 1325pt x 111.41624pt>
 File: classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf Graphic f
 ile (type pdf)
@@ -1418,31 +1425,31 @@ ile (type pdf)
 Package pdftex.def Info: classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_c
 graph.pdf used on input line 103.
 (pdftex.def)             Requested size: 302.0pt x 111.00114pt.
- [17])
+ [18])
 (./classExplicit.tex
-<classExplicit__inherit__graph.pdf, id=1554, 392.46625pt x 481.8pt>
+<classExplicit__inherit__graph.pdf, id=1593, 392.46625pt x 537.00626pt>
 File: classExplicit__inherit__graph.pdf Graphic file (type pdf)
 
 <use classExplicit__inherit__graph.pdf>
 Package pdftex.def Info: classExplicit__inherit__graph.pdf used on input line 2
 0.
-(pdftex.def)             Requested size: 350.0pt x 429.69754pt.
+(pdftex.def)             Requested size: 350.0pt x 478.93373pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <./classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf>]
-<classExplicit__coll__graph.pdf, id=1566, 329.23pt x 1025.8325pt>
+ [19 <./classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4_cgraph.pdf>]
+<classExplicit__coll__graph.pdf, id=1605, 329.23pt x 1081.03876pt>
 File: classExplicit__coll__graph.pdf Graphic file (type pdf)
 
 <use classExplicit__coll__graph.pdf>
 Package pdftex.def Info: classExplicit__coll__graph.pdf used on input line 30.
-(pdftex.def)             Requested size: 176.51558pt x 550.0pt.
+(pdftex.def)             Requested size: 167.50317pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./classExplicit__inherit__graph.pdf>] [20 <./classExplicit__coll__graph.p
+ [20 <./classExplicit__inherit__graph.pdf>] [21 <./classExplicit__coll__graph.p
 df>]
-<classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf, id=1602, 308.15125
+<classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf, id=1642, 308.15125
 pt x 138.5175pt>
 File: classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf Graphic file (
 type pdf)
@@ -1468,13 +1475,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Overfull \vbox (14.29735pt too high) has occurred while \output is active []
 
 
-[21 <./classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf>]
+[22 <./classExplicit_a87a81a730d68689268204ae8b296075d_cgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 102
 [][][]
  []
 
 
-<classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf, id=1622, 363.3575
+<classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf, id=1661, 363.3575
 pt x 100.375pt>
 File: classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf Graphic file 
 (type pdf)
@@ -1489,7 +1496,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 127.
 
 
-<classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf, id=1624, 634.37pt 
+<classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf, id=1663, 634.37pt 
 x 329.23pt>
 File: classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf Graphic file (
 type pdf)
@@ -1499,28 +1506,26 @@ Package pdftex.def Info: classExplicit_a09fa3df66e16200fefaabc908e6efafd_cgraph
 (pdftex.def)             Requested size: 350.0pt x 181.64975pt.
 )
 (./classFTCS.tex
-<classFTCS__inherit__graph.pdf, id=1628, 215.80624pt x 481.8pt>
+<classFTCS__inherit__graph.pdf, id=1667, 215.80624pt x 537.00626pt>
 File: classFTCS__inherit__graph.pdf Graphic file (type pdf)
 
 <use classFTCS__inherit__graph.pdf>
 Package pdftex.def Info: classFTCS__inherit__graph.pdf used on input line 19.
-(pdftex.def)             Requested size: 215.0pt x 480.01234pt.
- [22 <./classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf> <./classEx
+(pdftex.def)             Requested size: 215.0pt x 535.01378pt.
+ [23 <./classExplicit_a2b9b097253488f4ce07a8ef0580a5d22_icgraph.pdf> <./classEx
 plicit_a09fa3df66e16200fefaabc908e6efafd_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classExplicit_a09fa3df66e16200fefaabc908e6efaf
 d_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
->] <classFTCS__coll__graph.pdf, id=1648, 329.23pt x 1132.23pt>
+>] <classFTCS__coll__graph.pdf, id=1688, 329.23pt x 1187.43625pt>
 File: classFTCS__coll__graph.pdf Graphic file (type pdf)
 
 <use classFTCS__coll__graph.pdf>
 Package pdftex.def Info: classFTCS__coll__graph.pdf used on input line 29.
-(pdftex.def)             Requested size: 159.93256pt x 550.0pt.
-
-Underfull \vbox (badness 4479) has occurred while \output is active []
-
- [23 <./classFTCS__inherit__graph.pdf>] [24 <./classFTCS__coll__graph.pdf>]
+(pdftex.def)             Requested size: 152.49757pt x 550.0pt.
+ [24 <./classFTCS__inherit__graph.pdf>]
+[25 <./classFTCS__coll__graph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 74.
@@ -1539,7 +1544,7 @@ Underfull \hbox (badness 10000) detected at line 86
  []
 
 
-<classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf, id=1686, 310.15875pt x
+<classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf, id=1725, 310.15875pt x
  100.375pt>
 File: classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf Graphic file (type
  pdf)
@@ -1548,7 +1553,7 @@ Package pdftex.def Info: classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf
  used on input line 100.
 (pdftex.def)             Requested size: 309.0pt x 99.9995pt.
 
-<classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf, id=1687, 357.335pt x 
+<classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf, id=1726, 357.335pt x 
 100.375pt>
 File: classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf Graphic file (typ
 e pdf)
@@ -1557,31 +1562,31 @@ Package pdftex.def Info: classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pd
 f used on input line 112.
 (pdftex.def)             Requested size: 350.0pt x 98.31934pt.
 
-[25 <./classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf>])
+[26 <./classFTCS_abc8074dbb5a5facaf0380aa867998556_cgraph.pdf>])
 (./classImplicit.tex
-<classImplicit__inherit__graph.pdf, id=1704, 269.005pt x 492.84125pt>
+<classImplicit__inherit__graph.pdf, id=1743, 269.005pt x 548.0475pt>
 File: classImplicit__inherit__graph.pdf Graphic file (type pdf)
 
 <use classImplicit__inherit__graph.pdf>
 Package pdftex.def Info: classImplicit__inherit__graph.pdf used on input line 2
 0.
-(pdftex.def)             Requested size: 268.0pt x 491.00511pt.
+(pdftex.def)             Requested size: 268.0pt x 546.00569pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <./classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf>]
-<classImplicit__coll__graph.pdf, id=1716, 329.23pt x 1036.87375pt>
+ [27 <./classFTCS_abc8074dbb5a5facaf0380aa867998556_icgraph.pdf>]
+<classImplicit__coll__graph.pdf, id=1756, 329.23pt x 1092.08pt>
 File: classImplicit__coll__graph.pdf Graphic file (type pdf)
 
 <use classImplicit__coll__graph.pdf>
 Package pdftex.def Info: classImplicit__coll__graph.pdf used on input line 30.
-(pdftex.def)             Requested size: 174.64679pt x 550.0pt.
+(pdftex.def)             Requested size: 165.81021pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27 <./classImplicit__inherit__graph.pdf>] [28 <./classImplicit__coll__graph.p
+ [28 <./classImplicit__inherit__graph.pdf>] [29 <./classImplicit__coll__graph.p
 df>]
-<classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf, id=1755, 307.1475p
+<classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf, id=1795, 307.1475p
 t x 138.5175pt>
 File: classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf Graphic file (
 type pdf)
@@ -1599,13 +1604,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 94.
 
-[29 <./classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf>]
+[30 <./classImplicit_a5bc81959cd5329526f1c2b7e6e050050_cgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 105
 [][][]
  []
 
 
-<classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf, id=1775, 331.2375
+<classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf, id=1814, 331.2375
 pt x 100.375pt>
 File: classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf Graphic file 
 (type pdf)
@@ -1620,7 +1625,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 130.
 
 
-<classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf, id=1777, 659.46375
+<classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf, id=1816, 659.46375
 pt x 367.3725pt>
 File: classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf Graphic file (
 type pdf)
@@ -1634,7 +1639,7 @@ Package pdftex.def Info: classImplicit_a1d6b7250da6d3a417baefe7328635d45_cgraph
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 160.
 
-[30 <./classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf> <./classImp
+[31 <./classImplicit_ab2d07b5185008b2c845a31a03350d98d_icgraph.pdf> <./classImp
 licit_a1d6b7250da6d3a417baefe7328635d45_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classImplicit_a1d6b7250da6d3a417baefe7328635d4
@@ -1651,7 +1656,7 @@ Underfull \hbox (badness 10000) detected at line 179
  []
 
 
-<classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph.pdf, id=1803, 332.24126
+<classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph.pdf, id=1842, 332.24126
 pt x 100.375pt>
 File: classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph.pdf Graphic file (
 type pdf)
@@ -1661,7 +1666,7 @@ Package pdftex.def Info: classImplicit_a095e8555a718b53ff94770a0a220dfba_cgraph
 .pdf used on input line 189.
 (pdftex.def)             Requested size: 331.0pt x 100.00562pt.
 
-<classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf, id=1804, 379.4175
+<classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf, id=1843, 379.4175
 pt x 100.375pt>
 File: classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf Graphic file 
 (type pdf)
@@ -1671,240 +1676,250 @@ Package pdftex.def Info: classImplicit_a095e8555a718b53ff94770a0a220dfba_icgrap
 h.pdf used on input line 201.
 (pdftex.def)             Requested size: 350.0pt x 92.59422pt.
 )
-(./classIOManager.tex [31 <./classImplicit_a095e8555a718b53ff94770a0a220dfba_cg
+(./classIOManager.tex [32 <./classImplicit_a095e8555a718b53ff94770a0a220dfba_cg
 raph.pdf> <./classImplicit_a095e8555a718b53ff94770a0a220dfba_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classImplicit_a095e8555a718b53ff94770a0a220dfb
 a_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
->] <classIOManager__coll__graph.pdf, id=1825, 233.87375pt x 549.05125pt>
+>] <classIOManager__coll__graph.pdf, id=1864, 198.7425pt x 248.93pt>
 File: classIOManager__coll__graph.pdf Graphic file (type pdf)
 
 <use classIOManager__coll__graph.pdf>
 Package pdftex.def Info: classIOManager__coll__graph.pdf used on input line 19.
 
-(pdftex.def)             Requested size: 233.0pt x 547.03084pt.
- [32 <./classIOManager__coll__graph.pdf>]
+(pdftex.def)             Requested size: 198.0pt x 248.00638pt.
+ [33 <./classIOManager__coll__graph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 80.
+(hyperref)                removing `subscript' on input line 82.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 80.
+(hyperref)                removing `subscript' on input line 82.
 
 
-Underfull \hbox (badness 10000) detected at line 85
+Underfull \hbox (badness 10000) detected at line 87
 [][][]
  []
 
 
-<classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf, id=1861, 472.766
+<classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf, id=1911, 472.766
 25pt x 100.375pt>
 File: classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf Graphic file
  (type pdf)
 
 <use classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf>
 Package pdftex.def Info: classIOManager_a9798220ef88ebb14ffd354a04351862d_icgra
-ph.pdf used on input line 95.
+ph.pdf used on input line 97.
 (pdftex.def)             Requested size: 350.0pt x 74.31155pt.
- [33]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 107.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 107.
+(hyperref)                removing `subscript' on input line 109.
 
 
-Underfull \hbox (badness 10000) detected at line 119
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 109.
+
+[34 <./classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 121
 [][][]
  []
 
 
-<classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf, id=1880, 607.268
-75pt x 151.56625pt>
+<classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf, id=1927, 607.268
+75pt x 125.46875pt>
 File: classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf Graphic file
  (type pdf)
 
 <use classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf>
 Package pdftex.def Info: classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgra
-ph.pdf used on input line 129.
-(pdftex.def)             Requested size: 350.0pt x 87.35574pt.
+ph.pdf used on input line 131.
+(pdftex.def)             Requested size: 350.0pt x 72.31435pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 142.
+(hyperref)                removing `subscript' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 142.
+(hyperref)                removing `subscript' on input line 143.
 
-[34 <./classIOManager_a9798220ef88ebb14ffd354a04351862d_icgraph.pdf> <./classIO
-Manager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf
 
-pdfTeX warning: pdflatex (file ./classIOManager_ac0848cdaa155421cd6904650823bdc
-9e_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->]
-<classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf, id=1900, 493.845p
-t x 226.8475pt>
-File: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf Graphic file 
-(type pdf)
-
-<use classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf>
-Package pdftex.def Info: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgrap
-h.pdf used on input line 163.
-(pdftex.def)             Requested size: 350.0pt x 160.77208pt.
-
-<classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf, id=1901, 442.653
-75pt x 100.375pt>
-File: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf Graphic file
+<classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph.pdf, id=1928, 448.676
+25pt x 100.375pt>
+File: classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph.pdf Graphic file
  (type pdf)
 
-<use classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf>
-Package pdftex.def Info: classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_icgra
-ph.pdf used on input line 175.
-(pdftex.def)             Requested size: 350.0pt x 79.36888pt.
+<use classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph.pdf>
+Package pdftex.def Info: classIOManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgra
+ph.pdf used on input line 162.
+(pdftex.def)             Requested size: 350.0pt x 78.30289pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 187.
+(hyperref)                removing `subscript' on input line 174.
 
 
-<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf, id=1905, 695.5987
-5pt x 303.1325pt>
+<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf, id=1932, 695.5987
+5pt x 314.17375pt>
 File: classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf Graphic file 
 (type pdf)
 
 <use classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf>
 Package pdftex.def Info: classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgrap
-h.pdf used on input line 206.
-(pdftex.def)             Requested size: 350.0pt x 152.52333pt.
+h.pdf used on input line 193.
+(pdftex.def)             Requested size: 350.0pt x 158.07881pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35 <./classIOManager_a141e94d64d31d2ce77d8d2adf568d3d3_cgraph.pdf> <./classIO
-Manager_a141e94d64d31d2ce77d8d2adf568d3d3_icgraph.pdf
+ [35 <./classIOManager_ac0848cdaa155421cd6904650823bdc9e_icgraph.pdf> <./classI
+OManager_a32ba797e6d5cbd6f0f8d3856b62848a2_icgraph.pdf
 
-pdfTeX warning: pdflatex (file ./classIOManager_a141e94d64d31d2ce77d8d2adf568d3
-d3_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+pdfTeX warning: pdflatex (file ./classIOManager_a32ba797e6d5cbd6f0f8d3856b62848
+a2_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf, id=1925, 290.083
+<classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf, id=1953, 290.083
 76pt x 100.375pt>
 File: classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf Graphic file
  (type pdf)
 
 <use classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf>
 Package pdftex.def Info: classIOManager_ac4c42d2c5d93f7031447be7845bf2036_icgra
-ph.pdf used on input line 218.
+ph.pdf used on input line 205.
 (pdftex.def)             Requested size: 289.0pt x 100.00562pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 229.
+(hyperref)                removing `subscript' on input line 216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 229.
+(hyperref)                removing `subscript' on input line 216.
 
 
-<classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf, id=1927, 457.71p
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 216.
+
+
+<classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph.pdf, id=1954, 447.672
+5pt x 111.41624pt>
+File: classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph.pdf Graphic file
+ (type pdf)
+
+<use classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph.pdf>
+Package pdftex.def Info: classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgra
+ph.pdf used on input line 228.
+(pdftex.def)             Requested size: 350.0pt x 87.11002pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 239.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 239.
+
+
+<classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf, id=1956, 457.71p
 t x 111.41624pt>
 File: classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf Graphic file
  (type pdf)
 
 <use classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf>
 Package pdftex.def Info: classIOManager_addf56e894f0331609d821bd515887f84_icgra
-ph.pdf used on input line 241.
+ph.pdf used on input line 251.
 (pdftex.def)             Requested size: 350.0pt x 85.20084pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 254.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 254.
-
-
-Overfull \vbox (37.37767pt too high) has occurred while \output is active []
-
-
-[36 <./classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf> <./classIOM
-anager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf
+ [36 <./classIOManager_ac4c42d2c5d93f7031447be7845bf2036_cgraph.pdf> <./classIO
+Manager_ac4c42d2c5d93f7031447be7845bf2036_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classIOManager_ac4c42d2c5d93f7031447be7845bf20
 36_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
-> <./classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf
+> <./classIOManager_a12b636be3c0bab9b90ed042f450ebe8d_icgraph.pdf
 
-pdfTeX warning: pdflatex (file ./classIOManager_addf56e894f0331609d821bd515887f
-84_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+pdfTeX warning: pdflatex (file ./classIOManager_a12b636be3c0bab9b90ed042f450ebe
+8d_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
 gle page
 >]
-<classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf, id=1952, 508.9012
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 264.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 264.
+
+
+<classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf, id=1980, 508.9012
 5pt x 226.8475pt>
 File: classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf Graphic file 
 (type pdf)
 
 <use classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf>
 Package pdftex.def Info: classIOManager_a149183e073e33890810fe6801bc4861f_cgrap
-h.pdf used on input line 275.
+h.pdf used on input line 285.
 (pdftex.def)             Requested size: 350.0pt x 156.02303pt.
 
-<classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf, id=1953, 457.71p
+<classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf, id=1981, 457.71p
 t x 100.375pt>
 File: classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf Graphic file
  (type pdf)
 
 <use classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf>
 Package pdftex.def Info: classIOManager_a149183e073e33890810fe6801bc4861f_icgra
-ph.pdf used on input line 287.
+ph.pdf used on input line 297.
 (pdftex.def)             Requested size: 350.0pt x 76.7575pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 297.
+(hyperref)                removing `subscript' on input line 307.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 297.
+(hyperref)                removing `subscript' on input line 307.
+
+[37 <./classIOManager_addf56e894f0331609d821bd515887f84_icgraph.pdf> <./classIO
+Manager_a149183e073e33890810fe6801bc4861f_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classIOManager_a149183e073e33890810fe6801bc486
+1f_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sing
+le page
+> <./classIOManager_a149183e073e33890810fe6801bc4861f_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classIOManager_a149183e073e33890810fe6801bc486
+1f_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 314.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 304.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 311.
+(hyperref)                removing `subscript' on input line 321.
 
 ) (./classLaasonen.tex
-<classLaasonen__inherit__graph.pdf, id=1959, 215.80624pt x 492.84125pt>
+<classLaasonen__inherit__graph.pdf, id=2011, 215.80624pt x 548.0475pt>
 File: classLaasonen__inherit__graph.pdf Graphic file (type pdf)
 
 <use classLaasonen__inherit__graph.pdf>
 Package pdftex.def Info: classLaasonen__inherit__graph.pdf used on input line 1
 9.
-(pdftex.def)             Requested size: 215.0pt x 491.01262pt.
- [37 <./classIOManager_a149183e073e33890810fe6801bc4861f_cgraph.pdf> <./classIO
-Manager_a149183e073e33890810fe6801bc4861f_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./classIOManager_a149183e073e33890810fe6801bc486
-1f_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->] <classLaasonen__coll__graph.pdf, id=1977, 329.23pt x 1143.27126pt>
+(pdftex.def)             Requested size: 215.0pt x 546.01405pt.
+ [38]
+<classLaasonen__coll__graph.pdf, id=2017, 329.23pt x 1198.4775pt>
 File: classLaasonen__coll__graph.pdf Graphic file (type pdf)
 
 <use classLaasonen__coll__graph.pdf>
 Package pdftex.def Info: classLaasonen__coll__graph.pdf used on input line 29.
-(pdftex.def)             Requested size: 158.38527pt x 550.0pt.
+(pdftex.def)             Requested size: 151.09096pt x 550.0pt.
 
-Underfull \vbox (badness 3179) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38 <./classLaasonen__inherit__graph.pdf>] [39 <./classLaasonen__coll__graph.p
+ [39 <./classLaasonen__inherit__graph.pdf>] [40 <./classLaasonen__coll__graph.p
 df>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1920,7 +1935,7 @@ Underfull \hbox (badness 10000) detected at line 86
  []
 
 
-<classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf, id=2018, 294.09875
+<classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf, id=2057, 294.09875
 pt x 100.375pt>
 File: classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf Graphic file (
 type pdf)
@@ -1932,9 +1947,9 @@ Package pdftex.def Info: classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph
 
 Underfull \vbox (badness 1983) has occurred while \output is active []
 
- [40])
+ [41])
 (./classMatrix.tex
-<classMatrix__inherit__graph.pdf, id=2028, 199.74625pt x 398.48875pt>
+<classMatrix__inherit__graph.pdf, id=2067, 199.74625pt x 398.48875pt>
 File: classMatrix__inherit__graph.pdf Graphic file (type pdf)
 
 <use classMatrix__inherit__graph.pdf>
@@ -1944,8 +1959,8 @@ Package pdftex.def Info: classMatrix__inherit__graph.pdf used on input line 21.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <./classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf>]
-<classMatrix__coll__graph.pdf, id=2040, 199.74625pt x 398.48875pt>
+ [42 <./classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d_cgraph.pdf>]
+<classMatrix__coll__graph.pdf, id=2079, 199.74625pt x 398.48875pt>
 File: classMatrix__coll__graph.pdf Graphic file (type pdf)
 
 <use classMatrix__coll__graph.pdf>
@@ -1954,14 +1969,14 @@ Package pdftex.def Info: classMatrix__coll__graph.pdf used on input line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42 <./classMatrix__inherit__graph.pdf>] [43 <./classMatrix__coll__graph.pdf>]
- [44]
+ [43 <./classMatrix__inherit__graph.pdf>] [44 <./classMatrix__coll__graph.pdf>]
+ [45]
 Underfull \hbox (badness 10000) detected at line 113
 [][][]
  []
 
 
-<classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf, id=2135, 283.0575pt
+<classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf, id=2175, 283.0575pt
  x 138.5175pt>
 File: classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1974,7 +1989,7 @@ Underfull \hbox (badness 10000) detected at line 142
 [][][]
  []
 
-[45 <./classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf>]
+[46 <./classMatrix_a2dba13c45127354c9f75ef576f49269b_icgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 165.
@@ -1985,7 +2000,7 @@ Underfull \hbox (badness 10000) detected at line 170
  []
 
 
-<classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf, id=2156, 286.06876pt
+<classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf, id=2195, 286.06876pt
  x 138.5175pt>
 File: classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2004,16 +2019,16 @@ Underfull \hbox (badness 10000) detected at line 209
  []
 
 
-<classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf, id=2158, 443.6575pt
- x 405.515pt>
+<classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf, id=2197, 610.28pt x
+ 443.6575pt>
 File: classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf Graphic file (t
 ype pdf)
  <use classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf>
 Package pdftex.def Info: classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.
 pdf used on input line 219.
-(pdftex.def)             Requested size: 350.0pt x 319.9078pt.
+(pdftex.def)             Requested size: 350.0pt x 254.45119pt.
 
-[46 <./classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf>]
+[47 <./classMatrix_a765f4dcb51b6829311cc3e7576388423_cgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 235
 [][][]
  []
@@ -2024,16 +2039,16 @@ Underfull \hbox (badness 10000) detected at line 238
  []
 
 
-<classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf, id=2173, 586.19pt x
- 443.6575pt>
+<classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf, id=2212, 673.51625p
+t x 481.8pt>
 File: classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf Graphic file (t
 ype pdf)
  <use classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf>
 Package pdftex.def Info: classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.
 pdf used on input line 248.
-(pdftex.def)             Requested size: 350.0pt x 264.89677pt.
+(pdftex.def)             Requested size: 350.0pt x 250.3757pt.
 
-[47 <./classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf>]
+[48 <./classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d_icgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 259.
@@ -2053,7 +2068,7 @@ Underfull \hbox (badness 10000) detected at line 276
  []
 
 
-<classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf, id=2187, 447.6725pt 
+<classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf, id=2226, 447.6725pt 
 x 235.88126pt>
 File: classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -2062,42 +2077,49 @@ Package pdftex.def Info: classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.p
 df used on input line 286.
 (pdftex.def)             Requested size: 350.0pt x 184.42213pt.
 
-[48 <./classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf>]
+[49 <./classMatrix_ab0ed1933348c0511d74f825b73778aaa_icgraph.pdf>]
+<classMatrix_a4f7ede695709b614f2e1f6423a024201_icgraph.pdf, id=2239, 334.24875p
+t x 100.375pt>
+File: classMatrix_a4f7ede695709b614f2e1f6423a024201_icgraph.pdf Graphic file (t
+ype pdf)
+ <use classMatrix_a4f7ede695709b614f2e1f6423a024201_icgraph.pdf>
+Package pdftex.def Info: classMatrix_a4f7ede695709b614f2e1f6423a024201_icgraph.
+pdf used on input line 298.
+(pdftex.def)             Requested size: 333.0pt x 100.00868pt.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 297.
+(hyperref)                removing `alignment tab' on input line 309.
 
 
-Underfull \hbox (badness 10000) detected at line 302
+Underfull \hbox (badness 10000) detected at line 314
+[][][]
+ []
+
+[50 <./classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf> <./classMatrix
+_a4f7ede695709b614f2e1f6423a024201_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classMatrix_a4f7ede695709b614f2e1f6423a024201_
+icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) detected at line 324
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 312
-[][][]
- []
-
-
-<classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf, id=2205, 298.11375pt
+<classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf, id=2264, 298.11375pt
  x 176.66pt>
 File: classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.p
-df used on input line 327.
+df used on input line 339.
 (pdftex.def)             Requested size: 297.0pt x 176.00992pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49 <./classMatrix_a4f7ede695709b614f2e1f6423a024201_cgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 338.
-
-
-Underfull \hbox (badness 10000) detected at line 343
-[][][]
- []
+(hyperref)                removing `alignment tab' on input line 350.
 
 
 Underfull \hbox (badness 10000) detected at line 355
@@ -2105,117 +2127,127 @@ Underfull \hbox (badness 10000) detected at line 355
  []
 
 
-<classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf, id=2228, 298.11375pt
+Underfull \hbox (badness 10000) detected at line 367
+[][][]
+ []
+
+
+<classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf, id=2274, 298.11375pt
  x 176.66pt>
 File: classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.p
-df used on input line 370.
+df used on input line 382.
 (pdftex.def)             Requested size: 297.0pt x 176.00992pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <./classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf>]
+ [51 <./classMatrix_a1fbef471bec2714e891c082a345d2274_cgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 381.
+(hyperref)                removing `alignment tab' on input line 393.
 
 
-Underfull \hbox (badness 10000) detected at line 386
+Underfull \hbox (badness 10000) detected at line 398
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 389
+Underfull \hbox (badness 10000) detected at line 401
 [][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `alignment tab' on input line 403.
+(hyperref)                removing `alignment tab' on input line 415.
 
 
-Underfull \hbox (badness 10000) detected at line 408
+Underfull \hbox (badness 10000) detected at line 420
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 411
+Underfull \hbox (badness 10000) detected at line 423
 [][][]
  []
 
-[51 <./classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf>]
-<classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf, id=2271, 306.14375pt
+[52 <./classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f_cgraph.pdf>]
+<classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf, id=2317, 306.14375pt
  x 138.5175pt>
 File: classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.p
-df used on input line 426.
+df used on input line 438.
 (pdftex.def)             Requested size: 305.0pt x 138.00777pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 438.
+(hyperref)                removing `subscript' on input line 450.
 
 
-<classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf, id=2272, 285.065pt x
+<classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf, id=2318, 285.065pt x
  100.375pt>
 File: classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a24066c6e9743a07387bcb287437a6cea_cgraph.p
-df used on input line 464.
+df used on input line 476.
 (pdftex.def)             Requested size: 284.0pt x 99.9995pt.
 
-<classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf, id=2273, 488.82625p
+<classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf, id=2319, 488.82625p
 t x 138.5175pt>
 File: classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf Graphic file (t
 ype pdf)
 
 <use classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf>
 Package pdftex.def Info: classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.
-pdf used on input line 476.
+pdf used on input line 488.
 (pdftex.def)             Requested size: 350.0pt x 99.18086pt.
 
 Underfull \vbox (badness 4060) has occurred while \output is active []
 
- [52 <./classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf> <./classMatri
+ [53 <./classMatrix_a5bc97450e589f9ae3a43814808645f3f_cgraph.pdf> <./classMatri
 x_a24066c6e9743a07387bcb287437a6cea_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classMatrix_a24066c6e9743a07387bcb287437a6cea_
 cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
 >]
-Underfull \hbox (badness 10000) detected at line 492
+Underfull \hbox (badness 10000) detected at line 504
 [][][]
  []
 
 
-<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf, id=2295, 301.125pt x
+<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf, id=2341, 301.125pt x
  138.5175pt>
 File: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.p
-df used on input line 502.
+df used on input line 514.
 (pdftex.def)             Requested size: 300.0pt x 138.012pt.
 
-<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf, id=2296, 301.125pt 
-x 100.375pt>
+<classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf, id=2342, 462.72874p
+t x 100.375pt>
 File: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf Graphic file (t
 ype pdf)
  <use classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.pdf>
 Package pdftex.def Info: classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_icgraph.
-pdf used on input line 514.
-(pdftex.def)             Requested size: 300.0pt x 100.00868pt.
+pdf used on input line 526.
+(pdftex.def)             Requested size: 350.0pt x 75.92279pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 525.
+(hyperref)                removing `subscript' on input line 537.
 
-[53 <./classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf> <./classMatri
+
+Underfull \hbox (badness 10000) detected at line 542
+[][][]
+ []
+
+[54 <./classMatrix_a24066c6e9743a07387bcb287437a6cea_icgraph.pdf> <./classMatri
 x_a9da9f5ee8215491cc54ecc59ddeb3f73_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_
@@ -2227,274 +2259,311 @@ pdfTeX warning: pdflatex (file ./classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-Underfull \hbox (badness 10000) detected at line 530
+Underfull \hbox (badness 10000) detected at line 547
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 535
-[][][]
- []
-
-
-<classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf, id=2322, 301.125pt x
+<classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf, id=2369, 301.125pt x
  138.5175pt>
 File: classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.p
-df used on input line 545.
+df used on input line 557.
 (pdftex.def)             Requested size: 300.0pt x 138.012pt.
+
+<classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_icgraph.pdf, id=2370, 334.24875p
+t x 100.375pt>
+File: classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_icgraph.pdf Graphic file (t
+ype pdf)
+ <use classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_icgraph.pdf>
+Package pdftex.def Info: classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_icgraph.
+pdf used on input line 569.
+(pdftex.def)             Requested size: 333.0pt x 100.00868pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 556.
+(hyperref)                removing `subscript' on input line 580.
 
 
-Underfull \hbox (badness 10000) detected at line 561
+Underfull \hbox (badness 10000) detected at line 585
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 566
+Underfull \hbox (badness 10000) detected at line 590
 [][][]
  []
 
 
-<classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf, id=2325, 336.25626pt
+<classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf, id=2373, 336.25626pt
  x 214.8025pt>
 File: classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf>
 Package pdftex.def Info: classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.p
-df used on input line 576.
+df used on input line 600.
 (pdftex.def)             Requested size: 335.0pt x 214.00223pt.
 
-[54 <./classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf>]
-Underfull \hbox (badness 10000) detected at line 596
+[55 <./classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_cgraph.pdf> <./classMatrix
+_a0b738b2c1d87ec28b23c7e479d014f2a_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a_
+icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+<classMatrix_a05777a670e901010b96e9d667a4bdd3b_icgraph.pdf, id=2391, 351.3125pt
+ x 100.375pt>
+File: classMatrix_a05777a670e901010b96e9d667a4bdd3b_icgraph.pdf Graphic file (t
+ype pdf)
+ <use classMatrix_a05777a670e901010b96e9d667a4bdd3b_icgraph.pdf>
+Package pdftex.def Info: classMatrix_a05777a670e901010b96e9d667a4bdd3b_icgraph.
+pdf used on input line 612.
+(pdftex.def)             Requested size: 350.0pt x 100.00716pt.
+
+Underfull \hbox (badness 10000) detected at line 632
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 603
+Underfull \hbox (badness 10000) detected at line 639
+[][][]
+ []
+
+[56 <./classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf> <./classMatrix
+_a05777a670e901010b96e9d667a4bdd3b_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classMatrix_a05777a670e901010b96e9d667a4bdd3b_
+icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+>]
+Underfull \hbox (badness 10000) detected at line 661
 [][][]
  []
 
 
-Underfull \vbox (badness 1975) has occurred while \output is active []
-
- [55 <./classMatrix_a05777a670e901010b96e9d667a4bdd3b_cgraph.pdf>]
-Underfull \hbox (badness 10000) detected at line 625
+Underfull \hbox (badness 10000) detected at line 673
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 637
+Underfull \hbox (badness 10000) detected at line 693
+[][][]
+ []
+
+[57]
+Underfull \hbox (badness 10000) detected at line 705
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 657
+Underfull \hbox (badness 10000) detected at line 727
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 669
-[][][]
- []
-
-
-Overfull \vbox (13.50034pt too high) has occurred while \output is active []
-
-
-[56]
-Underfull \hbox (badness 10000) detected at line 691
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 698
+Underfull \hbox (badness 10000) detected at line 734
 [][][]
  []
 
 ) (./classMethod.tex
-<classMethod__inherit__graph.pdf, id=2385, 600.2425pt x 492.84125pt>
+<classMethod__inherit__graph.pdf, id=2445, 600.2425pt x 548.0475pt>
 File: classMethod__inherit__graph.pdf Graphic file (type pdf)
 
 <use classMethod__inherit__graph.pdf>
 Package pdftex.def Info: classMethod__inherit__graph.pdf used on input line 19.
 
-(pdftex.def)             Requested size: 350.0pt x 287.38222pt.
-
-Underfull \vbox (badness 7064) has occurred while \output is active []
-
- [57]
-<classMethod__coll__graph.pdf, id=2392, 329.23pt x 908.39375pt>
+(pdftex.def)             Requested size: 350.0pt x 319.57372pt.
+ [58]
+<classMethod__coll__graph.pdf, id=2452, 329.23pt x 963.6pt>
 File: classMethod__coll__graph.pdf Graphic file (type pdf)
 
 <use classMethod__coll__graph.pdf>
 Package pdftex.def Info: classMethod__coll__graph.pdf used on input line 29.
-(pdftex.def)             Requested size: 199.33798pt x 550.0pt.
+(pdftex.def)             Requested size: 187.91925pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58 <./classMethod__inherit__graph.pdf>] [59 <./classMethod__coll__graph.pdf>]
+ [59 <./classMethod__inherit__graph.pdf>] [60 <./classMethod__coll__graph.pdf>]
 
-Underfull \hbox (badness 10000) detected at line 89
+Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
 
-[60]
-Underfull \hbox (badness 10000) detected at line 103
+[61]
+Underfull \hbox (badness 10000) detected at line 113
 [][][]
  []
 
 
-<classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf, id=2459, 340.27126pt
+<classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf, id=2531, 340.27126pt
  x 100.375pt>
 File: classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf>
 Package pdftex.def Info: classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.p
-df used on input line 127.
+df used on input line 137.
 (pdftex.def)             Requested size: 339.0pt x 100.00562pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 138.
+(hyperref)                removing `subscript' on input line 148.
 
 
-<classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf, id=2463, 340.27126p
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 148.
+
+
+<classMethod_a4f1d13311599c8ffd73835663beb0e7b_cgraph.pdf, id=2532, 627.34375pt
+ x 442.65375pt>
+File: classMethod_a4f1d13311599c8ffd73835663beb0e7b_cgraph.pdf Graphic file (ty
+pe pdf)
+ <use classMethod_a4f1d13311599c8ffd73835663beb0e7b_cgraph.pdf>
+Package pdftex.def Info: classMethod_a4f1d13311599c8ffd73835663beb0e7b_cgraph.p
+df used on input line 156.
+(pdftex.def)             Requested size: 350.0pt x 246.9658pt.
+
+[62 <./classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 167.
+
+
+<classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf, id=2547, 340.27126p
 t x 100.375pt>
 File: classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf Graphic file (t
 ype pdf)
  <use classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf>
 Package pdftex.def Info: classMethod_af3dcec8e066214e82d8b4578a4a55076_icgraph.
-pdf used on input line 154.
+pdf used on input line 183.
 (pdftex.def)             Requested size: 339.0pt x 100.00562pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 165.
+(hyperref)                removing `subscript' on input line 194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 165.
+(hyperref)                removing `subscript' on input line 194.
 
 
-Underfull \hbox (badness 10000) detected at line 170
+Underfull \hbox (badness 10000) detected at line 199
 [][][]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 179.
+(hyperref)                removing `subscript' on input line 208.
 
-[61 <./classMethod_a50aea9f4e6101bf7c37f145177b72693_cgraph.pdf> <./classMethod
+[63 <./classMethod_a4f1d13311599c8ffd73835663beb0e7b_cgraph.pdf> <./classMethod
 _af3dcec8e066214e82d8b4578a4a55076_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classMethod_af3dcec8e066214e82d8b4578a4a55076_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-Underfull \hbox (badness 10000) detected at line 184
+Underfull \hbox (badness 10000) detected at line 213
 [][][]
  []
 
 
-<classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf, id=2482, 316.18124pt
+<classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf, id=2566, 316.18124pt
  x 100.375pt>
 File: classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf>
 Package pdftex.def Info: classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.p
-df used on input line 194.
+df used on input line 223.
 (pdftex.def)             Requested size: 315.0pt x 100.00716pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 205.
+(hyperref)                removing `subscript' on input line 234.
 
 
-Underfull \hbox (badness 10000) detected at line 210
+Underfull \hbox (badness 10000) detected at line 239
 [][][]
  []
 
 
-<classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf, id=2484, 592.2125pt
+<classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf, id=2568, 592.2125pt
  x 100.375pt>
 File: classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf Graphic file (t
 ype pdf)
  <use classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf>
 Package pdftex.def Info: classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.
-pdf used on input line 220.
+pdf used on input line 249.
 (pdftex.def)             Requested size: 350.0pt x 59.32333pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 231.
+(hyperref)                removing `subscript' on input line 260.
 
 
-Underfull \hbox (badness 10000) detected at line 236
+Underfull \hbox (badness 10000) detected at line 265
 [][][]
  []
 
 
-<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf, id=2486, 335.2525pt 
+<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf, id=2570, 335.2525pt 
 x 100.375pt>
 File: classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf>
 Package pdftex.def Info: classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.p
-df used on input line 246.
+df used on input line 275.
 (pdftex.def)             Requested size: 334.0pt x 99.9995pt.
 
-[62 <./classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf> <./classMethod
+[64 <./classMethod_a45b9b0d41d353381a6725323e5be6281_cgraph.pdf> <./classMethod
 _a103a9b2dcf6ef35857e279ba1e5ef9c3_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classMethod_a103a9b2dcf6ef35857e279ba1e5ef9c3_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf, id=2504, 601.24625p
-t x 138.5175pt>
+<classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf, id=2589, 601.24625p
+t x 176.66pt>
 File: classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf Graphic file (t
 ype pdf)
-
-<use classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf>
+ <use classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf>
 Package pdftex.def Info: classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.
-pdf used on input line 258.
-(pdftex.def)             Requested size: 350.0pt x 80.6361pt.
+pdf used on input line 287.
+(pdftex.def)             Requested size: 350.0pt x 102.84024pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 269.
+(hyperref)                removing `subscript' on input line 298.
 
 
-Underfull \hbox (badness 10000) detected at line 274
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 298.
+
+
+Underfull \hbox (badness 10000) detected at line 303
 [][][]
  []
 
 
-<classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf, id=2507, 335.2525pt 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 312.
+
+
+Underfull \hbox (badness 10000) detected at line 317
+[][][]
+ []
+
+
+<classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf, id=2592, 335.2525pt 
 x 100.375pt>
 File: classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf Graphic file (ty
 pe pdf)
  <use classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.pdf>
 Package pdftex.def Info: classMethod_aeda95af3c0440df84c0571614f6fd122_cgraph.p
-df used on input line 284.
+df used on input line 327.
 (pdftex.def)             Requested size: 334.0pt x 99.9995pt.
 
-<classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf, id=2508, 586.19pt x
- 100.375pt>
-File: classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf Graphic file (t
-ype pdf)
- <use classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf>
-Package pdftex.def Info: classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.
-pdf used on input line 296.
-(pdftex.def)             Requested size: 350.0pt x 59.93138pt.
-
-[63 <./classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf> <./classMethod
+[65 <./classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_cgraph.pdf> <./classMethod
 _a2a10100e81e4aca97f7ef485ed11fbe6_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classMethod_a2a10100e81e4aca97f7ef485ed11fbe6_
@@ -2508,17 +2577,28 @@ page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 306.
+(hyperref)                removing `subscript' on input line 337.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 351.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 368.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 371.
 
 ) (./classProblem.tex
-<classProblem__coll__graph.pdf, id=2537, 329.23pt x 692.5875pt>
+<classProblem__coll__graph.pdf, id=2620, 329.23pt x 692.5875pt>
 File: classProblem__coll__graph.pdf Graphic file (type pdf)
 
 <use classProblem__coll__graph.pdf>
 Package pdftex.def Info: classProblem__coll__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 261.45528pt x 550.0pt.
- [64 <./classMethod_aeda95af3c0440df84c0571614f6fd122_icgraph.pdf>] [65 <./clas
-sProblem__coll__graph.pdf>] [66]
+ [66] [67 <./classProblem__coll__graph.pdf>] [68]
 Underfull \hbox (badness 10000) detected at line 95
 [][][]
  []
@@ -2529,7 +2609,7 @@ Underfull \hbox (badness 10000) detected at line 110
  []
 
 
-<classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf, id=2633, 328.22626p
+<classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf, id=2709, 328.22626p
 t x 188.705pt>
 File: classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf Graphic file (t
 ype pdf)
@@ -2540,7 +2620,7 @@ pdf used on input line 134.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
+ [69]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 148.
@@ -2551,7 +2631,7 @@ Underfull \hbox (badness 10000) detected at line 153
  []
 
 
-<classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf, id=2640, 349.305pt
+<classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf, id=2717, 349.305pt
  x 252.945pt>
 File: classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf Graphic file (
 type pdf)
@@ -2564,7 +2644,7 @@ Package pdftex.def Info: classProblem_a5237b5ed257f9fae244573b64bea0c95_icgraph
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 174.
 
-[68 <./classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf> <./classProbl
+[70 <./classProblem_a2bd30352a90746e7b2c8233c59536259_cgraph.pdf> <./classProbl
 em_a5237b5ed257f9fae244573b64bea0c95_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classProblem_a5237b5ed257f9fae244573b64bea0c95
@@ -2576,7 +2656,7 @@ Underfull \hbox (badness 10000) detected at line 179
  []
 
 
-<classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf, id=2658, 308.15125
+<classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf, id=2735, 308.15125
 pt x 138.5175pt>
 File: classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf Graphic file (
 type pdf)
@@ -2600,7 +2680,7 @@ Underfull \hbox (badness 10000) detected at line 205
  []
 
 
-<classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf, id=2661, 363.3575p
+<classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf, id=2738, 363.3575p
 t x 138.5175pt>
 File: classProblem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf Graphic file (
 type pdf)
@@ -2620,16 +2700,16 @@ Underfull \hbox (badness 10000) detected at line 231
  []
 
 
-<classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf, id=2663, 748.7975p
-t x 169.63374pt>
+<classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf, id=2740, 748.7975p
+t x 188.705pt>
 File: classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf Graphic file (
 type pdf)
 
 <use classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf>
 Package pdftex.def Info: classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph
 .pdf used on input line 241.
-(pdftex.def)             Requested size: 350.0pt x 79.29042pt.
- [69 <./classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf> <./classPro
+(pdftex.def)             Requested size: 350.0pt x 88.20473pt.
+ [71 <./classProblem_ae4d3597c10075ce871795528a34f1b0a_icgraph.pdf> <./classPro
 blem_af17e4443d0bf9b347f5d2765eb235412_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classProblem_af17e4443d0bf9b347f5d2765eb235412
@@ -2646,7 +2726,7 @@ Underfull \hbox (badness 10000) detected at line 257
  []
 
 
-<classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf, id=2683, 346.29375
+<classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf, id=2758, 346.29375
 pt x 138.5175pt>
 File: classProblem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf Graphic file (
 type pdf)
@@ -2666,7 +2746,7 @@ Underfull \hbox (badness 10000) detected at line 283
  []
 
 
-<classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf, id=2686, 357.335pt
+<classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf, id=2761, 357.335pt
  x 150.5625pt>
 File: classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf Graphic file (
 type pdf)
@@ -2675,7 +2755,7 @@ type pdf)
 Package pdftex.def Info: classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph
 .pdf used on input line 293.
 (pdftex.def)             Requested size: 350.0pt x 147.479pt.
- [70 <./classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf> <./classPro
+ [72 <./classProblem_ac4e50f2308eef0abbe17446a9763b5be_icgraph.pdf> <./classPro
 blem_a2f4ee1a3e797fe66181d7f62a3191366_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classProblem_a2f4ee1a3e797fe66181d7f62a3191366
@@ -2692,7 +2772,7 @@ Underfull \hbox (badness 10000) detected at line 309
  []
 
 
-<classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf, id=2704, 349.305pt
+<classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf, id=2779, 349.305pt
  x 150.5625pt>
 File: classProblem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf Graphic file (
 type pdf)
@@ -2712,16 +2792,16 @@ Underfull \hbox (badness 10000) detected at line 335
  []
 
 
-<classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf, id=2707, 733.74126
-pt x 150.5625pt>
+<classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf, id=2782, 335.2525p
+t x 150.5625pt>
 File: classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf Graphic file (
 type pdf)
 
 <use classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf>
 Package pdftex.def Info: classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph
 .pdf used on input line 345.
-(pdftex.def)             Requested size: 350.0pt x 71.82117pt.
- [71 <./classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf> <./classPro
+(pdftex.def)             Requested size: 334.0pt x 149.99925pt.
+ [73 <./classProblem_ad9471629841ec6bd734d398ed9bfa624_icgraph.pdf> <./classPro
 blem_af09d12c75d48d233c0e6b34266440a96_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classProblem_af09d12c75d48d233c0e6b34266440a96
@@ -2737,7 +2817,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 356.
 
 
-<classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf, id=2725, 312.16624
+<classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf, id=2801, 312.16624
 pt x 111.41624pt>
 File: classProblem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf Graphic file (
 type pdf)
@@ -2761,7 +2841,7 @@ Underfull \hbox (badness 10000) detected at line 384
  []
 
 
-<classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf, id=2728, 326.21875
+<classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf, id=2804, 326.21875
 pt x 100.375pt>
 File: classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf Graphic file (
 type pdf)
@@ -2770,28 +2850,23 @@ type pdf)
 Package pdftex.def Info: classProblem_af5f96a84c005e788f84e902071b24b34_icgraph
 .pdf used on input line 394.
 (pdftex.def)             Requested size: 325.0pt x 100.00868pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 406.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 406.
-
-[72 <./classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf> <./classProb
-lem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf
+ [74 <./classProblem_a24f804792a0f5e30816a79cbbdb4c561_icgraph.pdf> <./classPro
+blem_a3bc203645a0d259f21586b55d239ee88_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classProblem_a3bc203645a0d259f21586b55d239ee88
 _icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
 e page
-> <./classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./classProblem_af5f96a84c005e788f84e902071b24b34
-_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
 >]
-<classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf, id=2756, 441.65pt x
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 406.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 406.
+
+
+<classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf, id=2826, 441.65pt x
  138.5175pt>
 File: classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf Graphic file (t
 ype pdf)
@@ -2800,7 +2875,7 @@ Package pdftex.def Info: classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.
 pdf used on input line 425.
 (pdftex.def)             Requested size: 350.0pt x 109.77847pt.
 
-<classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf, id=2757, 368.37625
+<classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf, id=2827, 368.37625
 pt x 138.5175pt>
 File: classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf Graphic file (
 type pdf)
@@ -2809,7 +2884,18 @@ type pdf)
 Package pdftex.def Info: classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph
 .pdf used on input line 437.
 (pdftex.def)             Requested size: 350.0pt x 131.60565pt.
+ [75 <./classProblem_af5f96a84c005e788f84e902071b24b34_icgraph.pdf> <./classPro
+blem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf
 
+pdfTeX warning: pdflatex (file ./classProblem_ac383070ca94c0da306bbcfbde061183a
+_cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
+ page
+> <./classProblem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf
+
+pdfTeX warning: pdflatex (file ./classProblem_ac383070ca94c0da306bbcfbde061183a
+_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
+e page
+>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 448.
@@ -2824,7 +2910,7 @@ Underfull \hbox (badness 10000) detected at line 453
  []
 
 
-<classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf, id=2760, 328.22626
+<classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf, id=2855, 328.22626
 pt x 100.375pt>
 File: classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf Graphic file (
 type pdf)
@@ -2833,13 +2919,7 @@ type pdf)
 Package pdftex.def Info: classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph
 .pdf used on input line 463.
 (pdftex.def)             Requested size: 327.0pt x 100.00102pt.
- [73 <./classProblem_ac383070ca94c0da306bbcfbde061183a_cgraph.pdf> <./classProb
-lem_ac383070ca94c0da306bbcfbde061183a_icgraph.pdf
 
-pdfTeX warning: pdflatex (file ./classProblem_ac383070ca94c0da306bbcfbde061183a
-_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a singl
-e page
->]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 473.
@@ -2864,30 +2944,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 515.
 
-[74 <./classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf>])
+[76 <./classProblem_a05100ba1606694f73080238a5d7ed9a5_icgraph.pdf>])
 (./classRichardson.tex
-<classRichardson__inherit__graph.pdf, id=2798, 215.80624pt x 481.8pt>
+<classRichardson__inherit__graph.pdf, id=2874, 215.80624pt x 537.00626pt>
 File: classRichardson__inherit__graph.pdf Graphic file (type pdf)
 
 <use classRichardson__inherit__graph.pdf>
 Package pdftex.def Info: classRichardson__inherit__graph.pdf used on input line
  19.
-(pdftex.def)             Requested size: 215.0pt x 480.01234pt.
-
-Underfull \vbox (badness 4341) has occurred while \output is active []
-
- [75]
-<classRichardson__coll__graph.pdf, id=2804, 329.23pt x 1132.23pt>
+(pdftex.def)             Requested size: 215.0pt x 535.01378pt.
+ [77]
+<classRichardson__coll__graph.pdf, id=2879, 329.23pt x 1187.43625pt>
 File: classRichardson__coll__graph.pdf Graphic file (type pdf)
 
 <use classRichardson__coll__graph.pdf>
 Package pdftex.def Info: classRichardson__coll__graph.pdf used on input line 29
 .
-(pdftex.def)             Requested size: 159.93256pt x 550.0pt.
+(pdftex.def)             Requested size: 152.49757pt x 550.0pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76 <./classRichardson__inherit__graph.pdf>] [77 <./classRichardson__coll__gra
+ [78 <./classRichardson__inherit__graph.pdf>] [79 <./classRichardson__coll__gra
 ph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2907,7 +2984,7 @@ Underfull \hbox (badness 10000) detected at line 89
  []
 
 
-<classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf, id=2842, 333.245
+<classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf, id=2918, 333.245
 pt x 100.375pt>
 File: classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf Graphic file
  (type pdf)
@@ -2916,9 +2993,9 @@ File: classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf Graphic file
 Package pdftex.def Info: classRichardson_a310f998254af88c3ad7532411b11a5fb_cgra
 ph.pdf used on input line 103.
 (pdftex.def)             Requested size: 332.0pt x 100.00716pt.
- [78])
+ [80])
 (./classVector.tex
-<classVector__inherit__graph.pdf, id=2852, 190.7125pt x 365.365pt>
+<classVector__inherit__graph.pdf, id=2928, 190.7125pt x 365.365pt>
 File: classVector__inherit__graph.pdf Graphic file (type pdf)
 
 <use classVector__inherit__graph.pdf>
@@ -2928,8 +3005,8 @@ Package pdftex.def Info: classVector__inherit__graph.pdf used on input line 21.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79 <./classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf>]
-<classVector__coll__graph.pdf, id=2864, 190.7125pt x 365.365pt>
+ [81 <./classRichardson_a310f998254af88c3ad7532411b11a5fb_cgraph.pdf>]
+<classVector__coll__graph.pdf, id=2941, 190.7125pt x 365.365pt>
 File: classVector__coll__graph.pdf Graphic file (type pdf)
 
 <use classVector__coll__graph.pdf>
@@ -2938,14 +3015,14 @@ Package pdftex.def Info: classVector__coll__graph.pdf used on input line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80 <./classVector__inherit__graph.pdf>] [81 <./classVector__coll__graph.pdf>]
+ [82 <./classVector__inherit__graph.pdf>] [83 <./classVector__coll__graph.pdf>]
 
 Underfull \hbox (badness 10000) detected at line 109
 [][][]
  []
 
 
-<classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf, id=2938, 260.975pt 
+<classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf, id=3013, 260.975pt 
 x 100.375pt>
 File: classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2954,7 +3031,7 @@ Package pdftex.def Info: classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.
 pdf used on input line 121.
 (pdftex.def)             Requested size: 260.0pt x 100.00102pt.
 
-[82]
+[84]
 Underfull \hbox (badness 10000) detected at line 137
 [][][]
  []
@@ -2968,7 +3045,7 @@ Underfull \hbox (badness 10000) detected at line 163
 [][][]
  []
 
-[83 <./classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf>]
+[85 <./classVector_a6f80c73b5f18dcf3f8e36065bdc8b9e5_icgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 179
 [][][]
  []
@@ -2979,7 +3056,7 @@ Underfull \hbox (badness 10000) detected at line 205
  []
 
 
-<classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf, id=2980, 471.7625pt
+<classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf, id=3056, 471.7625pt
  x 138.5175pt>
 File: classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf Graphic file (t
 ype pdf)
@@ -2993,16 +3070,16 @@ Underfull \hbox (badness 10000) detected at line 231
  []
 
 
-<classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf, id=2981, 672.5125pt
- x 417.56pt>
+<classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf, id=3057, 668.4975pt
+ x 368.37625pt>
 File: classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf Graphic file (t
 ype pdf)
- <use classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf>
+
+<use classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf>
 Package pdftex.def Info: classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.
 pdf used on input line 241.
-(pdftex.def)             Requested size: 350.0pt x 217.31084pt.
-
-[84 <./classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf>]
+(pdftex.def)             Requested size: 350.0pt x 192.87204pt.
+ [86 <./classVector_aa3039634ae7c98a3d46c351639c9b5ba_icgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 252.
@@ -3018,32 +3095,31 @@ Underfull \hbox (badness 10000) detected at line 262
  []
 
 
-<classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf, id=2997, 320.19624p
-t x 138.5175pt>
+<classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf, id=3072, 481.8pt x 
+138.5175pt>
 File: classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf Graphic file (t
 ype pdf)
-
-<use classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf>
+ <use classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf>
 Package pdftex.def Info: classVector_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.
 pdf used on input line 272.
-(pdftex.def)             Requested size: 319.0pt x 138.00142pt.
+(pdftex.def)             Requested size: 350.0pt x 100.62657pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 283.
 
-[85 <./classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf> <./classVecto
+
+Underfull \hbox (badness 10000) detected at line 288
+[][][]
+ []
+
+[87 <./classVector_ad7a31bddb977b9fee5fd6226d77ca119_icgraph.pdf> <./classVecto
 r_a6d840e97c65aa82bdedd2e09593e6fb5_icgraph.pdf
 
 pdfTeX warning: pdflatex (file ./classVector_a6d840e97c65aa82bdedd2e09593e6fb5_
 icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single
  page
 >]
-Underfull \hbox (badness 10000) detected at line 288
-[][][]
- []
-
-
 Underfull \hbox (badness 10000) detected at line 296
 [][][]
  []
@@ -3062,7 +3138,6 @@ Underfull \hbox (badness 10000) detected at line 322
 [][][]
  []
 
-[86]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 357.
@@ -3072,7 +3147,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 357.
 
 
-<classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf, id=3038, 371.3875pt
+Underfull \vbox (badness 5985) has occurred while \output is active []
+
+ [88]
+<classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf, id=3115, 371.3875pt
  x 100.375pt>
 File: classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf Graphic file (t
 ype pdf)
@@ -3104,21 +3182,24 @@ Underfull \hbox (badness 10000) detected at line 409
 [][][]
  []
 
-[87 <./classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf>]
+
+Overfull \vbox (3.46713pt too high) has occurred while \output is active []
+
+
+[89 <./classVector_a2c5afe0bb139bceda6723c22eb52a1cc_icgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 419
 [][][]
  []
 
 
-<classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf, id=3057, 336.25626p
-t x 138.5175pt>
+<classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf, id=3134, 497.86pt x
+ 138.5175pt>
 File: classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf Graphic file (t
 ype pdf)
-
-<use classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf>
+ <use classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf>
 Package pdftex.def Info: classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.
 pdf used on input line 429.
-(pdftex.def)             Requested size: 335.0pt x 138.00142pt.
+(pdftex.def)             Requested size: 350.0pt x 97.38007pt.
 
 Underfull \hbox (badness 10000) detected at line 449
 [][][]
@@ -3129,12 +3210,12 @@ Underfull \hbox (badness 10000) detected at line 456
 [][][]
  []
 
-[88 <./classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf>]
+
 Underfull \hbox (badness 10000) detected at line 478
 [][][]
  []
 
-
+[90 <./classVector_a72726780286e047ea7fdc1bc48bc8d7f_icgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 485
 [][][]
  []
@@ -3149,7 +3230,7 @@ Underfull \hbox (badness 10000) detected at line 514
 [][][]
  []
 
-[89]
+
 Underfull \hbox (badness 10000) detected at line 541
 [][][]
  []
@@ -3159,9 +3240,9 @@ Underfull \hbox (badness 10000) detected at line 548
 [][][]
  []
 
-) [90]
+[91]) [92]
 Chapter 5.
-(./matrix_8cpp.tex <matrix_8cpp__incl.pdf, id=3108, 542.025pt x 269.005pt>
+(./matrix_8cpp.tex <matrix_8cpp__incl.pdf, id=3183, 542.025pt x 269.005pt>
 File: matrix_8cpp__incl.pdf Graphic file (type pdf)
 
 <use matrix_8cpp__incl.pdf>
@@ -3181,7 +3262,7 @@ Underfull \hbox (badness 10000) detected at line 34
 [][][]
  []
 
-[91
+[93
 
  <./matrix_8cpp__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 41
@@ -3189,7 +3270,7 @@ Underfull \hbox (badness 10000) detected at line 41
  []
 
 
-<matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf, id=3139, 273.02pt x 
+<matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf, id=3215, 273.02pt x 
 138.5175pt>
 File: matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3216,8 +3297,8 @@ Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
 
-[92 <./matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf>]
-<matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf, id=3159, 273.02pt x 
+[94 <./matrix_8cpp_a060711074cb5bcaf4e75498bc040c4b7_cgraph.pdf>]
+<matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf, id=3236, 273.02pt x 
 138.5175pt>
 File: matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3245,7 +3326,7 @@ Underfull \hbox (badness 10000) detected at line 123
  []
 
 
-<matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf, id=3166, 273.02pt x 
+<matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf, id=3243, 273.02pt x 
 176.66pt>
 File: matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3256,7 +3337,7 @@ df used on input line 140.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [93 <./matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf>]
+ [95 <./matrix_8cpp_aa574249d63b390cf1108d6e82047ef61_cgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 152.
@@ -3276,7 +3357,7 @@ Underfull \hbox (badness 10000) detected at line 160
  []
 
 
-<matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf, id=3188, 257.96375pt
+<matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf, id=3264, 257.96375pt
  x 100.375pt>
 File: matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3285,32 +3366,32 @@ Package pdftex.def Info: matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.p
 df used on input line 177.
 (pdftex.def)             Requested size: 257.0pt x 100.00868pt.
 )
-(./matrix_8h.tex <matrix_8h__incl.pdf, id=3189, 542.025pt x 212.795pt>
+(./matrix_8h.tex <matrix_8h__incl.pdf, id=3265, 542.025pt x 212.795pt>
 File: matrix_8h__incl.pdf Graphic file (type pdf)
 
 <use matrix_8h__incl.pdf>
 Package pdftex.def Info: matrix_8h__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 137.41243pt.
- [94 <./matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf> <./matrix_8cp
+ [96 <./matrix_8cpp_a3d6c1dcfc038804f4c08687f4f37f48b_cgraph.pdf> <./matrix_8cp
 p_aa5699a0bdf0ee014f083ff8a76629d21_cgraph.pdf
 
 pdfTeX warning: pdflatex (file ./matrix_8cpp_aa5699a0bdf0ee014f083ff8a76629d21_
 cgraph.pdf): PDF inclusion: multiple pdfs with page group included in a single 
 page
->] <matrix_8h__dep__incl.pdf, id=3208, 1433.355pt x 403.5075pt>
+>] <matrix_8h__dep__incl.pdf, id=3284, 1433.355pt x 403.5075pt>
 File: matrix_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use matrix_8h__dep__incl.pdf>
 Package pdftex.def Info: matrix_8h__dep__incl.pdf used on input line 20.
 (pdftex.def)             Requested size: 350.0pt x 98.52464pt.
 ) (./vector_8cpp.tex
-<vector_8cpp__incl.pdf, id=3210, 542.025pt x 212.795pt>
+<vector_8cpp__incl.pdf, id=3286, 542.025pt x 212.795pt>
 File: vector_8cpp__incl.pdf Graphic file (type pdf)
 
 <use vector_8cpp__incl.pdf>
 Package pdftex.def Info: vector_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 137.41243pt.
- [95 <./matrix_8h__incl.pdf> <./matrix_8h__dep__incl.pdf
+ [97 <./matrix_8h__incl.pdf> <./matrix_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./matrix_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
@@ -3341,7 +3422,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 58.
 
-[96 <./vector_8cpp__incl.pdf>]
+[98 <./vector_8cpp__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 59
 [][][]
  []
@@ -3370,7 +3451,7 @@ Underfull \hbox (badness 10000) detected at line 91
  []
 
 
-<vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf, id=3270, 260.975pt x
+<vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf, id=3345, 260.975pt x
  100.375pt>
 File: vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3379,7 +3460,7 @@ Package pdftex.def Info: vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.p
 df used on input line 113.
 (pdftex.def)             Requested size: 260.0pt x 100.00102pt.
 
-[97 <./vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf>]
+[99 <./vector_8cpp_ac198cff0f4196c66649278458eebf227_cgraph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 125.
@@ -3399,7 +3480,7 @@ Underfull \hbox (badness 10000) detected at line 133
  []
 
 
-<vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf, id=3291, 260.975pt x
+<vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf, id=3368, 260.975pt x
  100.375pt>
 File: vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -3408,21 +3489,21 @@ Package pdftex.def Info: vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.p
 df used on input line 155.
 (pdftex.def)             Requested size: 260.0pt x 100.00102pt.
 )
-(./vector_8h.tex <vector_8h__incl.pdf, id=3292, 542.025pt x 156.585pt>
+(./vector_8h.tex <vector_8h__incl.pdf, id=3369, 542.025pt x 156.585pt>
 File: vector_8h__incl.pdf Graphic file (type pdf)
 
 <use vector_8h__incl.pdf>
 Package pdftex.def Info: vector_8h__incl.pdf used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 101.1148pt.
- [98 <./vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf>] <vector_8h__
-dep__incl.pdf, id=3306, 1433.355pt x 459.7175pt>
+ [100 <./vector_8cpp_ab6009b37fac65598b3db164dc4f19fed_cgraph.pdf>] <vector_8h_
+_dep__incl.pdf, id=3383, 1433.355pt x 459.7175pt>
 File: vector_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use vector_8h__dep__incl.pdf>
 Package pdftex.def Info: vector_8h__dep__incl.pdf used on input line 23.
 (pdftex.def)             Requested size: 350.0pt x 112.24947pt.
 ) (./iomanager_8cpp.tex
-<iomanager_8cpp__incl.pdf, id=3308, 602.25pt x 437.635pt>
+<iomanager_8cpp__incl.pdf, id=3385, 602.25pt x 437.635pt>
 File: iomanager_8cpp__incl.pdf Graphic file (type pdf)
 
 <use iomanager_8cpp__incl.pdf>
@@ -3431,89 +3512,86 @@ Package pdftex.def Info: iomanager_8cpp__incl.pdf used on input line 9.
 ) (./iomanager_8h.tex
 Underfull \vbox (badness 3158) has occurred while \output is active []
 
- [99 <./vector_8h__incl.pdf> <./vector_8h__dep__incl.pdf
+ [101 <./vector_8h__incl.pdf> <./vector_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./vector_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] <iomanager_8h__incl.pdf, id=3328, 602.25pt x 381.425pt>
+>] <iomanager_8h__incl.pdf, id=3404, 602.25pt x 381.425pt>
 File: iomanager_8h__incl.pdf Graphic file (type pdf)
 
 <use iomanager_8h__incl.pdf>
-Package pdftex.def Info: iomanager_8h__incl.pdf used on input line 10.
+Package pdftex.def Info: iomanager_8h__incl.pdf used on input line 11.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
 
-<iomanager_8h__dep__incl.pdf, id=3329, 246.9225pt x 156.585pt>
+<iomanager_8h__dep__incl.pdf, id=3405, 246.9225pt x 156.585pt>
 File: iomanager_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use iomanager_8h__dep__incl.pdf>
-Package pdftex.def Info: iomanager_8h__dep__incl.pdf used on input line 18.
+Package pdftex.def Info: iomanager_8h__dep__incl.pdf used on input line 19.
 (pdftex.def)             Requested size: 246.0pt x 155.99922pt.
-
-Underfull \vbox (badness 1092) has occurred while \output is active []
-
- [100 <./iomanager_8cpp__incl.pdf> <./iomanager_8h__incl.pdf
+ [102 <./iomanager_8cpp__incl.pdf> <./iomanager_8h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./iomanager_8h__incl.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
 >]) (./main_8cpp.tex
-<main_8cpp__incl.pdf, id=3349, 2291.56125pt x 504.88625pt>
+<main_8cpp__incl.pdf, id=3424, 2231.33624pt x 504.88625pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 
 <use main_8cpp__incl.pdf>
 Package pdftex.def Info: main_8cpp__incl.pdf used on input line 15.
-(pdftex.def)             Requested size: 350.0pt x 77.10866pt.
+(pdftex.def)             Requested size: 350.0pt x 79.18872pt.
 
-<main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=3351, 769.87625pt x
- 303.1325pt>
+<main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=3426, 769.87625pt x
+ 336.25626pt>
 File: main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file (type
  pdf)
  <use main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
 Package pdftex.def Info: main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
  used on input line 40.
-(pdftex.def)             Requested size: 350.0pt x 137.81448pt.
+(pdftex.def)             Requested size: 350.0pt x 152.87369pt.
 
-[101 <./iomanager_8h__dep__incl.pdf> <./main_8cpp__incl.pdf
+[103 <./iomanager_8h__dep__incl.pdf> <./main_8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./main_8cpp__incl.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]) (./analytical_8cpp.tex
-<analytical_8cpp__incl.pdf, id=3372, 602.25pt x 437.635pt>
+<analytical_8cpp__incl.pdf, id=3447, 602.25pt x 437.635pt>
 File: analytical_8cpp__incl.pdf Graphic file (type pdf)
 
 <use analytical_8cpp__incl.pdf>
 Package pdftex.def Info: analytical_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 254.34265pt.
 ) (./analytical_8h.tex
-<analytical_8h__incl.pdf, id=3373, 602.25pt x 381.425pt>
+<analytical_8h__incl.pdf, id=3448, 602.25pt x 381.425pt>
 File: analytical_8h__incl.pdf Graphic file (type pdf)
 
 <use analytical_8h__incl.pdf>
 Package pdftex.def Info: analytical_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
- [102 <./main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf> <./analytical_
+ [104 <./main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf> <./analytical_
 8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./analytical_8cpp__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <analytical_8h__dep__incl.pdf, id=3391, 273.02pt x 156.585pt>
+>] <analytical_8h__dep__incl.pdf, id=3467, 273.02pt x 156.585pt>
 File: analytical_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use analytical_8h__dep__incl.pdf>
 Package pdftex.def Info: analytical_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 272.0pt x 156.00879pt.
 ) (./dufort__frankel_8cpp.tex
-<dufort__frankel_8cpp__incl.pdf, id=3395, 602.25pt x 504.88625pt>
+<dufort__frankel_8cpp__incl.pdf, id=3471, 602.25pt x 504.88625pt>
 File: dufort__frankel_8cpp__incl.pdf Graphic file (type pdf)
 
 <use dufort__frankel_8cpp__incl.pdf>
 Package pdftex.def Info: dufort__frankel_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 293.42741pt.
-) (./dufort__frankel_8h.tex [103 <./analytical_8h__incl.pdf> <./analytical_8h__
+) (./dufort__frankel_8h.tex [105 <./analytical_8h__incl.pdf> <./analytical_8h__
 dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./analytical_8h__dep__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <dufort__frankel_8h__incl.pdf, id=3414, 602.25pt x 448.67625pt>
+>] <dufort__frankel_8h__incl.pdf, id=3491, 602.25pt x 448.67625pt>
 File: dufort__frankel_8h__incl.pdf Graphic file (type pdf)
 
 <use dufort__frankel_8h__incl.pdf>
@@ -3522,8 +3600,8 @@ Package pdftex.def Info: dufort__frankel_8h__incl.pdf used on input line 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [104 <./dufort__frankel_8cpp__incl.pdf>]
-<dufort__frankel_8h__dep__incl.pdf, id=3426, 271.0125pt x 178.6675pt>
+ [106 <./dufort__frankel_8cpp__incl.pdf>]
+<dufort__frankel_8h__dep__incl.pdf, id=3503, 271.0125pt x 178.6675pt>
 File: dufort__frankel_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use dufort__frankel_8h__dep__incl.pdf>
@@ -3531,36 +3609,36 @@ Package pdftex.def Info: dufort__frankel_8h__dep__incl.pdf used on input line 1
 7.
 (pdftex.def)             Requested size: 270.0pt x 178.0073pt.
 ) (./explicit_8cpp.tex
-<explicit_8cpp__incl.pdf, id=3429, 602.25pt x 493.845pt>
+<explicit_8cpp__incl.pdf, id=3506, 602.25pt x 493.845pt>
 File: explicit_8cpp__incl.pdf Graphic file (type pdf)
 
 <use explicit_8cpp__incl.pdf>
 Package pdftex.def Info: explicit_8cpp__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 287.01051pt.
-) (./explicit_8h.tex [105 <./dufort__frankel_8h__incl.pdf> <./dufort__frankel_8
+) (./explicit_8h.tex [107 <./dufort__frankel_8h__incl.pdf> <./dufort__frankel_8
 h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./dufort__frankel_8h__dep__incl.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->] <explicit_8h__incl.pdf, id=3450, 602.25pt x 381.425pt>
+>] <explicit_8h__incl.pdf, id=3525, 602.25pt x 381.425pt>
 File: explicit_8h__incl.pdf Graphic file (type pdf)
 
 <use explicit_8h__incl.pdf>
 Package pdftex.def Info: explicit_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
 
-<explicit_8h__dep__incl.pdf, id=3451, 746.79pt x 234.8775pt>
+<explicit_8h__dep__incl.pdf, id=3526, 746.79pt x 234.8775pt>
 File: explicit_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use explicit_8h__dep__incl.pdf>
 Package pdftex.def Info: explicit_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 110.08063pt.
- [106 <./explicit_8cpp__incl.pdf> <./explicit_8h__incl.pdf
+ [108 <./explicit_8cpp__incl.pdf> <./explicit_8h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./explicit_8h__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
 >]) (./forward__t__central__s_8cpp.tex
-<forward__t__central__s_8cpp__incl.pdf, id=3471, 602.25pt x 504.88625pt>
+<forward__t__central__s_8cpp__incl.pdf, id=3546, 602.25pt x 504.88625pt>
 File: forward__t__central__s_8cpp__incl.pdf Graphic file (type pdf)
 
 <use forward__t__central__s_8cpp__incl.pdf>
@@ -3568,19 +3646,19 @@ Package pdftex.def Info: forward__t__central__s_8cpp__incl.pdf used on input li
 ne 9.
 (pdftex.def)             Requested size: 350.0pt x 293.42741pt.
 ) (./forward__t__central__s_8h.tex
-<forward__t__central__s_8h__incl.pdf, id=3472, 602.25pt x 448.67625pt>
+<forward__t__central__s_8h__incl.pdf, id=3547, 602.25pt x 448.67625pt>
 File: forward__t__central__s_8h__incl.pdf Graphic file (type pdf)
 
 <use forward__t__central__s_8h__incl.pdf>
 Package pdftex.def Info: forward__t__central__s_8h__incl.pdf used on input line
  9.
 (pdftex.def)             Requested size: 350.0pt x 260.75957pt.
- [107 <./explicit_8h__dep__incl.pdf> <./forward__t__central__s_8cpp__incl.pdf
+ [109 <./explicit_8h__dep__incl.pdf> <./forward__t__central__s_8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./forward__t__central__s_8cpp__incl.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-<forward__t__central__s_8h__dep__incl.pdf, id=3491, 363.3575pt x 178.6675pt>
+<forward__t__central__s_8h__dep__incl.pdf, id=3567, 363.3575pt x 178.6675pt>
 File: forward__t__central__s_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use forward__t__central__s_8h__dep__incl.pdf>
@@ -3588,18 +3666,18 @@ Package pdftex.def Info: forward__t__central__s_8h__dep__incl.pdf used on input
  line 17.
 (pdftex.def)             Requested size: 350.0pt x 172.10498pt.
 ) (./richardson_8cpp.tex
-<richardson_8cpp__incl.pdf, id=3494, 602.25pt x 493.845pt>
+<richardson_8cpp__incl.pdf, id=3570, 602.25pt x 493.845pt>
 File: richardson_8cpp__incl.pdf Graphic file (type pdf)
 
 <use richardson_8cpp__incl.pdf>
 Package pdftex.def Info: richardson_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 287.01051pt.
-) (./richardson_8h.tex [108 <./forward__t__central__s_8h__incl.pdf> <./forward_
+) (./richardson_8h.tex [110 <./forward__t__central__s_8h__incl.pdf> <./forward_
 _t__central__s_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./forward__t__central__s_8h__dep__incl.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
->] <richardson_8h__incl.pdf, id=3513, 602.25pt x 437.635pt>
+>] <richardson_8h__incl.pdf, id=3589, 602.25pt x 437.635pt>
 File: richardson_8h__incl.pdf Graphic file (type pdf)
 
 <use richardson_8h__incl.pdf>
@@ -3608,144 +3686,144 @@ Package pdftex.def Info: richardson_8h__incl.pdf used on input line 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [109 <./richardson_8cpp__incl.pdf>]
-<richardson_8h__dep__incl.pdf, id=3525, 311.1625pt x 156.585pt>
+ [111 <./richardson_8cpp__incl.pdf>]
+<richardson_8h__dep__incl.pdf, id=3602, 311.1625pt x 156.585pt>
 File: richardson_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use richardson_8h__dep__incl.pdf>
 Package pdftex.def Info: richardson_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 310.0pt x 156.00162pt.
 ) (./crank__nicolson_8cpp.tex
-<crank__nicolson_8cpp__incl.pdf, id=3528, 602.25pt x 504.88625pt>
+<crank__nicolson_8cpp__incl.pdf, id=3605, 602.25pt x 504.88625pt>
 File: crank__nicolson_8cpp__incl.pdf Graphic file (type pdf)
 
 <use crank__nicolson_8cpp__incl.pdf>
 Package pdftex.def Info: crank__nicolson_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 293.42741pt.
-) (./crank__nicolson_8h.tex [110 <./richardson_8h__incl.pdf> <./richardson_8h__
+) (./crank__nicolson_8h.tex [112 <./richardson_8h__incl.pdf> <./richardson_8h__
 dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./richardson_8h__dep__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
->] <crank__nicolson_8h__incl.pdf, id=3547, 602.25pt x 448.67625pt>
+>] <crank__nicolson_8h__incl.pdf, id=3624, 602.25pt x 448.67625pt>
 File: crank__nicolson_8h__incl.pdf Graphic file (type pdf)
 
 <use crank__nicolson_8h__incl.pdf>
 Package pdftex.def Info: crank__nicolson_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 260.75957pt.
 
-<crank__nicolson_8h__dep__incl.pdf, id=3548, 270.00874pt x 178.6675pt>
+<crank__nicolson_8h__dep__incl.pdf, id=3625, 270.00874pt x 178.6675pt>
 File: crank__nicolson_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use crank__nicolson_8h__dep__incl.pdf>
 Package pdftex.def Info: crank__nicolson_8h__dep__incl.pdf used on input line 1
 7.
 (pdftex.def)             Requested size: 269.0pt x 178.00456pt.
- [111 <./crank__nicolson_8cpp__incl.pdf> <./crank__nicolson_8h__incl.pdf
+ [113 <./crank__nicolson_8cpp__incl.pdf> <./crank__nicolson_8h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./crank__nicolson_8h__incl.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]) (./implicit_8cpp.tex
-<implicit_8cpp__incl.pdf, id=3570, 602.25pt x 437.635pt>
+<implicit_8cpp__incl.pdf, id=3645, 602.25pt x 437.635pt>
 File: implicit_8cpp__incl.pdf Graphic file (type pdf)
 
 <use implicit_8cpp__incl.pdf>
 Package pdftex.def Info: implicit_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 254.34265pt.
 ) (./implicit_8h.tex
-<implicit_8h__incl.pdf, id=3571, 602.25pt x 381.425pt>
+<implicit_8h__incl.pdf, id=3646, 602.25pt x 381.425pt>
 File: implicit_8h__incl.pdf Graphic file (type pdf)
 
 <use implicit_8h__incl.pdf>
 Package pdftex.def Info: implicit_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
- [112 <./crank__nicolson_8h__dep__incl.pdf> <./implicit_8cpp__incl.pdf
+ [114 <./crank__nicolson_8h__dep__incl.pdf> <./implicit_8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./implicit_8cpp__incl.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
->] <implicit_8h__dep__incl.pdf, id=3590, 557.08125pt x 234.8775pt>
+>] <implicit_8h__dep__incl.pdf, id=3665, 557.08125pt x 234.8775pt>
 File: implicit_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use implicit_8h__dep__incl.pdf>
 Package pdftex.def Info: implicit_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 147.56862pt.
 ) (./laasonen_8cpp.tex
-<laasonen_8cpp__incl.pdf, id=3593, 602.25pt x 493.845pt>
+<laasonen_8cpp__incl.pdf, id=3668, 602.25pt x 493.845pt>
 File: laasonen_8cpp__incl.pdf Graphic file (type pdf)
 
 <use laasonen_8cpp__incl.pdf>
 Package pdftex.def Info: laasonen_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 287.01051pt.
-) (./laasonen_8h.tex [113 <./implicit_8h__incl.pdf> <./implicit_8h__dep__incl.p
+) (./laasonen_8h.tex [115 <./implicit_8h__incl.pdf> <./implicit_8h__dep__incl.p
 df
 
 pdfTeX warning: pdflatex (file ./implicit_8h__dep__incl.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
->] <laasonen_8h__incl.pdf, id=3612, 602.25pt x 437.635pt>
+>] <laasonen_8h__incl.pdf, id=3688, 602.25pt x 437.635pt>
 File: laasonen_8h__incl.pdf Graphic file (type pdf)
 
 <use laasonen_8h__incl.pdf>
 Package pdftex.def Info: laasonen_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 254.34265pt.
 
-<laasonen_8h__dep__incl.pdf, id=3613, 304.13625pt x 156.585pt>
+<laasonen_8h__dep__incl.pdf, id=3689, 304.13625pt x 156.585pt>
 File: laasonen_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use laasonen_8h__dep__incl.pdf>
 Package pdftex.def Info: laasonen_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 303.0pt x 156.004pt.
- [114 <./laasonen_8cpp__incl.pdf> <./laasonen_8h__incl.pdf
+ [116 <./laasonen_8cpp__incl.pdf> <./laasonen_8h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./laasonen_8h__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->]) (./method_8cpp.tex <method_8cpp__incl.pdf, id=3633, 602.25pt x 381.425pt>
+>]) (./method_8cpp.tex <method_8cpp__incl.pdf, id=3709, 602.25pt x 381.425pt>
 File: method_8cpp__incl.pdf Graphic file (type pdf)
 
 <use method_8cpp__incl.pdf>
 Package pdftex.def Info: method_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 221.67479pt.
 ) (./method_8h.tex
-<method_8h__incl.pdf, id=3634, 602.25pt x 325.215pt>
+<method_8h__incl.pdf, id=3710, 602.25pt x 325.215pt>
 File: method_8h__incl.pdf Graphic file (type pdf)
  <use method_8h__incl.pdf>
 Package pdftex.def Info: method_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 189.00693pt.
 
-[115 <./laasonen_8h__dep__incl.pdf> <./method_8cpp__incl.pdf
+[117 <./laasonen_8h__dep__incl.pdf> <./method_8cpp__incl.pdf
 
 pdfTeX warning: pdflatex (file ./method_8cpp__incl.pdf): PDF inclusion: multipl
 e pdfs with page group included in a single page
->] <method_8h__dep__incl.pdf, id=3653, 1433.355pt x 291.0875pt>
+>] <method_8h__dep__incl.pdf, id=3730, 1433.355pt x 291.0875pt>
 File: method_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use method_8h__dep__incl.pdf>
 Package pdftex.def Info: method_8h__dep__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 71.07498pt.
 ) (./problem_8cpp.tex
-<problem_8cpp__incl.pdf, id=3656, 602.25pt x 325.215pt>
+<problem_8cpp__incl.pdf, id=3733, 602.25pt x 325.215pt>
 File: problem_8cpp__incl.pdf Graphic file (type pdf)
 
 <use problem_8cpp__incl.pdf>
 Package pdftex.def Info: problem_8cpp__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 350.0pt x 189.00693pt.
-) (./problem_8h.tex [116 <./method_8h__incl.pdf> <./method_8h__dep__incl.pdf
+) (./problem_8h.tex [118 <./method_8h__incl.pdf> <./method_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./method_8h__dep__incl.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] <problem_8h__incl.pdf, id=3676, 602.25pt x 269.005pt>
+>] <problem_8h__incl.pdf, id=3752, 602.25pt x 269.005pt>
 File: problem_8h__incl.pdf Graphic file (type pdf)
 
 <use problem_8h__incl.pdf>
 Package pdftex.def Info: problem_8h__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 156.33907pt.
 
-<problem_8h__dep__incl.pdf, id=3677, 1433.355pt x 347.2975pt>
+<problem_8h__dep__incl.pdf, id=3753, 1433.355pt x 347.2975pt>
 File: problem_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use problem_8h__dep__incl.pdf>
 Package pdftex.def Info: problem_8h__dep__incl.pdf used on input line 18.
 (pdftex.def)             Requested size: 350.0pt x 84.7998pt.
-) (./utils_8h.tex [117 <./problem_8cpp__incl.pdf> <./problem_8h__incl.pdf
+) (./utils_8h.tex [119 <./problem_8cpp__incl.pdf> <./problem_8h__incl.pdf
 
 pdfTeX warning: pdflatex (file ./problem_8h__incl.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
@@ -3753,95 +3831,96 @@ pdfTeX warning: pdflatex (file ./problem_8h__incl.pdf): PDF inclusion: multiple
 
 pdfTeX warning: pdflatex (file ./problem_8h__dep__incl.pdf): PDF inclusion: mul
 tiple pdfs with page group included in a single page
->] <utils_8h__incl.pdf, id=3705, 246.9225pt x 156.585pt>
+>] <utils_8h__incl.pdf, id=3780, 246.9225pt x 156.585pt>
 File: utils_8h__incl.pdf Graphic file (type pdf)
 
 <use utils_8h__incl.pdf>
 Package pdftex.def Info: utils_8h__incl.pdf used on input line 11.
 (pdftex.def)             Requested size: 246.0pt x 155.99922pt.
 
-<utils_8h__dep__incl.pdf, id=3706, 1433.355pt x 403.5075pt>
+<utils_8h__dep__incl.pdf, id=3781, 1433.355pt x 403.5075pt>
 File: utils_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use utils_8h__dep__incl.pdf>
 Package pdftex.def Info: utils_8h__dep__incl.pdf used on input line 19.
 (pdftex.def)             Requested size: 350.0pt x 98.52464pt.
- [118 <./utils_8h__incl.pdf> <./utils_8h__dep__incl.pdf
+ [120 <./utils_8h__incl.pdf> <./utils_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./utils_8h__dep__incl.pdf): PDF inclusion: multi
 ple pdfs with page group included in a single page
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 64.
+(hyperref)                removing `subscript' on input line 73.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 71.
+(hyperref)                removing `subscript' on input line 80.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 78.
+(hyperref)                removing `subscript' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 78.
+(hyperref)                removing `subscript' on input line 87.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 85.
+(hyperref)                removing `subscript' on input line 94.
+
+[121]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 108.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 99.
+(hyperref)                removing `subscript' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 106.
+(hyperref)                removing `subscript' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 106.
+(hyperref)                removing `subscript' on input line 115.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 106.
-
-[119]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 113.
+(hyperref)                removing `subscript' on input line 122.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 127.
+(hyperref)                removing `subscript' on input line 136.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 127.
+(hyperref)                removing `subscript' on input line 136.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 134.
+(hyperref)                removing `subscript' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 134.
+(hyperref)                removing `subscript' on input line 143.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 141.
+(hyperref)                removing `subscript' on input line 150.
 
+[122]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 162.
+(hyperref)                removing `subscript' on input line 171.
 
-[120]) [121] [122
+) [123] [124
 
-] (./refman.ind [123
+] (./refman.ind [125
 
 
-] [124] [125] [126
+] [126] [127] [128
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
@@ -3850,7 +3929,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 452ED2336E0BF77EDF234F198D5F2208;53839.
+(rerunfilecheck)             Checksum: 56C3A87164498A3A47C493A029F939A6;55248.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3858,13 +3937,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 16786 strings out of 494910
- 269572 string characters out of 6179836
- 330629 words of memory out of 5000000
- 18820 multiletter control sequences out of 15000+600000
+ 16834 strings out of 494910
+ 271520 string characters out of 6179836
+ 332239 words of memory out of 5000000
+ 18846 multiletter control sequences out of 15000+600000
  66810 words of font info for 81 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 53i,16n,92p,3215b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,3211b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
@@ -3875,10 +3954,10 @@ hvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (136 pages, 615915 bytes).
+Output written on refman.pdf (138 pages, 625712 bytes).
 PDF statistics:
- 4265 PDF objects out of 4296 (max. 8388607)
- 3741 compressed objects within 38 object streams
- 781 named destinations out of 1000 (max. 500000)
- 2528 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4363 PDF objects out of 5155 (max. 8388607)
+ 3830 compressed objects within 39 object streams
+ 800 named destinations out of 1000 (max. 500000)
+ 2599 words of extra memory for PDF output out of 10000 (max. 10000000)
 
