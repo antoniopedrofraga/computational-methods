@@ -1,5 +1,0 @@
-<map id="Method::get_name" name="Method::get_name">
-<area shape="rect" id="node2" href="$classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="184,5,359,32"/>
-<area shape="rect" id="node3" href="$classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="407,5,587,32"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="635,5,685,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="Analytical::compute_solution" name="Analytical::compute_solution">
-<area shape="rect" id="node2" href="$classProblem.html#ac4e50f2308eef0abbe17446a9763b5be" title="Normal public get method that returns a Matrix, containing the solution solution. ..." alt="" coords="191,5,339,32"/>
-<area shape="rect" id="node3" href="$classProblem.html#ad9471629841ec6bd734d398ed9bfa624" title="Normal public get method that returns a Vector, containing the time values in each row..." alt="" coords="192,56,337,83"/>
-<area shape="rect" id="node4" href="$classProblem.html#a24f804792a0f5e30816a79cbbdb4c561" title="Normal public get method that returns a Vector, containing the space values in each column..." alt="" coords="191,107,339,133"/>
-<area shape="rect" id="node5" href="$classProblem.html#af09d12c75d48d233c0e6b34266440a96" title="Normal public get method that returns an unsigned int, the number of columns of the solution..." alt="" coords="197,157,332,184"/>
-</map>

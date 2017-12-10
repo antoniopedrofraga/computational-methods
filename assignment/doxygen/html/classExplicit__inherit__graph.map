@@ -1,6 +1,0 @@
-<map id="Explicit" name="Explicit">
-<area shape="rect" id="node3" href="$classDufortFrankel.html" title="A DufortFrankel method class that contains an iteration builder. " alt="" coords="5,520,127,612"/>
-<area shape="rect" id="node4" href="$classFTCS.html" title="A FTCS method class that contains an iteration builder. " alt="" coords="151,520,274,612"/>
-<area shape="rect" id="node5" href="$classRichardson.html" title="A Richardson method class that contains an iteration builder. " alt="" coords="299,520,420,612"/>
-<area shape="rect" id="node2" href="$classMethod.html" title="A Method class to structure information used to solve the problem. " alt="" coords="123,5,303,317"/>
-</map>

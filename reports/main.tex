@@ -12,7 +12,7 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt]{report}
+\documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
 \usepackage[myheadings]{fullpage}
@@ -81,7 +81,7 @@
 
 \begin{document}
 
-\title{ \fontsize{40}{90} \textsc{Computational Methods}
+\title{ \fontsize{40}{90} \textsc{Computational Methods \& C++}
 		\\ [2.0cm]
 		\HRule{0.5pt} \\
 		\LARGE \textbf{Heat Conduction Equation}
@@ -95,11 +95,20 @@
 		\textbf{Student ID: 279654} \\ 
 		\textbf{Cranfield University} \\
 		\textbf{M.Sc. in Software Engineering for Technical Computing
-		} \\
-		\setcounter{page}{2}}
+		} }
 
 \maketitle
+\thispagestyle{empty}
+\newpage
 \tableofcontents
+\thispagestyle{empty}
+\newpage
+\null\vspace{\fill}
+\begin{abstract}
+\normalsize
+Four numerical schemes were applied to compute a solution for a parabolic partial differential equation, the heat conduction equation. Two different types of schemes were used, explicit and implicit, and their solutions were evaluated. It could be observed the different behaviours of unstable and stable schemes. Step size variations of a stable method were studied as well. The obtained solutions were compared to the problem analytical solution in order to have a better understanding on these different behaviours.
+\end{abstract}
+\vspace{\fill}
 \thispagestyle{empty}
 \newpage
 
@@ -119,10 +128,6 @@
 %-------------------------------------------------------------------------------
 % BODY
 %-------------------------------------------------------------------------------
-\begin{abstract}
-Four numerical schemes were applied to compute a solution for a parabolic partial differential equation, the heat conduction equation. Two different types of schemes were used, explicit and implicit, and their solutions were evaluated. It could be observed the different behaviours of unstable and stable schemes. Step size variations of a stable method were studied as well. The obtained solutions were compared to the problem analytical solution in order to have a better understanding on these different behaviours.
-
-\end{abstract}
 
 %-------------------------------------------------------------------------------
 % Nomenclature
@@ -220,11 +225,11 @@ e ^{-D t (m \pi / L) ^2}  \frac{1 - (-1)^m}{m \pi} sin \left(\frac{m \pi x}{L}\r
 
 \subsection*{Numerical analysis}
 \addcontentsline{toc}{subsection}{Numerical analysis}
-\par Numerical analysis is the study of the obtained solution. Criticism is very important on this phase, since the solutions are evaluated. Digital computers have problems with round-off errors, and since values were truncated, problems with discretization errors may appear. There are some definitions related with this study: stability, convergence and approximation.
+\par Numerical analysis is the study of the obtained solution. Criticism is very important on this phase, since the solutions are evaluated. Digital computers have problems with round-off errors, and since values were truncated, problems with discretization errors may appear. There are some definitions related with this study: stability, convergence and approximation \cite{convergence_stability_consistency, numerical_analysis}.
 
 \par A method is declared stable if the error doesn't grow as time advances. Theoretically, conditions that make a scheme becomes stable or unstable can be known.
 \par Approximation can be verified by comparing the computed solution with the analytical solution, and check if there is an approximation at all.
-\par Convergence is defined by how well the computed solution approximates to the analytical solution. This can vary with a change in the number of \textbf{time steps} or \textbf{space steps}. A smaller number of steps can lead to a bigger error, whereas a bigger number of steps can lead to a considerably more time expensive solution. Every method could be developed using \textbf{Taylor Series}. This series were developed for \textbf{n} terms. Thus, every method has a given approximation factor, that could be represented in the \textbf{Big Oh} annotation. The error related with this approximation is called \textbf{Truncation Error}.
+\par Convergence is defined by how well the computed solution approximates to the analytical solution. This can vary with a change in the number of \textbf{time steps} or \textbf{space steps}. A smaller number of steps can lead to a bigger error, whereas a bigger number of steps can lead to a considerably more time expensive solution. Every method could be developed using \textbf{Taylor Series} \cite{hoffman}. This series were developed for \textbf{n} terms. Thus, every method has a given approximation factor, that could be represented in the \textbf{Big Oh} annotation. The error related with this approximation is called \textbf{Truncation Error} \cite{numerical_analysis}.
 \par A quantitative analysis can be done by comparing solutions of each method. By calculating the \textbf{norms} of the error matrix, one can conclude which method is more accurate. The \textbf{error matrix} can be calculated by subtracting each cell of the \textbf{analytical} solution matrix to the cells of a method matrix. When the result is a matrix of small values, the error is small. Whenever a norm is calculated, one is able to translate an error matrix into a single value:
 
 \begin{itemize}[noitemsep] 
@@ -251,7 +256,7 @@ As referred, considering the initial equation, these methods can be written in i
 \subsection*{Explicit Schemes}
 \addcontentsline{toc}{subsection}{Explicit Schemes}
 
-\par This type of schemes rely only on the previous time steps to calculate the current time step solution. In the case of both used methods, they were relying in known values of the \textbf{n - 1} and \textbf{n} time steps to calculate a value for the \textbf{n + 1} time step. Thereby, the second time step can not be calculated by these methods, because there's no possible value for a negative time step. A different method, for the same equation, with two levels of time steps was used in order to overcome this situation, the \textbf{Forward in Time and Central in Space} scheme. It's known that this method is \textbf{conditionally stable}, and its stability condition is given by,
+\par This type of schemes rely only on the previous time steps to calculate the current time step solution. In the case of both used methods, they were relying in known values of the \textbf{n - 1} and \textbf{n} time steps to calculate a value for the \textbf{n + 1} time step. Thereby, the second time step can not be calculated by these methods, because there's no possible value for a negative time step. A different method, for the same equation, with two levels of time steps was used in order to overcome this situation, the \textbf{Forward in Time and Central in Space} scheme. It's known that this method is \textbf{conditionally stable}, and its stability condition is given by\cite{hoffman},
 
 \begin{center}
 \Large
@@ -260,7 +265,7 @@ $
 $
 \end{center}
 
-Therefore, considering $\Delta t = 0.01$, $\Delta x = 0.05$, and $D = 0.1$, this method is declared stable. It's important to have a stable solution for the first iteration, since it is a major influence on the overall solution. Therefore, this iteration could be calculated with the following expression,
+Therefore, considering $\Delta t = 0.01$, $\Delta x = 0.05$, and $D = 0.1$, this method is declared stable. It's important to have a stable solution for the first iteration, since it is a major influence on the overall solution\cite{heat_transfer}. Therefore, this iteration could be calculated with the following expression,
 
 \begin{center}
 \Large
@@ -285,7 +290,7 @@ $
 
 \subsubsection*{Richardson}
 \addcontentsline{toc}{subsubsection}{Richardson}
-The Richardson method can be applied by having a central in time and central in space scheme. Regarding to stability issues, this method is unconditionally unstable. This method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)}. Following the heat conduction equation, the expression can be written as following:
+The Richardson method can be applied by having a central in time and central in space scheme. Regarding to stability issues, this method is unconditionally unstable. This method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} \cite{hoffman}. Following the heat conduction equation, the expression can be written as following:
 \begin{center}
 \Large
 $
@@ -302,7 +307,7 @@ $
 
 \subsubsection*{DuFort-Frankel}
 \addcontentsline{toc}{subsubsection}{DuFort-Frankel}
-\par The DuFort-Frankel scheme can be applied by having central differences in both derivatives, but to prevent stability issues, the space derivative term $f_i^n$ can be written as the average value of $f_{i}^{n + 1}$ and $f_{i}^{n - 1}$. Therefore this method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$, $(\frac{\Delta t}{\Delta x}) ^2$)} and is declared as unconditionally stable and it may be formulated as follows:
+\par The DuFort-Frankel scheme can be applied by having central differences in both derivatives, but to prevent stability issues, the space derivative term $f_i^n$ can be written as the average value of $f_{i}^{n + 1}$ and $f_{i}^{n - 1}$. Therefore this method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$, $(\frac{\Delta t}{\Delta x}) ^2$)} \cite{hoffman} and is declared as unconditionally stable and it may be formulated as follows:
 \begin{center}
 \Large
 $
@@ -320,7 +325,7 @@ $
 \subsection*{Implicit Schemes}
 \addcontentsline{toc}{subsection}{Implicit Schemes}
 
-\par In other hand, implicit schemes rely not only on lower time steps to calculate a solution, but also on the current time step known values. Each time step solution can often be solved by applying the Thomas Algorithm, which is an algorithm that can solve tridiagonal matrix systems, $Ax = r$. This algorithm is a special case of the LU decomposition, with a better performance. The matrix $A$ can be decomposed in a lower triangular matrix $L$ and an upper triangular matrix $U$, therefore $A = LU$. This algorithm consists of two steps, the downwards phase where the equation $Lp = r$ is solved and the upwards phase, solving $Ux = p$, obtaining a solution for $x$. 
+\par In other hand, implicit schemes rely not only on lower time steps to calculate a solution, but also on the current time step known values. Each time step solution can often be solved by applying the Thomas Algorithm, which is an algorithm that can solve tridiagonal matrix systems, $Ax = r$\cite{thomas}. This algorithm is a special case of the LU decomposition, with a better performance. The matrix $A$ can be decomposed in a lower triangular matrix $L$ and an upper triangular matrix $U$, therefore $A = LU$\cite{thomas}. This algorithm consists of two steps, the downwards phase where the equation $Lp = r$ is solved and the upwards phase, solving $Ux = p$\cite{thomas}, obtaining a solution for $x$. 
 
 \begin{figure}[!htb]
 \centering
@@ -338,7 +343,7 @@ $
 
 \subsubsection*{Laasonen Simple Implicit}
 \addcontentsline{toc}{subsubsection}{Laasonen Simple Implicit}
-\par The time derivative is considered forward in time. Central difference is used in space derivative, and the scheme is of order \textbf{O($\Delta x $, $\Delta t ^2$)}, and unconditionally stable. Concluding, the below equation could be established:
+\par The time derivative is considered forward in time. Central difference is used in space derivative, and the scheme is of order \textbf{O($\Delta x $, $\Delta t ^2$)}\cite{hoffman}, and unconditionally stable. Concluding, the below equation could be established:
 
 \begin{center}
 \Large
@@ -414,7 +419,7 @@ $
 
 \subsubsection*{Crank-Nicholson}
 \addcontentsline{toc}{subsubsection}{Crank-Nicholson}
-\par The time derivative is considered forward in time, and the space derivative can be replaced by the average of central differences in time steps \textbf{n} and \textbf{n + 1}. The method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} and declared unconditionally stable. Thus:
+\par The time derivative is considered forward in time, and the space derivative can be replaced by the average of central differences in time steps \textbf{n} and \textbf{n + 1}. The method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} \cite{hoffman} and declared unconditionally stable. Thus:
 
 \begin{center}
 \Large
@@ -571,7 +576,7 @@ $
 \addcontentsline{toc}{subsection}{Laasonen Implicit Scheme: study of time step variation}
 
 \par Laasonen Implicit Scheme is an unconditionally stable scheme to solve Parabolic Partial Differential Equations. Therefore, with the right time and space step, there's almost no error related to the development of its results throughout the time advancement. 
-\par A reduction on these steps led to a higher computational time, since there's more calculations to be made. Whereas steps with higher values led to more inaccurate results. This phenomenon could be explained with a concept that was introduced earlier, the \textbf{truncation error}. This error can only be avoided with exact calculations, but can be reduced by applying a larger number of smaller intervals or steps. As referred before, different results of this method were studied by changing the time step size. The space step was maintained, $\Delta x = 0.05$.
+\par A reduction on these steps led to a higher computational time, since there's more calculations to be made. Whereas steps with higher values led to more inaccurate results\cite{step_size}. This phenomenon could be explained with a concept that was introduced earlier, the \textbf{truncation error}\cite{hoffman}. This error can only be avoided with exact calculations, but can be reduced by applying a larger number of smaller intervals or steps. As referred before, different results of this method were studied by changing the time step size. The space step was maintained, $\Delta x = 0.05$.
 
 \begin{table}[!htb]
 \centering
@@ -611,38 +616,40 @@ $
 % REFERENCES
 %-------------------------------------------------------------------------------
 \newpage
-\section*{References}
-\addcontentsline{toc}{section}{References}
+%\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{0}
 
+\bibitem{convergence_stability_consistency}
 Gilberto E. Urroz, July 2004, \textit{Convergence, Stability, and Consistency of Finite
 Difference Schemes in the Solution of Partial Differential
 Equations,} Available at: <\url{http://ocw.usu.edu/Civil_and_Environmental_Engineering/Numerical_Methods_in_Civil_Engineering/StabilityNumericalSchemes.pdf}> [Accessed 2 October 2017]
-\newline
-\newline
+
+\bibitem{numerical_analysis}
 S. Scott Collis, April 26, 2005, \textit{An Introduction to Numerical Analysis
 for Computational Fluid Mechanics,} [Accessed 2 October 2017]
-\newline
-\newline
+
+\bibitem{hoffman}
 Klaus A. Hoffman, Steve T. Chiang, August 2000, \textit{Computational Fluid Dynamics, Volume 1} [Accessed 27 October 2017]
-\newline
-\newline
+
+\bibitem{heat_transfer}
 Richard H. Pletcher, Jhon C. Tannehill, Dale A. Anderson, 2013, \textit{Computational Fluid Mechanics and Heat Transfer, Third Edition}, [Accessed 27 October 2017]
-\newline
-\newline
+
+\bibitem{thomas}
 W. T. Lee, \textit{Tridiagonal Matrices: Thomas Algorithm}, Available at: <\url{https://www3.ul.ie/wlee/ms6021_thomas.pdf}> [Accessed 28 October 2017]
-\newline
-\newline
+
+\bibitem{error}
 \textit{ Error in Euler’s Method}, Available at: <\url{http://www.math.unl.edu/~gledder1/Math447/EulerError}> [Accessed 2 November 2017]
-\newline
-\newline
+
+\bibitem{step_size}
 John D. Cook, February 22 2008, \textit{ Step size for numerical differential equations}, Available at: <\url{https://www.johndcook.com/NumericalODEStepSize.pdf}> [Accessed 3 November 2017]
-\newline
-\newline
+
+\bibitem{explicit_implicit}
 B.J.P. Kaus, \textit{Explicit versus implicit Finite Difference Schemes}, Available at: <\url{https://www.geowiss.uni-mainz.de/Dateien/Finite_Differerence_Timpl_expl.pdf}> [Accessed 4 November 2017]
-\newline
-\newline
+
+\bibitem{numerical_methods_pde}
 Markus Schmuck, \textit{Numerical Methods for PDEs}, Available at: <\url{http://www.macs.hw.ac.uk/~ms713/lecture_9.pdf}> [Accessed 10 November 2017]
 
+\end{thebibliography}
 \newpage
 
 \section*{Appendices}
@@ -660,25 +667,25 @@ Every term can be developed with Taylor expansions:
 \begin{center}
 \Large
 $
-f_i^{n + 1} = f_i^{n} + \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n + \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^2)
+f(x + \Delta t) = f_i^{n} + \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n + \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^3)
 $
 \end{center}
 \begin{center}
 \Large
 $
-f_i^{n - 1} = f_i^{n} - \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n + \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^2)
+f(x - \Delta t)  = f_i^{n} - \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n + \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^3)
 $
 \end{center}
 \begin{center}
 \Large
 $
-f_{i + 1}^{n} = f_i^{n} + \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n + O(\Delta x ^2)
+f(x + \Delta x)  = f_i^{n} + \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x 2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n + \frac{\Delta x 3}{3} \left( \frac{\partial ^3 f}{\partial x ^3} \right)_i^n + O(\Delta x ^4)
 $
 \end{center}
 \begin{center}
 \Large
 $
-f_{i - 1}^{n} = f_i^{n} - \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n + O(\Delta x ^2)
+f(x - \Delta x) = f_i^{n} - \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n - \frac{\Delta x 3}{3} \left( \frac{\partial ^3 f}{\partial x ^3} \right)_i^n + O(\Delta x ^4)
 $
 \end{center}
 
@@ -697,7 +704,7 @@ $
 \begin{center}
 \Large
 $
-\frac{f_i^{n} + \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n + \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^2) - f_i^{n} + \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n - \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^2)}{2 \Delta t}
+\frac{f_i^{n} + \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n + \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^3) - f_i^{n} + \Delta t \left( \frac{\partial f}{\partial t} \right)_i^n - \frac{\Delta t ^2}{2} \left( \frac{\partial ^2 f}{\partial t ^2} \right)_i^n + O(\Delta t ^3)}{2 \Delta t}
 $
 \end{center}
 
@@ -722,9 +729,8 @@ $
 \par one can replace the terms by their expansions as well,
 
 \begin{center}
-\Large
 $
-D \frac{f_i^{n} + \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n + O(\Delta x ^2) - 2f_{i}^{n} + ff_i^{n} - \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n + O(\Delta x ^2)}{(\Delta x)^2}
+D \frac{f_i^{n} + \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n + \frac{\Delta x 3}{3} \left( \frac{\partial ^3 f}{\partial x ^3} \right)_i^n + O(\Delta x ^4) - 2f_{i}^{n} + f_i^{n} - \Delta x \left( \frac{\partial f}{\partial x} \right)_i^n + \frac{\Delta x ^2}{2} \left( \frac{\partial ^2 f}{\partial x ^2} \right)_i^n - \frac{\Delta x 3}{3} \left( \frac{\partial ^3 f}{\partial x ^3} \right)_i^n + O(\Delta x ^4)}{(\Delta x)^2}
 $
 \end{center}
 

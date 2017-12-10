@@ -1,6 +1,0 @@
-<map id="Method::get_solution" name="Method::get_solution">
-<area shape="rect" id="node2" href="$classIOManager.html#a149183e073e33890810fe6801bc4861f" title="Exports a plot chart that compares the analytical solution to any other solution using gnuplot..." alt="" coords="196,5,371,32"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="647,31,697,57"/>
-<area shape="rect" id="node5" href="$classMethod.html#a4f1d13311599c8ffd73835663beb0e7b" title="Method::compute_norms" alt="" coords="200,107,367,133"/>
-<area shape="rect" id="node3" href="$classIOManager.html#ac4c42d2c5d93f7031447be7845bf2036" title="Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution. " alt="" coords="419,5,599,32"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="Explicit" name="Explicit">
-<area shape="rect" id="node2" href="$classMethod.html" title="A Method class to structure information used to solve the problem. " alt="" coords="86,881,266,1179"/>
-<area shape="rect" id="node3" href="$classProblem.html" title="A Problem class to structure relevant information related with the problem. " alt="" coords="95,507,257,819"/>
-<area shape="rect" id="node4" href="$classVector.html" title="A vector class for data storage of a 1D array of doubles &#160;&#160;The implementation is derived from the sta..." alt="" coords="16,161,155,415"/>
-<area shape="rect" id="node6" href="$classMatrix.html" title="A matrix class for data storage of a 2D array of doubles &#160;&#160;The implementation is derived from the sta..." alt="" coords="190,147,311,429"/>
-</map>
