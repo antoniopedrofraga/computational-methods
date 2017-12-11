@@ -1,0 +1,10 @@
+<map id="Method" name="Method">
+<area shape="rect" id="node2" href="$classAnalytical.html" title="Analytical" alt="" coords="73,80,151,107"/>
+<area shape="rect" id="node3" href="$classExplicit.html" title="Explicit" alt="" coords="175,80,241,107"/>
+<area shape="rect" id="node7" href="$classImplicit.html" title="Implicit" alt="" coords="348,80,412,107"/>
+<area shape="rect" id="node4" href="$classDufortFrankel.html" title="DufortFrankel" alt="" coords="5,155,107,181"/>
+<area shape="rect" id="node5" href="$classFTCS.html" title="FTCS" alt="" coords="131,155,189,181"/>
+<area shape="rect" id="node6" href="$classRichardson.html" title="Richardson" alt="" coords="213,155,301,181"/>
+<area shape="rect" id="node8" href="$classCrankNicolson.html" title="CrankNicolson" alt="" coords="326,155,434,181"/>
+<area shape="rect" id="node9" href="$classLaasonen.html" title="Laasonen" alt="" coords="458,155,537,181"/>
+</map>

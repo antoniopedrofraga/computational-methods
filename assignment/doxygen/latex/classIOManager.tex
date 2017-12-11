@@ -1,0 +1,53 @@
+\hypertarget{classIOManager}{}\section{I\+O\+Manager Class Reference}
+\label{classIOManager}\index{I\+O\+Manager@{I\+O\+Manager}}
+
+
+{\ttfamily \#include $<$iomanager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIOManager_afce14d2f016545728fee1e48b74f431c}{I\+O\+Manager} ()
+\item 
+void \hyperlink{classIOManager_ac4c42d2c5d93f7031447be7845bf2036}{export\+\_\+outputs} (\hyperlink{classMethod}{Method} $\ast$analytical, std\+::vector$<$ \hyperlink{classMethod}{Method} $\ast$ $>$ methods)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An input/output manager class to handle plot exportations and future implementations of input handling
+
+The \hyperlink{classIOManager}{I\+O\+Manager} class provides\+: ~\newline
+-\/plot method which compares the analytical solution with a set of given methods, ploting them with a custom configuration using gnuplot 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{I\+O\+Manager@{I\+O\+Manager}!I\+O\+Manager@{I\+O\+Manager}}
+\index{I\+O\+Manager@{I\+O\+Manager}!I\+O\+Manager@{I\+O\+Manager}}
+\subsubsection[{\texorpdfstring{I\+O\+Manager()}{IOManager()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+O\+Manager\+::\+I\+O\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classIOManager_afce14d2f016545728fee1e48b74f431c}{}\label{classIOManager_afce14d2f016545728fee1e48b74f431c}
+Default constructor. Initialize an \hyperlink{classIOManager}{I\+O\+Manager} object. 
+
+\subsection{Member Function Documentation}
+\index{I\+O\+Manager@{I\+O\+Manager}!export\+\_\+outputs@{export\+\_\+outputs}}
+\index{export\+\_\+outputs@{export\+\_\+outputs}!I\+O\+Manager@{I\+O\+Manager}}
+\subsubsection[{\texorpdfstring{export\+\_\+outputs(\+Method $\ast$analytical, std\+::vector$<$ Method $\ast$ $>$ methods)}{export_outputs(Method *analytical, std::vector< Method * > methods)}}]{\setlength{\rightskip}{0pt plus 5cm}void I\+O\+Manager\+::export\+\_\+outputs (
+\begin{DoxyParamCaption}
+\item[{{\bf Method} $\ast$}]{analytical, }
+\item[{std\+::vector$<$ {\bf Method} $\ast$ $>$}]{methods}
+\end{DoxyParamCaption}
+)}\hypertarget{classIOManager_ac4c42d2c5d93f7031447be7845bf2036}{}\label{classIOManager_ac4c42d2c5d93f7031447be7845bf2036}
+Exports outputs regarding plots images and error tables for each computed solution, comparing them to the analytical solution 
+\begin{DoxyParams}{Parameters}
+{\em Method$\ast$} & analytical The analytical solution \\
+\hline
+{\em vector$<$\+Method$\ast$$>$} & methods \hyperlink{classVector}{Vector} containing the solutions \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+io/iomanager.\+h\item 
+io/iomanager.\+cpp\end{DoxyCompactItemize}

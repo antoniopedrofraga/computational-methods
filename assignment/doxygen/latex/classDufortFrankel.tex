@@ -1,0 +1,86 @@
+\hypertarget{classDufortFrankel}{}\section{Dufort\+Frankel Class Reference}
+\label{classDufortFrankel}\index{Dufort\+Frankel@{Dufort\+Frankel}}
+
+
+{\ttfamily \#include $<$dufort\+\_\+frankel.\+h$>$}
+
+
+
+Inheritance diagram for Dufort\+Frankel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classDufortFrankel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dufort\+Frankel\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classDufortFrankel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDufortFrankel_a3da0cebb23f1c23c8656b5d39824b22b}{Dufort\+Frankel} (\hyperlink{classProblem}{Problem} \hyperlink{classMethod_a29a08a679b5d30a8c813766308205041}{problem})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector}{Vector} \hyperlink{classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4}{build\+\_\+iteration} (\hyperlink{classVector}{Vector} current\+\_\+step, \hyperlink{classVector}{Vector} previous\+\_\+step)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classDufortFrankel}{Dufort\+Frankel} method class that contains an iteration builder. ~\newline
+ This builder is used to calculate a solution using the Dufort-\/\+Frankel mathod.
+
+The \hyperlink{classDufortFrankel}{Dufort\+Frankel} class provides\+: ~\newline
+-\/a basic constructor for creating a \hyperlink{classDufortFrankel}{Dufort\+Frankel} method object. ~\newline
+-\/a method to compute a solution of the current iteration 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Dufort\+Frankel@{Dufort\+Frankel}!Dufort\+Frankel@{Dufort\+Frankel}}
+\index{Dufort\+Frankel@{Dufort\+Frankel}!Dufort\+Frankel@{Dufort\+Frankel}}
+\subsubsection[{\texorpdfstring{Dufort\+Frankel(\+Problem problem)}{DufortFrankel(Problem problem)}}]{\setlength{\rightskip}{0pt plus 5cm}Dufort\+Frankel\+::\+Dufort\+Frankel (
+\begin{DoxyParamCaption}
+\item[{{\bf Problem}}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{classDufortFrankel_a3da0cebb23f1c23c8656b5d39824b22b}{}\label{classDufortFrankel_a3da0cebb23f1c23c8656b5d39824b22b}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\index{Dufort\+Frankel@{Dufort\+Frankel}!build\+\_\+iteration@{build\+\_\+iteration}}
+\index{build\+\_\+iteration@{build\+\_\+iteration}!Dufort\+Frankel@{Dufort\+Frankel}}
+\subsubsection[{\texorpdfstring{build\+\_\+iteration(\+Vector current\+\_\+step, Vector previous\+\_\+step)}{build_iteration(Vector current_step, Vector previous_step)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Dufort\+Frankel\+::build\+\_\+iteration (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}}]{current\+\_\+step, }
+\item[{{\bf Vector}}]{previous\+\_\+step}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4}{}\label{classDufortFrankel_ae140760ed55ca045a2136e6e882cecd4}
+Normal protected method. Calculate a next time step solution requiring a previous time step and a current time step solution. 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+step} & A vector representing the current time step solution. \\
+\hline
+{\em previous\+\_\+step} & A vector representing the previous time step solution. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. The computed solution. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classExplicit_a2b9b097253488f4ce07a8ef0580a5d22}{Explicit}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+methods/explicit/dufort\+\_\+frankel.\+h\item 
+methods/explicit/dufort\+\_\+frankel.\+cpp\end{DoxyCompactItemize}

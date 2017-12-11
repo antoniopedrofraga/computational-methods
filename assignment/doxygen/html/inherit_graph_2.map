@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classMethod.html" title="Method" alt="" coords="5,81,71,108"/>
+<area shape="rect" id="node2" href="$classAnalytical.html" title="Analytical" alt="" coords="119,31,197,57"/>
+<area shape="rect" id="node3" href="$classExplicit.html" title="Explicit" alt="" coords="125,81,191,108"/>
+<area shape="rect" id="node7" href="$classImplicit.html" title="Implicit" alt="" coords="126,157,190,184"/>
+<area shape="rect" id="node4" href="$classDufortFrankel.html" title="DufortFrankel" alt="" coords="249,5,350,32"/>
+<area shape="rect" id="node5" href="$classFTCS.html" title="FTCS" alt="" coords="271,56,328,83"/>
+<area shape="rect" id="node6" href="$classRichardson.html" title="Richardson" alt="" coords="255,107,343,133"/>
+<area shape="rect" id="node8" href="$classCrankNicolson.html" title="CrankNicolson" alt="" coords="245,157,353,184"/>
+<area shape="rect" id="node9" href="$classLaasonen.html" title="Laasonen" alt="" coords="260,208,339,235"/>
+</map>

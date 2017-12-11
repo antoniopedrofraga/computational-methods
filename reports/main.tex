@@ -52,7 +52,8 @@
   commentstyle=\color{dkgreen},
   stringstyle=\color{mauve},
   breakatwhitespace=true,
-  tabsize=3
+  breaklines=true,
+  tabsize=2
 }
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
@@ -290,7 +291,7 @@ $
 
 \subsubsection*{Richardson}
 \addcontentsline{toc}{subsubsection}{Richardson}
-The Richardson method can be applied by having a central in time and central in space scheme. Regarding to stability issues, this method is unconditionally unstable. This method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} \cite{hoffman}. Following the heat conduction equation, the expression can be written as following:
+The Richardson method can be applied by having a central in time and central in space scheme. Regarding to stability issues, this method is unconditionally unstable. This method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} \cite{hoffman}. Following the heat conduction equation, the expression could be represented at \textbf{Figure 2} and could be written as following:
 \begin{center}
 \Large
 $
@@ -307,7 +308,7 @@ $
 
 \subsubsection*{DuFort-Frankel}
 \addcontentsline{toc}{subsubsection}{DuFort-Frankel}
-\par The DuFort-Frankel scheme can be applied by having central differences in both derivatives, but to prevent stability issues, the space derivative term $f_i^n$ can be written as the average value of $f_{i}^{n + 1}$ and $f_{i}^{n - 1}$. Therefore this method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$, $(\frac{\Delta t}{\Delta x}) ^2$)} \cite{hoffman} and is declared as unconditionally stable and it may be formulated as follows:
+\par The DuFort-Frankel scheme can be applied by having central differences in both derivatives, but to prevent stability issues, the space derivative term $f_i^n$ can be written as the average value of $f_{i}^{n + 1}$ and $f_{i}^{n - 1}$. The method stencil can be observed at \textbf{Figure 1}. Therefore this method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$, $(\frac{\Delta t}{\Delta x}) ^2$)} \cite{hoffman}, it is declared as unconditionally stable and it may be formulated as follows:
 \begin{center}
 \Large
 $
@@ -343,7 +344,7 @@ $
 
 \subsubsection*{Laasonen Simple Implicit}
 \addcontentsline{toc}{subsubsection}{Laasonen Simple Implicit}
-\par The time derivative is considered forward in time. Central difference is used in space derivative, and the scheme is of order \textbf{O($\Delta x $, $\Delta t ^2$)}\cite{hoffman}, and unconditionally stable. Concluding, the below equation could be established:
+\par The time derivative is considered forward in time. Central difference is used in space derivative, and the scheme is of order \textbf{O($\Delta x $, $\Delta t ^2$)}\cite{hoffman}, and unconditionally stable. Concluding, the below equation could be established, and it could be represented at \textbf{Figure 3}:
 
 \begin{center}
 \Large
@@ -419,7 +420,7 @@ $
 
 \subsubsection*{Crank-Nicholson}
 \addcontentsline{toc}{subsubsection}{Crank-Nicholson}
-\par The time derivative is considered forward in time, and the space derivative can be replaced by the average of central differences in time steps \textbf{n} and \textbf{n + 1}. The method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} \cite{hoffman} and declared unconditionally stable. Thus:
+\par The time derivative is considered forward in time, and the space derivative can be replaced by the average of central differences in time steps \textbf{n} and \textbf{n + 1}. The method is of order \textbf{O($\Delta x ^2$, $\Delta t ^2$)} \cite{hoffman}, is declared unconditionally stable and it could be represented at \textbf{Figure 4}. Thus:
 
 \begin{center}
 \Large
@@ -506,7 +507,13 @@ $
 \par An \textbf{Input and Output Manager} class was developed so that the code related with plots and tables exportations could be separated from the logical source code. This class was developed with several methods regarding data interpretation and structuration in order to easily export plot charts. A \textbf{gnuplot c++ library} was used, therefore the gnuplot syntax could be directly used from the c++ code, cutting down the need of developing external bash scripts for this specific purpose.
 \par Despite the referred classes, a header file with useful \textbf{macros} was declared. This file contains information about which conditions to test, like the initial temperature and the surface temperature. Therefore, if for some reason, one of this values changes, it can be easily corrected.
 \par The \textbf{Matrix} and \textbf{Vector} classes, which were provided in the c++ module were reused to represent a solution matrix or a solution vector of a certain iteration.
-\par The several objects in this structure could be instantiated in the main file, calling methods to compute the several solutions and to export their plot charts. 
+\par The several objects in this structure could be instantiated in the main file, calling methods to compute the several solutions and to export their plot charts. The previously described classes can be represented in the \textbf{Figure 6} diagram.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=.5\linewidth]{class_diagram.png}
+  \captionof{figure}{Class Diagram.}
+\end{figure} 
 
 \section*{Results \& Discussion}
 \addcontentsline{toc}{section}{Results \& Discussion}
@@ -538,9 +545,9 @@ $
   \captionof{figure}{DuFort-Frankel's solution at $t= 0.5$.}
 \end{figure}
 
-\par When looking at \textbf{Figure 6}, it can be observed that the DuFort-Frankel solution is quite approximated to the real solution. This scheme, as it could be observed at \textbf{Figure 10}, is more time efficient comparing to the implicit unconditionally stable methods, the only disadvantage is the fact that it requires a different method for the first iteration.
+\par When looking at \textbf{Figure 7}, it can be observed that the DuFort-Frankel solution is quite approximated to the real solution. This scheme, as it could be observed at \textbf{Figure 10}, is more time efficient comparing to the implicit unconditionally stable methods, the only disadvantage is the fact that it requires a different method for the first iteration.
 
-\par Similarly of what could be concluded on DuFort-Frankel results, by observing \textbf{Figure 7} and \textbf{Figure 8}, it can also be deducted that these are good solutions. These schemes, Crank-Nicholson and Laasonen, are unconditionally stable as well. Therefore good results were expected.
+\par Similarly of what could be concluded on DuFort-Frankel results, by observing \textbf{Figure 8} and \textbf{Figure 9}, it can also be deducted that these are good solutions. These schemes, Crank-Nicholson and Laasonen, are unconditionally stable as well. Therefore good results were expected.
 
 \begin{figure}[!htb]
 \centering
@@ -556,7 +563,7 @@ $
 \end{minipage}
 \end{figure}
 
-\par In other hand, when a quantitative analysis was done, it could be seen that the Crank Nicholson scheme is more accurate than the Laasonen and DuFort-Frankel methods. By looking at \textbf{Figure 9}, it can be observed that the second norm value of the \textbf{Error matrix} of this scheme is smaller than the values obtained by the other methods \textbf{Error Matrices}.
+\par In other hand, when a quantitative analysis was done, it could be seen that the Crank Nicholson scheme is more accurate than the Laasonen and DuFort-Frankel methods. By looking at \textbf{Figure 10}, it can be observed that the second norm value of the \textbf{Error matrix} of this scheme is smaller than the values obtained by the other methods \textbf{Error Matrices}.
 
 \begin{figure}[!htb]
 \centering
@@ -595,7 +602,7 @@ $
 \end{tabular}
 \end{table}
 
-\par \textbf{Table 3} and \textbf{figure 11} could support the previous affirmations.  While observing \textbf{table 3}, it could be seen that the error is larger for bigger time steps, as it was expected. Whereas when observing \textbf{figure 11}, it can be identified a reduction in computational time as the \textbf{time step} becomes larger. 
+\par \textbf{Table 3} and \textbf{figure 12} could support the previous affirmations.  While observing \textbf{table 3}, it could be seen that the error is larger for bigger time steps, as it was expected. Whereas when observing \textbf{figure 12}, it can be identified a reduction in computational time as the \textbf{time step} becomes larger.
 
 \begin{figure}[!htb]
   \centering
@@ -801,11 +808,98 @@ $
 
 one will obtain $\lvert \xi \lvert > 1$  when $r > 0$, and because stability requires that $\lvert \xi \lvert \le 1 $, the Richardson scheme is \textbf{unconditionally unstable}.
 
+\newpage
+
+\subsection*{Source Code}
+\addcontentsline{toc}{subsection}{Source Code}
+
+
+\subsubsection*{main.cpp}
+\lstinputlisting[language=C++]{./src/main.cpp}
+
+\subsubsection*{variants/problem.h}
+\lstinputlisting[language=C++]{./src/variants/problem.h}
+
+\subsubsection*{variants/problem.cpp}
+\lstinputlisting[language=C++]{./src/variants/problem.cpp}
+
+\subsubsection*{variants/utils.h}
+\lstinputlisting[language=C++]{./src/variants/utils.h}
+
+\subsubsection*{methods/analytical.h}
+\lstinputlisting[language=C++]{./src/methods/analytical.h}
+
+\subsubsection*{methods/analytical.cpp}
+\lstinputlisting[language=C++]{./src/methods/analytical.cpp}
+
+\subsubsection*{methods/method.h}
+\lstinputlisting[language=C++]{./src/methods/method.h}
+
+\subsubsection*{methods/method.cpp}
+\lstinputlisting[language=C++]{./src/methods/method.cpp}
+
+\subsubsection*{methods/explicit/explicit.h}
+\lstinputlisting[language=C++]{./src/methods/explicit/explicit.h}
+
+\subsubsection*{methods/explicit/explicit.cpp}
+\lstinputlisting[language=C++]{./src/methods/explicit/explicit.cpp}
+
+\subsubsection*{methods/explicit/dufort\_frankel.h}
+\lstinputlisting[language=C++]{./src/methods/explicit/dufort_frankel.h}
+
+\subsubsection*{methods/explicit/dufort\_frankel.cpp}
+\lstinputlisting[language=C++]{./src/methods/explicit/dufort_frankel.cpp}
+
+\subsubsection*{methods/explicit/richardson.h}
+\lstinputlisting[language=C++]{./src/methods/explicit/richardson.h}
+
+\subsubsection*{methods/explicit/richardson.cpp}
+\lstinputlisting[language=C++]{./src/methods/explicit/richardson.cpp}
+
+\subsubsection*{methods/explicit/forward\_t\_central\_s.h}
+\lstinputlisting[language=C++]{./src/methods/explicit/forward_t_central_s.h}
+
+\subsubsection*{methods/explicit/forward\_t\_central\_s.cpp}
+\lstinputlisting[language=C++]{./src/methods/explicit/forward_t_central_s.cpp}
+
+\subsubsection*{methods/implicit/implicit.h}
+\lstinputlisting[language=C++]{./src/methods/implicit/implicit.h}
+
+\subsubsection*{methods/implicit/implicit.cpp}
+\lstinputlisting[language=C++]{./src/methods/implicit/implicit.cpp}
+
+\subsubsection*{methods/implicit/crank\_nicolson.h}
+\lstinputlisting[language=C++]{./src/methods/implicit/crank_nicolson.h}
+
+\subsubsection*{methods/implicit/crank\_nicolson.cpp}
+\lstinputlisting[language=C++]{./src/methods/implicit/crank_nicolson.cpp}
+
+\subsubsection*{methods/implicit/laasonen.h}
+\lstinputlisting[language=C++]{./src/methods/implicit/laasonen.h}
+
+\subsubsection*{methods/implicit/laasonen.cpp}
+\lstinputlisting[language=C++]{./src/methods/implicit/laasonen.cpp}
+
+\subsubsection*{io/iomanager.h}
+\lstinputlisting[language=C++]{./src/io/iomanager.h}
+
+\subsubsection*{io/iomanager.cpp}
+\lstinputlisting[language=C++]{./src/io/iomanager.cpp}
+
+\subsubsection*{grid/vector.h}
+\lstinputlisting[language=C++]{./src/grid/vector.h}
+
+\subsubsection*{grid/vector.cpp}
+\lstinputlisting[language=C++]{./src/grid/vector.cpp}
+
+\subsubsection*{grid/matrix.h}
+\lstinputlisting[language=C++]{./src/grid/matrix.h}
+
+\subsubsection*{grid/matrix.cpp}
+\lstinputlisting[language=C++]{./src/grid/matrix.cpp}
 
 
 \addcontentsline{toc}{subsection}{Doxygen Documentation}
-
-
 \includepdf[pages=-]{refman}
 
 \end{document}

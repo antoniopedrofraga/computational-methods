@@ -1,0 +1,449 @@
+\hypertarget{classMatrix}{}\section{Matrix Class Reference}
+\label{classMatrix}\index{Matrix@{Matrix}}
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+
+
+Inheritance diagram for Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMatrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Matrix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classMatrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix} ()
+\item 
+\hyperlink{classMatrix_a135a15de1126d735bb95fcc839d739d7}{Matrix} (int Nrows, int Ncols)
+\item 
+\hyperlink{classMatrix_a765f4dcb51b6829311cc3e7576388423}{Matrix} (const \hyperlink{classMatrix}{Matrix} \&m)
+\item 
+int \hyperlink{classMatrix_ab0ed1933348c0511d74f825b73778aaa}{get\+Nrows} () const 
+\item 
+int \hyperlink{classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d}{get\+Ncols} () const 
+\item 
+void \hyperlink{classMatrix_a24066c6e9743a07387bcb287437a6cea}{set\+\_\+row} (int index, \hyperlink{classVector}{Vector} v)
+\item 
+\hyperlink{classMatrix}{Matrix} \& \hyperlink{classMatrix_aea5a06385f646eb4a63929fae6fa3e14}{operator=} (const \hyperlink{classMatrix}{Matrix} \&m)
+\item 
+bool \hyperlink{classMatrix_a5bc97450e589f9ae3a43814808645f3f}{operator==} (const \hyperlink{classMatrix}{Matrix} \&m) const 
+\item 
+double \hyperlink{classMatrix_a4f7ede695709b614f2e1f6423a024201}{one\+\_\+norm} () const 
+\item 
+double \hyperlink{classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a}{two\+\_\+norm} () const 
+\item 
+double \hyperlink{classMatrix_a05777a670e901010b96e9d667a4bdd3b}{uniform\+\_\+norm} () const 
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMatrix_a1fbef471bec2714e891c082a345d2274}{operator$\ast$} (const \hyperlink{classMatrix}{Matrix} \&a) const 
+\item 
+\hyperlink{classVector}{Vector} \hyperlink{classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f}{operator$\ast$} (const \hyperlink{classVector}{Vector} \&v) const 
+\item 
+\hyperlink{classMatrix}{Matrix} \hyperlink{classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73}{transpose} () const 
+\item 
+\hyperlink{classMatrix}{Matrix} {\bfseries mult} (const \hyperlink{classMatrix}{Matrix} \&a) const \hypertarget{classMatrix_a28ac82d2f9ec7e4f8a366ec7bd6bd54e}{}\label{classMatrix_a28ac82d2f9ec7e4f8a366ec7bd6bd54e}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \hyperlink{classMatrix_a3d6c1dcfc038804f4c08687f4f37f48b}{operator$>$$>$} (std\+::istream \&is, \hyperlink{classMatrix}{Matrix} \&m)
+\item 
+std\+::ostream \& \hyperlink{classMatrix_a060711074cb5bcaf4e75498bc040c4b7}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classMatrix}{Matrix} \&m)
+\item 
+std\+::ifstream \& \hyperlink{classMatrix_aa5699a0bdf0ee014f083ff8a76629d21}{operator$>$$>$} (std\+::ifstream \&ifs, \hyperlink{classMatrix}{Matrix} \&m)
+\item 
+std\+::ofstream \& \hyperlink{classMatrix_aa574249d63b390cf1108d6e82047ef61}{operator$<$$<$} (std\+::ofstream \&ofs, const \hyperlink{classMatrix}{Matrix} \&m)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A matrix class for data storage of a 2D array of doubles ~\newline
+ The implementation is derived from the standard container vector std\+::vector ~\newline
+ We use private inheritance to base our vector upon the library version whilst  usto expose only those base class functions we wish to use -\/ in this  the array access operator \mbox{[}\mbox{]}
+
+The \hyperlink{classMatrix}{Matrix} class provides\+: ~\newline
+-\/basic constructors for creating a matrix object from other matrix object,  by creating empty matrix of a given size, ~\newline
+-\/input and oput operation via $>$$>$ and $<$$<$ operators using keyboard or file ~\newline
+-\/basic operations like access via \mbox{[}\mbox{]} operator, assignment and comparision 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Matrix()}{Matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+::\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrix_a2dba13c45127354c9f75ef576f49269b}{}\label{classMatrix_a2dba13c45127354c9f75ef576f49269b}
+Default constructor. Intialize an empty \hyperlink{classMatrix}{Matrix} object \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a135a15de1126d735bb95fcc839d739d7}{Matrix(int Nrows, int Ncols)} 
+
+\hyperlink{classMatrix_a765f4dcb51b6829311cc3e7576388423}{Matrix(const Matrix\& m)} 
+\end{DoxySeeAlso}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Matrix(int Nrows, int Ncols)}{Matrix(int Nrows, int Ncols)}}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+::\+Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{Nrows, }
+\item[{int}]{Ncols}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrix_a135a15de1126d735bb95fcc839d739d7}{}\label{classMatrix_a135a15de1126d735bb95fcc839d739d7}
+Alternate constructor. build a matrix Nrows by Ncols \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix()} 
+
+\hyperlink{classMatrix_a765f4dcb51b6829311cc3e7576388423}{Matrix(const Matrix\& m)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em invalid\+\_\+argument} & (\char`\"{}matrix size negative or zero\char`\"{}) \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+{\em Nrows} & int. number of rows in matrix \\
+\hline
+{\em Ncols} & int. number of columns in matrix \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{Matrix(const Matrix \&m)}{Matrix(const Matrix &m)}}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+::\+Matrix (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrix_a765f4dcb51b6829311cc3e7576388423}{}\label{classMatrix_a765f4dcb51b6829311cc3e7576388423}
+Copy constructor. build a matrix from another matrix \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a2dba13c45127354c9f75ef576f49269b}{Matrix()} 
+
+\hyperlink{classMatrix_a135a15de1126d735bb95fcc839d739d7}{Matrix(int Nrows, int Ncols)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \hyperlink{classMatrix}{Matrix}\&. matrix to copy from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Matrix@{Matrix}!get\+Ncols@{get\+Ncols}}
+\index{get\+Ncols@{get\+Ncols}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{get\+Ncols() const }{getNcols() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix\+::get\+Ncols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d}{}\label{classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d}
+Normal public get method. get the number of columns \begin{DoxySeeAlso}{See also}
+int \hyperlink{classMatrix_ab0ed1933348c0511d74f825b73778aaa}{get\+Nrows()const} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int. number of columns in matrix 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!get\+Nrows@{get\+Nrows}}
+\index{get\+Nrows@{get\+Nrows}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{get\+Nrows() const }{getNrows() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Matrix\+::get\+Nrows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_ab0ed1933348c0511d74f825b73778aaa}{}\label{classMatrix_ab0ed1933348c0511d74f825b73778aaa}
+Normal public get method. get the number of rows \begin{DoxySeeAlso}{See also}
+int \hyperlink{classMatrix_a09f35c4f255ad102a8692a4a2c6ccc0d}{get\+Ncols()const} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int. number of rows in matrix 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!one\+\_\+norm@{one\+\_\+norm}}
+\index{one\+\_\+norm@{one\+\_\+norm}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{one\+\_\+norm() const }{one_norm() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix\+::one\+\_\+norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a4f7ede695709b614f2e1f6423a024201}{}\label{classMatrix_a4f7ede695709b614f2e1f6423a024201}
+Normal public method that returns a double. It returns L1 norm of matrix \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a}{two\+\_\+norm()const} 
+
+\hyperlink{classMatrix_a05777a670e901010b96e9d667a4bdd3b}{uniform\+\_\+norm()const} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+double. matrix L1 norm 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Matrix \&a) const }{operator*(const Matrix &a) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Matrix\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix} \&}]{a}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a1fbef471bec2714e891c082a345d2274}{}\label{classMatrix_a1fbef471bec2714e891c082a345d2274}
+Overloaded $\ast$operator that returns a \hyperlink{classMatrix}{Matrix}. It Performs matrix by matrix multiplication. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a1fbef471bec2714e891c082a345d2274}{operator$\ast$(const Matrix \& a) const} 
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & (\char`\"{}\+Matrix access error\char`\"{}) One or more of the matrix have a zero size \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & (\char`\"{}uncompatible matrix sizes\char`\"{}) Number of columns in first matrix do not match number of columns in second matrix \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classMatrix}{Matrix}. matrix-\/matrix product 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \hyperlink{classMatrix}{Matrix}. matrix to multiply by \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$\ast$(const Vector \&v) const }{operator*(const Vector &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Matrix\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector} \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f}{}\label{classMatrix_a31aaaadc4c2f30ce01cd70c2e0c72f6f}
+Overloaded $\ast$operator that returns a \hyperlink{classVector}{Vector}. It Performs matrix by vector multiplication. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a1fbef471bec2714e891c082a345d2274}{operator$\ast$(const Matrix \& a)const} 
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & (\char`\"{}\+Matrix access error\char`\"{}) matrix has a zero size \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & (\char`\"{}\+Vector access error\char`\"{}) vector has a zero size \\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & (\char`\"{}uncompatible matrix-\/vector sizes\char`\"{}) Number of columns in matrix do not match the vector size \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. matrix-\/vector product 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \hyperlink{classVector}{Vector}. \hyperlink{classVector}{Vector} to multiply by \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator=(const Matrix \&m)}{operator=(const Matrix &m)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} \& Matrix\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrix_aea5a06385f646eb4a63929fae6fa3e14}{}\label{classMatrix_aea5a06385f646eb4a63929fae6fa3e14}
+Overloaded assignment operator \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a5bc97450e589f9ae3a43814808645f3f}{operator==(const Matrix\& m)const} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classMatrix}{Matrix}\&. the matrix on the left of the assignment 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \hyperlink{classMatrix}{Matrix}\&. \hyperlink{classMatrix}{Matrix} to assign from \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!operator==@{operator==}}
+\index{operator==@{operator==}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator==(const Matrix \&m) const }{operator==(const Matrix &m) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Matrix\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a5bc97450e589f9ae3a43814808645f3f}{}\label{classMatrix_a5bc97450e589f9ae3a43814808645f3f}
+Overloaded comparison operator returns true or false depending on whether the matrices are the same or not \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_aea5a06385f646eb4a63929fae6fa3e14}{operator=(const Matrix\& m)} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+bool. true or false 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \hyperlink{classMatrix}{Matrix}\&. \hyperlink{classMatrix}{Matrix} to compare to \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!set\+\_\+row@{set\+\_\+row}}
+\index{set\+\_\+row@{set\+\_\+row}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{set\+\_\+row(int index, Vector v)}{set_row(int index, Vector v)}}]{\setlength{\rightskip}{0pt plus 5cm}void Matrix\+::set\+\_\+row (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{{\bf Vector}}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrix_a24066c6e9743a07387bcb287437a6cea}{}\label{classMatrix_a24066c6e9743a07387bcb287437a6cea}
+Normal public set method. replace a row with a given vector 
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of row to mutate \\
+\hline
+{\em v} & New vector \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em out\+\_\+of\+\_\+range} & (\char`\"{}index out of range.\textbackslash{}n\char`\"{}) \\
+\hline
+{\em out\+\_\+of\+\_\+range} & (\char`\"{}vector size is different from matrix columns number.\textbackslash{}n\char`\"{}) \\
+\hline
+\end{DoxyExceptions}
+\index{Matrix@{Matrix}!transpose@{transpose}}
+\index{transpose@{transpose}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{transpose() const }{transpose() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Matrix} Matrix\+::transpose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73}{}\label{classMatrix_a9da9f5ee8215491cc54ecc59ddeb3f73}
+public method that returns the transpose of the matrix. It returns the transpose of matrix \begin{DoxyReturn}{Returns}
+\hyperlink{classMatrix}{Matrix}. matrix transpose 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!two\+\_\+norm@{two\+\_\+norm}}
+\index{two\+\_\+norm@{two\+\_\+norm}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{two\+\_\+norm() const }{two_norm() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix\+::two\+\_\+norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a}{}\label{classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a}
+Normal public method that returns a double. It returns L2 norm of matrix \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a4f7ede695709b614f2e1f6423a024201}{one\+\_\+norm()const} 
+
+\hyperlink{classMatrix_a05777a670e901010b96e9d667a4bdd3b}{uniform\+\_\+norm()const} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+double. matrix L2 norm 
+\end{DoxyReturn}
+\index{Matrix@{Matrix}!uniform\+\_\+norm@{uniform\+\_\+norm}}
+\index{uniform\+\_\+norm@{uniform\+\_\+norm}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{uniform\+\_\+norm() const }{uniform_norm() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Matrix\+::uniform\+\_\+norm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classMatrix_a05777a670e901010b96e9d667a4bdd3b}{}\label{classMatrix_a05777a670e901010b96e9d667a4bdd3b}
+Normal public method that returns a double. It returns L\+\_\+max norm of matrix \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_a4f7ede695709b614f2e1f6423a024201}{one\+\_\+norm()const} 
+
+\hyperlink{classMatrix_a0b738b2c1d87ec28b23c7e479d014f2a}{two\+\_\+norm()const} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+double. matrix L\+\_\+max norm 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Matrix@{Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classMatrix_a060711074cb5bcaf4e75498bc040c4b7}{}\label{classMatrix_a060711074cb5bcaf4e75498bc040c4b7}
+Overloaded ostream $<$$<$ operator. Display output if matrix has size user will be asked to input only matrix values if matrix was not initialized user can choose matrix size and input it values \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_aa5699a0bdf0ee014f083ff8a76629d21}{operator$>$$>$(std\+::ifstream\& ifs, Matrix\& m)} 
+
+\hyperlink{classMatrix_a3d6c1dcfc038804f4c08687f4f37f48b}{operator$>$$>$(std\+::istream\& is, Matrix\& m)} 
+
+\hyperlink{classMatrix_a060711074cb5bcaf4e75498bc040c4b7}{operator$<$$<$(std\+::ostream\& os, const Matrix\& m)} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+std\+::ostream\&. The ostream object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Display output stream \\
+\hline
+{\em m} & \hyperlink{classMatrix}{Matrix} to read from \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ofstream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ofstream \&}]{ofs, }
+\item[{const {\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classMatrix_aa574249d63b390cf1108d6e82047ef61}{}\label{classMatrix_aa574249d63b390cf1108d6e82047ef61}
+Overloaded ofstream $<$$<$ operator. File output the file output operator is compatible with file input operator, ie. everything written can be read later. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_aa5699a0bdf0ee014f083ff8a76629d21}{operator$>$$>$(std\+::ifstream\& ifs, Matrix\& m)} 
+
+\hyperlink{classMatrix_aa574249d63b390cf1108d6e82047ef61}{operator$<$$<$(std\+::ofstream\& ofs, const Matrix\& m)} 
+
+\hyperlink{classMatrix_a3d6c1dcfc038804f4c08687f4f37f48b}{operator$>$$>$(std\+::istream\& is, Matrix\& m)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & (\char`\"{}file read error -\/ negative matrix size\char`\"{}); \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+std\+::ofstream\&. The ofstream object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \hyperlink{classMatrix}{Matrix} to read from \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is, }
+\item[{{\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classMatrix_a3d6c1dcfc038804f4c08687f4f37f48b}{}\label{classMatrix_a3d6c1dcfc038804f4c08687f4f37f48b}
+Overloaded istream $>$$>$ operator. Keyboard input if matrix has size user will be asked to input only matrix values if matrix was not initialized user can choose matrix size and input it values \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_aa574249d63b390cf1108d6e82047ef61}{operator$<$$<$(std\+::ofstream\& ofs, const Matrix\& m)} 
+
+\hyperlink{classMatrix_a3d6c1dcfc038804f4c08687f4f37f48b}{operator$>$$>$(std\+::istream\& is, Matrix\& m)} 
+
+\hyperlink{classMatrix_a060711074cb5bcaf4e75498bc040c4b7}{operator$<$$<$(std\+::ostream\& os, const Matrix\& m)} 
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & (\char`\"{}read error -\/ negative matrix size\char`\"{}); \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+std\+::istream\&. The istream object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Keyboard input stream \\
+\hline
+{\em m} & \hyperlink{classMatrix}{Matrix} to write into \\
+\hline
+\end{DoxyParams}
+\index{Matrix@{Matrix}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Matrix@{Matrix}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ifstream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ifstream \&}]{ifs, }
+\item[{{\bf Matrix} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classMatrix_aa5699a0bdf0ee014f083ff8a76629d21}{}\label{classMatrix_aa5699a0bdf0ee014f083ff8a76629d21}
+Overloaded ifstream $>$$>$ operator. File input the file output operator is compatible with file input operator, ie. everything written can be read later. \begin{DoxySeeAlso}{See also}
+\hyperlink{classMatrix_aa5699a0bdf0ee014f083ff8a76629d21}{operator$>$$>$(std\+::ifstream\& ifs, Matrix\& m)} 
+
+\hyperlink{classMatrix_aa574249d63b390cf1108d6e82047ef61}{operator$<$$<$(std\+::ofstream\& ofs, const Matrix\& m)} 
+
+\hyperlink{classMatrix_a060711074cb5bcaf4e75498bc040c4b7}{operator$<$$<$(std\+::ostream\& os, const Matrix\& m)} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+std\+::ifstream\&. The ifstream object 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em ifs} & Input file stream with opened matrix file \\
+\hline
+{\em m} & \hyperlink{classMatrix}{Matrix} to write into \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+grid/matrix.\+h\item 
+grid/matrix.\+cpp\end{DoxyCompactItemize}

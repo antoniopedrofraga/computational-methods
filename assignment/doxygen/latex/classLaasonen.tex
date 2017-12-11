@@ -1,0 +1,83 @@
+\hypertarget{classLaasonen}{}\section{Laasonen Class Reference}
+\label{classLaasonen}\index{Laasonen@{Laasonen}}
+
+
+{\ttfamily \#include $<$laasonen.\+h$>$}
+
+
+
+Inheritance diagram for Laasonen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classLaasonen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Laasonen\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{classLaasonen__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLaasonen_a1ed879786dc74b8c2ba86a1deb167e5a}{Laasonen} (\hyperlink{classProblem}{Problem} \hyperlink{classMethod_a29a08a679b5d30a8c813766308205041}{problem})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector}{Vector} \hyperlink{classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d}{build\+\_\+r} (\hyperlink{classVector}{Vector} previous\+\_\+step)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classLaasonen}{Laasonen} method class that contains a r vector builder. ~\newline
+ This builder is used is used to calculate the r vector in A.\+x = r linear equation system.
+
+The \hyperlink{classLaasonen}{Laasonen} class provides\+: ~\newline
+-\/a basic constructor for creating a \hyperlink{classLaasonen}{Laasonen} method object. ~\newline
+-\/a method to compute the r vector. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Laasonen@{Laasonen}!Laasonen@{Laasonen}}
+\index{Laasonen@{Laasonen}!Laasonen@{Laasonen}}
+\subsubsection[{\texorpdfstring{Laasonen(\+Problem problem)}{Laasonen(Problem problem)}}]{\setlength{\rightskip}{0pt plus 5cm}Laasonen\+::\+Laasonen (
+\begin{DoxyParamCaption}
+\item[{{\bf Problem}}]{problem}
+\end{DoxyParamCaption}
+)}\hypertarget{classLaasonen_a1ed879786dc74b8c2ba86a1deb167e5a}{}\label{classLaasonen_a1ed879786dc74b8c2ba86a1deb167e5a}
+Default constructor. 
+
+\subsection{Member Function Documentation}
+\index{Laasonen@{Laasonen}!build\+\_\+r@{build\+\_\+r}}
+\index{build\+\_\+r@{build\+\_\+r}!Laasonen@{Laasonen}}
+\subsubsection[{\texorpdfstring{build\+\_\+r(\+Vector previous\+\_\+step)}{build_r(Vector previous_step)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector} Laasonen\+::build\+\_\+r (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector}}]{previous\+\_\+step}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d}{}\label{classLaasonen_a42cacb85b9ed27ff013a79ee2b4d923d}
+Normal protected method. get the number of rows 
+\begin{DoxyParams}{Parameters}
+{\em previous\+\_\+step} & \hyperlink{classVector}{Vector} representing the solution of the previous time step. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classVector}{Vector}. r vector to be used in A.\+x = r 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classImplicit_ab2d07b5185008b2c845a31a03350d98d}{Implicit}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+methods/implicit/laasonen.\+h\item 
+methods/implicit/laasonen.\+cpp\end{DoxyCompactItemize}
