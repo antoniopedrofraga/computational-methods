@@ -343,11 +343,10 @@ to a different problem. The mathematical calculations regarding the
 stability and accuracy properties of this method can be found under the
 appendix section.
 
-<p align="center">
 ![](./reports/DuFort-Frankelt_0_5.png)  | 
 :-------------------------:|
 Fig 7: DuFort-Frankel’s solution at t = 0.5.  |
-<p align="center">
+
 
 When looking at **Figure 7**, it can be observed that the DuFort-Frankel
 solution is quite approximated to the real solution. This scheme, as it
