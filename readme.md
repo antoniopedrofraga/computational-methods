@@ -185,5 +185,30 @@ declared as unconditionally stable and it may be formulated as follows:
     
 Which is equivalent to,
 
-
 <p align="center"><img src ="./readme/10.png" /><p align="center">
+    
+#### Implicit Schemes
+
+In other hand, implicit schemes rely not only on lower time steps to
+calculate a solution, but also on the current time step known values.
+Each time step solution can often be solved by applying the Thomas
+Algorithm, which is an algorithm that can solve tridiagonal matrix
+systems, **Ax = r**. This algorithm is a special case of the LU
+decomposition, with a better performance. The matrix  **A** can be
+decomposed in a lower triangular matrix **L** and an upper triangular
+matrix **U**, therefore **A = LU$**. This algorithm consists of two
+steps, the downwards phase where the equation **Lp = r** is solved and the
+upwards phase, solving **Ux = p**, obtaining a solution for **x**.
+
+
+![](./reports/laasonen.png)  |  ![](./reports/crank-nicholson.png)
+:-------------------------:|:-------------------------:
+Fig 3: Laasonen stencil  |  Fig 4: Crank-Nicholson stencil
+
+##### Laasonen Simple Implicit
+
+The time derivative is considered forward in time. Central difference is
+used in space derivative, and unconditionally stable. Concluding, the
+below equation could be established, and it could be represented at
+**Figure 3**:
+
