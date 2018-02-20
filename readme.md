@@ -9,6 +9,9 @@
 3. [Procedures](#procedures)
     1. [Explicit Schemes](explicit-schemes)
     2. [Implicit Schemes](implicit-schemes)
+4. [Solution Design](#solution-design)
+5. [Results and Discussion](#results-and-discussion)
+    
 
 ## Abstract 
 
@@ -273,3 +276,63 @@ expressions could be generalized for the second,
 Thus, a tridiagonal matrix system is obtained,
 
 <p align="center"><img src ="./readme/22.png" /><p align="center">
+
+### Solution Design
+
+The code was first planned with an initial structure and suffered
+incremental upgrades. A **method** class was created, being a prototype
+with multiple inheritance, containing three sub classes: **Analytical**,
+**Implicit** and **Explicit**. Therefore, the **Implicit** class is an
+Abstract class as well. This class has three sub classes, representing
+the three explicit methods used in this problem. Similarly, the
+**Implicit** class is also an abstract class, having two implicit
+methods classes as sub classes. The previously described inheritance
+structure can be more easily visualized in the image below.
+
+<p align="center"><img src ="./reports/method_inheritance.png" /><p align="center">
+
+A Method class contains a **Problem** object. The **Problem** class
+represents the Heat Conduction problem, containing informations about
+the time and space steps, the solution and initial conditions.
+
+An **Input and Output Manager** class was developed so that the code
+related with plots and tables exportations could be separated from the
+logical source code. This class was developed with several methods
+regarding data interpretation and structuration in order to easily
+export plot charts. A **gnuplot C++ library** was used, therefore the
+gnuplot syntax could be directly used from the c++ code, cutting down
+the need of developing external bash scripts for this specific purpose.
+
+Despite the referred classes, a header file with useful **macros** was
+declared. This file contains information about which conditions to test,
+like the initial temperature and the surface temperature. Therefore, if
+for some reason, one of this values changes, it can be easily corrected.
+
+The several objects in this structure could be instantiated in the main
+file, calling methods to compute the several solutions and to export
+their plot charts. The previously described classes can be represented
+in the following diagram.
+
+<p align="center"><img src ="./reports/class_diagram.png" /><p align="center">
+    
+### Results and Discussion
+
+The results of the four methods, **Richardson**, **DuFort-Frankel**,
+**Laasonen Simple Implicit** and **Crank-Nicholson** can be seen in the
+following figures/tables. These results were used to analyze each
+solution quantitatively and qualitatively. In most of the plot charts,
+the obtained solution was compared to the analytical solution so that it
+would be possible to realize whether the solution was a good
+approximation or not. Notice that the next results are regarding to the
+“default” values of time and space steps, **time step = 0.01** and
+**space step = 0.05**.
+
+By examining **Table 2**, it could be concluded that the solution given
+by the Richardson method was considerably different from the analytical
+solution. This was due to the fact that this method is declared as
+**unconditionally unstable**. As referred before, when a method is
+declared unstable, the error grows as the time advances. The error
+growth was responsible for obtaining a different solution, or a solution
+to a different problem. The mathematical calculations regarding the
+stability and accuracy properties of this method can be found under the
+appendix section.
