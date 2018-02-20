@@ -8,6 +8,7 @@
     2. [Numerical analysis](numerical-analysis)
 3. [Procedures](#procedures)
     1. [Explicit Schemes](explicit-schemes)
+    2. [Implicit Schemes](implicit-schemes)
 
 ## Abstract 
 
@@ -212,3 +213,63 @@ used in space derivative, and unconditionally stable. Concluding, the
 below equation could be established, and it could be represented at
 **Figure 3**:
 
+<p align="center"><img src ="./readme/11.png" /><p align="center">
+
+Assuming that <img src ="./readme/c.png" />, the equation could
+be represented as:
+
+<p align="center"><img src ="./readme/12.png" /><p align="center">
+    
+The values of the first and last space position of each time step are
+known, they are represent by the **TSur** value. Therefore, in every
+second and penultimate space step, two terms of the previous equation
+could be successfully inquired. For the second space step, the equation
+could be divided by having the unknown terms in the left side and the
+known terms in the right side:
+
+<p align="center"><img src ="./readme/13.png" /><p align="center">
+    
+And the same could be done for the penultimate space step:
+
+<p align="center"><img src ="./readme/14.png" /><p align="center">
+
+For every other space steps with unknown values, the expression could be
+generalized as:
+
+<p align="center"><img src ="./readme/15.png" /><p align="center">
+ 
+Considering that the maximum number of space steps is **m**, the
+previous expressions could form a system of linear equations, *A.x = r*:
+
+<p align="center"><img src ="./readme/16.png" /><p align="center">
+    
+##### Crank-Nicholson
+
+The time derivative is considered forward in time, and the space
+derivative can be replaced by the average of central differences in time
+steps **n** and **n + 1**. The method is declared unconditionally stable and it
+could be represented at **Figure 4**. Thus:
+
+<p align="center"><img src ="./readme/17.png" /><p align="center">
+    
+In this method, the coefficient had a new value, <img src ="./readme/c2.png" />, and assuming that
+**p** is equal to the **forward in space, central in time** plus **backwards in space, central in time** derivatives, the equation could be written as follows,
+
+<p align="center"><img src ="./readme/18.png" /><p align="center">
+    
+Following the same logical principles of the previous scheme, some
+expressions could be generalized for the second,
+
+<p align="center"><img src ="./readme/19.png" /><p align="center">
+    
+, penultimate,
+
+<p align="center"><img src ="./readme/20.png" /><p align="center">
+    
+, and every other space steps with unknown values.
+
+<p align="center"><img src ="./readme/21.png" /><p align="center">
+    
+Thus, a tridiagonal matrix system is obtained,
+
+<p align="center"><img src ="./readme/22.png" /><p align="center">
