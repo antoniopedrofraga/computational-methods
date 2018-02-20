@@ -7,6 +7,7 @@
     1. [Problem definition](problem-definition)
     2. [Numerical analysis](numerical-analysis)
 3. [Procedures](#procedures)
+    1. [Explicit Schemes](explicit-schemes)
 
 ## Abstract 
 
@@ -68,7 +69,7 @@ very important on this phase, since the solutions are evaluated. Digital
 computers have problems with round-off errors, and since values were
 truncated, problems with discretization errors may appear. There are
 some definitions related with this study: stability, convergence and
-approximation @convergence_stability_consistency [@numerical_analysis].
+approximation.
 
 A method is declared stable if the error doesn’t grow as time advances.
 Theoretically, conditions that make a scheme becomes stable or unstable
@@ -82,11 +83,10 @@ the analytical solution. This can vary with a change in the number of
 **time steps** or **space steps**. A smaller number of steps can lead to
 a bigger error, whereas a bigger number of steps can lead to a
 considerably more time expensive solution. Every method could be
-developed using **Taylor Series** @hoffman. This series were developed
+developed using **Taylor Series**. This series were developed
 for **n** terms. Thus, every method has a given approximation factor,
 that could be represented in the **Big Oh** annotation. The error
-related with this approximation is called **Truncation Error**
-@numerical_analysis.
+related with this approximation is called **Truncation Error**.
 
 A quantitative analysis can be done by comparing solutions of each
 method. By calculating the **norms** of the error matrix, one can
@@ -106,7 +106,7 @@ able to translate an error matrix into a single value:
     maximum value in the matrix.
 
 The second norm “punishes” the biggest values, and “regards” the lowest
-ones. Notice that a the square of a value between $0$ and $1$ is lower
+ones. Notice that a the square of a value between **0** and **1** is lower
 than the given value. Whereas the square of a value bigger than 1 is
 higher. Therefore, this norm is a good quality indicator.
 
@@ -125,3 +125,34 @@ studying every solutions in intervals of **0.1** hours from **0.0** to
 **0.5**. The **Laasonen Simple Implicit** solution was also studied with
 different time steps, always maintaining the same space step, **0.05**:
 
+<p align="center"><img src ="./readme/4.png" /><p align="center">
+
+As referred, considering the initial equation, these methods can be
+written in its discretized form.
+
+#### Explicit Schemes
+
+This type of schemes rely only on the previous time steps to calculate
+the current time step solution. In the case of both used methods, they
+were relying in known values of the **n - 1** and **n** time steps to
+calculate a value for the **n + 1** time step. Thereby, the second time
+step can not be calculated by these methods, because there’s no possible
+value for a negative time step. A different method, for the same
+equation, with two levels of time steps was used in order to overcome
+this situation, the **Forward in Time and Central in Space** scheme.
+It’s known that this method is **conditionally stable**, and its
+stability condition is given by,
+
+<p align="center"><img src ="./readme/5.png" /><p align="center">
+    
+Therefore, considering **Delta t = 0.01**, **Delta x = 0.05**, and
+**D = 0.1**, this method is declared stable. It’s important to have a
+stable solution for the first iteration, since it is a major influence
+on the overall solution. Therefore, this iteration could
+be calculated with the following expression,
+
+<p align="center"><img src ="./readme/6.png" /><p align="center">
+    
+Richardson stencil         |  Dufort-Frankel stencil
+:-------------------------:|:-------------------------:
+![](./reports/richardson.png)  |  ![](./reports/dufort-frankel.png)
