@@ -11,6 +11,8 @@
     2. [Implicit Schemes](implicit-schemes)
 4. [Solution Design](#solution-design)
 5. [Results and Discussion](#results-and-discussion)
+    1. [Laasonen Implicit Scheme: study of time step variation](laasonen-implicit-scheme:-study-of-time-step-variation) 
+6. [Conclusions](#conclusions)
     
 
 ## Abstract 
@@ -327,6 +329,10 @@ approximation or not. Notice that the next results are regarding to the
 “default” values of time and space steps, **time step = 0.01** and
 **space step = 0.05**.
 
+Table 2: Laasonen method error table  |
+:-------------------------:|
+![](./reports/23.png)  | 
+
 By examining **Table 2**, it could be concluded that the solution given
 by the Richardson method was considerably different from the analytical
 solution. This was due to the fact that this method is declared as
@@ -336,3 +342,90 @@ growth was responsible for obtaining a different solution, or a solution
 to a different problem. The mathematical calculations regarding the
 stability and accuracy properties of this method can be found under the
 appendix section.
+
+<p align="center">
+![](./reports/DuFort-Frankelt_0_5.png)  | 
+:-------------------------:|
+Fig 7: DuFort-Frankel’s solution at t = 0.5.  |
+<p align="center">
+
+When looking at **Figure 7**, it can be observed that the DuFort-Frankel
+solution is quite approximated to the real solution. This scheme, as it
+could be observed at **Figure 11**, is more time efficient comparing to
+the implicit unconditionally stable methods, the only disadvantage is
+the fact that it requires a different method for the first iteration.
+
+Similarly of what could be concluded on DuFort-Frankel results, by
+observing **Figure 9** and **Figure 8**, it can also be deducted that
+these are good solutions. These schemes, Crank-Nicholson and Laasonen,
+are unconditionally stable as well. Therefore good results were
+expected.
+
+
+![](./reports/Laasonent_0_4dt_0_010.png)  |  ![](./reports/Crank-Nicholsont_0_4.png)
+:-------------------------:|:-------------------------:
+Fig 8: Laasonen’s solution at t = 0.4.  | Fig 9: Crank-Nicholson’s solution at t = 0.4.
+
+In other hand, when a quantitative analysis was done, it could be seen
+that the Crank Nicholson scheme is more accurate than the Laasonen and
+DuFort-Frankel methods. By looking at **Figure 10**, it can be observed
+that the second norm value of the **Error matrix** of this scheme is
+smaller than the values obtained by the other methods **Error
+Matrices**.
+
+
+![](./reports/norms.png)  |  ![](./reports/default_deltat_times.png)
+:-------------------------:|:-------------------------:
+Fig 10: 2nd norm values of Error Matrices.  | Fig 11: Computational times of stable methods
+
+#### Laasonen Implicit Scheme: study of time step variation 
+
+Laasonen Implicit Scheme is an unconditionally stable scheme to solve
+Parabolic Partial Differential Equations. Therefore, with the right time
+and space step, there’s almost no error related to the development of
+its results throughout the time advancement.
+
+A reduction on these steps led to a higher computational time, since
+there’s more calculations to be made. Whereas steps with higher values
+led to more inaccurate results. This phenomenon could be
+explained with a concept that was introduced earlier, the **truncation
+error**. This error can only be avoided with exact calculations,
+but can be reduced by applying a larger number of smaller intervals or
+steps. As referred before, different results of this method were studied
+by changing the time step size. The space step was maintained at 0.05.
+
+
+Table 3: Laasonen method error table for the several time steps  |
+:-------------------------:|
+![](./reports/24.png)  | 
+
+**Table 3** and **figure 12** could support the previous affirmations.
+While observing **table 3**, it could be seen that the error is larger
+for bigger time steps, as it was expected. Whereas when observing
+**figure 12**, it can be identified a reduction in computational time as
+the **time step** becomes larger.
+
+### Conclusions
+
+The obtained results could support the theoretical concepts. Unstable
+methods demonstrated an error growth through the time progress. The
+**Forward in Time, Central in Space** explicit scheme was stable with
+the given initial conditions, therefore it could support a good solution
+for the explicit stable scheme, **DuFort-Frankel**. As referred, the
+solution of the DuFort-Frankel method strongly depends on the first
+iteration solution.
+
+It could be observed that smaller steps can lead to a time expensive
+solution, whereas larger steps lead to an error increase. Stable methods
+could give a good solution with the right time and space steps, but by
+analysing the second norm value, it was concluded that the
+Crank-Nicholson method is more accurate. This is due to the fact that
+this method has a better approximation order.
+
+It is important to have a balance between the two problems (time and
+approximation), a method should be computed in an acceptable time, and
+still obtain a good result. In realistic scenarios the problem solution
+is not known, therefore error estimates are impractical. The used step
+size should be small as possible, as long as the solution is not
+dominated with round-off errors. The solution must be obtained with a
+number of steps that one has time to compute.
