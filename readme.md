@@ -4,14 +4,14 @@
 
 1. [Abstract](#abstract)
 2. [Description](#description)
-    1. [Problem definition](problem-definition)
-    2. [Numerical analysis](numerical-analysis)
+    1. [Problem definition](#problem-definition)
+    2. [Numerical analysis](#numerical-analysis)
 3. [Procedures](#procedures)
-    1. [Explicit Schemes](explicit-schemes)
-    2. [Implicit Schemes](implicit-schemes)
+    1. [Explicit Schemes](#explicit-schemes)
+    2. [Implicit Schemes](#implicit-schemes)
 4. [Solution Design](#solution-design)
 5. [Results and Discussion](#results-and-discussion)
-    1. [Laasonen Implicit Scheme: study of time step variation](laasonen-implicit-scheme-study-of-time-step-variation) 
+    1. [Laasonen Implicit Scheme: study of time step variation](#laasonen-implicit-scheme-study-of-time-step-variation) 
 6. [Conclusions](#conclusions)
     
 
