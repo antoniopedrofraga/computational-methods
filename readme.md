@@ -176,8 +176,8 @@ Which corresponds to,
 
 The DuFort-Frankel scheme can be applied by having central differences
 in both derivatives, but to prevent stability issues, the space
-derivative term <img src ="./readme/fin.png" /> can be written as the average value of
-<img src ="./readme/fin+1.png" /> and <img src ="./readme/fin-1.png" />. The method stencil can be observed
+derivative term <img src ="./readme/fni.png" /> can be written as the average value of
+<img src ="./readme/fn+1i.png" /> and <img src ="./readme/fn-1i.png" />. The method stencil can be observed
 at **Figure 1**. Therefore this method is
 declared as unconditionally stable and it may be formulated as follows:
 
