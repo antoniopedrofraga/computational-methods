@@ -152,7 +152,38 @@ on the overall solution. Therefore, this iteration could
 be calculated with the following expression,
 
 <p align="center"><img src ="./readme/6.png" /><p align="center">
-    
-Richardson stencil         |  Dufort-Frankel stencil
-:-------------------------:|:-------------------------:
+
 ![](./reports/richardson.png)  |  ![](./reports/dufort-frankel.png)
+:-------------------------:|:-------------------------:
+Fig 1: Richardson stencil  |  Fig 2: Dufort-Frankel stencil
+
+##### Richardson
+
+The Richardson method can be applied by having a central in time and
+central in space scheme. Regarding to stability issues, this method is
+unconditionally unstable. Following the heat conduction equation, the
+expression could be represented at **Figure 2** and could be written as
+following:
+
+<p align="center"><img src ="./readme/7.png" /><p align="center">
+    
+Which corresponds to,
+
+<p align="center"><img src ="./readme/8.png" /><p align="center">
+    
+
+##### DuFort-Frankel
+
+The DuFort-Frankel scheme can be applied by having central differences
+in both derivatives, but to prevent stability issues, the space
+derivative term $f_i^n$ can be written as the average value of
+$f_{i}^{n + 1}$ and $f_{i}^{n - 1}$. The method stencil can be observed
+at **Figure 1**. Therefore this method is
+declared as unconditionally stable and it may be formulated as follows:
+
+<p align="center"><img src ="./readme/9.png" /><p align="center">
+    
+Which is equivalent to,
+
+
+<p align="center"><img src ="./readme/10.png" /><p align="center">
