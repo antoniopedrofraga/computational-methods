@@ -11,7 +11,7 @@
     2. [Implicit Schemes](implicit-schemes)
 4. [Solution Design](#solution-design)
 5. [Results and Discussion](#results-and-discussion)
-    1. [Laasonen Implicit Scheme: study of time step variation](laasonen-implicit-scheme:-study-of-time-step-variation) 
+    1. [Laasonen Implicit Scheme: study of time step variation](laasonen-implicit-scheme-study-of-time-step-variation) 
 6. [Conclusions](#conclusions)
     
 
@@ -331,7 +331,7 @@ approximation or not. Notice that the next results are regarding to the
 
 Table 2: Laasonen method error table  |
 :-------------------------:|
-![](./reports/23.png)  | 
+![](./readme/23.png)  | 
 
 By examining **Table 2**, it could be concluded that the solution given
 by the Richardson method was considerably different from the analytical
@@ -396,7 +396,7 @@ by changing the time step size. The space step was maintained at 0.05.
 
 Table 3: Laasonen method error table for the several time steps  |
 :-------------------------:|
-![](./reports/24.png)  | 
+![](./readme/24.png)  | 
 
 **Table 3** and **figure 12** could support the previous affirmations.
 While observing **table 3**, it could be seen that the error is larger
